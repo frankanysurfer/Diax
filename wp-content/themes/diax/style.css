@@ -1,0 +1,80 @@
+/*
+Theme Name:  Diax
+Theme URI:  https://diax.be
+Description:  diax. Child theme for the Slightly theme.
+Author:  Frank Van Acker
+Author URI:  https://diax.be
+Template:  slightly
+Version:  1.0
+License:  GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html                 
+*/
+.site-header-col {
+  position: relative; }
+
+.site-branding {
+  width: 60%;
+  margin-top: 10px; }
+
+.language {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  list-style-type: none;
+  text-align: right; }
+  .language li {
+    margin-left: 15px; }
+    .language li :first-child {
+      margin-left: 0; }
+
+.main-navigation {
+  margin-top: 45px; }
+
+.entry-title {
+  color: #1955A5; }
+
+.footerlist {
+  list-style-type: none; }
+
+@media screen and (min-width: 37.5em) {
+  .site-branding {
+    width: 50%; }
+
+  .main-navigation {
+    margin-top: 0; } }
+@media only screen and (min-width: 48em) {
+  .site-header .row {
+    margin-left: 8.33333333%;
+    margin-right: 8.33333333%; }
+
+  .site-branding {
+    width: 40%; }
+
+  .main-navigation {
+    margin-top: -4px; } }
+@media only screen and (min-width: 980px) {
+  .site-header .row {
+    margin-left: 8.33333333%;
+    margin-right: 8.33333333%; }
+
+  .site-branding {
+    width: 40%;
+    max-width: 308px; }
+
+  .main-navigation {
+    position: absolute;
+    top: 54px;
+    right: -25px;
+    width: 460px; } }
+
+/*# sourceMappingURL=style.css.map */

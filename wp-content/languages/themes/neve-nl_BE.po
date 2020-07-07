@@ -1,0 +1,952 @@
+# Translation of Themes - Neve in Dutch (Belgium)
+# This file is distributed under the same license as the Themes - Neve package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2019-06-17 06:46:56+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/3.0.0-alpha\n"
+"Language: nl_BE\n"
+"Project-Id-Version: Themes - Neve\n"
+
+#. Theme Name of the theme
+#: dashboard/src/Components/Content/FreePro.js:15
+#: dashboard/src/Components/Content/Changelog.js:20
+msgid "Neve"
+msgstr "Neve"
+
+#. Description of the theme
+msgid "Neve is a super fast, easily customizable, multi-purpose theme. It’s perfect for blogs, small business, startups, agencies, firms, e-commerce shops (WooCommerce storefront) as well as personal portfolio sites and most types of projects. A fully AMP optimized and responsive theme, Neve will load in mere seconds and adapt perfectly on any viewing device. While it is lightweight and has a minimalist design, the theme is highly extendable, it has a highly SEO optimized code, resulting in top rankings in Google search results. Neve works perfectly with Gutenberg and the most popular page builders (Elementor, Brizy, Beaver Builder, Visual Composer, SiteOrigin, Divi). Neve is also WooCommerce ready, responsive, RTL & translation ready. Look no further. Neve is the perfect theme for you!"
+msgstr "Neve is een super snel, gemakkelijk aanpasbaar, multifunctioneel thema. Het is perfect voor blogs, kleine bedrijven, startups, bureaus, e-commerce winkels (WooCommerce Storefront) evenals persoonlijke portfolio websites en de andere soorten projecten. Een volledig AMP geoptimaliseerd en responsief thema, Neve laadt in slechts enkele seconden en past zich perfect aan op elk toestel. Hoewel het licht is gebouwd is en een minimalistisch ontwerp heeft, is het thema uitermate uitbreidbaar, heeft het een zeer SEO geoptimaliseerde code, resulterend in een toppositie in de zoekresultaten van Google. Neve werkt perfect met Gutenberg en de populairste paginabouwers (Elementor, Brizy, Beaver Builder, Visual Composer, SiteOrigin, Divi). Neve is ook geschikt voor WooCommerce, responsief, RTL & klaar voor vertaling. Zoek niet verder. Neve is het perfecte thema voor jou!"
+
+#: inc/customizer/options/buttons.php:42
+msgid "Buttons"
+msgstr "Knoppen"
+
+#: inc/customizer/options/buttons.php:58 assets/js/src/gutenberg.js:14
+msgid "Primary"
+msgstr "Primair"
+
+#: inc/customizer/options/buttons.php:61 assets/js/src/gutenberg.js:19
+msgid "Secondary"
+msgstr "Secundair"
+
+#: header-footer-grid/Core/Components/Search.php:284
+#: header-footer-grid/Core/Components/SearchResponsive.php:448
+msgid "Background Color"
+msgstr "Achtergrondkleur"
+
+#: header-footer-grid/Core/Components/SearchResponsive.php:184
+#: header-footer-grid/Core/Components/CartIcon.php:141
+#: inc/customizer/controls/react/src/background/BackgroundComponent.js:45
+#: inc/customizer/controls/react/src/background/BackgroundComponent.js:89
+msgid "Color"
+msgstr "Kleur"
+
+#: header-footer-grid/Core/Components/SearchResponsive.php:205
+#: header-footer-grid/Core/Components/CartIcon.php:167
+msgid "Hover Color"
+msgstr "Kleur bij hover"
+
+#: inc/customizer/options/buttons.php:148
+msgid "Border radius"
+msgstr "Straal van de afgeronde hoeken"
+
+#: inc/compatibility/lifter.php:314
+msgid "Catalog Sidebar"
+msgstr "Catalogus zijbalk"
+
+#: inc/customizer/options/layout_single_product.php:71
+msgid "Exclusive Products"
+msgstr "Exclusieve producten"
+
+#: inc/customizer/options/layout_single_product.php:92
+msgid "Title"
+msgstr "Titel"
+
+#: inc/customizer/options/layout_single_product.php:125
+msgid "All"
+msgstr "Alle"
+
+#: header-footer-grid/Core/Builder/Abstract_Builder.php:301
+msgid "Slide from Left"
+msgstr "Schuif van links"
+
+#: header-footer-grid/Core/Builder/Abstract_Builder.php:302
+msgid "Toggle Dropdown"
+msgstr "Dropdown aan/uitzetten"
+
+#: inc/customizer/options/buttons.php:129
+#: header-footer-grid/Core/Components/Abstract_Component.php:512
+msgid "Padding"
+msgstr "Opvulling"
+
+#: header-footer-grid/Core/Components/Abstract_Component.php:472
+msgid "Right"
+msgstr "Rechts"
+
+#: header-footer-grid/Core/Components/Abstract_Component.php:464
+msgid "Left"
+msgstr "Links"
+
+#: header-footer-grid/Core/Components/Abstract_Component.php:538
+msgid "Margin"
+msgstr "Marge"
+
+#: header-footer-grid/Core/Components/SecondNav.php:142
+msgid "Select Menu"
+msgstr "Selecteer menu"
+
+#: header-footer-grid/Core/Settings/Manager.php:185
+#: inc/customizer/controls/react/src/button-appearance/ButtonAppearanceComponent.js:274
+msgid "Style"
+msgstr "Stijl"
+
+#: header-footer-grid/Core/Builder/Header.php:176
+msgid "Header Top"
+msgstr "Header bovenaan"
+
+#: header-footer-grid/Core/Builder/Header.php:180
+msgid "Header Main"
+msgstr "Header midden"
+
+#: header-footer-grid/Core/Builder/Header.php:184
+msgid "Header Bottom"
+msgstr "Header onderaan"
+
+#: header-footer-grid/Core/Builder/Footer.php:120
+msgid "Footer Top"
+msgstr "Footer bovenaan"
+
+#: header-footer-grid/Core/Builder/Footer.php:124
+msgid "Footer Bottom"
+msgstr "Footer onderaan"
+
+#: header-footer-grid/Core/Components/MenuIcon.php:76
+msgid "Menu Icon"
+msgstr "Menu icoon"
+
+#: header-footer-grid/Core/Components/Logo.php:72
+msgid "Logo & Site Identity"
+msgstr "Logo en website identiteit"
+
+#: header-footer-grid/Core/Components/Logo.php:147
+msgid "Show Site Title"
+msgstr "Toon site titel"
+
+#: header-footer-grid/Core/Components/Logo.php:132
+msgid "Show Site Tagline"
+msgstr "Toon website slogan"
+
+#: header-footer-grid/Core/Components/Button.php:77
+#: header-footer-grid/Core/Components/Button.php:115
+msgid "Button"
+msgstr "Knop"
+
+#: header-footer-grid/Core/Components/Button.php:101
+msgid "Link"
+msgstr "Link"
+
+#: header-footer-grid/Core/Components/CartIcon.php:46
+msgid "Cart Icon"
+msgstr "Winkelwagen icoon"
+
+#: header-footer-grid/Core/Components/Copyright.php:36
+#: header-footer-grid/Core/Components/Copyright.php:70
+msgid "Copyright"
+msgstr "Copyright"
+
+#: inc/core/front_end.php:80
+#: header-footer-grid/templates/components/component-nav-secondary.php:23
+#: header-footer-grid/Core/Components/SecondNav.php:41
+#: header-footer-grid/Core/Components/SecondNav.php:136
+msgid "Secondary Menu"
+msgstr "Secundair menu"
+
+#: header-footer-grid/Core/Components/NavFooter.php:86
+#: header-footer-grid/Core/Components/Nav.php:113
+#: header-footer-grid/Core/Components/SecondNav.php:86
+msgid "Items Color"
+msgstr "Itemkleur"
+
+#: header-footer-grid/Core/Components/NavFooter.php:108
+#: header-footer-grid/Core/Components/Nav.php:155
+#: header-footer-grid/Core/Components/SecondNav.php:109
+msgid "Items Hover Color"
+msgstr "Kleur items hover"
+
+#: header-footer-grid/Core/Components/Search.php:42
+msgid "Search Form"
+msgstr "Zoekformulier"
+
+#: header-footer-grid/Core/Components/Search.php:65
+#: header-footer-grid/Core/Components/Search.php:456
+#: header-footer-grid/Core/Components/Search.php:460
+#: header-footer-grid/Core/Components/SearchResponsive.php:97
+#: header-footer-grid/Core/Components/SearchResponsive.php:670
+#: header-footer-grid/Core/Components/SearchResponsive.php:674
+msgid "Search for..."
+msgstr "Zoeken naar..."
+
+#: header-footer-grid/Core/Components/Search.php:66
+#: header-footer-grid/Core/Components/SearchResponsive.php:98
+msgid "Placeholder"
+msgstr "Plaatshouder"
+
+#: header-footer-grid/Core/Components/SearchResponsive.php:48
+#: dashboard/src/Components/Onboarding/EditorSelector.js:86
+msgid "Search Icon"
+msgstr "Zoekicoon"
+
+#: header-footer-grid/Core/Components/Nav.php:134
+msgid "Active Item Color"
+msgstr "Actief itemkleur"
+
+#: header-footer-grid/Core/Components/Nav.php:203
+msgid "Last Menu Item"
+msgstr "Laatste menu-item"
+
+#: inc/customizer/controls/react/src/typeface/TypefaceComponent.js:148
+msgid "Capitalize"
+msgstr "Met hoofdletter"
+
+#: inc/customizer/controls/react/src/typeface/TypefaceComponent.js:150
+msgid "Uppercase"
+msgstr "Hoofdletters"
+
+#: inc/customizer/controls/react/src/typeface/TypefaceComponent.js:149
+msgid "Lowercase"
+msgstr "Kleine letters"
+
+#: inc/customizer/controls/react/src/typeface/TypefaceComponent.js:246
+msgid "Letter Spacing"
+msgstr "Letter afstand"
+
+#: header-footer-grid/Core/Components/CustomHtml.php:35
+#: header-footer-grid/Core/Components/CustomHtml.php:142
+msgid "HTML"
+msgstr "HTML"
+
+#: inc/customizer/options/layout_single_post.php:71
+msgid "Post navigation"
+msgstr "Berichtnavigatie"
+
+#: inc/views/pluggable/pagination.php:157
+msgid "previous"
+msgstr "vorige"
+
+#: inc/views/pluggable/pagination.php:162
+msgid "next"
+msgstr "volgende"
+
+#: inc/core/admin.php:209
+msgid "Try one of our ready to use Starter Sites"
+msgstr "Probeer een van onze kant-en-klare Starter websites"
+
+#: inc/core/admin.php:220
+msgid "or go to the theme settings"
+msgstr "of ga naar de thema-instellingen"
+
+#: inc/core/admin.php:198
+msgid "Congratulations!"
+msgstr "Gefeliciteerd!"
+
+#. translators: %s - theme name
+#: inc/core/admin.php:201
+msgid "%s is now installed and ready to use. We've assembled some links to get you started."
+msgstr "%s is nu geïnstalleerd en klaar om te gebruiken. We hebben een aantal links samengesteld om je op weg te helpen."
+
+#: inc/core/admin.php:214
+msgid "Return to your dashboard"
+msgstr "Ga terug naar je dashboard"
+
+#. translators: %s - post type
+#: inc/admin/metabox/manager.php:113
+msgid "%s Settings"
+msgstr "%s Instellingen"
+
+#. translators: %s: number of comments
+#: inc/views/partials/post_meta.php:186
+msgid "%s Comment"
+msgid_plural "%s Comments"
+msgstr[0] "%s reactie"
+msgstr[1] "%s reacties"
+
+#: functions.php:48
+msgid "upgrading PHP to the latest version"
+msgstr "PHP naar de laatste versie aan het upgraden"
+
+#. translators: %s message to upgrade PHP to the latest version
+#: functions.php:44
+msgid "Hey, we've noticed that you're running an outdated version of PHP which is no longer supported. Make sure your site is fast and secure, by %s. Neve's minimal requirement is PHP 5.4.0."
+msgstr "He, we hebben gemerkt dat je een verouderde versie van PHP uitvoert die niet langer wordt ondersteund. Zorg ervoor dat je website snel en veilig is, door %s. Neve's minimale vereiste PHP versie is 5.4.0."
+
+#: header.php:31
+msgid "Skip to content"
+msgstr "Spring naar de inhoud"
+
+#: inc/admin/metabox/main.php:128
+msgid "Content Width"
+msgstr "Breedte inhoud"
+
+#: inc/admin/metabox/main.php:129
+msgid "Enable Individual Content Width"
+msgstr "Individuele inhoudsbreedte inschakelen"
+
+#: inc/admin/metabox/main.php:70
+msgid "Components"
+msgstr "Componenten"
+
+#: inc/admin/metabox/main.php:71
+msgid "Disable Header"
+msgstr "Header uitschakelen"
+
+#: inc/admin/metabox/main.php:76
+msgid "Disable Title"
+msgstr "Titel uitschakelen"
+
+#: inc/admin/metabox/main.php:82
+msgid "Disable Featured Image"
+msgstr "Uitgelichte afbeelding uitschakelen"
+
+#: inc/admin/metabox/main.php:88
+msgid "Disable Footer"
+msgstr "Footer uitschakelen"
+
+#: inc/admin/metabox/main.php:37 inc/admin/metabox/main.php:51
+msgid "Customizer Setting"
+msgstr "Instelling customizer"
+
+#: inc/admin/metabox/main.php:38
+#: inc/customizer/options/layout_container.php:133
+#: header-footer-grid/Core/Builder/Abstract_Builder.php:324
+#: header-footer-grid/Core/Builder/Abstract_Builder.php:326
+msgid "Contained"
+msgstr "Opgenomen"
+
+#: inc/admin/metabox/main.php:39
+#: inc/customizer/options/layout_container.php:134
+#: header-footer-grid/Core/Builder/Abstract_Builder.php:324
+#: header-footer-grid/Core/Builder/Abstract_Builder.php:325
+msgid "Full Width"
+msgstr "Volledige breedte"
+
+#: inc/admin/metabox/main.php:41 inc/customizer/options/layout_container.php:43
+msgid "Container"
+msgstr "Container"
+
+#: inc/admin/metabox/main.php:52
+msgid "Left Sidebar"
+msgstr "Linker zijbalk"
+
+#: inc/admin/metabox/main.php:53
+msgid "Right Sidebar"
+msgstr "Rechter zijbalk"
+
+#: inc/admin/metabox/main.php:54
+msgid "No Sidebar"
+msgstr "Geen zijbalk"
+
+#: inc/admin/metabox/main.php:56 inc/core/front_end.php:3081
+msgid "Sidebar"
+msgstr "Zijbalk"
+
+#: inc/admin/plugin_install/main.php:109
+msgid "Install and activate"
+msgstr "Installeer en activeer"
+
+#: inc/admin/plugin_install/main.php:113 inc/admin/plugin_install/main.php:133
+#: dashboard/src/Components/PluginCard.js:17
+#: dashboard/src/Components/LicenseCard.js:84
+msgid "Activate"
+msgstr "Activeer"
+
+#: inc/admin/plugin_install/main.php:128
+#: dashboard/src/Components/PluginCard.js:18
+#: dashboard/src/Components/LicenseCard.js:83
+msgid "Deactivate"
+msgstr "Deactiveren"
+
+#: inc/admin/plugin_install/main.php:133
+msgid "Jetpack Portfolio"
+msgstr "Jetpack portfolio"
+
+#: inc/admin/plugin_install/main.php:176
+msgid "Activating "
+msgstr "Aan het activeren"
+
+#: inc/compatibility/woocommerce.php:375
+msgid "Filter"
+msgstr "Filter"
+
+#: inc/views/header.php:165
+#: header-footer-grid/templates/components/component-cart-icon.php:50
+#: header-footer-grid/Core/Components/Nav.php:182
+#: header-footer-grid/Core/Magic_Tags.php:493
+msgid "Cart"
+msgstr "WInkelwagen"
+
+#: dashboard/src/Components/Sidebar.js:20
+msgid "Neve Community"
+msgstr "Neve community"
+
+#: dashboard/src/Components/Sidebar.js:28
+msgid "Leave us a review"
+msgstr "Schrijf een recensie"
+
+#: dashboard/src/Components/Sidebar.js:31
+msgid "Submit a review"
+msgstr "Geef een beoordeling"
+
+#: inc/core/admin.php:239 dashboard/src/Components/Content/Help.js:63
+msgid "Documentation"
+msgstr "Documentatie"
+
+#: dashboard/src/Components/Content/Help.js:24
+#: dashboard/src/Components/Content/Help.js:31
+msgid "Contact Support"
+msgstr "Neem contact op met ondersteuning"
+
+#: inc/core/admin.php:243 header-footer-grid/Core/Builder/Footer.php:47
+#: header-footer-grid/Core/Builder/Header.php:51
+msgid "Read full documentation"
+msgstr "Lees de volledige documentatie hieronder"
+
+#: dashboard/src/Components/Content/Help.js:37
+msgid "Changelog"
+msgstr "Logbestand veranderingen"
+
+#: dashboard/src/Components/Content/Help.js:38
+msgid "Want to get the gist on the latest theme changes? Just consult our changelog below to get a taste of the recent fixes and features implemented."
+msgstr "Wil je een samenvatting van de laatste wijzigingen in het thema? Bekijk onderstaand onze changelog met hierin de meeste recente reparaties en nieuwe functionaliteiten en kenmerken."
+
+#: dashboard/src/Components/Content/Help.js:77
+msgid "Create a child theme"
+msgstr "Maak een subthema"
+
+#: dashboard/src/Components/Content/Help.js:78
+msgid "If you want to make changes to the theme's files, those changes are likely to be overwritten when you next update the theme. In order to prevent that from happening, you need to create a child theme. For this, please follow the documentation below."
+msgstr "Als je wijzigingen wilt aanbrengen in je thema, dan worden deze waarschijnlijk overschreven wanneer je in de toekomst je thema update. Om dat te voorkomen kan je het beste een child thema maken. Kijk in onderstaande documentatie hoe je dat doet."
+
+#: dashboard/src/Components/Content/Help.js:49
+msgid "If you find yourself in a situation where everything on your site is running very slowly, you might consider having a look at the documentation below where you will find the most common issues causing this and possible solutions for each of the issues."
+msgstr "Als je ooit in een situatie komt waarbij alles van je site erg traag draait, kun je misschien eens kijken naar de documentatie hieronder met de meest voorkomende problemen en mogelijke oplossingen voor elk probleem."
+
+#: dashboard/src/Components/Content/Help.js:89
+msgid "Build a landing page with a drag-and-drop content builder"
+msgstr "Maak een landingspagina met de drag en drop content builder."
+
+#: dashboard/src/Components/Content/Help.js:90
+msgid "In the documentation below you will find an easy way to build a great looking landing page using a drag-and-drop content builder plugin."
+msgstr "In de documentatie hieronder vind je een gemakkelijke manier om een prachtig ogende landingspagina te maken met een drag-and-drop content builder plugin."
+
+#: dashboard/inc/Main.php:292
+msgid "Upload Logo"
+msgstr "Logo uploaden"
+
+#: dashboard/inc/Main.php:296
+msgid "Set Colors"
+msgstr "Kleuren instellen"
+
+#: dashboard/inc/Main.php:300
+msgid "Customize Fonts"
+msgstr "Wijzig lettertypen"
+
+#: dashboard/inc/Main.php:304
+msgid "Layout Options"
+msgstr "Layout opties"
+
+#: dashboard/inc/Main.php:308
+msgid "Header Options"
+msgstr "Header opties"
+
+#: dashboard/inc/Main.php:312
+msgid "Blog Layouts"
+msgstr "Blog lay-outs"
+
+#: dashboard/inc/Main.php:316
+msgid "Footer Options"
+msgstr "Footer opties"
+
+#: inc/customizer/options/layout_sidebar.php:43 dashboard/inc/Main.php:320
+msgid "Content / Sidebar"
+msgstr "Inhoud / Zijbalk"
+
+#: inc/core/front_end.php:78
+#: header-footer-grid/templates/components/component-nav.php:25
+#: header-footer-grid/Core/Components/Nav.php:43
+#: header-footer-grid/Core/Components/Nav.php:221
+msgid "Primary Menu"
+msgstr "Hoofdmenu"
+
+#: inc/core/front_end.php:79
+#: header-footer-grid/templates/components/component-nav-footer.php:23
+#: header-footer-grid/Core/Components/NavFooter.php:41
+#: header-footer-grid/Core/Components/NavFooter.php:138
+msgid "Footer Menu"
+msgstr "Footer menu"
+
+#: inc/core/front_end.php:2378 inc/core/front_end.php:2388
+msgid "Want to keep using Zelle's homepage?"
+msgstr "Wil je de startpagina van Zelle blijven gebruiken?"
+
+#: inc/core/front_end.php:2379 inc/core/front_end.php:2389
+msgid "Hi! We've noticed you were using Zelle before. To make your transition easier, we can help you keep the same beautiful homepage you had before, by converting it into an Elementor template. This option will also import your homepage content."
+msgstr "Hallo! We hebben gemerkt dat je hiervoor Zelle eerder gebruikte. Om je overstap gemakkelijker te maken, kunnen we je helpen hetzelfde prachtige startpagina als voorheen te bewaren door deze in een Elementor-sjabloon om te zetten. Met deze optie wordt ook de inhoud van de startpagina geïmporteerd."
+
+#: dashboard/src/Components/Onboarding/Main.js:100
+msgid "Ready to use pre-built websites with 1-click installation"
+msgstr "Klaar om vooraf gebouwde websites te gebruiken met de 1-klik installatie"
+
+#: inc/core/front_end.php:2738
+msgid "Black"
+msgstr "Zwart"
+
+#: inc/core/front_end.php:2747
+msgid "White"
+msgstr "Wit"
+
+#: inc/core/front_end.php:2756
+msgid "Button Color"
+msgstr "Kleur knop"
+
+#: inc/customizer/options/colors_background.php:56 inc/core/front_end.php:2760
+msgid "Link Color"
+msgstr "Link Kleur"
+
+#: inc/customizer/options/colors_background.php:61 inc/core/front_end.php:2764
+msgid "Link Hover Color"
+msgstr "Link hover kleur"
+
+#: inc/customizer/options/colors_background.php:66 inc/core/front_end.php:2768
+#: header-footer-grid/Core/Components/CustomHtml.php:158
+#: header-footer-grid/Core/Components/Logo.php:205
+#: header-footer-grid/Core/Components/Copyright.php:84
+#: header-footer-grid/Core/Builder/Abstract_Builder.php:401
+msgid "Text Color"
+msgstr "Tekstkleur"
+
+#: inc/core/front_end.php:3082
+msgid "Shop Sidebar"
+msgstr "Shop zijbalk"
+
+#: inc/core/front_end.php:3088
+#: header-footer-grid/Core/Components/FooterWidgetOne.php:31
+msgid "Footer One"
+msgstr "Footer Eén"
+
+#: inc/core/front_end.php:3089
+#: header-footer-grid/Core/Components/FooterWidgetTwo.php:32
+msgid "Footer Two"
+msgstr "Footer Twee"
+
+#: inc/core/front_end.php:3090
+#: header-footer-grid/Core/Components/FooterWidgetThree.php:31
+msgid "Footer Three"
+msgstr "Footer Drie"
+
+#: inc/core/front_end.php:3091
+#: header-footer-grid/Core/Components/FooterWidgetFour.php:32
+msgid "Footer Four"
+msgstr "Footer Vier"
+
+#. translators: %s is the header name
+#: header-footer-grid/Core/Customizer.php:265
+#: inc/customizer/controls/react/bundle/controls.js:35
+#: inc/customizer/controls/react/src/font-family/FontFamilySelector.js:59
+#: inc/customizer/controls/react/src/font-family/FontFamilySelector.js:169
+#: assets/js/src/gutenberg.js:9
+msgid "Default"
+msgid_plural "neve"
+msgstr[0] "Standaard"
+msgstr[1] ""
+
+#: inc/customizer/options/colors_background.php:42
+msgid "Colors & Background"
+msgstr "Kleuren & achtergrond"
+
+#: inc/customizer/options/layout_sidebar.php:152
+#: inc/customizer/options/layout_blog.php:47
+msgid "Blog / Archive"
+msgstr "Blog / Archief"
+
+#: inc/customizer/options/layout_blog.php:66
+msgid "Blog"
+msgstr "Blog"
+
+#: inc/customizer/options/layout_blog.php:66 inc/customizer/options/main.php:51
+#: header-footer-grid/Core/Settings/Manager.php:181
+#: header-footer-grid/Core/Builder/Abstract_Builder.php:296
+#: header-footer-grid/Core/Builder/Abstract_Builder.php:319
+msgid "Layout"
+msgstr "Lay-out"
+
+#: inc/customizer/options/layout_blog.php:95
+msgid "Grid Layout"
+msgstr "Grid Layout"
+
+#: inc/customizer/options/layout_blog.php:97
+msgid "1 Column"
+msgstr "1 kolom"
+
+#: inc/customizer/options/layout_blog.php:98
+msgid "2 Columns"
+msgstr "2 kolommen"
+
+#: inc/customizer/options/layout_blog.php:99
+msgid "3 Columns"
+msgstr "3 kolommen"
+
+#: inc/customizer/options/layout_blog.php:100
+msgid "4 Columns"
+msgstr "4 kolommen"
+
+#: inc/customizer/options/layout_blog.php:119
+msgid "Enable Masonry"
+msgstr "Masonry inschakelen"
+
+#: inc/customizer/options/layout_blog.php:138
+msgid "Excerpt Length"
+msgstr "Excerpt lengte"
+
+#: inc/customizer/options/layout_blog.php:166
+msgid "Post Pagination"
+msgstr "Bericht paginering"
+
+#: inc/customizer/options/layout_blog.php:171
+msgid "Number"
+msgstr "Nummer"
+
+#: inc/customizer/options/layout_blog.php:172
+msgid "Infinite Scroll"
+msgstr "Oneindige scroll"
+
+#: inc/customizer/options/layout_blog.php:222
+#: inc/customizer/options/layout_single_post.php:68
+msgid "Thumbnail"
+msgstr "Thumbnail"
+
+#: inc/customizer/options/layout_blog.php:223
+#: inc/customizer/options/layout_single_post.php:67
+msgid "Title & Meta"
+msgstr "Titel & meta"
+
+#: inc/customizer/options/layout_blog.php:224
+msgid "Excerpt"
+msgstr "Samenvatting"
+
+#: inc/customizer/options/layout_blog.php:235
+msgid "Post Content Order"
+msgstr "Volgorde bericht-inhoud"
+
+#: inc/customizer/options/layout_blog.php:283
+#: inc/views/partials/post_meta.php:141
+#: header-footer-grid/Core/Magic_Tags.php:438
+msgid "Author"
+msgstr "Auteur"
+
+#: inc/customizer/options/layout_blog.php:284
+#: inc/customizer/options/layout_single_product.php:107
+#: inc/views/partials/post_meta.php:142
+msgid "Category"
+msgstr "Categorie"
+
+#: inc/customizer/options/layout_blog.php:285
+#: inc/views/partials/post_meta.php:143
+msgid "Date"
+msgstr "Datum"
+
+#: inc/customizer/options/layout_blog.php:286
+#: inc/customizer/options/layout_single_post.php:72
+#: inc/views/partials/post_meta.php:144
+msgid "Comments"
+msgstr "Reacties"
+
+#: inc/customizer/options/layout_blog.php:298
+msgid "Meta Order"
+msgstr "Meta volgorde"
+
+#: inc/customizer/options/layout_container.php:90
+msgid "Default Container Style"
+msgstr "Standaard container stijl"
+
+#: inc/customizer/options/layout_container.php:94
+msgid "Blog / Archive Container Style"
+msgstr "Blog / Archief containerstijl"
+
+#: inc/customizer/options/layout_container.php:98
+msgid "Single Post Container Style"
+msgstr "Bericht container stijl"
+
+#: inc/customizer/options/layout_container.php:108
+msgid "Shop / Archive Container Style"
+msgstr "Shop / Archief containerstijl"
+
+#: inc/customizer/options/layout_container.php:112
+msgid "Single Product Container Style"
+msgstr "Enkel product containerstijl"
+
+#: header-footer-grid/Core/Builder/Footer.php:34
+#: header-footer-grid/Core/Builder/Footer.php:74
+msgid "Footer"
+msgstr "Footer"
+
+#: inc/customizer/options/layout_single_post.php:69
+#: dashboard/src/Components/Onboarding/ImportModal.js:126
+msgid "Content"
+msgstr "Inhoud"
+
+#: dashboard/src/Components/Onboarding/ImportModal.js:134
+msgid "Widgets"
+msgstr "Widgets"
+
+#: inc/customizer/options/layout_single_product.php:124
+#: inc/customizer/controls/react/src/typeface/TypefaceComponent.js:147
+msgid "None"
+msgstr "Geen"
+
+#: header-footer-grid/Core/Components/Button.php:116
+#: inc/customizer/controls/react/src/button-appearance/ButtonAppearanceComponent.js:182
+#: inc/customizer/controls/react/src/button-appearance/ButtonAppearanceComponent.js:189
+msgid "Text"
+msgstr "Tekst"
+
+#. translators: %1$s is Theme Name ( Neve ), %2$s is WordPress
+#: header-footer-grid/Core/Components/Copyright.php:64
+msgid "%1$s | Powered by %2$s"
+msgstr "%1$s | Ondersteund door %2$s"
+
+#: header-footer-grid/Core/Builder/Abstract_Builder.php:595
+msgid "Section Content"
+msgstr "Sectie inhoud"
+
+#: header-footer-grid/Core/Components/Nav.php:177
+#: inc/customizer/controls/react/bundle/controls.js:35
+#: inc/customizer/controls/react/src/font-family/FontFamilySelector.js:120
+msgid "Search"
+msgid_plural "neve"
+msgstr[0] "Zoek"
+msgstr[1] ""
+
+#: inc/customizer/options/layout_sidebar.php:62
+msgid "Sitewide Sidebar Layout"
+msgstr "Zijbalk op volledige breedte lay-out"
+
+#: inc/customizer/options/layout_sidebar.php:81
+msgid "Sitewide Content Width (%)"
+msgstr "Breedte van inhoud over gehele site (%)"
+
+#: inc/customizer/options/layout_sidebar.php:104
+msgid "Enable Advanced Options"
+msgstr "Geavanceerde instellingen inschakelen"
+
+#: inc/customizer/options/layout_sidebar.php:153
+#: inc/customizer/options/layout_single_post.php:42
+msgid "Single Post"
+msgstr "Enkelvoudig bericht"
+
+#: inc/customizer/options/layout_sidebar.php:160
+msgid "Shop / Archive"
+msgstr "Shop / Archief"
+
+#: inc/customizer/options/layout_sidebar.php:161
+#: inc/customizer/options/layout_single_product.php:52
+msgid "Single Product"
+msgstr "Enkel product"
+
+#: inc/customizer/options/layout_sidebar.php:165
+msgid "Others"
+msgstr "Andere"
+
+#: inc/customizer/options/layout_sidebar.php:224
+msgid "Sidebar Layout"
+msgstr "Lay-out zijbalk"
+
+#: inc/customizer/options/layout_sidebar.php:323
+msgid "Content Width (%)"
+msgstr "Breedte inhoud (%)"
+
+#: inc/customizer/options/layout_single_post.php:84
+msgid "Elements Order"
+msgstr "Volgorde elementen"
+
+#: header-footer-grid/Core/Builder/Header.php:38
+#: header-footer-grid/Core/Builder/Abstract_Builder.php:507
+msgid "Header"
+msgstr "Header"
+
+#: inc/customizer/options/main.php:55
+#: header-footer-grid/Core/Components/Abstract_Component.php:771
+msgid "Typography"
+msgstr "Typografie"
+
+#: inc/customizer/options/typography.php:106
+#: header-footer-grid/Core/Settings/Manager.php:177
+#: dashboard/src/Components/Onboarding/ImportModal.js:140
+msgid "General"
+msgstr "Algemeen"
+
+#: inc/customizer/options/typography.php:110
+msgid "Headings"
+msgstr "Koppen"
+
+#: inc/customizer/controls/react/bundle/controls.js:35
+#: inc/customizer/controls/react/src/font-family/FontFamilySelector.js:156
+msgid "Font Family"
+msgid_plural "neve"
+msgstr[0] "Lettertype"
+msgstr[1] ""
+
+#: header-footer-grid/Core/Components/Search.php:120
+#: header-footer-grid/Core/Components/SearchResponsive.php:284
+#: inc/customizer/controls/react/src/typeface/TypefaceComponent.js:167
+msgid "Font Size"
+msgstr "Lettergrootte"
+
+#: inc/customizer/controls/react/src/typeface/TypefaceComponent.js:204
+msgid "Line Height"
+msgstr "Lijnhoogte"
+
+#: inc/views/layouts/layout_sidebar.php:148 inc/views/header.php:130
+#: header-footer-grid/templates/components/component-cart-icon.php:26
+#: header-footer-grid/Core/Customizer.php:273
+#: dashboard/src/Components/Onboarding/PreviewFrame.js:24
+#: dashboard/src/Components/Onboarding/Migration.js:119
+#: dashboard/src/Components/Onboarding/ImportModal.js:400
+msgid "Close"
+msgstr "Sluit"
+
+#: header-footer-grid/templates/components/component-menu-icon.php:26
+#: header-footer-grid/templates/row-wrapper-mobile.php:26
+msgid "Navigation Menu"
+msgstr "Navigatie Menu"
+
+#: header-footer-grid/templates/components/component-menu-icon.php:39
+#: header-footer-grid/templates/row-wrapper-mobile.php:36
+msgid "Toggle Navigation"
+msgstr "Navigatie wisselen"
+
+#. translators: search result
+#: inc/views/page_header.php:73
+msgid "Search Results for: %s"
+msgstr "Zoekresultaten voor : %s"
+
+#: inc/views/partials/comments.php:57
+msgid "Comments are closed."
+msgstr "Reacties zijn gesloten."
+
+#: inc/views/partials/comments.php:74
+msgid "Comments Navigation"
+msgstr "Reactie navigatie"
+
+#: inc/views/partials/comments.php:79
+#: dashboard/src/Components/Onboarding/PreviewFrame.js:33
+msgid "Previous"
+msgstr "Vorige"
+
+#: inc/views/partials/comments.php:82
+#: dashboard/src/Components/Onboarding/PreviewFrame.js:43
+msgid "Next"
+msgstr "Volgende"
+
+#: inc/views/partials/comments.php:105
+msgid "Pingback:"
+msgstr "Pingback:"
+
+#: inc/views/partials/comments.php:107 inc/views/partials/comments.php:138
+msgid "Edit"
+msgstr "Bewerken"
+
+#. translators: 1: date, 2: time
+#: inc/views/partials/comments.php:129
+msgid "%1$s at %2$s"
+msgstr "%1$s bij %2$s"
+
+#: inc/views/partials/comments.php:144
+msgid "Reply"
+msgstr "Antwoord"
+
+#: inc/views/partials/comments.php:157
+msgid "Comment awaiting moderation."
+msgstr "Reactie wacht op goedkeuring."
+
+#. translators: number of comments
+#: inc/views/partials/comments.php:178
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "%1$s reactie op &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s reacties op &ldquo;%2$s&rdquo;"
+
+#: inc/customizer/options/layout_single_post.php:70
+#: inc/views/partials/post_meta.php:200
+msgid "Tags"
+msgstr "Tags"
+
+#: inc/views/template_parts.php:258
+msgid "Read More"
+msgstr "Meer lezen"
+
+#. translators: %s is Link to new post
+#: inc/views/content_none.php:34
+msgid "Ready to publish your first post? %s."
+msgstr "Klaar om je eerste bericht te schrijven? %s."
+
+#: inc/views/content_none.php:39
+msgid "Get started here"
+msgstr "Begin hier"
+
+#: inc/views/content_none.php:57
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "Helaas, niets komt overeen met uw zoektermen. Probeer opnieuw met andere zoektermen."
+
+#: inc/views/content_404.php:37
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "Het lijkt dat we niet kunnen vinden wat u zoekt. Misschien kan de zoekfunctie helpen."
+
+#. Template Name of the theme
+msgid "Page Builder Full Width (Neve)"
+msgstr "Pagebuilder volledige breedte (Neve)"
+
+#: dashboard/src/Components/Sidebar.js:23
+msgid "Join our Facebook Group"
+msgstr "Word lid van onze Facebook groep"
+
+#. translators: %s - theme name
+#. translators: %s - Theme name
+#: inc/core/admin.php:233 dashboard/inc/Main.php:193
+msgid "%s now comes with a sites library with various designs to pick from. Visit our collection of demos that are constantly being added."
+msgstr "%s wordt nu geleverd met een bibliotheek met verschillende ontwerpen om uit te kiezen. Bezoek onze collectie demo's die steeds groter wordt."
+
+#. translators: %s - theme name
+#. translators: %s - Theme name
+#: inc/core/admin.php:241 dashboard/inc/Main.php:201
+msgid "Need more details? Please check our full documentation for detailed information on how to use %s."
+msgstr "Meer informatie nodig? Raadpleeg onze volledige documentatie voor gedetailleerde informatie over hoe je %s gebruikt."
+
+#: dashboard/src/Components/Content/Help.js:48
+msgid "Speed up your site"
+msgstr "Maak je website sneller"
+
+#. translators: %s - Theme name
+#: dashboard/inc/Main.php:197
+msgid "With %s, you can choose from multiple unique demos, specially designed for you, that can be installed with a single click. You just need to choose your favorite, and we will take care of everything else."
+msgstr "Met %s kan je kiezen uit meerdere unieke demo's, speciaal voor jou ontworpen, die je met één klik kunt installeren. Je hoeft alleen maar je favoriet te kiezen, en wij zorgen voor de rest."
+
+#: inc/core/admin.php:231
+msgid "Sites Library"
+msgstr "Site bibliotheek"
+
+#. Theme URI of the theme
+msgid "https://themeisle.com/themes/neve/"
+msgstr "https://themeisle.com/themes/neve/"
+
+#. Author of the theme
+msgid "ThemeIsle"
+msgstr "ThemeIsle"
+
+#. Author URI of the theme
+msgid "https://themeisle.com"
+msgstr "https://themeisle.com"

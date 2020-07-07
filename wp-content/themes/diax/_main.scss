@@ -1,0 +1,81 @@
+.site-header-col {
+	position: relative;
+}
+
+.site-branding {
+	width: 60%;
+	margin-top: 10px;
+}
+
+.language {
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	list-style-type: none;
+	text-align: right;
+	li {
+		margin-left: 15px;
+		:first-child {
+			margin-left: 0;
+		}
+	}
+}
+
+.main-navigation {
+	margin-top: 45px;
+}
+
+.entry-title  {
+	color: $blue;
+}
+
+.footerlist {
+	list-style-type: none;
+}
+
+@media screen and (min-width: 37.5em) {
+	.site-branding {
+		width: 50%;
+	}
+
+	.main-navigation {
+		margin-top: 0;
+	}
+}
+
+@media only screen and (min-width: 48em) {
+	.site-header .row {
+		margin-left: 8.33333333%;
+		margin-right: 8.33333333%;
+	}
+
+	.site-branding {
+		width: 40%;
+	}
+
+	.main-navigation {
+		margin-top: -4px;
+	}
+}
+
+@media only screen and (min-width: 980px) {
+	.site-header .row {
+		margin-left: 8.33333333%;
+		margin-right: 8.33333333%;
+	}
+
+	.site-branding {
+		width: 40%;
+		max-width: 308px;
+	}
+
+	.main-navigation {
+		position: absolute;
+		top: 54px;
+		right: -25px;
+		width: 460px;
+	}
+}

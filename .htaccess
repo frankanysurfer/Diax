@@ -1,0 +1,15 @@
+
+# BEGIN WordPress
+# De richtlijnen (regels) tussen `BEGIN WordPress` and `END WordPress` worden
+# dynamisch aangemaakt en zouden enkel aangepast mogen worden via WordPress filters.
+# Elke wijziging aan deze richtlijnen tussen deze markeringen worden overschreven.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /diax/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /diax/index.php [L]
+</IfModule>
+
+# END WordPress
