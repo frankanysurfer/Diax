@@ -29,6 +29,15 @@
                 <li>Algemene voorwaarden</li>
                 <li>Toegankelijkheidsverklaring</li>
             </ul>
+
+            <?php 
+                // if(pll_current_language() == 'nl') {
+                //     echo 'Only in english';
+                // } else if(pll_current_language() == 'fr') {
+                //     echo 'Seulment en francais'; 
+                // }  
+        ?>
+
 		</div><!-- .site-info -->
 
     </div>
