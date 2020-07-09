@@ -84,82 +84,30 @@ class Admin {
 		}
 		$theme_support = $theme_support[0];
 		$sites         = isset( $theme_support['remote'] ) ? $theme_support['remote'] : null;
-		$upsells       = isset( $theme_support['upsell'] ) ? $theme_support['upsell'] : null;
 
-		if ( $upsells !== null ) {
-			foreach ( $upsells as $builder => $upsells_for_builder ) {
-				foreach ( $upsells_for_builder as $upsell_slug => $upsell_data ) {
-					$upsells[ $builder ][ $upsell_slug ]['utmOutboundLink'] = add_query_arg(
-						apply_filters(
-							'ti_onboarding_outbound_query_args',
-							array(
-								'utm_medium'   => 'about-' . get_template(),
-								'utm_source'   => $upsell_slug,
-								'utm_campaign' => 'siteslibrary',
-							)
-						),
-						$theme_support['pro_link']
-					);
+		foreach ( $sites as $builder => $sites_for_builder ) {
+			foreach ( $sites_for_builder as $slug => $data ) {
+				if ( ! isset( $data['upsell'] ) || $data['upsell'] !== true ) {
+					continue;
 				}
+				$sites[ $builder ][ $slug ]['utmOutboundLink'] = add_query_arg(
+					apply_filters(
+						'ti_onboarding_outbound_query_args',
+						array(
+							'utm_medium'   => 'about-' . get_template(),
+							'utm_source'   => $slug,
+							'utm_campaign' => 'siteslibrary',
+						)
+					),
+					$theme_support['pro_link']
+				);
 			}
 		}
-
-		$sites = $this->shuffle_sites( $sites );
 
 		return array(
 			'sites'     => $sites,
-			'upsells'   => $upsells,
 			'migration' => $this->get_migrateable( $theme_support ),
 		);
-	}
-
-	/**
-	 * Shuffle available sites to change display order.
-	 *
-	 * @param array $sites sites array.
-	 * @return array
-	 */
-	private function shuffle_sites( $sites ) {
-		$web_agencies = array(
-			'elementor'      => 'neve-web-agency',
-			'beaver builder' => 'neve-beaver-web-agency',
-			'gutenberg'      => 'neve-web-agency-gutenberg',
-		);
-		foreach ( $sites as $editor => $sites_for_editor ) {
-			$web_agency = false;
-			if ( isset( $web_agencies[ $editor ] ) ) {
-				$web_agency_slug = $web_agencies[ $editor ];
-				$web_agency      = $sites_for_editor[ $web_agency_slug ];
-				unset( $sites_for_editor[ $web_agency_slug ] );
-			}
-			$sites_for_editor = $this->shuffle_associative_array( $sites_for_editor );
-			if ( $web_agency && isset( $web_agencies[ $editor ] ) ) {
-				$agency_item                             = array();
-				$agency_item[ $web_agencies[ $editor ] ] = $web_agency;
-				$sites_for_editor                        = array_merge( $agency_item, $sites_for_editor );
-			}
-			$sites[ $editor ] = $sites_for_editor;
-		}
-
-		return $sites;
-	}
-
-	/**
-	 * Shuffle associative array.
-	 *
-	 * @param array $array associative array.
-	 * @return array
-	 */
-	private function shuffle_associative_array( $array ) {
-		$keys     = array_keys( $array );
-		$shuffled = array();
-
-		shuffle( $keys );
-		foreach ( $keys as $key ) {
-			$shuffled[ $key ] = $array[ $key ];
-		}
-
-		return $shuffled;
 	}
 
 	/**

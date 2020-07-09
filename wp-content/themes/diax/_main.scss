@@ -38,15 +38,18 @@
 	color: $blue;
 }
 
+.diensten-menu {
+	margin: 2rem auto;
+	max-width: 637px;
+}
 .onze-diensten {
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
-	margin: 2rem auto;
 	padding-inline-start: 0;
 	list-style-type: none;
-	li {
+	li {	
 		display: flex;
 		justify-content: center;
 		width: 12rem;

@@ -24,7 +24,7 @@
                 <li>E-mailadres</li>
                 <li>Contactformulier</li>
             </ul>
-            <ul class="footerlist nuttigelinks">
+            <ul class="footerlist nuttigelinks">    
                 <li>Privacyverklaring</li>
                 <li>Algemene voorwaarden</li>
                 <li>Toegankelijkheidsverklaring</li>

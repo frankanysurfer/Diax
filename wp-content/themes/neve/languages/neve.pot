@@ -2,21 +2,19 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Neve 2.7.3\n"
+"Project-Id-Version: Neve 2.7.4\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/neve\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2020-06-23T12:49:45+00:00\n"
+"POT-Creation-Date: 2020-07-08T09:27:35+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.4.0\n"
 "X-Domain: neve\n"
 
 #. Theme Name of the theme
-#: dashboard/src/Components/Content/Changelog.js:20
-#: dashboard/src/Components/Content/FreePro.js:15
 msgid "Neve"
 msgstr ""
 
@@ -41,16 +39,6 @@ msgstr ""
 msgid "Options"
 msgstr ""
 
-#: dashboard/inc/Main.php:177
-#: dashboard/src/Components/Content/Changelog.js:25
-#: dashboard/src/Components/Content/FreePro.js:16
-msgid "Neve Pro"
-msgstr ""
-
-#: dashboard/inc/Main.php:178
-msgid "Neve Pro Addon"
-msgstr ""
-
 #. translators: %s - Theme name
 #: dashboard/inc/Main.php:195
 msgid "%s Options"
@@ -59,7 +47,7 @@ msgstr ""
 #. translators: %s - Theme name
 #. translators: %s - theme name
 #: dashboard/inc/Main.php:197
-#: inc/core/admin.php:233
+#: inc/core/admin.php:236
 msgid "%s now comes with a sites library with various designs to pick from. Visit our collection of demos that are constantly being added."
 msgstr ""
 
@@ -86,7 +74,7 @@ msgstr ""
 #. translators: %s - Theme name
 #. translators: %s - theme name
 #: dashboard/inc/Main.php:205
-#: inc/core/admin.php:241
+#: inc/core/admin.php:244
 msgid "Need more details? Please check our full documentation for detailed information on how to use %s."
 msgstr ""
 
@@ -319,7 +307,7 @@ msgstr ""
 #: header-footer-grid/Core/Components/Copyright.php:84
 #: header-footer-grid/Core/Components/CustomHtml.php:158
 #: header-footer-grid/Core/Components/Logo.php:205
-#: inc/core/front_end.php:2598
+#: inc/core/front_end.php:2981
 #: inc/customizer/options/colors_background.php:66
 msgid "Text Color"
 msgstr ""
@@ -346,7 +334,7 @@ msgstr ""
 
 #: header-footer-grid/Core/Builder/Footer.php:47
 #: header-footer-grid/Core/Builder/Header.php:51
-#: inc/core/admin.php:243
+#: inc/core/admin.php:246
 msgid "Read full documentation"
 msgstr ""
 
@@ -517,22 +505,22 @@ msgid "Arbitrary HTML code. It supports also shortcodes."
 msgstr ""
 
 #: header-footer-grid/Core/Components/FooterWidgetFour.php:32
-#: inc/core/front_end.php:2921
+#: inc/core/front_end.php:3304
 msgid "Footer Four"
 msgstr ""
 
 #: header-footer-grid/Core/Components/FooterWidgetOne.php:31
-#: inc/core/front_end.php:2918
+#: inc/core/front_end.php:3301
 msgid "Footer One"
 msgstr ""
 
 #: header-footer-grid/Core/Components/FooterWidgetThree.php:31
-#: inc/core/front_end.php:2920
+#: inc/core/front_end.php:3303
 msgid "Footer Three"
 msgstr ""
 
 #: header-footer-grid/Core/Components/FooterWidgetTwo.php:32
-#: inc/core/front_end.php:2919
+#: inc/core/front_end.php:3302
 msgid "Footer Two"
 msgstr ""
 
@@ -575,7 +563,7 @@ msgstr ""
 #: header-footer-grid/Core/Components/Nav.php:43
 #: header-footer-grid/Core/Components/Nav.php:221
 #: header-footer-grid/templates/components/component-nav.php:25
-#: inc/core/front_end.php:78
+#: inc/core/front_end.php:77
 msgid "Primary Menu"
 msgstr ""
 
@@ -632,7 +620,7 @@ msgstr ""
 #: header-footer-grid/Core/Components/NavFooter.php:41
 #: header-footer-grid/Core/Components/NavFooter.php:138
 #: header-footer-grid/templates/components/component-nav-footer.php:23
-#: inc/core/front_end.php:79
+#: inc/core/front_end.php:78
 msgid "Footer Menu"
 msgstr ""
 
@@ -720,7 +708,7 @@ msgstr ""
 #: header-footer-grid/Core/Components/SecondNav.php:41
 #: header-footer-grid/Core/Components/SecondNav.php:136
 #: header-footer-grid/templates/components/component-nav-secondary.php:23
-#: inc/core/front_end.php:80
+#: inc/core/front_end.php:79
 msgid "Secondary Menu"
 msgstr ""
 
@@ -936,7 +924,7 @@ msgid "No Sidebar"
 msgstr ""
 
 #: inc/admin/metabox/main.php:56
-#: inc/core/front_end.php:2911
+#: inc/core/front_end.php:3294
 msgid "Sidebar"
 msgstr ""
 
@@ -1014,81 +1002,81 @@ msgstr ""
 msgid "Filter"
 msgstr ""
 
-#: inc/core/admin.php:198
+#: inc/core/admin.php:201
 msgid "Congratulations!"
 msgstr ""
 
 #. translators: %s - theme name
-#: inc/core/admin.php:201
+#: inc/core/admin.php:204
 msgid "%s is now installed and ready to use. We've assembled some links to get you started."
 msgstr ""
 
-#: inc/core/admin.php:209
+#: inc/core/admin.php:212
 msgid "Try one of our ready to use Starter Sites"
 msgstr ""
 
-#: inc/core/admin.php:214
+#: inc/core/admin.php:217
 msgid "Return to your dashboard"
 msgstr ""
 
-#: inc/core/admin.php:220
+#: inc/core/admin.php:223
 msgid "or go to the theme settings"
 msgstr ""
 
-#: inc/core/admin.php:231
+#: inc/core/admin.php:234
 msgid "Sites Library"
 msgstr ""
 
-#: inc/core/admin.php:239
+#: inc/core/admin.php:242
 #: dashboard/src/Components/Content/Help.js:63
 msgid "Documentation"
 msgstr ""
 
-#: inc/core/front_end.php:2239
-#: inc/core/front_end.php:2249
+#: inc/core/front_end.php:2475
+#: inc/core/front_end.php:2485
 msgid "Want to keep using Zelle's homepage?"
 msgstr ""
 
-#: inc/core/front_end.php:2240
-#: inc/core/front_end.php:2250
+#: inc/core/front_end.php:2476
+#: inc/core/front_end.php:2486
 msgid "Hi! We've noticed you were using Zelle before. To make your transition easier, we can help you keep the same beautiful homepage you had before, by converting it into an Elementor template. This option will also import your homepage content."
 msgstr ""
 
-#: inc/core/front_end.php:2568
+#: inc/core/front_end.php:2951
 msgid "Black"
 msgstr ""
 
-#: inc/core/front_end.php:2577
+#: inc/core/front_end.php:2960
 msgid "White"
 msgstr ""
 
-#: inc/core/front_end.php:2586
+#: inc/core/front_end.php:2969
 msgid "Button Color"
 msgstr ""
 
-#: inc/core/front_end.php:2590
+#: inc/core/front_end.php:2973
 #: inc/customizer/options/colors_background.php:56
 msgid "Link Color"
 msgstr ""
 
-#: inc/core/front_end.php:2594
+#: inc/core/front_end.php:2977
 #: inc/customizer/options/colors_background.php:61
 msgid "Link Hover Color"
 msgstr ""
 
-#: inc/core/front_end.php:2602
+#: inc/core/front_end.php:2985
 msgid "Button text color"
 msgstr ""
 
-#: inc/core/front_end.php:2606
+#: inc/core/front_end.php:2989
 msgid "Button Hover text color"
 msgstr ""
 
-#: inc/core/front_end.php:2610
+#: inc/core/front_end.php:2993
 msgid "Button Hover Color"
 msgstr ""
 
-#: inc/core/front_end.php:2912
+#: inc/core/front_end.php:3295
 msgid "Shop Sidebar"
 msgstr ""
 
@@ -1645,13 +1633,10 @@ msgstr ""
 msgid "In Progress"
 msgstr ""
 
-#: dashboard/src/Components/Onboarding/EditorSelector.js:46
-#: dashboard/src/Components/Onboarding/EditorSelector.js:67
+#: dashboard/src/Components/Onboarding/EditorSelector.js:18
+#: dashboard/src/Components/Onboarding/EditorSelector.js:40
+#: dashboard/src/Components/Onboarding/EditorTabs.js:26
 msgid "Builder Logo"
-msgstr ""
-
-#: dashboard/src/Components/Onboarding/EditorSelector.js:85
-msgid "Search for a starter site"
 msgstr ""
 
 #: dashboard/src/Components/Onboarding/ImportModal.js:42
@@ -1753,39 +1738,39 @@ msgstr ""
 msgid "Importing Widgets"
 msgstr ""
 
-#: dashboard/src/Components/Onboarding/Main.js:20
+#: dashboard/src/Components/Onboarding/Main.js:23
 msgid "Business"
 msgstr ""
 
-#: dashboard/src/Components/Onboarding/Main.js:21
+#: dashboard/src/Components/Onboarding/Main.js:24
 msgid "Ecommerce"
 msgstr ""
 
-#: dashboard/src/Components/Onboarding/Main.js:22
+#: dashboard/src/Components/Onboarding/Main.js:25
 msgid "Fashion"
 msgstr ""
 
-#: dashboard/src/Components/Onboarding/Main.js:23
+#: dashboard/src/Components/Onboarding/Main.js:26
 msgid "Blogging"
 msgstr ""
 
-#: dashboard/src/Components/Onboarding/Main.js:24
+#: dashboard/src/Components/Onboarding/Main.js:27
 msgid "Photography"
 msgstr ""
 
-#: dashboard/src/Components/Onboarding/Main.js:100
+#: dashboard/src/Components/Onboarding/Main.js:200
 msgid "Ready to use pre-built websites with 1-click installation"
 msgstr ""
 
-#: dashboard/src/Components/Onboarding/Main.js:103
+#: dashboard/src/Components/Onboarding/Main.js:203
 msgid "Keep the Current Layout"
 msgstr ""
 
-#: dashboard/src/Components/Onboarding/Main.js:115
-msgid "No results found for"
+#: dashboard/src/Components/Onboarding/Main.js:224
+msgid "No results found"
 msgstr ""
 
-#: dashboard/src/Components/Onboarding/Main.js:115
+#: dashboard/src/Components/Onboarding/Main.js:225
 msgid "You can try a different search or use one of the categories below."
 msgstr ""
 
@@ -1828,6 +1813,10 @@ msgstr ""
 
 #: dashboard/src/Components/Onboarding/PreviewFrame.js:56
 msgid "Upgrade and Import"
+msgstr ""
+
+#: dashboard/src/Components/Onboarding/Search.js:62
+msgid "Search for a starter site"
 msgstr ""
 
 #: dashboard/src/Components/Onboarding/StarterSiteCard.js:30

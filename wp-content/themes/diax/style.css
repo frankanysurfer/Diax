@@ -48,6 +48,10 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 .entry-title {
   color: #1955A5; }
 
+.diensten-menu {
+  margin: 2rem auto;
+  max-width: 637px; }
+
 .onze-diensten {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -60,7 +64,6 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  margin: 2rem auto;
   -webkit-padding-start: 0;
      -moz-padding-start: 0;
           padding-inline-start: 0;
