@@ -1,0 +1,62 @@
+@media screen and (min-width: 37.5em) {
+	.site-branding {
+		width: 50%;
+	}
+
+	.main-navigation {
+		margin-top: 0;
+	}	
+
+	.footerlist {
+		margin-bottom: 0;
+	}
+
+	.site-info {
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+	}
+
+}
+
+@media only screen and (min-width: 48em) {
+	.site-header .row {
+		margin-left: 8.33333333%;
+		margin-right: 8.33333333%;
+	}
+
+	.site-branding {
+		width: 40%;
+	}
+
+	.main-navigation {
+		margin-top: -4px;
+	}
+
+	.onze-diensten {
+		justify-content: space-between;
+		li {
+			justify-content: center;
+		}
+	}	
+}
+
+@media only screen and (min-width: 980px) {
+
+	.site-header .row {
+		margin-left: 8.33333333%;
+		margin-right: 8.33333333%;
+	}
+
+	.site-branding {
+		width: 40%;
+		max-width: 308px;
+	}
+
+	.main-navigation {
+		position: absolute;
+		top: 54px;
+		right: -25px;
+		width: 460px;
+	}
+}

@@ -16,7 +16,7 @@ add_action( 'wp_enqueue_scripts', 'childtheme_parent_styles');
 
 // remove contact form 7 br
 
-// add_filter( 'wpcf7_autop_or_not', '__return_false' );
+add_filter( 'wpcf7_autop_or_not', '__return_false' );
 
 ?>
 

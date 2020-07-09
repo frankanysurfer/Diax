@@ -104,6 +104,60 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 .footerlist:last-child {
   margin-bottom: 0; }
 
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+  outline: 1px solid #404040; }
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="range"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="time"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="color"]:focus,
+textarea:focus {
+  outline: 2px solid #1955A5; }
+
+.wpcf7 {
+  padding: 0 .5rem;
+  border: 1px solid #404040;
+  background-color: rgba(0, 0, 0, 0.05); }
+  .wpcf7 form fieldset {
+    padding: 0 2rem 1.25rem; }
+    .wpcf7 form fieldset legend {
+      padding-top: 1rem; }
+    .wpcf7 form fieldset label {
+      margin: 1.5rem 0 .5rem; }
+    .wpcf7 form fieldset textarea {
+      margin-bottom: 1rem; }
+
+input[type="submit"] {
+  background-color: #1955A5; }
+  input[type="submit"]:hover {
+    background-color: #3d73d5; }
+
 @media screen and (min-width: 37.5em) {
   .site-branding {
     width: 50%; }
