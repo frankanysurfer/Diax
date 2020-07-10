@@ -28,3 +28,10 @@ Honeypot for Contact Form 7
 Klassieke editor
 
 Polylang
+
+
+8/07/2020
+
+Polylang probleem opgelost.
+
+Contact form styling
