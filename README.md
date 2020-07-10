@@ -30,8 +30,14 @@ Klassieke editor
 Polylang
 
 
-8/07/2020
+9/07/2020
 
 Polylang probleem opgelost.
 
 Contact form styling
+
+10/07/2020
+
+Contact form
+
+Partners
