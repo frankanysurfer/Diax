@@ -59,4 +59,49 @@
 		right: -25px;
 		width: 460px;
 	}
+
+/* Partners page */
+	.post-117 .entry-content {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: space-between;
+		align-content: space-between;
+		width: 100%;
+		.partners {
+			align-self: stretch;
+			width: 45%;
+			margin-bottom: 2rem;
+			padding: 1rem;
+			background-color: rgba(0, 0, 0,.05);
+		}
+	}
+}
+
+@media only screen and (min-width: 64em) {
+	.page-id-117 {
+		.site-content {
+			&:before {
+				content: none;	
+			}
+			&:after {
+				content: none;
+			}
+			.row {
+				margin-right: 3rem;
+	    		margin-left: 5.5rem;
+				.col-md-offset-2 {
+			    	margin-left: 0;
+		    		margin-right: 0;
+				}
+				.col-md-8 {
+				    // -ms-flex-preferred-size: 66.66666667%;
+				    // flex-basis: 0;
+				    max-width: 100%;
+				    width: 100%;
+				    flex-basis: 100%;
+				}
+			}
+		}
+	}
 }

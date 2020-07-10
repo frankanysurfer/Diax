@@ -97,6 +97,9 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
       .onze-diensten li a:after {
         background: none; }
 
+.partners img {
+  width: 50%; }
+
 .footerlist {
   margin-bottom: 1rem;
   list-style-type: none; }
@@ -140,6 +143,18 @@ input[type="color"]:focus,
 textarea:focus {
   outline: 2px solid #1955A5; }
 
+input[type="submit"]:hover,
+input[type="submit"]:active,
+input[type="submit"]:focus {
+  background-color: #1955A5; }
+
+.wpcf7 form.invalid .wpcf7-response-output,
+.wpcf7 form.unaccepted .wpcf7-response-output {
+  border-color: #dd0000; }
+
+.wpcf7-not-valid-tip {
+  color: #dd0000; }
+
 .wpcf7 {
   padding: 0 .5rem;
   border: 1px solid #404040;
@@ -150,10 +165,9 @@ textarea:focus {
       padding-top: 1rem; }
     .wpcf7 form fieldset label {
       margin: 1.5rem 0 .5rem; }
-    .wpcf7 form fieldset textarea {
-      margin-bottom: 1rem; }
 
 input[type="submit"] {
+  margin-top: 1rem;
   background-color: #1955A5; }
   input[type="submit"]:hover {
     background-color: #3d73d5; }
@@ -210,6 +224,47 @@ input[type="submit"] {
     position: absolute;
     top: 54px;
     right: -25px;
-    width: 460px; } }
+    width: 460px; }
+
+  /* Partners page */
+  .post-117 .entry-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+    width: 100%; }
+    .post-117 .entry-content .partners {
+      -ms-flex-item-align: stretch;
+          align-self: stretch;
+      width: 45%;
+      margin-bottom: 2rem;
+      padding: 1rem;
+      background-color: rgba(0, 0, 0, 0.05); } }
+@media only screen and (min-width: 64em) {
+  .page-id-117 .site-content:before {
+    content: none; }
+  .page-id-117 .site-content:after {
+    content: none; }
+  .page-id-117 .site-content .row {
+    margin-right: 3rem;
+    margin-left: 5.5rem; }
+    .page-id-117 .site-content .row .col-md-offset-2 {
+      margin-left: 0;
+      margin-right: 0; }
+    .page-id-117 .site-content .row .col-md-8 {
+      max-width: 100%;
+      width: 100%;
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%; } }
 
 /*# sourceMappingURL=style.css.map */
