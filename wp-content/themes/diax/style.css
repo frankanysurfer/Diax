@@ -9,6 +9,22 @@ Version:  1.0
 License:  GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html                 
 */
+@font-face {
+  font-family: 'flama_semicondensedbasic';
+  src: url("font/flamasemicondensed-basic-webfont.woff2") format("woff2"), url("font/flamasemicondensed-basic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'flama_semicondensedbold';
+  src: url("font/flamasemicondensed-bold-webfont.woff2") format("woff2"), url("font/flamasemicondensed-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+body {
+  font-family: 'flama_semicondensedbasic'; }
+
+h1, h2, strong {
+  font-family: 'flama_semicondensedbold'; }
+
 .site,
 .site-footer {
   margin: 0 auto;
@@ -41,6 +57,15 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
     margin-left: 15px; }
     .language li :first-child {
       margin-left: 0; }
+
+.lang-item a {
+  padding: .75rem;
+  line-height: 2.5; }
+
+.lang-item a:hover,
+.current-lang a {
+  color: #FFF;
+  background-color: #1955A5; }
 
 .main-navigation {
   margin-top: 45px; }
@@ -97,8 +122,14 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
       .onze-diensten li a:after {
         background: none; }
 
+.partners,
+.card {
+  margin-bottom: 2rem;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.05); }
+
 .partners img {
-  width: 50%; }
+  width: 90%; }
 
 .footerlist {
   margin-bottom: 1rem;
@@ -106,6 +137,23 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 .footerlist:last-child {
   margin-bottom: 0; }
+
+.srt {
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute; }
+
+.card h2 a {
+  border-bottom: 2px solid transparent; }
+
+.card:hover h2 a {
+  border-bottom: 2px solid black; }
 
 input[type="text"],
 input[type="email"],
@@ -227,7 +275,8 @@ input[type="submit"] {
     width: 460px; }
 
   /* Partners page */
-  .post-117 .entry-content {
+  .post-117 .entry-content,
+  .page-id-13 .entry-content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -243,25 +292,30 @@ input[type="submit"] {
     -ms-flex-line-pack: justify;
         align-content: space-between;
     width: 100%; }
-    .post-117 .entry-content .partners {
+    .post-117 .entry-content:before,
+    .page-id-13 .entry-content:before {
+      content: normal; }
+    .post-117 .entry-content:after,
+    .page-id-13 .entry-content:after {
+      content: normal; }
+    .post-117 .entry-content .partners,
+    .post-117 .entry-content .card,
+    .page-id-13 .entry-content .partners,
+    .page-id-13 .entry-content .card {
       -ms-flex-item-align: stretch;
           align-self: stretch;
-      width: 45%;
-      margin-bottom: 2rem;
-      padding: 1rem;
-      background-color: rgba(0, 0, 0, 0.05); } }
+      width: 47%; } }
 @media only screen and (min-width: 64em) {
-  .page-id-117 .site-content:before {
-    content: none; }
-  .page-id-117 .site-content:after {
-    content: none; }
-  .page-id-117 .site-content .row {
+  .page-id-117 .site-content .row,
+  .page-id-13 .site-content .row {
     margin-right: 3rem;
-    margin-left: 5.5rem; }
-    .page-id-117 .site-content .row .col-md-offset-2 {
+    margin-left: 3rem; }
+    .page-id-117 .site-content .row .col-md-offset-2,
+    .page-id-13 .site-content .row .col-md-offset-2 {
       margin-left: 0;
       margin-right: 0; }
-    .page-id-117 .site-content .row .col-md-8 {
+    .page-id-117 .site-content .row .col-md-8,
+    .page-id-13 .site-content .row .col-md-8 {
       max-width: 100%;
       width: 100%;
       -ms-flex-preferred-size: 100%;

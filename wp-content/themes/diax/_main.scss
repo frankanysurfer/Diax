@@ -1,3 +1,27 @@
+@font-face {
+    font-family: 'flama_semicondensedbasic';
+    src: url('font/flamasemicondensed-basic-webfont.woff2') format('woff2'),
+         url('font/flamasemicondensed-basic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'flama_semicondensedbold';
+    src: url('font/flamasemicondensed-bold-webfont.woff2') format('woff2'),
+         url('font/flamasemicondensed-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	font-family: 'flama_semicondensedbasic';
+}
+
+h1,h2,strong {
+	font-family: 'flama_semicondensedbold';
+}
+
 .site,
 .site-footer {
 	margin: 0 auto;
@@ -28,6 +52,17 @@
 			margin-left: 0;
 		}
 	}
+}
+
+.lang-item a {
+	padding: .75rem;
+	line-height: 2.5;	
+}
+
+.lang-item a:hover ,
+.current-lang a {
+	color: #FFF;
+	background-color: $blue;
 }
 
 .main-navigation {
@@ -80,8 +115,15 @@
 	}
 }
 
+.partners,
+.card {
+	margin-bottom: 2rem;
+	padding: 2rem;
+	background-color: rgba(0, 0, 0,.05);
+}
+
 .partners img {
-	width: 50%;
+	width: 90%;
 }
 
 .footerlist {
@@ -91,5 +133,24 @@
 
 .footerlist:last-child {
 	margin-bottom: 0;
+}
+
+.srt {
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	width: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+}
+
+.card h2 a {
+	border-bottom: 2px solid transparent;
+}
+
+.card:hover h2 a {
+	border-bottom: 2px solid black;
 }
 
