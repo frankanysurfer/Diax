@@ -40,6 +40,9 @@ body {
 h1, h2 {
   font-family: 'flama_semicondensedbold'; }
 
+a {
+  font-family: 'flama_semicondensedbasic'; }
+
 p > img {
   max-width: 100%;
   width: 100%;
@@ -343,7 +346,19 @@ input[type="submit"] {
     .onze-diensten li {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
-              justify-content: center; } }
+              justify-content: center; }
+
+  .post-15 .entry-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .post-15 .entry-content .adres {
+      width: 40%; }
+    .post-15 .entry-content .wpcf7 {
+      width: 50%; } }
 @media only screen and (min-width: 980px) {
   .card-content {
     -webkit-box-orient: vertical;

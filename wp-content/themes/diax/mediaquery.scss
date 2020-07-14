@@ -84,6 +84,17 @@
 		li {
 			justify-content: center;
 		}
+	}
+
+	.post-15 .entry-content {
+		display: flex;
+		justify-content: space-between;
+		.adres{
+			width: 40%;
+		}
+		.wpcf7 {
+			width: 50%;
+		}
 	}	
 }
 
