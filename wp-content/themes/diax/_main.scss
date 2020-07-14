@@ -1,4 +1,27 @@
 @font-face {
+font-family: 'Flama';
+font-style: normal;
+font-weight: normal;
+src: local('Flama'), url('font/Flama Regular.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Flama Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Flama Italic'), url('font/Flama Italic.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Flama Bold Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Flama Bold Italic'), url('font/Flama Bold Italic.woff') format('woff');
+}
+
+@font-face {
     font-family: 'flama_semicondensedbasic';
     src: url('font/flamasemicondensed-basic-webfont.woff2') format('woff2'),
          url('font/flamasemicondensed-basic-webfont.woff') format('woff');
@@ -15,11 +38,19 @@
 }
 
 body {
-	font-family: 'flama_semicondensedbasic';
+	font-family: 'flama';
 }
 
-h1,h2,strong {
+h1,h2 {
 	font-family: 'flama_semicondensedbold';
+}
+
+
+
+p > img {
+	max-width: 100%;
+	width: 100%;
+	height: auto;
 }
 
 .site,
@@ -64,9 +95,54 @@ h1,h2,strong {
 	color: #FFF;
 	background-color: $blue;
 }
+a:hover {
+	// color: $blue;
+}
+
+a:hover, a:active {
+    outline: 0;
+    border-bottom-color: $blue;
+}
+
+p:not(.site-title) a,
+span a,
+.nav-previous a,
+.nav-next a,
+.entry-content a {
+    border-bottom: 2px solid $blue;
+    font-weight: normal;
+}
+
+p:not(.site-title) a:hover,
+span a:hover,
+.nav-previous a:hover,
+.nav-next a:hover,
+.entry-content a:hover {
+    border-bottom: 2px solid $blue;
+}
+
+p:not(.site-title) a:after,
+span a:after,
+.nav-previous a:after,
+.nav-next a:after,
+.entry-content a:after {
+    background-color: $blue;
+}
 
 .main-navigation {
 	margin-top: 45px;
+	a:hover {
+		// color: $blue;
+	}
+	a:after {
+		 height: 3px;
+	     background-color: $blue; 
+	}
+	.current_page_item>a {
+	    -webkit-box-shadow: inset 0px -2px 0px 0px $blue;
+	    -moz-box-shadow: inset 0px -2px 0px 0px $blue;
+	    box-shadow: inset 0px -2px 0px 0px $blue;
+	}
 }
 
 .entry-title  {

@@ -1,6 +1,28 @@
 @media screen and (min-width: 37.5em) {
+
+	.card-content {
+		display: flex;
+		justify-content: space-between;
+
+		.text {
+			width: 50%;
+		}
+
+		.foto {
+			width: 40%;
+			margin-bottom: 0;
+		}
+	}
+
+	p > img {
+		max-width: 100%;
+		width: 300px;
+		height: auto;
+	}
+
 	.site-branding {
 		width: 50%;
+		// max-width: 330px;
 	}
 
 	.main-navigation {
@@ -21,8 +43,14 @@
 
 @media only screen and (min-width: 48em) {
 	.site-header .row {
-		margin-left: 8.33333333%;
-		margin-right: 8.33333333%;
+		// margin-left: 8.33333333%;
+		// margin-right: 8.33333333%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.site-header-col {
+		padding-left: 0;
 	}
 
 	.site-branding {
@@ -30,8 +58,26 @@
 	}
 
 	.main-navigation {
-		margin-top: -4px;
+		position: absolute;
+		// top: 42px;
+		bottom: 0;
+		right: 0;
+		.nav-menu {
+			li:last-child a {
+				padding: 16px 0 16px 20px;
+			}
+		}
 	}
+
+	.col-sm-offset-1 {
+	    margin-left: 0;
+	}
+
+	.col-sm-10 {
+    	-ms-flex-preferred-size: 100%;
+    	flex-basis: 100%;
+	    max-width: 100%;
+	  }
 
 	.onze-diensten {
 		justify-content: space-between;
@@ -43,22 +89,20 @@
 
 @media only screen and (min-width: 980px) {
 
-	.site-header .row {
-		margin-left: 8.33333333%;
-		margin-right: 8.33333333%;
-		// padding-right: 0;
+	.card-content {
+		flex-direction: column;
+		.text {
+			width: 100%;
+		}
+
+		.foto {
+			width: 100%;
+		}
 	}
 
 	.site-branding {
 		width: 40%;
 		max-width: 308px;
-	}
-
-	.main-navigation {
-		position: absolute;
-		top: 54px;
-		right: -25px;
-		width: 460px;
 	}
 
 /* Partners page */
@@ -85,8 +129,15 @@
 }
 
 @media only screen and (min-width: 64em) {
-	.page-id-117,
-	.page-id-13 {
+	
+	.site-header .row {
+		margin-left: 8.33333333%;
+		margin-right: 8.33333333%;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+
 		.site-content {
 			.row {
 				margin-right: 3rem;
@@ -102,5 +153,5 @@
 				}
 			}
 		}
-	}
+	
 }
