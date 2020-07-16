@@ -20,6 +20,11 @@
 		height: auto;
 	}
 
+	.partners img {
+		width: 50%;
+		max-width: 150px;
+	}
+
 	.site-branding {
 		width: 50%;
 		// max-width: 330px;
@@ -108,6 +113,20 @@
 
 		.foto {
 			width: 100%;
+		}
+	}
+
+	.page-id-2 .card-content {
+		display: flex;
+		    flex-direction: row;
+		justify-content: space-between;
+		.text {
+			width: 65%;
+		}
+
+		.foto {
+			width: 30%;
+			margin-bottom: 0;
 		}
 	}
 

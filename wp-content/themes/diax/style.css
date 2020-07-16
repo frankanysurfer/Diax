@@ -184,7 +184,8 @@ span a:after,
   background-color: rgba(0, 0, 0, 0.05); }
 
 .partners img {
-  width: 90%; }
+  width: 50%;
+  max-width: 150px; }
 
 .footerlist {
   margin-bottom: 1rem;
@@ -294,6 +295,10 @@ input[type="submit"] {
     width: 300px;
     height: auto; }
 
+  .partners img {
+    width: 50%;
+    max-width: 150px; }
+
   .site-branding {
     width: 50%; }
 
@@ -369,6 +374,23 @@ input[type="submit"] {
       width: 100%; }
     .card-content .foto {
       width: 100%; }
+
+  .page-id-2 .card-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .page-id-2 .card-content .text {
+      width: 65%; }
+    .page-id-2 .card-content .foto {
+      width: 30%;
+      margin-bottom: 0; }
 
   .site-branding {
     width: 40%;
