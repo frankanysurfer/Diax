@@ -88,6 +88,11 @@ class DUP_DatabaseInfo
     public $tableWiseRowCounts;
 
     /**
+     * @var array List of triggers included in the database
+     */
+    public $triggerList = array();
+
+    /**
      * Integer field file structure of table, table name as key
      */
     private $intFieldsStruct = array();
@@ -103,11 +108,27 @@ class DUP_DatabaseInfo
         $this->collationList      = array();
         $this->tableWiseRowCounts = array();
     }
+
+    public function addTriggers()
+    {
+        global $wpdb;
+
+        if (!is_array($triggers = $wpdb->get_results("SHOW TRIGGERS", ARRAY_A))) {
+            return;
+        }
+
+        foreach ($triggers as $trigger) {
+            $name   = $trigger["Trigger"];
+            $create = $wpdb->get_row("SHOW CREATE TRIGGER `{$name}`", ARRAY_N);
+            $this->triggerList[$name] = array(
+                "create" => "DELIMITER ;;\n".$create[2].";;\nDELIMITER ;"
+            );
+        }
+    }
 }
 
 class DUP_Database
 {
-
     //PUBLIC
     public $Type = 'MySQL';
     public $Size;
@@ -219,7 +240,7 @@ class DUP_Database
         }
         catch (Exception $e) {
             do_action('duplicator_lite_build_database_fail', $package);
-            DUP_Log::Error("Runtime error in DUP_Database::Build", "Exception: {$e}", $errorBehavior);
+            DUP_Log::Error("Runtime error in DUP_Database::Build. ".$e->getMessage(), "Exception: {$e}", $errorBehavior);
         }
     }
 
@@ -298,6 +319,9 @@ class DUP_Database
             }
         }
 
+        $this->setInfoObj();
+        $this->info->addTriggers();
+
         $info['Status']['DB_Case'] = preg_match('/[A-Z]/', $wpdb->dbname) ? 'Warn' : 'Good';
         $info['Status']['DB_Rows'] = ($info['Rows'] > DUPLICATOR_SCAN_DB_ALL_ROWS) ? 'Warn' : 'Good';
         $info['Status']['DB_Size'] = ($info['Size'] > DUPLICATOR_SCAN_DB_ALL_SIZE) ? 'Warn' : 'Good';
@@ -305,6 +329,7 @@ class DUP_Database
         $info['Status']['TBL_Case'] = ($tblCaseFound) ? 'Warn' : 'Good';
         $info['Status']['TBL_Rows'] = ($tblRowsFound) ? 'Warn' : 'Good';
         $info['Status']['TBL_Size'] = ($tblSizeFound) ? 'Warn' : 'Good';
+        $info['Status']['Triggers'] = count($this->info->triggerList) > 0 ? 'Warn' : 'Good';
 
         $info['RawSize']    = $info['Size'];
         $info['Size']       = DUP_Util::byteSize($info['Size']) or "unknown";
@@ -312,7 +337,6 @@ class DUP_Database
         $info['TableList']  = $info['TableList'] or "unknown";
         $info['TableCount'] = $tblCount;
 
-        $this->setInfoObj();
         $this->info->isTablesUpperCase = $tblCaseFound;
         $this->info->tablesBaseCount   = $tblBaseCount;
         $this->info->tablesFinalCount  = $tblCount;
@@ -378,7 +402,9 @@ class DUP_Database
         $cmd .= ' --quote-names';
         $cmd .= ' --skip-comments';
         $cmd .= ' --skip-set-charset';
+        $cmd .= ' --skip-triggers';
         $cmd .= ' --allow-keywords';
+        $cmd .= ' --no-tablespaces';
 
         //Compatibility mode
         if ($mysqlcompat_on) {
@@ -542,8 +568,8 @@ class DUP_Database
              * 2 - Exception
              */
             DUP_Log::Info('MYSQL DUMP ERROR '.print_r($mysqlResult, true));
-            DUP_Log::error(__('Shell mysql dump error. Change Mysql dump engine in PHP mode', 'duplicator'),
-                implode("\n", DupLiteSnapLibIOU::getLastLinesOfFile($this->tempDbPath, DUPLICATOR_DB_MYSQLDUMP_ERROR_CONTAINING_LINE_COUNT)), Dup_ErrorBehavior::ThrowException);
+            DUP_Log::error(__('Shell mysql dump error. Change SQL Script to the "PHP Code" in the Duplicator > Settings > Packages.', 'duplicator'), implode("\n", DupLiteSnapLibIOU::getLastLinesOfFile($this->tempDbPath,
+                DUPLICATOR_DB_MYSQLDUMP_ERROR_CONTAINING_LINE_COUNT, DUPLICATOR_DB_MYSQLDUMP_ERROR_CHARS_IN_LINE_COUNT)), Dup_ErrorBehavior::ThrowException);
             return false;
         }
 

@@ -2,91 +2,89 @@
 # This file is distributed under the same license as the Plugins - Classic Editor - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-05-20 18:35:05+0000\n"
+"PO-Revision-Date: 2020-11-01 16:40:55+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: GlotPress/3.0.0-alpha\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
 "Language: fr_BE\n"
 "Project-Id-Version: Plugins - Classic Editor - Stable (latest release)\n"
 
-#: classic-editor.php:812
+#: classic-editor.php:822
 msgctxt "Editor Name"
-msgid "Edit (Classic Editor)"
+msgid "Edit (classic editor)"
 msgstr "Modifier (Classic Editor)"
 
-#: classic-editor.php:805
+#: classic-editor.php:815
 msgctxt "Editor Name"
-msgid "Edit (Block Editor)"
+msgid "Edit (block editor)"
 msgstr "Modifier (Nouvel éditeur)"
 
-#: classic-editor.php:479
+#: classic-editor.php:489
 msgid "Change settings"
 msgstr "Modifier les réglages"
 
-#: classic-editor.php:466
+#: classic-editor.php:476
 msgid "Default editor for all sites"
 msgstr "Éditeur par défaut pour tous le sites"
 
-#: classic-editor.php:462
+#: classic-editor.php:472
 msgid "Editor Settings"
 msgstr "Réglages de l’éditeur"
 
-#: classic-editor.php:446
+#: classic-editor.php:456
 msgid "Default Editor"
 msgstr "Éditeur par défaut"
 
-#: classic-editor.php:397 classic-editor.php:474 classic-editor.php:846
-#: classic-editor.php:859
+#: classic-editor.php:856
 msgctxt "Editor Name"
-msgid "Block Editor"
+msgid "block editor"
 msgstr "Nouvel éditeur"
 
-#: classic-editor.php:393 classic-editor.php:470 classic-editor.php:843
-#: classic-editor.php:859
+#: classic-editor.php:853
 msgctxt "Editor Name"
-msgid "Classic Editor"
+msgid "classic editor"
 msgstr "Éditeur classique"
 
 #. translators: %s: post title
-#: classic-editor.php:807
-msgid "Edit &#8220;%s&#8221; in the Block Editor"
+#: classic-editor.php:817
+msgid "Edit &#8220;%s&#8221; in the block editor"
 msgstr "Modifier &#171; %s &#187; dans l’éditeur de blocs"
 
-#: classic-editor.php:647
-msgid "Switch to Block Editor"
+#: classic-editor.php:657
+msgid "Switch to block editor"
 msgstr "Changer vers le nouvel éditeur"
 
-#: classic-editor.php:671
-msgid "Switch to Classic Editor"
+#: classic-editor.php:681
+msgid "Switch to classic editor"
 msgstr "Basculer vers l’éditeur classique"
 
-#: classic-editor.php:483
-msgid "By default the Block Editor is replaced with the Classic Editor and users cannot switch editors."
+#: classic-editor.php:493
+msgid "By default the block editor is replaced with the classic editor and users cannot switch editors."
 msgstr "Par défaut, le nouvel éditeur est remplacé par l’éditeur classique et les utilisateurs ne peuvent pas changer d’éditeur."
 
-#: classic-editor.php:482
+#: classic-editor.php:492
 msgid "Allow site admins to change settings"
 msgstr "Autoriser les administrateurs à changer les réglages"
 
-#: classic-editor.php:628
+#: classic-editor.php:638
 msgid "Editor"
 msgstr "Éditeur"
 
-#: classic-editor.php:421
+#: classic-editor.php:431
 msgid "No"
 msgstr "Non"
 
-#: classic-editor.php:417
+#: classic-editor.php:427
 msgid "Yes"
 msgstr "Oui"
 
-#: classic-editor.php:344
+#: classic-editor.php:354
 msgid "Allow users to switch editors"
 msgstr "Autoriser les utilisateurs à changer d’éditeur"
 
-#: classic-editor.php:343
+#: classic-editor.php:353
 msgid "Default editor for all users"
 msgstr "Éditeur par défaut pour tous les utilisateurs"
 
@@ -111,10 +109,10 @@ msgid "Classic Editor"
 msgstr "Classic Editor"
 
 #. translators: %s: post title
-#: classic-editor.php:814
-msgid "Edit &#8220;%s&#8221; in the Classic Editor"
+#: classic-editor.php:824
+msgid "Edit &#8220;%s&#8221; in the classic editor"
 msgstr "Modifier « %s » dans l’éditeur classique"
 
-#: classic-editor.php:690
+#: classic-editor.php:700
 msgid "Settings"
 msgstr "Réglages"

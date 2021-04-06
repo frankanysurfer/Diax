@@ -1,0 +1,86 @@
+********************************************************************************
+DUPLICATOR-LITE PACKAGE-LOG: 16 March 2021 09:24
+NOTICE: Do NOT post to public sites or forums 
+********************************************************************************
+VERSION:	1.4.0
+WORDPRESS:	5.7
+PHP INFO:	7.2.18 | SAPI: apache2handler
+SERVER:		Apache/2.4.39 (Win64) PHP/7.2.18 
+PHP TIME LIMIT: (0) no time limit imposed 
+PHP MAX MEMORY: 4294967296 (128M default) 
+MEMORY STACK: 2MB
+
+********************************************************************************
+DATABASE:
+********************************************************************************
+BUILD MODE:   PHP(query limit - 100)
+MYSQLTIMEOUT: 5000
+MYSQLDUMP:    Not Supported
+TABLES: total:13 | filtered:0 | create:13
+FILTERED: []
+SQL CREATED: 20200717_diax_d04d335b635077dc2350_20210316092435_database.sql
+SQL FILE SIZE: 889.3KB (910645)
+SQL FILE TIME: 2021-03-16 09:24:47
+SQL RUNTIME: 1.42 sec.
+
+********************************************************************************
+ARCHIVE (ZIP):
+********************************************************************************
+ARCHIVE DIR:  C:/wamp64/www/diax
+ARCHIVE FILE: 20200717_diax_d04d335b635077dc2350_20210316092435_archive.zip
+FILTERS: *OFF*
+DIRS:
+	not set
+FILES:
+	not set
+EXTS:  not set
+----------------------------------------
+COMPRESSING
+SIZE:	110.82MB
+STATS:	Dirs 929 | Files 8,661
+SQL ADDED: 20200717_diax_d04d335b635077dc2350_20210316092435_database.sql
+ZipArchive Object
+(
+    [status] => 0
+    [statusSys] => 0
+    [numFiles] => 9590
+    [filename] => C:\wamp64\www\diax\wp-content\backups-dup-lite\tmp\20200717_diax_d04d335b635077dc2350_20210316092435_archive.zip
+    [comment] => 
+)
+
+FILE ADDED TO ZIP: 9589
+COMPRESSION RESULT: '1'
+COMPRESSED SIZE: 58.58MB
+ARCHIVE RUNTIME: 12.93 sec.
+MEMORY STACK: 2MB
+building installer
+add_extra_files1
+add_extra_files2
+add_extra_files3
+add_extra_files4
+Doing archive file check
+add_extra_files5
+add_extra_files6
+add_extra_files8
+Successfully opened zip C:/wamp64/www/diax/wp-content/backups-dup-lite/tmp/20200717_diax_d04d335b635077dc2350_20210316092435_archive.zip
+Adding enhanced installer files to archive using ZipArchive
+Installer files added to archive
+Added to archive
+After ziparchive close when adding installer
+
+********************************************************************************
+INTEGRITY CHECKS:
+********************************************************************************
+SQL FILE: 889.3KB
+INSTALLER FILE: 63.95KB
+ARCHIVE FILE: 60.2MB 
+EXPECTED FILE/DIRECTORY COUNT: 9,590
+ACTUAL FILE/DIRECTORY COUNT: 9,589
+ARCHIVE CONSISTENCY TEST: Pass
+
+********************************************************************************
+RECORD ID:[5]
+TOTAL PROCESS RUNTIME: 16.31 sec.
+PEAK PHP MEMORY USED: 2MB
+DONE PROCESSING => 20200717_diax 16 March 2021 09:25
+

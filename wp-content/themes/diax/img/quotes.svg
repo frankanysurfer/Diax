@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="164" height="92" viewBox="0 0 164 92">
+  <defs>
+    <linearGradient id="quotes-a" x1="0%" x2="100%" y1="25.036%" y2="100%">
+      <stop offset="0%" stop-color="#0575E6"/>
+      <stop offset="100%" stop-color="#021B79"/>
+    </linearGradient>
+  </defs>
+  <g fill="url(#quotes-a)" fill-rule="evenodd">
+    <polygon points="0 0 0 46 92 92 46 46 46 0"/>
+    <polygon points="72 0 72 46 164 92 118 46 118 0"/>
+  </g>
+</svg>

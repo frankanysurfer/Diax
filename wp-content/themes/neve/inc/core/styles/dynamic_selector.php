@@ -136,11 +136,11 @@ class Dynamic_Selector {
 			if ( empty( $expanded_selectors ) ) {
 				continue;
 			}
-			if ( $this->get_context() === Dynamic_Selector::CONTEXT_GUTENBERG ) {
+			if ( $this->get_context() === self::CONTEXT_GUTENBERG ) {
 				$expanded_selectors = explode( ',', $expanded_selectors );
 				$expanded_selectors = array_map(
 					function ( $value ) {
-						return '#editor .editor-styles-wrapper ' . $value;
+						return '.editor-styles-wrapper ' . $value;
 					},
 					$expanded_selectors
 				);

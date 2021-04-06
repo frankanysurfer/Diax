@@ -1,38 +1,69 @@
 <?php
+/**
+ * @package Polylang
+ */
 
 /**
- * Frontend controller
- * accessible as $polylang global object
- *
- * Properties:
- * options        => inherited, reference to Polylang options array
- * model          => inherited, reference to PLL_Model object
- * links_model    => inherited, reference to PLL_Links_Model object
- * links          => reference to PLL_Links object
- * static_pages   => reference to PLL_Frontend_Static_Pages object
- * choose_lang    => reference to PLL_Choose_Lang object
- * curlang        => current language
- * filters        => reference to PLL_Frontend_Filters object
- * filters_links  => reference to PLL_Frontend_Filters_Links object
- * filters_search => reference to PLL_Frontend_Filters_Search object
- * posts          => reference to PLL_CRUD_Posts object
- * terms          => reference to PLL_CRUD_Terms object
- * nav_menu       => reference to PLL_Frontend_Nav_Menu object
- * sync           => reference to PLL_Sync object
- * auto_translate => optional, reference to PLL_Auto_Translate object
+ * Main Polylang class when on frontend, accessible from @see PLL().
  *
  * @since 1.2
  */
 class PLL_Frontend extends PLL_Base {
+	/**
+	 * Current language.
+	 *
+	 * @var PLL_Language
+	 */
 	public $curlang;
-	public $links, $choose_lang, $filters, $filters_search, $nav_menu, $auto_translate;
 
 	/**
-	 * Constructor
+	 * @var PLL_Frontend_Auto_Translate
+	 */
+	public $auto_translate;
+
+	/**
+	 * The class selecting the current language.
+	 *
+	 * @var PLL_Choose_Lang
+	 */
+	public $choose_lang;
+
+	/**
+	 * @var PLL_Frontend_Filters
+	 */
+	public $filters;
+
+	/**
+	 * @var PLL_Frontend_Filters_Links
+	 */
+	public $filters_links;
+
+	/**
+	 * @var PLL_Frontend_Filters_Search
+	 */
+	public $filters_search;
+
+	/**
+	 * @var PLL_Frontend_Links
+	 */
+	public $links;
+
+	/**
+	 * @var PLL_Frontend_Nav_Menu
+	 */
+	public $nav_menu;
+
+	/**
+	 * @var PLL_Frontend_Static_Pages
+	 */
+	public $static_pages;
+
+	/**
+	 * Constructor.
 	 *
 	 * @since 1.2
 	 *
-	 * @param object $links_model
+	 * @param PLL_Links_Model $links_model Reference to the links model.
 	 */
 	public function __construct( &$links_model ) {
 		parent::__construct( $links_model );
@@ -74,51 +105,20 @@ class PLL_Frontend extends PLL_Base {
 
 		// Need to load nav menu class early to correctly define the locations in the customizer when the language is set from the content
 		$this->nav_menu = new PLL_Frontend_Nav_Menu( $this );
-
-		// Cross domain
-		if ( PLL_COOKIE ) {
-			$class = array( 2 => 'PLL_Xdata_Subdomain', 3 => 'PLL_Xdata_Domain' );
-			if ( isset( $class[ $this->options['force_lang'] ] ) && class_exists( $class[ $this->options['force_lang'] ] ) ) {
-				$this->xdata = new $class[ $this->options['force_lang'] ]( $this );
-			}
-		}
-
-		if ( get_option( 'permalink_structure' ) ) {
-			// Translate slugs
-			if ( class_exists( 'PLL_Frontend_Translate_Slugs' ) ) {
-				$slugs_model = new PLL_Translate_Slugs_Model( $this );
-				$this->translate_slugs = new PLL_Frontend_Translate_Slugs( $slugs_model, $this->curlang );
-			}
-
-			// Share term slugs
-			if ( $this->options['force_lang'] && class_exists( 'PLL_Share_Term_Slug' ) ) {
-				$this->share_term_slug = new PLL_Share_Term_Slug( $this );
-			}
-		}
-
-		if ( class_exists( 'PLL_Sync_Post_Model' ) ) {
-			$this->sync_post_model = new PLL_Sync_Post_Model( $this );
-		}
-
-		if ( class_exists( 'PLL_Sync_Post' ) ) {
-			$this->sync_post = new PLL_Sync_Post( $this );
-		}
 	}
 
 	/**
 	 * Setups filters and nav menus once the language has been defined
 	 *
 	 * @since 1.2
+	 *
+	 * @return void
 	 */
 	public function pll_language_defined() {
 		// Filters
 		$this->filters_links = new PLL_Frontend_Filters_Links( $this );
 		$this->filters = new PLL_Frontend_Filters( $this );
 		$this->filters_search = new PLL_Frontend_Filters_Search( $this );
-		$this->posts = new PLL_CRUD_Posts( $this );
-		$this->terms = new PLL_CRUD_Terms( $this );
-
-		$this->sync = new PLL_Sync( $this );
 
 		// Auto translate for Ajax
 		if ( ( ! defined( 'PLL_AUTO_TRANSLATE' ) || PLL_AUTO_TRANSLATE ) && wp_doing_ajax() ) {
@@ -127,11 +127,12 @@ class PLL_Frontend extends PLL_Base {
 	}
 
 	/**
-	 * When querying multiple taxonomies, makes sure that the language is not the queried object
+	 * When querying multiple taxonomies, makes sure that the language is not the queried object.
 	 *
 	 * @since 1.8
 	 *
-	 * @param object $query WP_Query object
+	 * @param WP_Query $query WP_Query object.
+	 * @return void
 	 */
 	public function parse_tax_query( $query ) {
 		$pll_query = new PLL_Query( $query, $this->model );
@@ -143,11 +144,12 @@ class PLL_Frontend extends PLL_Base {
 	}
 
 	/**
-	 * Modifies some query vars to "hide" that the language is a taxonomy and avoid conflicts
+	 * Modifies some query vars to "hide" that the language is a taxonomy and avoid conflicts.
 	 *
 	 * @since 1.2
 	 *
-	 * @param object $query WP_Query object
+	 * @param WP_Query $query WP_Query object.
+	 * @return void
 	 */
 	public function parse_query( $query ) {
 		$qv = $query->query_vars;
@@ -188,26 +190,31 @@ class PLL_Frontend extends PLL_Base {
 	 * Auto translate posts and terms ids
 	 *
 	 * @since 1.2
+	 *
+	 * @return void
 	 */
 	public function auto_translate() {
 		$this->auto_translate = new PLL_Frontend_Auto_Translate( $this );
 	}
 
 	/**
-	 * Resets some variables when switching blog
-	 * Overrides parent method
+	 * Resets some variables when the blog is switched.
+	 * Overrides the parent method.
 	 *
 	 * @since 1.5.1
 	 *
-	 * @param int $new_blog
-	 * @param int $old_blog
+	 * @param int $new_blog_id  New blog ID.
+	 * @param int $prev_blog_id Previous blog ID.
+	 * @return void
 	 */
-	public function switch_blog( $new_blog, $old_blog ) {
-		// Need to check that some languages are defined when user is logged in, has several blogs, some without any languages
-		if ( parent::switch_blog( $new_blog, $old_blog ) && did_action( 'pll_language_defined' ) && $this->model->get_languages_list() ) {
+	public function switch_blog( $new_blog_id, $prev_blog_id ) {
+		parent::switch_blog( $new_blog_id, $prev_blog_id );
+
+		// Need to check that some languages are defined when user is logged in, has several blogs, some without any languages.
+		if ( $this->is_active_on_new_blog( $new_blog_id, $prev_blog_id ) && did_action( 'pll_language_defined' ) && $this->model->get_languages_list() ) {
 			static $restore_curlang;
 			if ( empty( $restore_curlang ) ) {
-				$restore_curlang = $this->curlang->slug; // To always remember the current language through blogs
+				$restore_curlang = $this->curlang->slug; // To always remember the current language through blogs.
 			}
 
 			$lang = $this->model->get_language( $restore_curlang );

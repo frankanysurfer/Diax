@@ -1,4 +1,10 @@
-jQuery( document ).ready(
+/**
+ * Adds one biography input field per language in the user profile.
+ *
+ * @package Polylang
+ */
+
+jQuery(
 	function( $ ) {
 		// biography
 		// FIXME there is probably a more efficient way to do this

@@ -19,23 +19,57 @@
     <div class="col-xs-12">
         
 		<div class="site-info">
+            <?php 
+                if(pll_current_language() == 'nl') {?>
+            <div class="footer-row footer-row-1">
+            <h6>Contacteer ons</h6>
             <ul class="footerlist contactgegevens">
-                <li>Telefoonnummer</li>
-                <li>E-mailadres</li>
-                <li>Contactformulier</li>
+                <li><a href="mailto:info@di-ax.be">info@di-ax.be</a></li>
+                <li>02 210 61 40</li>
+            </ul>
+            </div>
+            <div class="footer-row">
+            <h6>DiAX</h6>
+            <ul class="footerlist nuttigelinks">    
+                <li><a href="http://staging.di-ax.be/">Home</a></li>
+                <li><a href="http://staging.di-ax.be/diensten/">Diensten</a></li>
+                <li><a href="http://staging.di-ax.be/partners/">Partners</a></li>
+                <li><a href="http://staging.di-ax.be/contact/">Contact</a></li>
+            </ul>
+            </div>
+            <div class="footer-row">
+            <h6>Legal</h6>
+            <ul class="footerlist nuttigelinks">    
+                <li><a href="http://staging.di-ax.be/privacybeleid/">Privacyverklaring</a></li>
+                <li><a href="http://staging.di-ax.be/algemene-voorwaarden/">Algemene voorwaarden</a></li>
+                <li><a href="http://staging.di-ax.be/toegankelijkheidsverklaring/">Toegankelijkheidsverklaring</a></li>
+            </ul>
+        </div>
+            <?php 
+                } else if(pll_current_language() == 'fr') {?>
+            
+            <ul class="footerlist contactgegevens">
+                <li><a href="mailto:info@di-ax.be">info@di-ax.be</a></li>
+                <li><a href="http://localhost/diax/fr/contact-fr">Formulaire de contact</a></li>
             </ul>
             <ul class="footerlist nuttigelinks">    
-                <li>Privacyverklaring</li>
-                <li>Algemene voorwaarden</li>
-                <li>Toegankelijkheidsverklaring</li>
+                <li><a href="http://localhost/diax/fr/privacybeleid-fr">Déclaration de confidentialité</a></li>
+                <li><a href="http://localhost/diax/fr/algemene-voorwaarden-fr">Conditions générales</a></li>
+                <li><a href="http://localhost/diax/fr/toegankelijkheidsverklaring-fr">Déclaration d'accessibilité</a></li>
             </ul>
-
-            <?php 
-                // if(pll_current_language() == 'nl') {
-                //     echo 'Only in english';
-                // } else if(pll_current_language() == 'fr') {
-                //     echo 'Seulment en francais'; 
-                // }  
+            <?php
+                } else if(pll_current_language() == 'en') {?>
+            
+            <ul class="footerlist contactgegevens">
+                <li><a href="mailto:info@di-ax.be">info@di-ax.be</a></li>
+                <li><a href="http://localhost/diax/en/contact-en">Contact Form</a></li>
+            </ul>
+            <ul class="footerlist nuttigelinks">    
+                <li><a href="http://localhost/diax/en/privacybeleid-en">Privacy declaration</a></li>
+                <li><a href="http://localhost/diax/en/algemene-voorwaarden-en">Terms and Conditions</a></li>
+                <li><a href="http://localhost/diax/en/toegankelijkheidsverklaring-en">Accessibility statement</a></li>
+            </ul>
+             <?php                }  
         ?>
 
 		</div><!-- .site-info -->
@@ -44,7 +78,7 @@
     </div>
         
 	</footer><!-- #colophon -->
-</div><!-- #page -->
+
 
 <?php wp_footer(); ?>
 

@@ -33,7 +33,7 @@ get_header(); ?>
 		endwhile; // End of the loop.
 		?>
 		
-		<aside class="diensten-menu">		
+		<div class="diensten-menu" role="navigation" aria-label="Diensten menu">		
 			<ul class="onze-diensten">
                 <li><a href="http://localhost/diax/sensibilisering/">Sensibilisering</a></li>
                 <li><a href="http://localhost/diax/opleiding/">Opleiding</a></li>
@@ -42,13 +42,15 @@ get_header(); ?>
                 <li><a href="http://localhost/diax/operationele-ondersteuning/">Operationele ondersteuning</a></li>
                 <li><a href="http://localhost/diax/monitoring-servicedesk/">Monitoring & Servicedesk</a></li>
             </ul>
-        </aside>
+        </div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
     </div>
 
     </div>
+    </div>
+
 
 <?php
 get_footer();

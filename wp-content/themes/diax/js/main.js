@@ -1,5 +1,7 @@
-jQuery(document).ready(function( $ ) {
+var b = document.querySelector(".site-branding a img");
+b.setAttribute("alt", "Diax Digital Accessibility Experts");
 
+// Cards klikgebied
 const cards = document.querySelectorAll('.card');
 Array.prototype.forEach.call(cards, card => {
     let down, up, link = card.querySelector('h2 a');
@@ -13,4 +15,6 @@ Array.prototype.forEach.call(cards, card => {
     }
 });
 
-});
+// document.getElementById("cookie-notice").removeAttribute("role");
+
+

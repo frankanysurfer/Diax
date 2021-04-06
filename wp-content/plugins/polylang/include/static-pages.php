@@ -1,4 +1,7 @@
 <?php
+/**
+ * @package Polylang
+ */
 
 /**
  * Base class to manage the static front page and the page for posts
@@ -6,8 +9,38 @@
  * @since 1.8
  */
 class PLL_Static_Pages {
-	public $model, $options;
-	public $page_on_front, $page_for_posts;
+	/**
+	 * Id of the page on front.
+	 *
+	 * @var int
+	 */
+	public $page_on_front;
+
+	/**
+	 * Id of the page for posts.
+	 *
+	 * @var int
+	 */
+	public $page_for_posts;
+
+	/**
+	 * Stores the plugin options.
+	 *
+	 * @var array
+	 */
+	protected $options;
+
+	/**
+	 * @var PLL_Model
+	 */
+	protected $model;
+
+	/**
+	 * Current language.
+	 *
+	 * @var PLL_Language
+	 */
+	protected $curlang;
 
 	/**
 	 * Constructor: setups filters and actions
@@ -42,6 +75,8 @@ class PLL_Static_Pages {
 	 * Stores the page on front and page for posts ids
 	 *
 	 * @since 1.8
+	 *
+	 * @return void
 	 */
 	public function init() {
 		if ( 'page' == get_option( 'show_on_front' ) ) {
@@ -72,12 +107,13 @@ class PLL_Static_Pages {
 	}
 
 	/**
-	 * Adds page_on_front and page_for_posts properties to the language objects
+	 * Adds page_on_front and page_for_posts properties to the language objects.
 	 *
 	 * @since 1.8
 	 *
-	 * @param array  $languages
-	 * @param object $model
+	 * @param PLL_Language[] $languages The list of languages.
+	 * @param PLL_Model      $model     The instance of PLL_Model.
+	 * @return PLL_Language[]
 	 */
 	public static function pll_languages_list( $languages, $model ) {
 		if ( 'page' === get_option( 'show_on_front' ) ) {
@@ -100,7 +136,7 @@ class PLL_Static_Pages {
 	 */
 	public function translate_page_for_posts( $v ) {
 		// Don't attempt to translate in a 'switch_blog' action as there is a risk to call this function while initializing the languages cache
-		return isset( $this->curlang->page_for_posts ) && ! doing_action( 'switch_blog' ) ? $this->curlang->page_for_posts : $v;
+		return isset( $this->curlang->page_for_posts ) && ( $this->curlang->page_for_posts ) && ! doing_action( 'switch_blog' ) ? $this->curlang->page_for_posts : $v;
 	}
 
 	/**
@@ -111,6 +147,7 @@ class PLL_Static_Pages {
 	 *
 	 * @param int    $post_id The post ID.
 	 * @param string $url     The requested URL.
+	 * @return int
 	 */
 	public function oembed_request_post_id( $post_id, $url ) {
 		foreach ( $this->model->get_languages_list() as $lang ) {

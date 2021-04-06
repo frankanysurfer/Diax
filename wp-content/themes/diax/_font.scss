@@ -1,0 +1,188 @@
+@font-face {
+    font-family: 'flama_semicondensedbasic';
+    src: url('font/flamasemicondensed-basic-webfont.woff2') format('woff2'),
+         url('font/flamasemicondensed-basic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'flama_semicondensedbold';
+    src: url('font/flamasemicondensed-bold-webfont.woff2') format('woff2'),
+         url('font/flamasemicondensed-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'flama_semicondensedbook';
+    src: url('font/flamasemicondensed-book-webfont.woff2') format('woff2'),
+         url('font/flamasemicondensed-book-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'flama_semicondensedlight';
+    src: url('font/flamasemicondensed-light-webfont.woff2') format('woff2'),
+         url('font/flamasemicondensed-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'flama_semicondensedmedium';
+    src: url('font/flamasemicondensed-medium-webfont.woff2') format('woff2'),
+         url('font/flamasemicondensed-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'flama_semicondensedsemibold';
+    src: url('font/flamasemicondensed-semibold-webfont.woff2') format('woff2'),
+         url('font/flamasemicondensed-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('font/opensans-bold-webfont.woff2') format('woff2'),
+         url('font/opensans-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sansbold_italic';
+    src: url('font/opensans-bolditalic-webfont.woff2') format('woff2'),
+         url('font/opensans-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sansextrabold';
+    src: url('font/opensans-extrabold-webfont.woff2') format('woff2'),
+         url('font/opensans-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sansextrabold_italic';
+    src: url('font/opensans-extrabolditalic-webfont.woff2') format('woff2'),
+         url('font/opensans-extrabolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sansitalic';
+    src: url('font/opensans-italic-webfont.woff2') format('woff2'),
+         url('font/opensans-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('font/opensans-light-webfont.woff2') format('woff2'),
+         url('font/opensans-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sanslight_italic';
+    src: url('font/opensans-lightitalic-webfont.woff2') format('woff2'),
+         url('font/opensans-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('font/opensans-regular-webfont.woff2') format('woff2'),
+         url('font/opensans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sanssemibold';
+    src: url('font/opensans-semibold-webfont.woff2') format('woff2'),
+         url('font/opensans-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sanssemibold_italic';
+    src: url('font/opensans-semibolditalic-webfont.woff2') format('woff2'),
+         url('font/opensans-semibolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+	font-size: 100%;
+}
+
+body {
+	font-family: 'open_sansregular';	
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.375;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 1rem 0;
+}
+
+h1 {
+	font-family: 'flama_semicondensedbold';
+	// font-size: 3.6rem;
+    font-size: 3rem;
+    line-height: 1.2;
+    color: $blueDark;
+}
+
+h2 {
+	font-family: 'flama_semicondensedbold';
+	font-size: 2.8rem;
+    line-height: 1.2;
+    color: $blueDark;
+}
+
+h3 {
+	font-family: 'flama_semicondensedsemibold';
+	font-size: 2.2rem;
+    line-height: 1.2;
+    color: $blueDark;
+}
+
+h4 {
+	font-family: 'flama_semicondensedsemibold';
+	font-size: 1.8rem;
+    line-height: 1.2;
+    color: $blueVeryDark;
+}
+
+h5 {
+	font-family: 'flama_semicondensedbold';
+	font-size: 1.2rem;
+    line-height: 1.2;
+    color: $blueVeryDark;
+    text-transform: none;
+}
+
+h6 {
+	font-family: 'flama_semicondensedsemibold';
+	font-size: 1.2rem;
+    line-height: 1.2;
+    color: $blueVeryDark;
+}

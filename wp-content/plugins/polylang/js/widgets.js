@@ -1,3 +1,9 @@
+/**
+ * Adds a flag to the widgets filtered by a language.
+ *
+ * @package Polylang
+ */
+
 jQuery(
 	function( $ ) {
 		var widgets_container, widgets_selector, flags;
@@ -8,7 +14,7 @@ jQuery(
 
 		/**
 		 * Prepend widget titles with a flag once a language is selected.
-		 * 
+		 *
 		 * @param {object} widget The widget element.
 		 * @return {void} Nothing.
 		 */
@@ -29,7 +35,8 @@ jQuery(
 					current.html( icon ); // phpcs:ignore WordPressVIPMinimum.JS.HTMLExecutingFunctions.html
 				} else {
 					flag = $( '<span />' ).addClass( 'pll-lang' ).html( icon );  // phpcs:ignore WordPressVIPMinimum.JS.HTMLExecutingFunctions.html
-					title.prepend( flag );
+					// See the comment above about the icon which is safe. So it is also safe to prepend flag which uses icon.
+					title.prepend( flag ); // phpcs:ignore WordPressVIPMinimum.JS.HTMLExecutingFunctions.prepend
 				}
 			} else {
 				$( '.pll-lang', title ).remove();
@@ -86,6 +93,38 @@ jQuery(
 			'.pll-lang-choice',
 			function() {
 				add_flag( $( this ).parents( '.widget' ) );
+			}
+		);
+
+		function pll_toggle( a, test ) {
+			test ? a.show() : a.hide();
+		}
+
+		// Remove all options if dropdown is checked.
+		$( '.widgets-sortables,.control-section-sidebar' ).on(
+			'change',
+			'.pll-dropdown',
+			function() {
+				var this_id = $( this ).parent().parent().parent().children( '.widget-id' ).attr( 'value' );
+				pll_toggle( $( '.no-dropdown-' + this_id ), true != $( this ).prop( 'checked' ) );
+			}
+		);
+
+		// Disallow unchecking both show names and show flags.
+		var options = ['-show_flags', '-show_names'];
+		$.each(
+			options,
+			function( i, v ) {
+				$( '.widgets-sortables,.control-section-sidebar' ).on(
+					'change',
+					'.pll' + v,
+					function() {
+						var this_id = $( this ).parent().parent().parent().children( '.widget-id' ).attr( 'value' );
+						if ( true != $( this ).prop( 'checked' ) ) {
+							$( '#widget-' + this_id + options[ 1 - i ] ).prop( 'checked', true );
+						}
+					}
+				);
 			}
 		);
 

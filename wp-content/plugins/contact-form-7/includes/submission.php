@@ -49,10 +49,12 @@ class WPCF7_Submission {
 	}
 
 	private function proceed() {
+		$contact_form = $this->contact_form;
+
+		switch_to_locale( $contact_form->locale() );
+
 		$this->setup_meta_data();
 		$this->setup_posted_data();
-
-		$contact_form = $this->contact_form;
 
 		if ( $this->is( 'init' ) and ! $this->validate() ) {
 			$this->set_status( 'validation_failed' );
@@ -67,6 +69,11 @@ class WPCF7_Submission {
 		if ( $this->is( 'init' ) and $this->spam() ) {
 			$this->set_status( 'spam' );
 			$this->set_response( $contact_form->message( 'spam' ) );
+		}
+
+		if ( $this->is( 'init' ) and ! $this->unship_uploaded_files() ) {
+			$this->set_status( 'validation_failed' );
+			$this->set_response( $contact_form->message( 'validation_error' ) );
 		}
 
 		if ( $this->is( 'init' ) ) {
@@ -94,6 +101,8 @@ class WPCF7_Submission {
 				do_action( 'wpcf7_mail_failed', $contact_form );
 			}
 		}
+
+		restore_previous_locale();
 
 		$this->remove_uploaded_files();
 	}
@@ -240,29 +249,31 @@ class WPCF7_Submission {
 				}
 			}
 
-			if ( wpcf7_form_tag_supports( $type, 'selectable-values' )
-			and $tag->has_option( 'free_text' )
-			and isset( $posted_data[$name . '_free_text'] )
-			and is_array( $value ) ) {
-				$last_val = array_pop( $value );
+			if ( wpcf7_form_tag_supports( $type, 'selectable-values' ) ) {
+				$value = (array) $value;
 
-				list( $tied_item ) = array_slice(
-					WPCF7_USE_PIPE ? $tag->pipes->collect_afters() : $tag->values,
-					-1, 1
-				);
+				if ( $tag->has_option( 'free_text' )
+				and isset( $posted_data[$name . '_free_text'] ) ) {
+					$last_val = array_pop( $value );
 
-				$tied_item = html_entity_decode( $tied_item, ENT_QUOTES, 'UTF-8' );
-
-				if ( $last_val === $tied_item ) {
-					$value[] = sprintf( '%s %s',
-						$last_val,
-						$posted_data[$name . '_free_text']
+					list( $tied_item ) = array_slice(
+						WPCF7_USE_PIPE ? $tag->pipes->collect_afters() : $tag->values,
+						-1, 1
 					);
-				} else {
-					$value[] = $last_val;
-				}
 
-				unset( $posted_data[$name . '_free_text'] );
+					$tied_item = html_entity_decode( $tied_item, ENT_QUOTES, 'UTF-8' );
+
+					if ( $last_val === $tied_item ) {
+						$value[] = sprintf( '%s %s',
+							$last_val,
+							$posted_data[$name . '_free_text']
+						);
+					} else {
+						$value[] = $last_val;
+					}
+
+					unset( $posted_data[$name . '_free_text'] );
+				}
 			}
 
 			$value = apply_filters( "wpcf7_posted_data_{$type}", $value,
@@ -343,10 +354,11 @@ class WPCF7_Submission {
 			return false;
 		}
 
-		require_once WPCF7_PLUGIN_DIR . '/includes/validation.php';
 		$result = new WPCF7_Validation();
 
-		$tags = $this->contact_form->scan_form_tags();
+		$tags = $this->contact_form->scan_form_tags( array(
+		  'feature' => '! file-uploading',
+		) );
 
 		foreach ( $tags as $tag ) {
 			$type = $tag->type;
@@ -410,16 +422,7 @@ class WPCF7_Submission {
 			) );
 		}
 
-		if ( $this->is_blacklisted() ) {
-			$spam = true;
-
-			$this->add_spam_log( array(
-				'agent' => 'wpcf7',
-				'reason' => __( "Blacklisted words are used.", 'contact-form-7' ),
-			) );
-		}
-
-		return apply_filters( 'wpcf7_spam', $spam );
+		return apply_filters( 'wpcf7_spam', $spam, $this );
 	}
 
 	public function add_spam_log( $args = '' ) {
@@ -441,16 +444,6 @@ class WPCF7_Submission {
 		}
 
 		return wpcf7_verify_nonce( $_POST['_wpnonce'] );
-	}
-
-	private function is_blacklisted() {
-		$target = wpcf7_array_flatten( $this->posted_data );
-		$target[] = $this->get_meta( 'remote_ip' );
-		$target[] = $this->get_meta( 'user_agent' );
-		$target = implode( "\n", $target );
-
-		return (bool) apply_filters( 'wpcf7_submission_is_blacklisted',
-			wpcf7_blacklist_check( $target ), $this );
 	}
 
 	/* Mail */
@@ -506,32 +499,86 @@ class WPCF7_Submission {
 		return $this->uploaded_files;
 	}
 
-	public function add_uploaded_file( $name, $file_path ) {
+	private function add_uploaded_file( $name, $file_path ) {
 		if ( ! wpcf7_is_name( $name ) ) {
 			return false;
 		}
 
-		if ( ! @is_file( $file_path ) or ! @is_readable( $file_path ) ) {
-			return false;
+		$paths = (array) $file_path;
+		$uploaded_files = array();
+		$hash_strings = array();
+
+		foreach ( $paths as $path ) {
+			if ( @is_file( $path ) and @is_readable( $path ) ) {
+				$uploaded_files[] = $path;
+				$hash_strings[] = md5_file( $path );
+			}
 		}
 
-		$this->uploaded_files[$name] = $file_path;
+		$this->uploaded_files[$name] = $uploaded_files;
 
 		if ( empty( $this->posted_data[$name] ) ) {
-			$this->posted_data[$name] = md5_file( $file_path );
+			$this->posted_data[$name] = implode( ' ', $hash_strings );
 		}
 	}
 
-	public function remove_uploaded_files() {
-		foreach ( (array) $this->uploaded_files as $name => $path ) {
-			wpcf7_rmdir_p( $path );
+	private function remove_uploaded_files() {
+		foreach ( (array) $this->uploaded_files as $file_path ) {
+			$paths = (array) $file_path;
 
-			if ( $dir = dirname( $path )
-			and false !== ( $files = scandir( $dir ) )
-			and ! array_diff( $files, array( '.', '..' ) ) ) {
-				// remove parent dir if it's empty.
-				rmdir( $dir );
+			foreach ( $paths as $path ) {
+				wpcf7_rmdir_p( $path );
+
+				if ( $dir = dirname( $path )
+				and false !== ( $files = scandir( $dir ) )
+				and ! array_diff( $files, array( '.', '..' ) ) ) {
+					// remove parent dir if it's empty.
+					rmdir( $dir );
+				}
 			}
 		}
 	}
+
+	private function unship_uploaded_files() {
+		$result = new WPCF7_Validation();
+
+		$tags = $this->contact_form->scan_form_tags( array(
+			'feature' => 'file-uploading',
+		) );
+
+		foreach ( $tags as $tag ) {
+			if ( empty( $_FILES[$tag->name] ) ) {
+				continue;
+			}
+
+			$file = $_FILES[$tag->name];
+
+			$args = array(
+				'tag' => $tag,
+				'name' => $tag->name,
+				'required' => $tag->is_required(),
+				'filetypes' => $tag->get_option( 'filetypes' ),
+				'limit' => $tag->get_limit_option(),
+			);
+
+			$new_files = wpcf7_unship_uploaded_file( $file, $args );
+
+			if ( ! is_wp_error( $new_files ) ) {
+				$this->add_uploaded_file( $tag->name, $new_files );
+			}
+
+			$result = apply_filters(
+				"wpcf7_validate_{$tag->type}",
+				$result, $tag,
+				array(
+					'uploaded_files' => $new_files,
+				)
+			);
+		}
+
+		$this->invalid_fields = $result->get_invalid_fields();
+
+		return $result->is_valid();
+	}
+
 }

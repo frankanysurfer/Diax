@@ -1,13 +1,14 @@
 <?php
+
 /**
  * Plugin Name: Footer Text
- * Plugin URI:  https://sheabunge.com/plugins/footer-text/
+ * Plugin URI:  https://github.com/sheabunge/footer-text
  * Description: Allow changing of the theme footer text easily from the dashboard
  * Author:      Shea Bunge
  * Author URI:  https://sheabunge.com
  * License:     MIT
  * License URI: https://opensource.org/licenses/MIT
- * Version:     2.0.2
+ * Version:     2.0.3
  * Text Domain: footer-text
  * Domain Path: /languages
  */
@@ -15,18 +16,18 @@
 /**
  * Administration
  */
-require plugin_dir_path( __FILE__ ) . 'includes/admin.php';
+require dirname( __FILE__ ) . '/includes/admin.php';
 
 /**
  * Shortcodes
  */
-require plugin_dir_path( __FILE__ ) . 'includes/class-shortcodes.php';
+require dirname( __FILE__ ) . '/includes/class-shortcodes.php';
 $GLOBALS['footer_text_shortcodes'] = new Footer_Text_Shortcodes();
 
 /**
  * Template Tags
  */
-require plugin_dir_path( __FILE__ ) . 'includes/template-tags.php';
+require dirname( __FILE__ ) . '/includes/template-tags.php';
 
 /**
  * Load the plugin textdomain

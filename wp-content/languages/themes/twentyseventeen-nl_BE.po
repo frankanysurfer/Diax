@@ -2,12 +2,12 @@
 # This file is distributed under the same license as the Themes - Twenty Seventeen package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-06-07 07:38:27+0000\n"
+"PO-Revision-Date: 2021-03-24 17:11:22+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: GlotPress/3.0.0-alpha\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
 "Language: nl_BE\n"
 "Project-Id-Version: Themes - Twenty Seventeen\n"
 
@@ -16,37 +16,133 @@ msgid "Twenty Seventeen brings your site to life with header video and immersive
 msgstr "Twenty Seventeen brengt uw website tot leven met header video en meeslepende uitgelichte afbeeldingen. Met focus op zakelijke websites kenmerkt het thema zich door een startpagina met verschillende onderdelen en door widgets, navigatie- en sociale menu's, een logo en meer. Personaliseer het asymmetrische grid met een aangepast kleurschema en toon multimedia inhoud met verschillende berichtformaten. Ons standaard thema voor 2017 werkt fantastisch in meerdere talen, voor alle omstandigheden en op elk apparaat."
 
 #. Theme Name of the theme
+#: inc/block-patterns.php:17
 msgid "Twenty Seventeen"
 msgstr "Twenty Seventeen"
+
+#: inc/block-patterns.php:193
+msgid "Contact us"
+msgstr "Contacteer ons"
+
+#: inc/block-patterns.php:188
+msgid "We are proud to serve outstanding clients."
+msgstr "We zijn er trots op uitstekende klanten van dienst te zijn."
+
+#: inc/block-patterns.php:184
+msgid "Contact Us"
+msgstr "Contacteer ons"
+
+#: inc/block-patterns.php:170
+msgid "Video Production"
+msgstr "Video productie"
+
+#: inc/block-patterns.php:170
+msgid "Marketing &amp; SEO"
+msgstr "Marketing &amp; SEO"
+
+#: inc/block-patterns.php:170
+msgid "Content Strategy"
+msgstr "Contentstrategie"
+
+#: inc/block-patterns.php:162
+msgid "Web Development"
+msgstr "Webontwikkeling"
+
+#: inc/block-patterns.php:148
+msgid "Services"
+msgstr "Diensten"
+
+#: inc/block-patterns.php:131
+msgid "Strategy"
+msgstr "Strategie"
+
+#: inc/block-patterns.php:128
+msgid "Direct Light"
+msgstr "Direct licht"
+
+#: inc/block-patterns.php:117
+msgid "Design"
+msgstr "Design"
+
+#: inc/block-patterns.php:90
+msgid "Images with Link"
+msgstr "Afbeeldingen met link"
+
+#: inc/block-patterns.php:77
+msgid "Need a website? We&#39;ve got you covered. Our design team will create a stunning design to transform your brand."
+msgstr "Heb je een site nodig? We hebben alles voor je. Ons ontwerpteam zal een prachtig ontwerp maken om je merk te transformeren."
+
+#: inc/block-patterns.php:74 inc/block-patterns.php:162
+msgid "Web Design"
+msgstr "Webontwerp"
+
+#: inc/block-patterns.php:71 inc/block-patterns.php:114
+msgid "White border"
+msgstr "Witte rand"
+
+#: inc/block-patterns.php:63 inc/block-patterns.php:80
+#: inc/block-patterns.php:106 inc/block-patterns.php:120
+#: inc/block-patterns.php:134
+msgid "See Case Study"
+msgstr "Zie casestudy"
+
+#: inc/block-patterns.php:60
+msgid "Communicate your purpose and goals with a beautiful logo that encapsulates your business."
+msgstr "Communiceer je doel en doelen met een mooi logo dat je bedrijf weergeeft."
+
+#: inc/block-patterns.php:57 inc/block-patterns.php:103
+#: inc/block-patterns.php:162
+msgid "Branding"
+msgstr "Branding"
+
+#: inc/block-patterns.php:54 inc/block-patterns.php:100
+msgid "Black Stripes"
+msgstr "Zwarte strepen"
+
+#: inc/block-patterns.php:45
+msgid "Images with Text and Link"
+msgstr "Afbeeldingen met tekst en link"
+
+#: inc/block-patterns.php:36 inc/block-patterns.php:155
+msgid "Our Services"
+msgstr "Onze diensten"
+
+#: inc/block-patterns.php:31
+msgid "Attract Leads with Marketing Campaigns that Work"
+msgstr "Trek leads aan met marketingcampagnes die werken"
+
+#: inc/block-patterns.php:28
+msgid "Large Heading with Button"
+msgstr "Grote header met knop"
 
 #: template-parts/footer/footer-widgets.php:18
 msgid "Footer"
 msgstr "Footer"
 
-#: functions.php:338 sidebar.php:18
-msgid "Blog Sidebar"
-msgstr "Blog Sidebar"
-
-#: functions.php:340
+#: functions.php:346
 msgid "Add widgets here to appear in your sidebar on blog posts and archive pages."
 msgstr "Voeg hier widgets toe in de sidebar op blog berichten en archiefpagina's."
+
+#: functions.php:344 sidebar.php:18
+msgid "Blog Sidebar"
+msgstr "Blog Sidebar"
 
 #: template-parts/header/site-branding.php:34
 #: template-parts/navigation/navigation-top.php:31
 msgid "Scroll down to content"
 msgstr "Scroll omlaag naar de inhoud"
 
-#: functions.php:181
+#: functions.php:187
 msgctxt "Theme starter content"
 msgid "Coffee"
 msgstr "Koffie"
 
-#: functions.php:177
+#: functions.php:183
 msgctxt "Theme starter content"
 msgid "Sandwich"
 msgstr "Broodje"
 
-#: functions.php:173
+#: functions.php:179
 msgctxt "Theme starter content"
 msgid "Espresso"
 msgstr "Espresso"
@@ -59,14 +155,14 @@ msgstr "Pauzeer achtergrondvideo"
 msgid "Play background video"
 msgstr "Speel achtergrondvideo"
 
-#: inc/customizer.php:109
-msgid "When the two-column layout is assigned, the page title is in one column and content is in the other."
-msgstr "Wanneer de lay-out op twee kolommen gezet wordt, bevindt de titel van de pagina zich in de ene kolom en de inhoud in de andere."
-
 #. translators: %s: The section ID.
 #: inc/template-tags.php:158
 msgid "Front Page Section %s Placeholder"
 msgstr "Homepage sectie %s placeholder"
+
+#: inc/customizer.php:109
+msgid "When the two-column layout is assigned, the page title is in one column and content is in the other."
+msgstr "Wanneer de lay-out op twee kolommen gezet wordt, bevindt de titel van de pagina zich in de ene kolom en de inhoud in de andere."
 
 #: single.php:34
 msgid "Next Post"
@@ -99,6 +195,10 @@ msgstr "<span class=\"screen-reader-text\">Geplaatst op</span> %s"
 msgid "by %s"
 msgstr "door %s"
 
+#: inc/icon-functions.php:44
+msgid "Please define an SVG icon filename."
+msgstr "Gelieve een bestandsnaam voor een SVG icoon te geven."
+
 #: inc/icon-functions.php:39
 msgid "Please define default parameters in the form of an array."
 msgstr "Gelieve standaard parameters te definiëren in de vorm van een array."
@@ -107,9 +207,18 @@ msgstr "Gelieve standaard parameters te definiëren in de vorm van een array."
 msgid "Select pages to feature in each area from the dropdowns. Add an image to a section by setting a featured image in the page editor. Empty sections will not be displayed."
 msgstr "Selecteer voor elk gebied een pagina uit het dropdown menu. Voeg een afbeelding toe aan een gebied door een uitgelichte afbeelding in te stellen in de pagina editor. Lege gebieden worden niet getoond."
 
+#. translators: %d: The front page section number.
+#: inc/customizer.php:142
+msgid "Front Page Section %d Content"
+msgstr "Startpagina sectie %d inhoud"
+
 #: inc/customizer.php:112 inc/customizer.php:171
 msgid "Two Column"
 msgstr "Twee kolommen"
+
+#: inc/customizer.php:111 inc/customizer.php:170
+msgid "One Column"
+msgstr "Eén kolom"
 
 #: inc/customizer.php:106
 msgid "Page Layout"
@@ -131,48 +240,35 @@ msgstr "Licht"
 msgid "Color Scheme"
 msgstr "Kleurschema"
 
-#: inc/icon-functions.php:44
-msgid "Please define an SVG icon filename."
-msgstr "Gelieve een bestandsnaam voor een SVG icoon te geven."
-
-#. translators: %d: The front page section number.
-#: inc/customizer.php:142
-msgid "Front Page Section %d Content"
-msgstr "Startpagina sectie %d inhoud"
-
-#: inc/customizer.php:111 inc/customizer.php:170
-msgid "One Column"
-msgstr "Eén kolom"
-
 #: inc/custom-header.php:56
 msgid "Default Header Image"
 msgstr "Standaard header afbeelding"
 
-#: functions.php:362
+#: functions.php:368
 msgid "Footer 2"
 msgstr "Footer 2"
 
-#: functions.php:350
+#: functions.php:358 functions.php:370
+msgid "Add widgets here to appear in your footer."
+msgstr "Voeg hier widgets toe om in de footer te tonen."
+
+#: functions.php:356
 msgid "Footer 1"
 msgstr "Footer 1"
 
-#: functions.php:290
+#: functions.php:296
 msgctxt "Libre Franklin font: on or off"
 msgid "on"
 msgstr "aan"
 
+#: template-parts/navigation/navigation-top.php:12 functions.php:69
+#: functions.php:211
+msgid "Top Menu"
+msgstr "Topmenu"
+
 #: comments.php:62
 msgid "Reply"
 msgstr "Antwoord"
-
-#: functions.php:352 functions.php:364
-msgid "Add widgets here to appear in your footer."
-msgstr "Voeg hier widgets toe om in de footer te tonen."
-
-#: template-parts/navigation/navigation-top.php:12 functions.php:64
-#: functions.php:205
-msgid "Top Menu"
-msgstr "Topmenu"
 
 #: template-parts/post/content-none.php:33
 msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
@@ -182,13 +278,26 @@ msgstr "Het lijkt dat we niet kunnen vinden wat u zoekt. Misschien kan de zoekfu
 msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
 msgstr "Helaas, niets komt overeen met uw zoektermen. Probeer opnieuw met andere zoektermen."
 
-#: single.php:34 comments.php:72
-msgid "Next"
-msgstr "Volgende"
+#. translators: %s: Post editor URL.
+#: template-parts/post/content-none.php:27
+msgid "Ready to publish your first post? <a href=\"%s\">Get started here</a>."
+msgstr "Klaar om je eerste bericht te publiceren? <a href=\"%s\">Begin hier</a>."
+
+#: template-parts/post/content-none.php:17 search.php:26
+msgid "Nothing Found"
+msgstr "Niets gevonden"
+
+#: single.php:33
+msgid "Previous Post"
+msgstr "Vorig bericht"
 
 #: single.php:33 comments.php:71
 msgid "Previous"
 msgstr "Vorige"
+
+#: single.php:34 comments.php:72
+msgid "Next"
+msgstr "Volgende"
 
 #: searchform.php:20
 msgctxt "submit button"
@@ -199,19 +308,6 @@ msgstr "Zoek"
 msgctxt "placeholder"
 msgid "Search &hellip;"
 msgstr "Zoek &hellip;"
-
-#: template-parts/post/content-none.php:17 search.php:26
-msgid "Nothing Found"
-msgstr "Niets gevonden"
-
-#: single.php:33
-msgid "Previous Post"
-msgstr "Vorig bericht"
-
-#. translators: %s: Post editor URL.
-#: template-parts/post/content-none.php:27
-msgid "Ready to publish your first post? <a href=\"%s\">Get started here</a>."
-msgstr "Klaar om je eerste bericht te publiceren? <a href=\"%s\">Begin hier</a>."
 
 #: searchform.php:17
 msgctxt "label"
@@ -229,13 +325,18 @@ msgstr "Zoekresultaten voor: %s"
 #: template-parts/post/content-video.php:83
 #: template-parts/post/content-gallery.php:71
 #: template-parts/page/content-front-page.php:42
-#: template-parts/page/content-front-page-panels.php:45 functions.php:392
+#: template-parts/page/content-front-page-panels.php:45 functions.php:398
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr "<span class=\"screen-reader-text\">\"%s\" </span>verder lezen"
 
 #: inc/customizer.php:63
 msgid "Dark"
 msgstr "Donker"
+
+#. translators: %s: The current WordPress version.
+#: inc/back-compat.php:40 inc/back-compat.php:54 inc/back-compat.php:73
+msgid "Twenty Seventeen requires at least WordPress version 4.7. You are running version %s. Please upgrade and try again."
+msgstr "Twenty Seventeen vereist minstens WordPress versie 4.7. Je gebruikt versie %s. Gelieve te upgraden en probeer dan opnieuw."
 
 #. translators: %s: Post title.
 #: inc/template-tags.php:117
@@ -246,6 +347,7 @@ msgstr "Bewerk<span class=\"screen-reader-text\"> \"%s\"</span>"
 #: template-parts/post/content-image.php:68
 #: template-parts/post/content-video.php:90
 #: template-parts/post/content-gallery.php:78
+#: template-parts/page/content-front-page.php:48
 #: template-parts/page/content-page.php:26
 msgid "Pages:"
 msgstr "Pagina's:"
@@ -258,18 +360,26 @@ msgstr "Menu"
 msgid "Skip to content"
 msgstr "Spring naar de inhoud"
 
-#: functions.php:484
+#: functions.php:490
 msgid "Collapse child menu"
 msgstr "Submenu inklappen"
 
-#: functions.php:483
+#: functions.php:489
 msgid "Expand child menu"
 msgstr "Submenu uitklappen"
+
+#: functions.php:70 functions.php:222
+msgid "Social Links Menu"
+msgstr "Sociale links menu"
 
 #. translators: %s: WordPress
 #: template-parts/footer/site-info.php:21
 msgid "Proudly powered by %s"
 msgstr "Ondersteund door %s"
+
+#: footer.php:26
+msgid "Footer Social Links Menu"
+msgstr "Footer sociale links menu"
 
 #: comments.php:82
 msgid "Comments are closed."
@@ -283,44 +393,31 @@ msgid_plural "%1$s Replies to &ldquo;%2$s&rdquo;"
 msgstr[0] "%1$s Antwoord op &ldquo;%2$s&rdquo;"
 msgstr[1] "%1$s Antwoorden op &ldquo;%2$s&rdquo;"
 
-#: index.php:55 archive.php:51 search.php:52
-msgid "Page"
-msgstr "Pagina"
-
-#: 404.php:24
-msgid "It looks like nothing was found at this location. Maybe try a search?"
-msgstr "Het lijkt dat hier niets gevonden wordt. Probeer eens met een zoekopdracht?"
-
-#: index.php:53 archive.php:49 search.php:50
-msgid "Previous page"
-msgstr "Vorige pagina"
-
-#: index.php:54 archive.php:50 search.php:51
-msgid "Next page"
-msgstr "Volgende pagina"
-
-#. translators: %s: The current WordPress version.
-#: inc/back-compat.php:40 inc/back-compat.php:54 inc/back-compat.php:73
-msgid "Twenty Seventeen requires at least WordPress version 4.7. You are running version %s. Please upgrade and try again."
-msgstr "Twenty Seventeen vereist minstens WordPress versie 4.7. Je gebruikt versie %s. Gelieve te upgraden en probeer dan opnieuw."
-
-#: functions.php:65 functions.php:216
-msgid "Social Links Menu"
-msgstr "Sociale links menu"
-
-#: footer.php:26
-msgid "Footer Social Links Menu"
-msgstr "Footer sociale links menu"
-
-#: 404.php:21
-msgid "Oops! That page can&rsquo;t be found."
-msgstr "Oeps! Die pagina werd niet gevonden."
-
 #. translators: %s: Post title.
 #: comments.php:37
 msgctxt "comments title"
 msgid "One Reply to &ldquo;%s&rdquo;"
 msgstr "Eén antwoord op &ldquo;%s&rdquo;"
+
+#: index.php:55 archive.php:51 search.php:52
+msgid "Page"
+msgstr "Pagina"
+
+#: index.php:54 archive.php:50 search.php:51
+msgid "Next page"
+msgstr "Volgende pagina"
+
+#: index.php:53 archive.php:49 search.php:50
+msgid "Previous page"
+msgstr "Vorige pagina"
+
+#: 404.php:24
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr "Het lijkt dat hier niets gevonden wordt. Probeer eens met een zoekopdracht?"
+
+#: 404.php:21
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Oeps! Die pagina werd niet gevonden."
 
 #. Author of the theme
 msgid "the WordPress team"

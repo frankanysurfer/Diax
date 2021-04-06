@@ -1,4 +1,7 @@
 <?php
+/**
+ * @package Polylang
+ */
 
 /**
  * WPML Compatibility class
@@ -8,8 +11,23 @@
  * @since 1.0.2
  */
 class PLL_WPML_Compat {
-	protected static $instance; // For singleton
-	protected static $strings; // Used for cache
+	/**
+	 * Singleton instance
+	 *
+	 * @var PLL_WPML_Compat
+	 */
+	protected static $instance;
+
+	/**
+	 * Stores the strings registered with the WPML API.
+	 *
+	 * @var array
+	 */
+	protected static $strings;
+
+	/**
+	 * @var PLL_WPML_API
+	 */
 	public $api;
 
 	/**
@@ -19,7 +37,7 @@ class PLL_WPML_Compat {
 	 */
 	protected function __construct() {
 		// Load the WPML API
-		require_once PLL_MODULES_INC . '/wpml/wpml-legacy-api.php';
+		require_once __DIR__ . '/wpml-legacy-api.php';
 		$this->api = new PLL_WPML_API();
 
 		self::$strings = get_option( 'polylang_wpml_strings', array() );
@@ -34,7 +52,7 @@ class PLL_WPML_Compat {
 	 *
 	 * @since 1.7
 	 *
-	 * @return object
+	 * @return PLL_WPML_Compat
 	 */
 	public static function instance() {
 		if ( empty( self::$instance ) ) {
@@ -49,6 +67,8 @@ class PLL_WPML_Compat {
 	 * in 'setup_theme' by Polylang ( based on user info ) and 'plugins_loaded' by WPML ( based on cookie )
 	 *
 	 * @since 0.9.5
+	 *
+	 * @return void
 	 */
 	public function define_constants() {
 		if ( ! empty( PLL()->curlang ) ) {
@@ -80,6 +100,7 @@ class PLL_WPML_Compat {
 	 * @param string $context The group in which the string is registered.
 	 * @param string $name    A unique name for the string.
 	 * @param string $string  The string to register.
+	 * @return void
 	 */
 	public function register_string( $context, $name, $string ) {
 		// If a string has already been registered with the same name and context, let's replace it.
@@ -115,6 +136,7 @@ class PLL_WPML_Compat {
 	 *
 	 * @param string $context The group in which the string is registered.
 	 * @param string $name    A unique name for the string.
+	 * @return void
 	 */
 	public function unregister_string( $context, $name ) {
 		$key = md5( "$context | $name" );

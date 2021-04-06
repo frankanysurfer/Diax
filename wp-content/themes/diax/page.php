@@ -43,6 +43,60 @@ get_header(); ?>
 			endwhile; // End of the loop.
 			?>
 
+	<?php $classes = get_body_class();
+	if (in_array('home',$classes)) {
+		?> 
+
+   		<?php	 
+   		if(pll_current_language() == 'nl') {
+   		?>
+            <!-- Nederlands -->
+			<div class="home-berichten">
+				<article>
+					<h2><?php the_field('titel'); ?></h2>
+					<div class="text-field"><?php the_field('home_page_post'); ?></div>
+				</article>
+				<article>
+					<h2><?php the_field('titel_2'); ?></h2>
+					<div class="text-field"><?php the_field('home_page_post_2'); ?></div>
+				</article>
+			</div>
+       
+        <?php
+        } else if(pll_current_language() == 'fr') {
+        ?>
+            <!-- Frans -->
+			<div class="home-berichten">
+				<article>
+					<h2><?php the_field('titel_fr'); ?></h2>
+					<div class="text-field"><?php the_field('home_page_post_fr'); ?></div>
+				</article>
+				<article>
+					<h2><?php the_field('titel_2_fr'); ?></h2>
+					<div class="text-field"><?php the_field('home_page_post_2_fr'); ?></div>
+				</article>
+			</div>
+		<?php	
+    	} else if(pll_current_language() == 'en') {
+    	?>
+         	<!-- Engels -->
+			<div class="home-berichten">
+				<article>
+					<h2><?php the_field('titel_en'); ?></h2>
+					<div class="text-field"><?php the_field('home_page_post_en'); ?></div>
+				</article>
+				<article>
+					<h2><?php the_field('titel_2_en'); ?></h2>
+					<div class="text-field"><?php the_field('home_page_post_2_en'); ?></div>
+				</article>
+			</div>
+    	<?php
+    	}  
+      } 
+	?>
+			
+			
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
     </div>

@@ -6,6 +6,15 @@
 if (!defined('WP_UNINSTALL_PLUGIN')) {
     exit;
 }
+
+// CHECK PHP VERSION
+define('DUPLICATOR_LITE_PHP_MINIMUM_VERSION', '5.3.8');
+define('DUPLICATOR_LITE_PHP_SUGGESTED_VERSION', '5.6.20');
+require_once(dirname(__FILE__)."/tools/DuplicatorPhpVersionCheck.php");
+if (DuplicatorPhpVersionCheck::check(DUPLICATOR_LITE_PHP_MINIMUM_VERSION, DUPLICATOR_LITE_PHP_SUGGESTED_VERSION) === false) {
+    return;
+}
+
 require_once 'helper.php';
 require_once 'define.php';
 require_once 'lib/snaplib/snaplib.all.php';
@@ -54,6 +63,11 @@ if (DUP_Settings::Get('uninstall_files')) {
             if (strstr($file, '_scan.json'))
                 @unlink("{$file}");
         }
+        foreach (glob("{$ssdir_tmp}/*_scan.json") as $file) {
+            if (strstr($file, '_scan.json'))
+                @unlink("{$file}");
+        }
+        // before 1.3.38 the [HASH]_wp-config.txt was present in main storage area
         foreach (glob("{$ssdir}/*_wp-config.txt") as $file) {
             if (strstr($file, '_wp-config.txt'))
                 @unlink("{$file}");
@@ -101,4 +115,5 @@ if (DUP_Settings::Get('uninstall_settings')) {
     delete_option('duplicator_ui_view_state');
     delete_option('duplicator_package_active');
     delete_option("duplicator_exe_safe_mode");
+    delete_option('duplicator_lite_inst_hash_notice');
 }

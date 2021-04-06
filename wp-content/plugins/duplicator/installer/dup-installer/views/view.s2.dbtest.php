@@ -271,13 +271,13 @@ defined('ABSPATH') || defined('DUPXABSPATH') || exit;
 	================================== -->
 	<div class="hdr-sub4 s2-notices-hdr" data-type="toggle" data-target="#s2-notices-all">
 		<i class="fa fa-caret-right"></i> Notices <small class='db-check'>(optional)</small>
-		<div class="{{noticeStyle payload.noticesPass}}">{{noticeText payload.noticesPass}}</div>
+		<div class="{{optionalNoticeStyle payload.noticesPass}}">{{noticeText payload.noticesPass}}</div>
 	</div>
 	<div class="s2-reqs" id="s2-notices-all">
 
 		<!-- ==================================
 		NOTICE 10: TABLE CASE CHECK-->
-		<div class="status {{noticeStyle payload.notices.10.pass}}">{{noticeText payload.notices.10.pass}}</div>
+		<div class="status {{optionalNoticeStyle payload.notices.10.pass}}">{{noticeText payload.notices.10.pass}}</div>
 		<div class="title" data-type="toggle" data-target="#s2-notice10" style="border-top:none"><i class="fa fa-caret-right"></i> {{payload.notices.10.title}}</div>
 		<div class="info" id="s2-notice10">
 			<div class="sub-title">STATUS</div>
@@ -298,6 +298,33 @@ defined('ABSPATH') || defined('DUPXABSPATH') || exit;
 				<li><i class="fa fa-external-link"></i> <a href='http://www.inmotionhosting.com/support/website/general-server-setup/edit-mysql-my-cnf' target='_help'>How to edit MySQL config files my.cnf (linux) or my.ini (windows) files</a></li>
 			</ul>
 		</div>
+
+        <!-- ==================================
+		NOTICE 20: SOURCE SITE CONTAINED TRIGGERS-->
+        <div class="status {{optionalNoticeStyle payload.notices.20.pass}}">{{noticeText payload.notices.20.pass}}</div>
+        <div class="title" data-type="toggle" data-target="#s2-notice20" style="border-top:none"><i class="fa fa-caret-right"></i> {{payload.notices.20.title}}</div>
+        <div class="info" id="s2-notice20">
+            <div class="sub-title">STATUS</div>
+            {{#if payload.notices.20.pass}}
+                <p>{{payload.notices.20.info}}</p>
+            {{else}}
+                <p>The source site contains Triggers which can optionally be imported after the install process is complete. </p>
+                <div class="sub-title">DETAILS</div>
+                <p>
+                    Triggers are not being imported alongside the rest of the database, because they may cause unintended behavior during the install process.
+                    It is recommeded that you copy the queries to a seperate document and save them for later.  After the install process is
+                    completed and you have logged into your WordPress Admin you can then add the triggers if needed.
+                    <br/><br/>
+                    For a quick overview on how to add these triggers back to your site checkout this
+                    <a href="https://www.siteground.com/tutorials/phpmyadmin/" target="_blank">phpMyAdmin Tutorial</a>.   See the section
+                    titled "How to Run MySQL Queries" to run the queries below.
+                </p>
+                <div class="copy-to-clipboard-block">
+                    <button type="button" class="default-btn">Copy Queries To Clipboard</button>
+                    <textarea readonly="readonly">{{payload.notices.20.info}}</textarea>
+                </div>
+            {{/if}}
+        </div>
 
 	</div>
 </script>
@@ -350,6 +377,19 @@ Handlebars.registerHelper('noticeStyle',function(req)  {
 			break;
 		case 2:
 			return "status-badge-warn"
+			break;
+		case -1:
+		default:
+			return "";
+	}
+});
+Handlebars.registerHelper('optionalNoticeStyle',function(req)  { 
+	switch (req) {
+		case 0:
+			return "status-badge-warn"
+			break;
+		case 1:
+			return "status-badge-pass"
 			break;
 		case -1:
 		default:
@@ -420,7 +460,7 @@ DUPX.testDBConnect = function ()
 				msg		+= "<small>If the error persists contact your host for database connection requirements.</small><br/> ";
 				msg		+= "<small>Status details: " + textStatus + "</small>";
 				$dbResult.html("<div class='message dupx-fail'>" + msg + "</div>");
-				<?php if ($GLOBALS['DUPX_DEBUG']) : ?>
+				<?php if (DUPX_Log::isLevel(DUPX_Log::LV_DEBUG)) : ?>
 					var jsonStr = JSON.stringify(data, null, 2);
 					$('#debug-dbtest-json').val(jsonStr);
 				<?php endif; ?>
@@ -434,7 +474,7 @@ DUPX.testDBConnect = function ()
 			msg		+= "<small>If the error persists contact your host for database connection requirements.</small><br/> ";
 			msg		+= "<small>Status details: " + data.statusText + "</small>";
 			$dbResult.html("<div class='message dupx-fail'>" + msg + "</div>");
-			<?php if ($GLOBALS['DUPX_DEBUG']) : ?>
+			<?php if (DUPX_Log::isLevel(DUPX_Log::LV_DEBUG)) : ?>
 				var jsonStr = JSON.stringify(data, null, 2);
 				$('#debug-dbtest-json').val(jsonStr);
 			<?php endif; ?>
@@ -477,9 +517,6 @@ DUPX.intTestDBResults = function(data, result)
 		$(this).attr('data-target', attr + mode);
 	});
 
-	$("div#" + resultID + " *[data-type='toggle']").on('click', DUPX.toggleClick);
-
-
 	var $divReqsAll		= $('div#s2-reqs-all' + mode);
 	var $divNoticeAll	= $('div#s2-notices-all' + mode);
 	var $btnNext		= $('#s2-next-btn' + mode);
@@ -510,7 +547,7 @@ DUPX.intTestDBResults = function(data, result)
 	$('div#s2-db-basic select#dbaction').on('change', {'mode': mode}, DUPX.resetDBTest);
 	$('table#s2-cpnl-db-opts :input').on('keyup', {'mode': mode}, DUPX.resetDBTest);
 
-	<?php if ($GLOBALS['DUPX_DEBUG']) : ?>
+	<?php if (DUPX_Log::isLevel(DUPX_Log::LV_DEBUG)) : ?>
 		var jsonStr = JSON.stringify(data, null, 2);
 		$('#debug-dbtest-json').val(jsonStr);
 	<?php endif; ?>
@@ -527,4 +564,3 @@ DUPX.resetDBTest = function(e)
 	$divTestArea.html("<div class='sub-message'>To continue click the 'Test Database'<br/>button to retest the database setup.</div>");
 }
 </script>
-

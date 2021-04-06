@@ -197,6 +197,35 @@ class Typography extends Base_Customizer {
 				'\Neve\Customizer\Controls\React\Typography'
 			)
 		);
+
+		/**
+		 * Fallback Font Family.
+		 */
+		$this->add_control(
+			new Control(
+				'neve_fallback_font_family',
+				[
+					'transport'         => $this->selective_refresh,
+					'sanitize_callback' => 'sanitize_text_field',
+					'default'           => 'Arial, Helvetica, sans-serif',
+				],
+				[
+					'label'       => esc_html__( 'Fallback Font', 'neve' ),
+					'section'     => 'neve_typography_general',
+					'priority'    => 12,
+					'type'        => 'neve_font_family_control',
+					'input_attrs' => [
+						'system' => true,
+						'link'   => [
+							'string' => __( 'Learn more about fallback fonts', 'neve' ),
+							'url'    => esc_url( 'https://docs.themeisle.com/article/1319-fallback-fonts' ),
+						],
+					],
+				],
+				'\Neve\Customizer\Controls\React\Font_Family'
+			)
+		);
+
 	}
 
 	/**
@@ -217,7 +246,7 @@ class Typography extends Base_Customizer {
 					'section'               => 'neve_typography_headings',
 					'priority'              => 10,
 					'type'                  => 'neve_font_family_control',
-					'live_refresh_selector' => apply_filters( 'neve_headings_font_family_selectors', 'h1:not(.site-title), .single h1.entry-title, h2, h3, h4, h5, h6' ),
+					'live_refresh_selector' => apply_filters( 'neve_headings_font_family_selectors', 'h1:not(.site-title), .single h1.entry-title, h2, h3, .woocommerce-checkout h3, h4, h5, h6' ),
 				),
 				'\Neve\Customizer\Controls\React\Font_Family'
 			)

@@ -1,7 +1,8 @@
 <?php
-
 /**
  * Displays the languages tab in Polylang settings
+ *
+ * @package Polylang
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -127,7 +128,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 						<select name="flag" id="flag_list">
 							<option value=""></option>
 							<?php
-							$flags = include PLL_SETTINGS_INC . '/flags.php';
+							$flags = include __DIR__ . '/flags.php';
 							foreach ( $flags as $code => $label ) {
 								printf(
 									'<option value="%s" data-flag-html="%s"%s>%s</option>' . "\n",
@@ -159,7 +160,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 						 *
 						 * @since 1.7.10
 						 *
-						 * @param object $lang language being edited.
+						 * @param PLL_Language $lang language being edited.
 						 */
 						do_action( 'pll_language_edit_form_fields', $edit_lang );
 					} else {

@@ -1,0 +1,78 @@
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+    outline: 1px solid #404040;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="range"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="time"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="color"]:focus,
+textarea:focus {
+    outline: 2px solid $blueBright;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:active,
+input[type="submit"]:focus {
+	background-color: $blueBright;
+}
+
+.wpcf7 form.invalid .wpcf7-response-output,
+.wpcf7 form.unaccepted .wpcf7-response-output {
+    border-color: $blueBright;
+}
+
+.wpcf7-not-valid-tip {
+	color: $blueBright;
+}
+
+.wpcf7 {
+	padding: 0 .5rem;
+	border: 1px solid #404040;
+	background-color: rgba(0, 0, 0,.04);
+	form { 
+		fieldset {
+			padding: 0 2rem 1.25rem;
+			legend{ 
+				padding-top: 1rem;
+			}
+			label {
+				margin: 1.5rem 0 .5rem;
+				color: #404040;
+			}
+		}
+	}
+}
+
+input[type="submit"] {
+	margin-top: 1rem;
+	background-color: $blueBright;
+	&:hover {
+		background-color: $blueBright;
+	}
+}

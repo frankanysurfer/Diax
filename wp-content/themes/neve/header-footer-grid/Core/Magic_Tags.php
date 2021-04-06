@@ -7,6 +7,9 @@
 
 namespace HFG\Core;
 
+use Neve\Views\Partials\Post_Meta;
+use Neve\Views\Post_Layout;
+
 /**
  * Class Short_Codes
  *
@@ -32,14 +35,14 @@ class Magic_Tags {
 	 *
 	 * @var string
 	 */
-	static private $magic_tag_regex;
+	private static $magic_tag_regex;
 
 	/**
 	 * Holds the instance of the class.
 	 *
 	 * @var Magic_Tags
 	 */
-	static private $_instance;
+	private static $_instance;
 
 	/**
 	 * Returns the instance of the class.
@@ -91,6 +94,11 @@ class Magic_Tags {
 			return $input;
 		}
 
+		if ( strpos( $input, 'http://{current_single_url}' ) !== false || strpos( $input, 'https://{current_single_url}' ) !== false ) {
+			$input = str_replace( 'http://{current_single_url}', '{current_single_url}', $input );
+			$input = str_replace( 'https://{current_single_url}', '{current_single_url}', $input );
+		}
+
 		return preg_replace_callback(
 			'/\\{\s?\b(?:' . self::$magic_tag_regex . ')\b\s?\\}/',
 			[
@@ -119,7 +127,19 @@ class Magic_Tags {
 			return '';
 		}
 
-		return wp_kses_post( call_user_func( [ $this, $tag ] ) );
+		$allowed_tags = wp_kses_allowed_html();
+		if ( $tag === 'current_post_meta' || $tag === 'meta_date' ) {
+			$allowed_tags['span'] = [
+				'class' => [],
+			];
+			$allowed_tags['time'] = [
+				'class'    => [],
+				'datetime' => [],
+				'content'  => [],
+			];
+		}
+
+		return wp_kses( call_user_func( [ $this, $tag ] ), $allowed_tags );
 	}
 
 	/**
@@ -138,6 +158,71 @@ class Magic_Tags {
 	 */
 	public function current_single_excerpt() {
 		return is_singular() ? get_the_excerpt() : '';
+	}
+
+	/**
+	 * Single Post meta.
+	 *
+	 * @return string.
+	 */
+	public function current_post_meta() {
+		ob_start();
+		Post_Layout::render_post_meta( false );
+		$meta = ob_get_contents();
+		ob_end_clean();
+
+		return $meta;
+	}
+
+	/**
+	 * Meta author.
+	 *
+	 * @return string.
+	 */
+	public function meta_author() {
+		return '<span class="nv-dynamic-author-meta">' . Post_Meta::neve_get_author_meta() . '</span>';
+	}
+
+	/**
+	 * Meta date.
+	 *
+	 * @return string.
+	 */
+	public function meta_date() {
+		ob_start();
+		do_action( 'neve_post_meta_single', array( 'date' ), false );
+		$meta = ob_get_contents();
+		ob_end_clean();
+
+		return $meta;
+	}
+
+	/**
+	 * Meta category.
+	 *
+	 * @return string.
+	 */
+	public function meta_category() {
+		return get_the_category_list( ', ', get_the_ID() );
+	}
+
+	/**
+	 * Meta comments.
+	 *
+	 * @return string.
+	 */
+	public function meta_comments() {
+		$comments = Post_Meta::get_comments();
+		return ! empty( $comments ) ? $comments : '';
+	}
+
+	/**
+	 * Meta time.
+	 *
+	 * @return string.
+	 */
+	public function meta_time_to_read() {
+		return apply_filters( 'neve_do_read_time', '' );
 	}
 
 	/**
@@ -415,6 +500,26 @@ class Magic_Tags {
 						'label' => __( 'Current Single URL', 'neve' ),
 						'type'  => 'url',
 					],
+					'current_post_meta'      => [
+						'label' => __( 'Current Post Meta', 'neve' ),
+						'type'  => 'string',
+					],
+					'meta_author'            => [
+						'label' => __( 'Author meta', 'neve' ),
+						'type'  => 'string',
+					],
+					'meta_date'              => [
+						'label' => __( 'Date meta', 'neve' ),
+						'type'  => 'string',
+					],
+					'meta_category'          => [
+						'label' => __( 'Category meta', 'neve' ),
+						'type'  => 'string',
+					],
+					'meta_comments'          => [
+						'label' => __( 'Comments meta', 'neve' ),
+						'type'  => 'string',
+					],
 				],
 			],
 			[
@@ -535,6 +640,8 @@ class Magic_Tags {
 				],
 			];
 		}
+
+		$this->options = apply_filters( 'neve_magic_tags_config', $this->options );
 
 		foreach ( $this->options as $magic_tag_group => $args ) {
 			foreach ( $args['controls'] as $tag => $tag_args ) {

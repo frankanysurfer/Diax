@@ -1,0 +1,167 @@
+/***** Links *****/
+a {
+	font-family: "flama_semicondensedbook";
+	font-size: .9rem;
+	color: $blueBright;
+	border-bottom-color: $blueBright;
+}+
+
+a:hover, a:active {
+	color: $blueAlmostBlack;
+    border-bottom-color: $blueAlmostBlack;
+    cursor: pointer;
+    outline: 1px solid #333;
+}
+
+/***** Hoofdnavigatie *****/
+.main-navigation {
+	margin-top: 50px;
+	a {
+		font-family: 'flama_semicondensedbasic';
+		font-size: 1.2rem;
+		color: $blueVeryDark;
+	}
+}
+
+/***** Talenkeuze* ****/
+.language {
+	position: absolute;
+	top: 0;
+	right: 45px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	list-style-type: none;
+	text-align: right;
+	li {
+		:first-child {
+			margin-left: 0;
+		}
+	}
+}
+
+.lang-item a {
+	width: 40px;
+	height: 40px;
+	padding: .5rem;
+	line-height: 2.2;	
+}
+
+.lang-item a:hover ,
+.current-lang a {
+	color: #FFF;
+	background-color: $blueBright;
+}
+
+/***** Maan *****/
+
+.maan {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 40px;
+	height: 40px;
+	padding: 8px;
+	background-color: $blueVeryDark;
+}
+
+/***** Link knoppen *****/
+.card-links {
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	a {
+		display: inline-block;
+		font-family: 'flama_semicondensedbold';
+		font-size: 1rem;
+		padding: .8rem;
+		:hover, :active {
+			border-bottom-color: none;
+		}	
+	}
+	a.linkb1 {
+		text-decoration: none;
+		color: white;
+		background-color: $blueDark;
+		border: none;
+		margin-right: 2rem;
+		transition-property: none;
+		&:hover {
+			color: white;
+			background-color: $blueVeryDark;
+			border: none;
+			transition-property: none;
+		}
+		&:focus {
+			color: $blueDark;
+			border-color: $blueDark;
+			background-color: white;
+		}
+		&:active {
+			color: $blueVeryDark;
+			border-color: $blueVeryDark;
+			background-color: white;
+		}
+		&:after {
+			transform: none;
+			height: 0;
+		}
+	}
+	a.linkb2 {
+		text-decoration: none;
+		color: $blueBright;
+		background-color: $blueVeryDark;
+		border: none;
+		transition-property: none;
+		&:hover {
+			color: $blueVeryDark;
+			background-color: $blueBright;
+			border: none;
+			transition-property: none;
+		}
+		&:focus {
+			color: $blueBright;
+			border-color: $blueBright;
+			background-color: white;
+		}
+		&:active {
+			color: white;
+			border-color: $blueVeryDark;
+			background-color: $blueVeryDark;
+		}
+		&:after {
+			transform: none;
+			height: 0;
+		}
+	}
+}
+
+/***** Footer links *****/
+.site-footer {
+	background-color: $blueDark;
+	.footer-row {
+		margin: 0 2rem;
+		padding: 1rem;
+		h6 {
+			color: $blueVeryLight;
+		}
+
+		a {	
+			text-decoration: underline;
+			color: $blueVeryLight;
+			&:hover {
+				border: none;
+			}
+			&:focus {
+				outline: 1px solid white;
+			}
+		}
+		.footerlist {
+			padding-inline-start: 0;
+			font-family: "flama_semicondensedbook";
+			font-size: .9rem;
+			color: $blueVeryLight;
+		}
+	}
+}
+

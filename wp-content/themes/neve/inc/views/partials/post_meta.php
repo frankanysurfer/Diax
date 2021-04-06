@@ -26,7 +26,7 @@ class Post_Meta extends Base_View {
 	public function init() {
 		add_filter( 'neve_display_author_avatar', array( $this, 'should_display_author_avatar' ) );
 		add_action( 'neve_post_meta_archive', array( $this, 'render_meta_list' ) );
-		add_action( 'neve_post_meta_single', array( $this, 'render_meta_list' ) );
+		add_action( 'neve_post_meta_single', array( $this, 'render_meta_list' ), 10, 2 );
 		add_action( 'neve_do_tags', array( $this, 'render_tags_list' ) );
 	}
 
@@ -51,79 +51,67 @@ class Post_Meta extends Base_View {
 	/**
 	 * Render meta list.
 	 *
-	 * @param array $order the order array. Passed through the action parameter.
+	 * @param array $order   the order array. Passed through the action parameter.
+	 * @param bool  $as_list Flag to display meta as list or as text.
 	 */
-	public function render_meta_list( $order ) {
+	public function render_meta_list( $order, $as_list = true ) {
 		if ( ! is_array( $order ) || empty( $order ) ) {
 			return;
 		}
 		$order     = $this->sanitize_order_array( $order );
 		$pid       = get_the_ID();
 		$post_type = get_post_type( $pid );
-		$markup    = '';
-		$markup   .= '<ul class="nv-meta-list">';
+		$markup    = $as_list === true ? '<ul class="nv-meta-list">' : '<span class="nv-meta-list nv-dynamic-meta">';
+		$index     = 1;
+		$tag       = $as_list === true ? 'li' : 'span';
 		foreach ( $order as $meta ) {
 			switch ( $meta ) {
 				case 'author':
-					$author_email   = get_the_author_meta( 'user_email' );
-					$gravatar_args  = apply_filters(
-						'neve_gravatar_args',
-						array(
-							'size' => 20,
-						)
-					);
-					$avatar_url     = get_avatar_url( $author_email, $gravatar_args );
-					$avatar_markup  = '<img class="photo" alt="' . get_the_author() . '" src="' . esc_url( $avatar_url ) . '" />&nbsp;';
-					$display_avatar = apply_filters( 'neve_display_author_avatar', false );
-
-					$markup .= '<li class="meta author vcard">';
-					if ( $display_avatar ) {
-						$markup .= $avatar_markup;
-					}
-					$markup .= '<span class="author-name fn">';
-					if ( ! $display_avatar ) {
-						$markup .= __( 'by', 'neve' ) . ' ';
-					}
-					$markup .= wp_kses_post( get_the_author_posts_link() ) . '</span>';
-
-					$markup .= '</li>';
+					$markup .= '<' . $tag . '  class="meta author vcard">';
+					$markup .= self::neve_get_author_meta();
+					$markup .= '</' . $tag . '>';
 					break;
 				case 'date':
-					$markup .= '<li class="meta date posted-on">';
-					$markup .= $this->get_time_tags();
-					$markup .= '</li>';
+					$markup .= '<' . $tag . ' class="meta date posted-on">';
+					$markup .= self::get_time_tags();
+					$markup .= '</' . $tag . '>';
 					break;
 				case 'category':
 					if ( $post_type !== 'post' ) {
 						break;
 					}
-					$markup .= '<li class="meta category">';
+					$markup .= '<' . $tag . ' class="meta category">';
 					$markup .= get_the_category_list( ', ', get_the_ID() );
-					$markup .= '</li>';
+					$markup .= '</' . $tag . '>';
 					break;
 				case 'comments':
-					$comments = $this->get_comments();
+					$comments = self::get_comments();
 					if ( empty( $comments ) ) {
 						break;
 					}
-					$markup .= '<li class="meta comments">';
+					$markup .= '<' . $tag . ' class="meta comments">';
 					$markup .= $comments;
-					$markup .= '</li>';
+					$markup .= '</' . $tag . '>';
 					break;
 				case 'reading':
 					if ( $post_type !== 'post' ) {
 						break;
 					}
-					$markup .= '<li class="meta reading-time">';
-					$markup .= apply_filters( 'neve_do_read_time', '' );
-					$markup .= '</li>';
+					$reading_time = apply_filters( 'neve_do_read_time', '' );
+					if ( empty( $reading_time ) ) {
+						break;
+					}
+					$markup .= '<' . $tag . ' class="meta reading-time">';
+					$markup .= $reading_time;
+					$markup .= '</' . $tag . '>';
 					break;
 				case 'default':
 				default:
 					break;
 			}
+			$index ++;
 		}
-		$markup .= '</ul>';
+		$markup .= $as_list === true ? '</ul>' : '</span>';
 		echo ( $markup ); //phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 	}
 
@@ -152,12 +140,61 @@ class Post_Meta extends Base_View {
 
 		return $order;
 	}
+
+	/**
+	 * Get the author meta.
+	 *
+	 * @return string | false
+	 */
+	public static function neve_get_author_meta() {
+		global $post;
+		if ( ! isset( $post ) ) {
+			return false;
+		}
+		$author_id      = $post->post_author;
+		$user_nicename  = get_the_author_meta( 'user_nicename', $author_id );
+		$display_name   = get_the_author_meta( 'display_name', $author_id );
+		$author_email   = get_the_author_meta( 'user_email', $author_id );
+		$gravatar_args  = apply_filters(
+			'neve_gravatar_args',
+			array(
+				'size' => 20,
+			)
+		);
+		$display_avatar = apply_filters( 'neve_display_author_avatar', false );
+		$avatar_url     = get_avatar_url( $author_email, $gravatar_args );
+		$avatar_markup  = '<img class="photo" alt="' . get_the_author() . '" src="' . esc_url( $avatar_url ) . '" />&nbsp;';
+
+		$markup = '';
+		if ( $display_avatar ) {
+			$markup .= $avatar_markup;
+		}
+		$markup .= '<span class="author-name fn">';
+		if ( ! $display_avatar ) {
+			$markup .= __( 'by', 'neve' ) . ' ';
+		}
+
+		$link = sprintf(
+			'<a href="%1$s" title="%2$s" rel="author">%3$s</a>',
+			esc_url( get_author_posts_url( $author_id, $user_nicename ) ),
+			/* translators: %s: Author's display name. */
+			esc_attr( sprintf( __( 'Posts by %s', 'neve' ), $display_name ) ),
+			$display_name
+		);
+
+		$link = apply_filters( 'the_author_posts_link', $link );
+
+		$markup .= wp_kses_post( $link ) . '</span>';
+
+		return $markup;
+	}
+
 	/**
 	 * Get <time> tags.
 	 *
 	 * @return string
 	 */
-	private function get_time_tags() {
+	public static function get_time_tags() {
 		$created  = get_the_time( 'U' );
 		$format   = get_option( 'date_format' );
 		$modified = get_the_modified_time( 'U' );
@@ -174,13 +211,19 @@ class Post_Meta extends Base_View {
 	 *
 	 * @return string
 	 */
-	private function get_comments() {
+	public static function get_comments() {
+		if ( ! get_post() ) {
+			return false;
+		}
 		if ( ! comments_open() ) {
-			return '';
+			return false;
 		}
 		$comments_number = get_comments_number();
 		if ( $comments_number < 1 ) {
-			return '';
+			return false;
+		}
+		if ( ! is_front_page() && is_home() ) {
+			return false;
 		}
 		/* translators: %s: number of comments */
 		$comments = sprintf( _n( '%s Comment', '%s Comments', $comments_number, 'neve' ), $comments_number );

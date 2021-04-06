@@ -114,8 +114,12 @@ $unhook_third_party_css = DUP_Settings::Get('unhook_third_party_css');
         <tr valign="top">
             <th scope="row"><label><?php esc_html_e("Version", 'duplicator'); ?></label></th>
             <td>
-                <?php echo DUPLICATOR_VERSION ?> &nbsp;
-                <i><small>(<?php echo DUPLICATOR_VERSION_BUILD ?>)</small></i>
+                <?php 
+                    echo DUPLICATOR_VERSION . ' &nbsp; ';
+                    echo (stristr(DUPLICATOR_VERSION_BUILD, 'rc'))
+                        ? "<span style='color:red'>["  . DUPLICATOR_VERSION_BUILD . "]</span>"
+                        : "<span style='color:gray'>[" . DUPLICATOR_VERSION_BUILD . "]</span>";
+                ?>
             </td>
         </tr>
         <tr valign="top">
@@ -281,7 +285,7 @@ $reset_confirm->cancelText     = __('No', 'duplicator');
 $reset_confirm->closeOnConfirm = true;
 $reset_confirm->initConfirm();
 
-$msg_ajax_error                 = new DUP_UI_Messages(__('AJAX ERROR!', 'duplicator').'<br>'.__('Ajax request error', 'duplicator'), DUP_UI_Messages::ERROR);
+$msg_ajax_error                 = new DUP_UI_Messages(__('AJAX Call Error!', 'duplicator').'<br>'.__('AJAX error encountered when resetting packages. Please see <a href="https://snapcreek.com/duplicator/docs/faqs-tech/#faq-trouble-053-q" target="_blank">this FAQ entry</a> for possible resolutions.', 'duplicator'), DUP_UI_Messages::ERROR);
 $msg_ajax_error->hide_on_init   = true;
 $msg_ajax_error->is_dismissible = true;
 $msg_ajax_error->initMessage();

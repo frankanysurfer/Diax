@@ -1,3 +1,158 @@
+##### [Version 2.10.4](https://github.com/Codeinwp/neve/compare/v2.10.3...v2.10.4) (2021-03-16)
+
+- [Fix] customizer responsive switches not working
+
+##### [Version 2.10.3](https://github.com/Codeinwp/neve/compare/v2.10.2...v2.10.3) (2021-03-16)
+
+- [Fix] utilize wp_get_attachment_image for responsive logo image in header
+- [Fix] add compatibility with PHP 8
+- [Fix] apply font-family for inputs
+- [Fix] button styles not applying to form buttons properly
+
+##### [Version 2.10.2](https://github.com/Codeinwp/neve/compare/v2.10.1...v2.10.2) (2021-03-01)
+
+- [Feat] Add compatibility with Google Web Stories
+- [Fix] meta_comments and current_post_meta magic tags
+- [Fix] add to cart notice when product template is made with Elementor
+- [Fix] changelog parsing in the Neve Options dashboard page
+- [Fix] global colors palette selector not showing swatches in safari
+- [Fix] visual hierarchy for the Cart Totals
+- [Fix] subtotal prices squished on checkout pages for products with large titles
+- [Fix] street address textbox was too narrow in Woocommerce
+
+##### [Version 2.10.1](https://github.com/Codeinwp/neve/compare/v2.10.0...v2.10.1) (2021-02-10)
+
+- [Feat] Compatibility with Beaver Themer parts location
+- [Feat] Out of stock badge
+- [Fix] Variable products in the Header Builder Cart component
+- [Fix] {meta_author} magic tag throwing notice on 404 page
+- [Fix] Code tag style inconsistencies
+- [Fix] Header search component background now inherits site background
+- [Fix] Editor background-color
+- [Fix] Close button style for off-canvas cart
+- [Fix] Appearance of global colors selector in customizer when Gutenberg plugin is installed
+- [Fix] Allow HTML markup inside the comments heading
+- [Fix] Remove some redundant classes from the Header / Footer
+
+#### [Version 2.10.0](https://github.com/Codeinwp/neve/compare/v2.9.5...v2.10.0) (2021-01-18)
+
+- [Feat] Form fields styling controls
+- [Feat] Redesign global colors list
+- [Fix] Infinite scroll on the Blog page with masonry enabled
+
+##### [Version 2.9.5](https://github.com/Codeinwp/neve/compare/v2.9.4...v2.9.5) (2020-12-28)
+
+- [Feat] Update starter content
+
+##### [Version 2.9.4](https://github.com/Codeinwp/neve/compare/v2.9.3...v2.9.4) (2020-12-25)
+
+- [Feat] Starter content support
+
+##### [Version 2.9.3](https://github.com/Codeinwp/neve/compare/v2.9.2...v2.9.3) (2020-12-17)
+
+- [Fix] Cart menu component layout on mobile devices
+- [Fix] Dynamic tags list not inserted for header/footer builder components
+
+##### [Version 2.9.2](https://github.com/Codeinwp/neve/compare/v2.9.1...v2.9.2) (2020-12-15)
+
+- [Fix] Customizer tabs not opening in Windows browsers
+- [Fix] Syntax error causing errors
+- [Fix] Search input not focused when opened from the Search Icon component
+- [Fix] Individual page settings not applying to the Shop page
+- [Fix] Composer requiring PHP greater than 7.1.0
+
+##### [Version 2.9.1](https://github.com/Codeinwp/neve/compare/v2.9.0...v2.9.1) (2020-12-07)
+
+- [Feat] New Fallback Font option
+- [Fix] Compatibility with WP 5.6
+- [Fix] WooCommerce products variations dropdown color
+- [Fix] Cart Icon component layout revision
+- [Fix] Not translatable strings in the Options page
+
+#### [Version 2.9.0](https://github.com/Codeinwp/neve/compare/v2.8.4...v2.9.0) (2020-11-24)
+
+- [Feat] Globally linked Color Palettes
+- [Feat] Compatibility with Template Cloud and single page templates import
+- [Feat] Adds compatibility for more Checkout styles
+- [Fix] Compatibility with the Visualizer plugin
+- New Gutenberg Starter Sites
+
+##### [Version 2.8.4](https://github.com/Codeinwp/neve/compare/v2.8.3...v2.8.4) (2020-11-02)
+
+- [Fix] Warning jQuery .load() function is deprecated
+- [Fix] Header builder responsive instructions notifications
+- [Fix] Search icon component going out of the window when right-aligned
+- [Fix] Search icon opening behavior on mobile
+- [Fix] Button styling for WooCommerce blocks
+- [Fix] Move Customizer homepage settings to the Layout panel
+
+##### [Version 2.8.3](https://github.com/Codeinwp/neve/compare/v2.8.2...v2.8.3) (2020-10-19)
+
+- [Fix] Exclusive products section in RTL mode
+- [Fix] Font Family dropdown layout in RTL mode
+- [Fix] Migrate from Zelle theme
+- [Fix] Default values for the spacing and custom content width controls
+- [Fix] Default line-height for buttons
+- [Fix] Search icon color in the mobile header builder
+- New Gutenberg Starter Sites
+
+##### [Version 2.8.2](https://github.com/Codeinwp/neve/compare/v2.8.1...v2.8.2) (2020-10-01)
+
+- [Feat] New Blog Layout options
+- [Feat] New Header Builder presets
+- [Feat] Support for Alpha RGBa Color Picker
+- [Feat] Enhancements to the Neve Options page
+- [Fix] Updated date layout in magic tags {current_post_meta} {meta_date}
+- [Fix] Compatibility with Elementor PRO 404 templates pages
+- [Fix] Style captions
+- [Fix] Button component style options overlapping with general button options
+- [Fix] Default meta elements order
+
+##### [Version 2.8.1](https://github.com/Codeinwp/neve/compare/v2.8.0...v2.8.1) (2020-09-17)
+
+- [Feat] New options for styling buttons ( text-transform, weight, font size, line height, and letter spacing )
+- [Feat] New block patterns
+- [Feat] Async/defer loading of the JS scripts
+- [Fix] Masonry not working in Safari
+- [Fix] Range controls in older versions of WordPress
+- [Fix] Links and headings not inheriting Customizer colors inside the editor
+- [Fix] Do not parse HTML tags inside the search heading
+- [Fix] Cart Icon size and color options not working properly
+- [Fix] Accessibility issues with form labels
+- [Fix] Update list of Google Fonts
+- [Fix] Button state management in the Starter Sites notice
+- [Fix] Inputs text color on a dark background
+- New Gutenberg Starter Sites
+
+#### [Version 2.8.0](https://github.com/Codeinwp/neve/compare/v2.7.7...v2.8.0) (2020-09-03)
+
+- [Feat] Compatibility with AMP 2.0
+- [Feat] New opening behaviors for the mobile menu (Slide from Left/Right, Pull from Left/Right, Full Canvas, Slide Down)
+- [Feat] New option to automatically expand first level dropdowns on mobile
+- [Feat] Single post/page customization options for Gutenberg editor
+- [Fix] Primary Menu and Secondary Menu alignment on mobile
+- [Fix] Scrollbar in the Primary Menu on mobile for larger font size
+- [Fix] Items spacing for Primary Menu on mobile
+- [Fix] Range controls lagging
+
+##### [Version 2.7.7](https://github.com/Codeinwp/neve/compare/v2.7.6...v2.7.7) (2020-08-19)
+
+- [Fix] Permissions callback for REST route in WP 5.5
+- [Fix] Color not working for the Cart Icon component
+- [Fix] Headings and lists alignment in the editor
+- [Fix] Warnings in the Music Band 2 Starter Site
+- [Fix] Range controls controlled from the keyboard
+- [Fix] Previewing templates from Otter Blocks
+- [Fix] Inline text-color not applying in the editor
+- New Gutenberg Starter Sites
+
+##### [Version 2.7.6](https://github.com/Codeinwp/neve/compare/v2.7.5...v2.7.6) (2020-08-04)
+
+- [Feat] New magic tags for single post pages
+- [Feat] Move Starter Sites library and import process in the Cloud Templates & Patterns collection plugin
+- [Fix] Compatibility with WP 5.5
+- [Fix] Starter sites tab layout on smaller resolutions
+
 ##### [Version 2.7.5](https://github.com/Codeinwp/neve/compare/v2.7.4...v2.7.5) (2020-07-10)
 
 - [Fix] Move Starter Sites library and import process in OrbitFox companion plugin

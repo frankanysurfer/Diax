@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>C29B3318-F0EA-4F2B-92A3-951EB5B7D145</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.901961 0 0 0 0 0.909804 0 0 0 0 0.945098 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="np_moon_810789_000000" transform="translate(-1307.000000, -33.000000)" filter="url(#filter-1)">
+            <g transform="translate(1307.000000, 33.000000)">
+                <path d="M18.7316531,18.3883243 C20.1683729,16.9525995 21.1228595,15.2107047 21.6,13.3783622 C17.8674453,16.1845784 12.5425362,15.888381 9.14666241,12.4948333 C5.73561356,9.08614674 5.44934472,3.73485328 8.29768111,0 C6.43395007,0.461851067 4.67058031,1.42066303 3.21377284,2.87638449 C-1.07125761,7.15844737 -1.07125761,14.1012494 3.21377284,18.3884528 C7.49880328,22.6705157 14.4464169,22.6705157 18.7314473,18.3884528 L18.7316531,18.3883243 Z" id="Path" fill="#000000" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

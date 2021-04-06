@@ -65,10 +65,20 @@ function wpcf7_flamingo_submit( $contact_form, $result ) {
 	$akismet = isset( $submission->akismet )
 		? (array) $submission->akismet : null;
 
+	$timestamp = $submission->get_meta( 'timestamp' );
+
+	if ( $timestamp and $datetime = date_create( '@' . $timestamp ) ) {
+		$datetime->setTimezone( wp_timezone() );
+		$last_contacted = $datetime->format( 'Y-m-d H:i:s' );
+	} else {
+		$last_contacted = '0000-00-00 00:00:00';
+	}
+
 	if ( 'mail_sent' == $result['status'] ) {
 		$flamingo_contact = Flamingo_Contact::add( array(
 			'email' => $email,
 			'name' => $name,
+			'last_contacted' => $last_contacted,
 		) );
 	}
 
@@ -114,7 +124,7 @@ function wpcf7_flamingo_submit( $contact_form, $result ) {
 		'akismet' => $akismet,
 		'spam' => ( 'spam' == $result['status'] ),
 		'consent' => $submission->collect_consent(),
-		'timestamp' => $submission->get_meta( 'timestamp' ),
+		'timestamp' => $timestamp,
 		'posted_data_hash' => $submission->get_posted_data_hash(),
 	);
 
@@ -128,11 +138,25 @@ function wpcf7_flamingo_submit( $contact_form, $result ) {
 
 	$flamingo_inbound = Flamingo_Inbound_Message::add( $args );
 
+	if ( empty( $flamingo_contact ) ) {
+		$flamingo_contact_id = 0;
+	} elseif ( method_exists( $flamingo_contact, 'id' ) ) {
+		$flamingo_contact_id = $flamingo_contact->id();
+	} else {
+		$flamingo_contact_id = $flamingo_contact->id;
+	}
+
+	if ( empty( $flamingo_inbound ) ) {
+		$flamingo_inbound_id = 0;
+	} elseif ( method_exists( $flamingo_inbound, 'id' ) ) {
+		$flamingo_inbound_id = $flamingo_inbound->id();
+	} else {
+		$flamingo_inbound_id = $flamingo_inbound->id;
+	}
+
 	$result += array(
-		'flamingo_contact_id' =>
-			empty( $flamingo_contact ) ? 0 : absint( $flamingo_contact->id ),
-		'flamingo_inbound_id' =>
-			empty( $flamingo_inbound ) ? 0 : absint( $flamingo_inbound->id ),
+		'flamingo_contact_id' => absint( $flamingo_contact_id ),
+		'flamingo_inbound_id' => absint( $flamingo_inbound_id ),
 	);
 
 	do_action( 'wpcf7_after_flamingo', $result );
@@ -242,9 +266,27 @@ function wpcf7_flamingo_update_channel( $contact_form ) {
 	}
 }
 
-add_filter( 'wpcf7_special_mail_tags', 'wpcf7_flamingo_serial_number', 10, 3 );
 
-function wpcf7_flamingo_serial_number( $output, $name, $html ) {
+add_filter( 'wpcf7_special_mail_tags', 'wpcf7_flamingo_serial_number', 10, 4 );
+
+/**
+ * Returns output string of a special mail-tag.
+ *
+ * @param string $output The string to be output.
+ * @param string $name The tag name of the special mail-tag.
+ * @param bool $html Whether the mail-tag is used in an HTML content.
+ * @param WPCF7_MailTag $mail_tag An object representation of the mail-tag.
+ * @return string Output of the given special mail-tag.
+ */
+function wpcf7_flamingo_serial_number( $output, $name, $html, $mail_tag = null ) {
+	if ( ! $mail_tag instanceof WPCF7_MailTag ) {
+		wpcf7_doing_it_wrong(
+			sprintf( '%s()', __FUNCTION__ ),
+			__( 'The fourth parameter ($mail_tag) must be an instance of the WPCF7_MailTag class.', 'contact-form-7' ),
+			'5.2.2'
+		);
+	}
+
 	if ( '_serial_number' != $name ) {
 		return $output;
 	}

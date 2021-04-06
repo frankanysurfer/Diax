@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit00779a8976f4a27f753d91532dfae8fb
+class ComposerStaticInit5efefd2d55082a3b7ec8d8f8f03ca692
 {
     public static $files = array (
         'c730ac5ba4946398dd12db7e8d42d1c8' => __DIR__ . '/..' . '/codeinwp/themeisle-sdk/load.php',
@@ -33,6 +33,7 @@ class ComposerStaticInit00779a8976f4a27f753d91532dfae8fb
     );
 
     public static $classMap = array (
+        'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'HFG\\Core\\Builder\\Abstract_Builder' => __DIR__ . '/../..' . '/header-footer-grid/Core/Builder/Abstract_Builder.php',
         'HFG\\Core\\Builder\\Footer' => __DIR__ . '/../..' . '/header-footer-grid/Core/Builder/Footer.php',
         'HFG\\Core\\Builder\\Header' => __DIR__ . '/../..' . '/header-footer-grid/Core/Builder/Header.php',
@@ -55,6 +56,7 @@ class ComposerStaticInit00779a8976f4a27f753d91532dfae8fb
         'HFG\\Core\\Components\\SecondNav' => __DIR__ . '/../..' . '/header-footer-grid/Core/Components/SecondNav.php',
         'HFG\\Core\\Css_Generator' => __DIR__ . '/../..' . '/header-footer-grid/Core/Css_Generator.php',
         'HFG\\Core\\Customizer' => __DIR__ . '/../..' . '/header-footer-grid/Core/Customizer.php',
+        'HFG\\Core\\Customizer\\Instructions_Control' => __DIR__ . '/../..' . '/header-footer-grid/Core/Customizer/Instructions_Control.php',
         'HFG\\Core\\Customizer\\Instructions_Section' => __DIR__ . '/../..' . '/header-footer-grid/Core/Customizer/Instructions_Section.php',
         'HFG\\Core\\Interfaces\\Builder' => __DIR__ . '/../..' . '/header-footer-grid/Core/Interfaces/Builder.php',
         'HFG\\Core\\Interfaces\\Component' => __DIR__ . '/../..' . '/header-footer-grid/Core/Interfaces/Component.php',
@@ -72,9 +74,9 @@ class ComposerStaticInit00779a8976f4a27f753d91532dfae8fb
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit00779a8976f4a27f753d91532dfae8fb::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit00779a8976f4a27f753d91532dfae8fb::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit00779a8976f4a27f753d91532dfae8fb::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit5efefd2d55082a3b7ec8d8f8f03ca692::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit5efefd2d55082a3b7ec8d8f8f03ca692::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit5efefd2d55082a3b7ec8d8f8f03ca692::$classMap;
 
         }, null, ClassLoader::class);
     }

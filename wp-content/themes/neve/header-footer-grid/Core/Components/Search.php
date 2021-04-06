@@ -44,7 +44,7 @@ class Search extends Abstract_Component {
 		$this->set_property( 'component_slug', 'hfg-search-form' );
 		$this->set_property( 'width', 2 );
 		$this->set_property( 'icon', 'code-standards' );
-		$this->set_property( 'default_selector', '.builder-item--' . $this->get_id() );
+		$this->set_property( 'default_selector', '.builder-item--' . $this->get_id() . ' > .search-field form' );
 	}
 
 	/**
@@ -280,7 +280,7 @@ class Search extends Abstract_Component {
 				'group'                 => $this->get_class_const( 'COMPONENT_ID' ),
 				'tab'                   => SettingsManager::TAB_STYLE,
 				'transport'             => 'postMessage',
-				'sanitize_callback'     => 'sanitize_hex_color',
+				'sanitize_callback'     => 'neve_sanitize_colors',
 				'label'                 => __( 'Background Color', 'neve' ),
 				'type'                  => '\Neve\Customizer\Controls\React\Color',
 				'section'               => $this->section,
@@ -302,7 +302,7 @@ class Search extends Abstract_Component {
 				'group'                 => $this->get_class_const( 'COMPONENT_ID' ),
 				'tab'                   => SettingsManager::TAB_STYLE,
 				'transport'             => 'postMessage',
-				'sanitize_callback'     => 'sanitize_hex_color',
+				'sanitize_callback'     => 'neve_sanitize_colors',
 				'label'                 => __( 'Text and Border', 'neve' ),
 				'type'                  => 'neve_color_control',
 				'section'               => $this->section,
@@ -315,7 +315,7 @@ class Search extends Abstract_Component {
 						body ' . $this->default_selector . ' input[type=search] {
 							border-color: {{value}};
 						}
-						body ' . $this->default_selector . ' .search-form .nv-search-icon-wrap .nv-icon svg {
+						body ' . $this->default_selector . ' .nv-search-icon-wrap .nv-icon svg {
 							fill: {{value}};
 						}',
 				],

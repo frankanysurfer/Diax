@@ -20,7 +20,16 @@
 <body <?php body_class(); ?>>
 
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'slightly' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#content"><?php
+
+    if(pll_current_language() == 'nl') {
+                    esc_html_e( 'Naar de inhoud', 'slightly' );
+                } else if(pll_current_language() == 'fr') {
+                    esc_html_e( 'Aller au contenu', 'slightly' ); 
+                } else if (pll_current_language() == 'en') {
+                    esc_html_e( 'Skip to content', 'slightly' );
+                } 
+      ?></a>
 
 
 	<header id="masthead" class="site-header">
@@ -46,7 +55,9 @@
 			 ?>
 		</div><!-- .site-branding -->
         <ul class="language"><?php pll_the_languages();?></ul>
-		<nav id="site-navigation" class="main-navigation" role="navigation">
+       <!--  <div class="maan"><img src="https://staging.di-ax.be/wp-content/themes/diax/img/moon.svg"></div> -->
+        <div class="maan"><img src="http://localhost/diax/wp-content/themes/diax/img/moon.svg"></div>
+		<nav id="site-navigation" class="main-navigation">
             <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'slightly' ); ?></button>
 			<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
 		</nav><!-- #site-navigation -->
