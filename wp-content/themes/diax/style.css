@@ -95,7 +95,7 @@ html {
 body {
   font-family: 'open_sansregular'; }
 
-p {
+p, li {
   font-size: 1rem;
   line-height: 1.375; }
 
@@ -104,31 +104,36 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-family: 'flama_semicondensedbold';
-  font-size: 3rem;
+  font-size: 3.6rem;
+  font-size: 2.4em;
   line-height: 1.2;
   color: #021b79; }
 
 h2 {
   font-family: 'flama_semicondensedbold';
   font-size: 2.8rem;
+  font-size: 1.8rem;
   line-height: 1.2;
   color: #021b79; }
 
 h3 {
   font-family: 'flama_semicondensedsemibold';
   font-size: 2.2rem;
+  font-size: 1.4rem;
   line-height: 1.2;
   color: #021b79; }
 
 h4 {
   font-family: 'flama_semicondensedsemibold';
   font-size: 1.8rem;
+  font-size: 1.2rem;
   line-height: 1.2;
   color: #01172e; }
 
 h5 {
   font-family: 'flama_semicondensedbold';
   font-size: 1.2rem;
+  font-size: .8rem;
   line-height: 1.2;
   color: #01172e;
   text-transform: none; }
@@ -136,6 +141,7 @@ h5 {
 h6 {
   font-family: 'flama_semicondensedsemibold';
   font-size: 1.2rem;
+  font-size: .8rem;
   line-height: 1.2;
   color: #01172e; }
 
@@ -473,10 +479,13 @@ blockquote {
   border-bottom: 2px solid #1955A5; }
 
 /***** Diensten *****/
+.partners-sec,
 .diensten-sec {
   margin: 1rem 0; }
+  .partners-sec .card-content,
   .diensten-sec .card-content {
     margin: 0; }
+    .partners-sec .card-content a,
     .diensten-sec .card-content a {
       font-size: 2.8rem; }
 
@@ -581,6 +590,22 @@ input[type="submit"] {
     .home-wat .card-img {
       width: 45%; }
 
+  .home-waarom-sec {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: 100%; }
+    .home-waarom-sec .card-content {
+      margin: 0 auto;
+      width: 65%; }
+
   section .card-diensten,
   section .card-partners {
     width: 100%; }
@@ -629,6 +654,7 @@ input[type="submit"] {
        -moz-padding-start: 0;
             padding-inline-start: 0; }
 
+  .partners-sec,
   .diensten-sec {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -636,9 +662,7 @@ input[type="submit"] {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column; }
-    .diensten-sec .card-content {
-      width: 100%; } }
+            flex-direction: column; } }
 @media only screen and (min-width: 48em) {
   .col-sm-offset-1 {
     margin-left: 0; }
@@ -697,7 +721,7 @@ input[type="submit"] {
     font-size: 125%; }
 
   h1 {
-    font-size: 3.6rem; }
+    font-size: 2.8rem; }
 
   .site-branding {
     width: 40%;
@@ -762,6 +786,12 @@ input[type="submit"] {
       padding: 0; }
 
   blockquote p {
+    font-size: 2.4rem; } }
+@media only screen and (min-width: 80em) {
+  h1 {
+    font-size: 3.2rem; }
+
+  h2 {
     font-size: 2.4rem; } }
 
 /*# sourceMappingURL=style.css.map */

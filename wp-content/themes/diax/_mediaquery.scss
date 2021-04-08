@@ -28,6 +28,17 @@
 		}
 	}
 
+	.home-waarom-sec {
+		flex-direction: column;
+		justify-content: center;
+		flex: 0 0 auto;
+		width: 100%;
+		.card-content {
+			margin: 0 auto;
+			width: 65%;
+		}
+	}
+
 section	.card-diensten,
 section	.card-partners {
 		width: 100%;
@@ -67,11 +78,12 @@ section	.card-partners {
 		padding-inline-start: 0;
 	}
 
+	.partners-sec,
 	.diensten-sec {
 		display: flex;
 		flex-direction: column;
 		.card-content {
-			width: 100%;
+			// width: 100%;
 		}
 	}
 
@@ -160,7 +172,7 @@ section	.card-partners {
 	}
 
 	h1 {
-		font-size: 3.6rem;
+		font-size: 2.8rem;
 	}
 
 	.site-branding {
@@ -232,4 +244,16 @@ section	.card-partners {
 	blockquote p {
 		font-size: 2.4rem;
 	}
+}
+
+@media only screen and (min-width: 80em) {
+	
+	h1 {
+		font-size: 3.2rem;
+	}
+
+	h2 {
+		font-size: 2.4rem;
+	}
+
 }

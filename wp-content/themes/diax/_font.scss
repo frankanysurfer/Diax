@@ -134,7 +134,7 @@ body {
 	font-family: 'open_sansregular';	
 }
 
-p {
+p, li {
     font-size: 1rem;
     line-height: 1.375;
 }
@@ -145,8 +145,9 @@ h1,h2,h3,h4,h5,h6 {
 
 h1 {
 	font-family: 'flama_semicondensedbold';
-	// font-size: 3.6rem;
-    font-size: 3rem;
+	font-size: 3.6rem;
+    font-size: 2.4em;
+    // font-size: 3rem;
     line-height: 1.2;
     color: $blueDark;
 }
@@ -154,6 +155,7 @@ h1 {
 h2 {
 	font-family: 'flama_semicondensedbold';
 	font-size: 2.8rem;
+    font-size: 1.8rem;
     line-height: 1.2;
     color: $blueDark;
 }
@@ -161,6 +163,7 @@ h2 {
 h3 {
 	font-family: 'flama_semicondensedsemibold';
 	font-size: 2.2rem;
+    font-size: 1.4rem;
     line-height: 1.2;
     color: $blueDark;
 }
@@ -168,6 +171,7 @@ h3 {
 h4 {
 	font-family: 'flama_semicondensedsemibold';
 	font-size: 1.8rem;
+    font-size: 1.2rem;
     line-height: 1.2;
     color: $blueVeryDark;
 }
@@ -175,6 +179,7 @@ h4 {
 h5 {
 	font-family: 'flama_semicondensedbold';
 	font-size: 1.2rem;
+    font-size: .8rem;
     line-height: 1.2;
     color: $blueVeryDark;
     text-transform: none;
@@ -183,6 +188,7 @@ h5 {
 h6 {
 	font-family: 'flama_semicondensedsemibold';
 	font-size: 1.2rem;
+    font-size: .8rem;
     line-height: 1.2;
     color: $blueVeryDark;
 }

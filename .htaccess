@@ -1,10 +1,13 @@
+#This Apache config file was created by Duplicator Installer on 2020-08-10 12:26:30.
+#The original can be found in archived file with the name .htaccess__[HASH]
 
 # BEGIN WordPress
-# De richtlijnen (regels) tussen `BEGIN WordPress` and `END WordPress` worden
-# dynamisch aangemaakt en zouden enkel aangepast mogen worden via WordPress filters.
+# De richtlijnen (regels) tussen "BEGIN WordPress" en `END WordPress` worden
+# dynamisch gegenereerd en zouden alleen aangepast mogen worden via WordPress filters.
 # Elke wijziging aan deze richtlijnen tussen deze markeringen worden overschreven.
 <IfModule mod_rewrite.c>
 RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
 RewriteBase /diax/
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
