@@ -67,20 +67,13 @@ section	.card-partners {
 		padding-inline-start: 0;
 	}
 
-	// .site-footer {
-	// 	.footer-row-1 {
-	// 		background-image: ;
-	// 		h6 {
-	// 			color: $blueDark;
-	// 		}	
-	// 		.footerlist {
-	// 			color: $blueDark;
-	// 			a {
-	// 				color: $blueDark;
-	// 			}
-	// 		}
-	// 	}
-	// }
+	.diensten-sec {
+		display: flex;
+		flex-direction: column;
+		.card-content {
+			width: 100%;
+		}
+	}
 
 }
 

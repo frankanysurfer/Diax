@@ -472,6 +472,14 @@ blockquote {
 .site-footer a:hover {
   border-bottom: 2px solid #1955A5; }
 
+/***** Diensten *****/
+.diensten-sec {
+  margin: 1rem 0; }
+  .diensten-sec .card-content {
+    margin: 0; }
+    .diensten-sec .card-content a {
+      font-size: 2.8rem; }
+
 input[type="text"],
 input[type="email"],
 input[type="url"],
@@ -488,7 +496,8 @@ input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
 textarea {
-  outline: 1px solid #404040; }
+  font-family: "open_sansregular";
+  outline: 1px solid #0575e6; }
 
 input[type="text"]:focus,
 input[type="email"]:focus,
@@ -506,12 +515,16 @@ input[type="datetime"]:focus,
 input[type="datetime-local"]:focus,
 input[type="color"]:focus,
 textarea:focus {
+  background-color: #e6f1fc;
   outline: 2px solid #0575e6; }
 
 input[type="submit"]:hover,
 input[type="submit"]:active,
 input[type="submit"]:focus {
-  background-color: #0575e6; }
+  background-color: #e6f1fc; }
+
+.input:-internal-autofill-selected {
+  background-color: #e6f1fc !important; }
 
 .wpcf7 form.invalid .wpcf7-response-output,
 .wpcf7 form.unaccepted .wpcf7-response-output {
@@ -521,16 +534,17 @@ input[type="submit"]:focus {
   color: #0575e6; }
 
 .wpcf7 {
-  padding: 0 .5rem;
-  border: 1px solid #404040;
-  background-color: rgba(0, 0, 0, 0.04); }
+  padding: 0 .5rem; }
   .wpcf7 form fieldset {
     padding: 0 2rem 1.25rem; }
     .wpcf7 form fieldset legend {
       padding-top: 1rem; }
     .wpcf7 form fieldset label {
       margin: 1.5rem 0 .5rem;
-      color: #404040; }
+      font-family: "flama_semicondensedbold";
+      font-size: 1.2rem;
+      color: #0575e6;
+      text-transform: capitalize; }
 
 input[type="submit"] {
   margin-top: 1rem;
@@ -613,7 +627,18 @@ input[type="submit"] {
     margin-bottom: 0;
     -webkit-padding-start: 0;
        -moz-padding-start: 0;
-            padding-inline-start: 0; } }
+            padding-inline-start: 0; }
+
+  .diensten-sec {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .diensten-sec .card-content {
+      width: 100%; } }
 @media only screen and (min-width: 48em) {
   .col-sm-offset-1 {
     margin-left: 0; }

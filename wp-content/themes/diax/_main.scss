@@ -201,4 +201,14 @@ blockquote {
     border-bottom: 2px solid #1955A5;
 }
 
+/***** Diensten *****/
 
+.diensten-sec {
+	margin: 1rem 0;
+	.card-content {
+		margin: 0;
+		a {
+			font-size: 2.8rem;
+		}
+	}
+}
