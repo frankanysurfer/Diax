@@ -1,0 +1,125 @@
+.dark {
+	background-color: $blueVeryDark;
+	h1 {
+	    color: $blueBright;
+	}
+
+	h2 {
+	    color: $blueBright;
+	}
+
+	h3 {
+	    color: $blueBright;
+	}
+
+	h4 {
+	    color: $blueVeryLight;
+	}
+
+	h5 {
+	    color: $blueVeryLight;
+	}
+
+	h6 {
+	    color: $blueVeryLight;
+	}
+
+	p,li {
+		color: $blueVeryLight;
+	}
+
+	/***** Links *****/
+	a {
+		color: $blueBright;
+		border-bottom-color: $blueBright;
+	}+
+
+	a:hover, a:active {
+		color: $blueVeryLight;
+	    border-bottom-color: $blueVeryLight;
+	    outline: 1px solid #333;
+	}
+
+	/***** Hoofdnavigatie *****/
+	.main-navigation {
+		a {
+			color: $white;
+		}
+	}
+
+	/***** Talenkeuze* ****/
+
+	.lang-item a:hover ,
+	.current-lang a {
+		color: $blueBright;
+		background-color: $blueBright;
+	}
+
+	/***** Maan *****/
+
+	.maan {
+		background-color: $blueVeryDark;
+	}
+
+	/***** Link knoppen *****/
+	.card-links {
+		a.linkb1 {
+			color: $blueAlmostBlack;
+			background-color: $blueBright;
+			&:hover {
+				color: $blueDark;
+				background-color: $blueVeryLight;
+			}
+			&:focus {
+				color: $blueDark;
+				border-color: $blueDark;
+				background-color: $blueVeryDark;
+			}
+			&:active {
+				color: $blueBright;
+				border-color: $blueAlmostBlack;
+				background-color: $blueAlmostBlack;
+			}
+		}
+		a.linkb2 {
+			color: $blueVeryDark;
+			background-color: $blueVeryLight;
+			&:hover {
+				color: $blueVeryLight;
+				background-color: #011A76;
+			}
+			&:focus {
+				color: $blueVeryLight;
+				border-color: $blueVeryLight;
+				background-color: $blueVeryDark;
+			}
+			&:active {
+				color: $blueVeryLight;
+				border-color: $blueAlmostBlack;
+				background-color: $blueAlmostBlack;
+			}
+		}
+	}
+
+	/***** Footer links *****/
+	.site-footer {
+		background-color: $blueDark;
+		.footer-row {
+			h6 {
+				color: $blueVeryLight;
+			}
+
+			a {	
+				color: $blueVeryLight;
+				&:focus {
+					outline: 1px solid white;
+				}
+			}
+			.footerlist {
+				color: $blueVeryLight;
+			}
+		}
+	}
+
+
+}

@@ -793,5 +793,81 @@ input[type="submit"] {
 
   h2 {
     font-size: 2.4rem; } }
+.dark {
+  background-color: #01172e;
+  /***** Links *****/
+  /***** Hoofdnavigatie *****/
+  /***** Talenkeuze* ****/
+  /***** Maan *****/
+  /***** Link knoppen *****/
+  /***** Footer links *****/ }
+  .dark h1 {
+    color: #0575e6; }
+  .dark h2 {
+    color: #0575e6; }
+  .dark h3 {
+    color: #0575e6; }
+  .dark h4 {
+    color: #e6f1fc; }
+  .dark h5 {
+    color: #e6f1fc; }
+  .dark h6 {
+    color: #e6f1fc; }
+  .dark p, .dark li {
+    color: #e6f1fc; }
+  .dark a {
+    color: #0575e6;
+    border-bottom-color: #0575e6; }
+  .dark +
+  a:hover, .dark a:active {
+    color: #e6f1fc;
+    border-bottom-color: #e6f1fc;
+    outline: 1px solid #333; }
+  .dark .main-navigation a {
+    color: #edeaf6; }
+  .dark .lang-item a:hover,
+  .dark .current-lang a {
+    color: #0575e6;
+    background-color: #0575e6; }
+  .dark .maan {
+    background-color: #01172e; }
+  .dark .card-links a.linkb1 {
+    color: #000518;
+    background-color: #0575e6; }
+    .dark .card-links a.linkb1:hover {
+      color: #021b79;
+      background-color: #e6f1fc; }
+    .dark .card-links a.linkb1:focus {
+      color: #021b79;
+      border-color: #021b79;
+      background-color: #01172e; }
+    .dark .card-links a.linkb1:active {
+      color: #0575e6;
+      border-color: #000518;
+      background-color: #000518; }
+  .dark .card-links a.linkb2 {
+    color: #01172e;
+    background-color: #e6f1fc; }
+    .dark .card-links a.linkb2:hover {
+      color: #e6f1fc;
+      background-color: #011A76; }
+    .dark .card-links a.linkb2:focus {
+      color: #e6f1fc;
+      border-color: #e6f1fc;
+      background-color: #01172e; }
+    .dark .card-links a.linkb2:active {
+      color: #e6f1fc;
+      border-color: #000518;
+      background-color: #000518; }
+  .dark .site-footer {
+    background-color: #021b79; }
+    .dark .site-footer .footer-row h6 {
+      color: #e6f1fc; }
+    .dark .site-footer .footer-row a {
+      color: #e6f1fc; }
+      .dark .site-footer .footer-row a:focus {
+        outline: 1px solid white; }
+    .dark .site-footer .footer-row .footerlist {
+      color: #e6f1fc; }
 
 /*# sourceMappingURL=style.css.map */
