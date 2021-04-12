@@ -15,6 +15,12 @@ Array.prototype.forEach.call(cards, card => {
     }
 });
 
-// document.getElementById("cookie-notice").removeAttribute("role");
+// var c = document.getElementById("cookie-notice");
+// c.removeAttribute("role");
 
-
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark");
+   var d = document.getElementById("switch");
+   d.classList.toggle("zon")
+}

@@ -1,4 +1,4 @@
-  > img {
+img {
 	max-width: 100%;
 	width: 100%;
 	height: auto;
@@ -14,6 +14,20 @@
 	padding: 0;
 	position: absolute;
 }
+
+.maan {
+	background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/moon.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.zon {
+	background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/zon.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 40px 40px;
+}
+
 
 .page {
 	padding: 0;
@@ -68,6 +82,9 @@
 .site-branding {
 	width: 60%;
 	margin-top: 10px;
+	img {
+		max-width: 300px;
+	}
 }
 
 .entry-header {
@@ -160,6 +177,7 @@ figure {
 	img {
 		display: block;
 		margin:	0 auto 2rem;
+		width: auto;
 	}
 	> p {
 		display: none;
@@ -183,14 +201,33 @@ blockquote {
 .site,
 .site-footer {
 	margin: 0 auto;
+	border-top: none;
 	max-width: 1024px;
+	h5 {
+		font-size: 1.2rem;
+		color: $blueVeryLight;
+		font-weight: 400;
+	}
 }
 
 .footerlist {
 	margin-bottom: 1rem;
 	list-style-type: none;
 	color: #333;
-	font-family: 'flama';
+	li {
+		margin-bottom: .5rem;
+		font-size: .8rem;
+		a {
+			font-size: .8rem;	
+			padding-left: 1.3rem;
+		}
+	}
+	.mail {
+		background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/mail.svg");
+		background-repeat: no-repeat;
+		background-position: left 7px;
+		background-size: 14px auto;
+	}
 }
 
 .footerlist:last-child {

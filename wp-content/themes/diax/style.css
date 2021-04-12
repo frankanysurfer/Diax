@@ -152,12 +152,10 @@ a {
   color: #0575e6;
   border-bottom-color: #0575e6; }
 
-+
 a:hover, a:active {
   color: #000518;
   border-bottom-color: #000518;
-  cursor: pointer;
-  outline: 1px solid #333; }
+  cursor: pointer; }
 
 /***** Hoofdnavigatie *****/
 .main-navigation {
@@ -170,7 +168,7 @@ a:hover, a:active {
 /***** Talenkeuze* ****/
 .language {
   position: absolute;
-  top: 0;
+  top: 0px;
   right: 45px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -191,12 +189,13 @@ a:hover, a:active {
   width: 40px;
   height: 40px;
   padding: .5rem;
-  line-height: 2.2; }
+  line-height: 2.2;
+  color: #01172e; }
 
 .lang-item a:hover,
 .current-lang a {
-  color: #FFF;
-  background-color: #0575e6; }
+  color: #021b79;
+  text-decoration: underline; }
 
 /***** Maan *****/
 .maan {
@@ -205,7 +204,8 @@ a:hover, a:active {
   right: 0;
   width: 40px;
   height: 40px;
-  padding: 8px;
+  min-height: 40px;
+  padding: 0 8px;
   background-color: #01172e; }
 
 /***** Link knoppen *****/
@@ -266,11 +266,11 @@ a:hover, a:active {
       transition-property: none; }
     .card-links a.linkb2:focus {
       color: #0575e6;
-      border-color: #0575e6;
+      outline: 2px solid #0575e6;
       background-color: white; }
     .card-links a.linkb2:active {
       color: white;
-      border-color: #01172e;
+      outline: 1px solid #01172e;
       background-color: #01172e; }
     .card-links a.linkb2:after {
       -webkit-transform: none;
@@ -299,8 +299,10 @@ a:hover, a:active {
       font-family: "flama_semicondensedbook";
       font-size: .9rem;
       color: #e6f1fc; }
+      .site-footer .footer-row .footerlist li {
+        font-size: .9rem; }
 
-> img {
+img {
   max-width: 100%;
   width: 100%;
   height: auto; }
@@ -315,6 +317,17 @@ a:hover, a:active {
   overflow: hidden;
   padding: 0;
   position: absolute; }
+
+.maan {
+  background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/moon.svg");
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.zon {
+  background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/zon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40px 40px; }
 
 .page {
   padding: 0; }
@@ -359,6 +372,8 @@ a:hover, a:active {
 .site-branding {
   width: 60%;
   margin-top: 10px; }
+  .site-branding img {
+    max-width: 300px; }
 
 .entry-header .entry-title {
   display: none; }
@@ -443,7 +458,8 @@ figure {
   width: 100%; }
   figure img {
     display: block;
-    margin: 0 auto 2rem; }
+    margin: 0 auto 2rem;
+    width: auto; }
   figure > p {
     display: none; }
   figure figcaption {
@@ -464,13 +480,29 @@ blockquote {
 .site,
 .site-footer {
   margin: 0 auto;
+  border-top: none;
   max-width: 1024px; }
+  .site h5,
+  .site-footer h5 {
+    font-size: 1.2rem;
+    color: #e6f1fc;
+    font-weight: 400; }
 
 .footerlist {
   margin-bottom: 1rem;
   list-style-type: none;
-  color: #333;
-  font-family: 'flama'; }
+  color: #333; }
+  .footerlist li {
+    margin-bottom: .5rem;
+    font-size: .8rem; }
+    .footerlist li a {
+      font-size: .8rem;
+      padding-left: 1.3rem; }
+  .footerlist .mail {
+    background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/mail.svg");
+    background-repeat: no-repeat;
+    background-position: left 7px;
+    background-size: 14px auto; }
 
 .footerlist:last-child {
   margin-bottom: 0; }
@@ -565,6 +597,9 @@ input[type="submit"] {
   .main-navigation {
     margin-top: 0; } }
 @media screen and (min-width: 40em) {
+  .site-header {
+    padding-top: 1rem; }
+
   .site-branding {
     width: 50%; }
 
@@ -589,22 +624,6 @@ input[type="submit"] {
     .home-wat .card-content,
     .home-wat .card-img {
       width: 45%; }
-
-  .home-waarom-sec {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
-    width: 100%; }
-    .home-waarom-sec .card-content {
-      margin: 0 auto;
-      width: 65%; }
 
   section .card-diensten,
   section .card-partners {
@@ -825,10 +844,12 @@ input[type="submit"] {
     outline: 1px solid #333; }
   .dark .main-navigation a {
     color: #edeaf6; }
+  .dark .lang-item a {
+    color: #e6f1fc; }
   .dark .lang-item a:hover,
   .dark .current-lang a {
     color: #0575e6;
-    background-color: #0575e6; }
+    background-color: none; }
   .dark .maan {
     background-color: #01172e; }
   .dark .card-links a.linkb1 {
@@ -860,14 +881,14 @@ input[type="submit"] {
       border-color: #000518;
       background-color: #000518; }
   .dark .site-footer {
-    background-color: #021b79; }
+    background-color: #0575e6; }
     .dark .site-footer .footer-row h6 {
-      color: #e6f1fc; }
+      color: #01172e; }
     .dark .site-footer .footer-row a {
-      color: #e6f1fc; }
+      color: #01172e; }
       .dark .site-footer .footer-row a:focus {
         outline: 1px solid white; }
-    .dark .site-footer .footer-row .footerlist {
-      color: #e6f1fc; }
+    .dark .site-footer .footer-row .footerlist li {
+      color: #01172e; }
 
 /*# sourceMappingURL=style.css.map */

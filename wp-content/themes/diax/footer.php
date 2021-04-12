@@ -22,14 +22,14 @@
             <?php 
                 if(pll_current_language() == 'nl') {?>
             <div class="footer-row footer-row-1">
-            <h6>Contacteer ons</h6>
+            <h5>Contacteer ons</h5>
             <ul class="footerlist contactgegevens">
-                <li><a href="mailto:info@di-ax.be">info@di-ax.be</a></li>
+                <li class="mail"><a href="mailto:info@di-ax.be">info@di-ax.be</a></li>
                 <li>02 210 61 40</li>
             </ul>
             </div>
             <div class="footer-row">
-            <h6>DiAX</h6>
+            <h5>DiAX</h5>
             <ul class="footerlist nuttigelinks">    
                 <li><a href="http://staging.di-ax.be/">Home</a></li>
                 <li><a href="http://staging.di-ax.be/diensten/">Diensten</a></li>
@@ -38,7 +38,7 @@
             </ul>
             </div>
             <div class="footer-row">
-            <h6>Legal</h6>
+            <h5>Legal</h5>
             <ul class="footerlist nuttigelinks">    
                 <li><a href="http://staging.di-ax.be/privacybeleid/">Privacyverklaring</a></li>
                 <li><a href="http://staging.di-ax.be/algemene-voorwaarden/">Algemene voorwaarden</a></li>

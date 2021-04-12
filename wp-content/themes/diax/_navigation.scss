@@ -4,13 +4,12 @@ a {
 	font-size: .9rem;
 	color: $blueBright;
 	border-bottom-color: $blueBright;
-}+
+}
 
 a:hover, a:active {
 	color: $blueAlmostBlack;
     border-bottom-color: $blueAlmostBlack;
     cursor: pointer;
-    outline: 1px solid #333;
 }
 
 /***** Hoofdnavigatie *****/
@@ -26,7 +25,7 @@ a:hover, a:active {
 /***** Talenkeuze* ****/
 .language {
 	position: absolute;
-	top: 0;
+	top: 0px;
 	right: 45px;
 	display: flex;
 	flex-direction: row;
@@ -45,12 +44,13 @@ a:hover, a:active {
 	height: 40px;
 	padding: .5rem;
 	line-height: 2.2;	
+	color: $blueVeryDark;
 }
 
 .lang-item a:hover ,
 .current-lang a {
-	color: #FFF;
-	background-color: $blueBright;
+	color: $blueDark;
+	text-decoration: underline;
 }
 
 /***** Maan *****/
@@ -61,7 +61,8 @@ a:hover, a:active {
 	right: 0;
 	width: 40px;
 	height: 40px;
-	padding: 8px;
+	min-height: 40px;
+	padding: 0 8px;
 	background-color: $blueVeryDark;
 }
 
@@ -121,12 +122,12 @@ a:hover, a:active {
 		}
 		&:focus {
 			color: $blueBright;
-			border-color: $blueBright;
+			outline: 2px solid $blueBright;
 			background-color: white;
 		}
 		&:active {
 			color: white;
-			border-color: $blueVeryDark;
+			outline: 1px solid $blueVeryDark;
 			background-color: $blueVeryDark;
 		}
 		&:after {
@@ -161,6 +162,9 @@ a:hover, a:active {
 			font-family: "flama_semicondensedbook";
 			font-size: .9rem;
 			color: $blueVeryLight;
+			li {
+				font-size: .9rem;
+			}
 		}
 	}
 }

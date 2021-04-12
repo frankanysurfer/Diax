@@ -56,7 +56,8 @@
 		</div><!-- .site-branding -->
         <ul class="language"><?php pll_the_languages();?></ul>
        <!--  <div class="maan"><img src="https://staging.di-ax.be/wp-content/themes/diax/img/moon.svg"></div> -->
-        <div class="maan"><img src="http://localhost/diax/wp-content/themes/diax/img/moon.svg"></div>
+        <button  onclick="myFunction()" id="switch" class="maan"><span class="srt">Dark mode</span></button>
+
 		<nav id="site-navigation" class="main-navigation">
             <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'slightly' ); ?></button>
 			<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>

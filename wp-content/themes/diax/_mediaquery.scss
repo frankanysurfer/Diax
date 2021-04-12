@@ -8,6 +8,10 @@
 
 @media screen and (min-width: 40em) {
 
+	.site-header {
+		padding-top: 1rem;
+	}
+
 	.site-branding {
 		width: 50%;
 	}
@@ -25,17 +29,6 @@
 		.card-content,
 		.card-img {
 			width: 45%;
-		}
-	}
-
-	.home-waarom-sec {
-		flex-direction: column;
-		justify-content: center;
-		flex: 0 0 auto;
-		width: 100%;
-		.card-content {
-			margin: 0 auto;
-			width: 65%;
 		}
 	}
 

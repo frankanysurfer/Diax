@@ -49,10 +49,14 @@
 
 	/***** Talenkeuze* ****/
 
+	.lang-item a {
+		color: $blueVeryLight;
+	}
+
 	.lang-item a:hover ,
 	.current-lang a {
 		color: $blueBright;
-		background-color: $blueBright;
+		background-color: none;
 	}
 
 	/***** Maan *****/
@@ -103,20 +107,20 @@
 
 	/***** Footer links *****/
 	.site-footer {
-		background-color: $blueDark;
+		background-color: $blueBright;
 		.footer-row {
 			h6 {
-				color: $blueVeryLight;
+				color: $blueVeryDark;
 			}
 
 			a {	
-				color: $blueVeryLight;
+				color: $blueVeryDark;
 				&:focus {
 					outline: 1px solid white;
 				}
 			}
-			.footerlist {
-				color: $blueVeryLight;
+			.footerlist li {
+				color: $blueVeryDark;
 			}
 		}
 	}
