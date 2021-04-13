@@ -28,11 +28,12 @@ img {
 	background-size: 40px 40px;
 }
 
-
 .page {
 	padding: 0;
 	.site {
+		margin: 1rem auto 0;
 		padding: 0 1rem;
+		border-top: none;
 		max-width: 1440px;
 	}
 	.site-header,
@@ -98,7 +99,7 @@ span a,
 .nav-previous a,
 .nav-next a,
 .entry-content a {
-    border-bottom: 2px solid $blueBright;
+    border-bottom: 2px solid $blueDark;
     color: $blueBright;
     font-weight: normal;
 }
@@ -158,12 +159,19 @@ section:first-of-type {
 }
 
 .card-item {
+	position: relative;
+	min-height: 21rem;
 	margin-bottom: 2rem;
 	padding: 1rem;
 	border-radius: 2px;
 	box-shadow: 2px 2px 20px rgba(0,5,24,.1);	
-	h5 {
+	h3 {
 		text-align: center;
+	}
+	.card-item-link {
+		position: absolute;
+		left: 1rem;
+		bottom: .5rem;
 	}
 }
 
@@ -194,48 +202,6 @@ blockquote {
 	p {
 	font-size: 1.6rem;
 	}
-}
-
-/***** FOOTER *****/
-
-.site,
-.site-footer {
-	margin: 0 auto;
-	border-top: none;
-	max-width: 1024px;
-	h5 {
-		font-size: 1.2rem;
-		color: $blueVeryLight;
-		font-weight: 400;
-	}
-}
-
-.footerlist {
-	margin-bottom: 1rem;
-	list-style-type: none;
-	color: #333;
-	li {
-		margin-bottom: .5rem;
-		font-size: .8rem;
-		a {
-			font-size: .8rem;	
-			padding-left: 1.3rem;
-		}
-	}
-	.mail {
-		background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/mail.svg");
-		background-repeat: no-repeat;
-		background-position: left 7px;
-		background-size: 14px auto;
-	}
-}
-
-.footerlist:last-child {
-	margin-bottom: 0;
-}
-
-.site-footer a:hover {
-    border-bottom: 2px solid #1955A5;
 }
 
 /***** Diensten *****/

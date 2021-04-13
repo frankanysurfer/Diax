@@ -2,8 +2,8 @@
 a {
 	font-family: "flama_semicondensedbook";
 	font-size: .9rem;
-	color: $blueBright;
-	border-bottom-color: $blueBright;
+	color: $blueDark;
+	border-bottom-color: $blueDark;
 }
 
 a:hover, a:active {
@@ -138,15 +138,48 @@ a:hover, a:active {
 }
 
 /***** Footer links *****/
+
+.site-footer {
+	margin: 3rem auto 0;
+	padding: 0;
+	border-top: none;
+	max-width: 1024px;
+}
+
 .site-footer {
 	background-color: $blueDark;
 	.footer-row {
 		margin: 0 2rem;
-		padding: 1rem;
-		h6 {
+		padding: 1rem 1rem 0;
+		h3 {
+			font-size: 1.2rem;
 			color: $blueVeryLight;
+			font-weight: 400;
 		}
-
+		p {
+			margin-top: 5rem;
+			font-size: .8rem;
+			color: $blueVeryLight;
+			font-family: "flama_semicondensedbook";
+			a {	
+				text-decoration: underline;
+				font-size: .8rem;
+				color: $blueVeryLight;
+				transition-property: none;
+				&:hover {
+					border: none;
+					color: $blueVeryLight;
+					transition-property: none;
+				}
+				&:focus {
+					outline: 1px solid white;
+				}
+				&:after {
+					background-color: transparent;
+					transition-property: none;
+				}
+			}
+		}
 		a {	
 			text-decoration: underline;
 			color: $blueVeryLight;
@@ -158,12 +191,39 @@ a:hover, a:active {
 			}
 		}
 		.footerlist {
+			margin-bottom: 1rem;
 			padding-inline-start: 0;
+			list-style-type: none;
+			color: #333;
 			font-family: "flama_semicondensedbook";
 			font-size: .9rem;
 			color: $blueVeryLight;
 			li {
-				font-size: .9rem;
+				margin-bottom: .5rem;
+				font-size: .8rem;
+				a {
+					font-size: .8rem;	
+				}
+			}
+			.footer-icon {
+				background-repeat: no-repeat;
+				background-position: left 5px;
+				background-size: 14px auto;
+			}
+			.mail {
+				background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/mail.svg");	
+				a {	
+					margin-left: 1.3rem;
+				}
+			}
+			.tele {
+				background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/tele.svg");
+				span {	
+					margin-left: 1.3rem;
+				}
+			}
+			&:last-child {
+				margin-bottom: 0;
 			}
 		}
 	}

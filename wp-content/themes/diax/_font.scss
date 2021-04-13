@@ -161,11 +161,17 @@ h2 {
 }
 
 h3 {
-	font-family: 'flama_semicondensedsemibold';
-	font-size: 2.2rem;
-    font-size: 1.4rem;
+    font-family: 'flama_semicondensedbold';
+    font-size: 1.2rem;
+    font-size: .8rem;
     line-height: 1.2;
-    color: $blueDark;
+    color: $blueVeryDark;
+    text-transform: none;    
+	// font-family: 'flama_semicondensedsemibold';
+	// font-size: 2.2rem;
+ //    font-size: 1.4rem;
+ //    line-height: 1.2;
+ //    color: $blueDark;
 }
 
 h4 {

@@ -22,14 +22,14 @@
             <?php 
                 if(pll_current_language() == 'nl') {?>
             <div class="footer-row footer-row-1">
-            <h5>Contacteer ons</h5>
+            <h3>Contacteer ons</h3>
             <ul class="footerlist contactgegevens">
-                <li class="mail"><a href="mailto:info@di-ax.be">info@di-ax.be</a></li>
-                <li>02 210 61 40</li>
+                <li class="footer-icon mail"><a href="mailto:info@di-ax.be">info@di-ax.be</a></li>
+                <li class="footer-icon tele"><span>02 210 61 40</span></li>
             </ul>
             </div>
             <div class="footer-row">
-            <h5>DiAX</h5>
+            <h3>DiAX</h3>
             <ul class="footerlist nuttigelinks">    
                 <li><a href="http://staging.di-ax.be/">Home</a></li>
                 <li><a href="http://staging.di-ax.be/diensten/">Diensten</a></li>
@@ -38,13 +38,14 @@
             </ul>
             </div>
             <div class="footer-row">
-            <h5>Legal</h5>
+            <h3>Legal</h3>
             <ul class="footerlist nuttigelinks">    
                 <li><a href="http://staging.di-ax.be/privacybeleid/">Privacyverklaring</a></li>
                 <li><a href="http://staging.di-ax.be/algemene-voorwaarden/">Algemene voorwaarden</a></li>
                 <li><a href="http://staging.di-ax.be/toegankelijkheidsverklaring/">Toegankelijkheidsverklaring</a></li>
             </ul>
-        </div>
+            <p>&copy; Rechten gereserveerd door <a href="https://di-ax.be">DiAX</a></p>
+            </div>
             <?php 
                 } else if(pll_current_language() == 'fr') {?>
             
