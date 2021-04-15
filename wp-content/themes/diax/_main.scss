@@ -4,7 +4,7 @@ img {
 	height: auto;
 }
 
-.srt {
+.sr-only {
 	clip: rect(1px, 1px, 1px, 1px);
 	clip-path: inset(50%);
 	height: 1px;
@@ -88,10 +88,8 @@ img {
 	}
 }
 
-.entry-header {
-	.entry-title {
-		display: none;
-	}
+.entry-title {
+	margin: 3rem 0 0;
 }
 
 p:not(.site-title) a,
@@ -129,7 +127,7 @@ section {
 }
 
 section:first-of-type {
-	margin-top: 2rem;
+	margin-top: .5rem;
 }
 
 .card-content {
@@ -201,6 +199,19 @@ blockquote {
 	justify-content: center;
 	p {
 	font-size: 1.6rem;
+	}
+}
+
+
+/***** Home *****/
+.home {
+	.entry-header {
+		.entry-title {
+			display: none;
+		}
+	}
+	section:first-of-type {
+		margin-top: 2rem;
 	}
 }
 

@@ -263,7 +263,7 @@ msgstr "Pagina"
 msgid "Add widgets here to appear in your footer."
 msgstr "Voeg hier widgets toe om in de footer te tonen."
 
-#: functions.php:194 template-parts/footer/footer-widgets.php:12
+#: template-parts/footer/footer-widgets.php:12 functions.php:194
 msgid "Footer"
 msgstr "Footer"
 
@@ -296,14 +296,15 @@ msgid "Top Menu"
 msgstr "Topmenu"
 
 #. translators: %s: Post title. Only visible to screen readers.
+#. translators: %s: Post title.
 #: template-parts/content/content.php:36
-#: template-parts/content/content-single.php:27
+#: template-parts/content/content-single.php:27 functions.php:225
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr "<span class=\"screen-reader-text\">\"%s\" </span>verder lezen"
 
-#: image.php:52 template-parts/content/content.php:49
-#: template-parts/content/content-single.php:40
+#: template-parts/content/content.php:49
 #: template-parts/content/content-page.php:27
+#: template-parts/content/content-single.php:40 image.php:52
 msgid "Pages:"
 msgstr "Pagina's:"
 
@@ -314,11 +315,6 @@ msgstr "Het lijkt dat we niet kunnen vinden wat u zoekt. Misschien kan de zoekfu
 #: template-parts/content/content-none.php:39
 msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
 msgstr "Helaas, niets komt overeen met uw zoektermen. Probeer opnieuw met andere zoektermen."
-
-#. translators: 1: Link to WP admin new post page.
-#: template-parts/content/content-none.php:26
-msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr "Klaar om je eerste bericht te publiceren? <a href=\"%1$s\">Begin hier</a>."
 
 #: template-parts/content/content-none.php:16
 msgid "Nothing Found"
@@ -422,8 +418,8 @@ msgid "Category Archives: "
 msgstr "Categorie archief:"
 
 #. translators: %s: Post title. Only visible to screen readers.
-#: inc/template-tags.php:120 template-parts/content/content-page.php:41
-#: template-parts/header/entry-header.php:32
+#: template-parts/content/content-page.php:41
+#: template-parts/header/entry-header.php:32 inc/template-tags.php:120
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 msgstr "Bewerk <span class=\"screen-reader-text\">%s</span>"
 
@@ -431,7 +427,7 @@ msgstr "Bewerk <span class=\"screen-reader-text\">%s</span>"
 msgid "Skip to content"
 msgstr "Spring naar de inhoud"
 
-#: functions.php:61 template-parts/header/site-branding.php:46
+#: template-parts/header/site-branding.php:46 functions.php:61
 msgid "Social Links Menu"
 msgstr "Sociale links menu"
 

@@ -167,9 +167,8 @@
 	input[type="datetime-local"],
 	input[type="color"],
 	textarea {
-	    outline: 1px solid $blueBright;
 	    background-color: $blueVeryDark;
-	    border: 2px solid $blueVeryDark;
+	    border: 2px solid $blueBright;
 	}
 
 	input[type="text"]:focus,
@@ -215,18 +214,22 @@
 		padding: 0 .5rem;
 		form { 
 			fieldset {
+				border: 1px solid $blueBright;
+				legend{ 
+					color: $blueVeryLight;
+				}
 				label {
-					color: $blueBright;
+					color: $blueVeryLight;
+				}
+				input[type="submit"] {
+					background-color: $blueDark;
+					border: 2px solid $blueDark;
+					&:hover {
+						background-color: $blueBright;
+						border: 2px solid $blueBright;
+					}
 				}
 			}
 		}
 	}
-
-	input[type="submit"] {
-		background-color: $blueBright;
-		&:hover {
-			background-color: $blueBright;
-		}
-	}
-
 }

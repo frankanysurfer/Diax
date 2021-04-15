@@ -93,7 +93,8 @@ html {
   font-size: 100%; }
 
 body {
-  font-family: 'open_sansregular'; }
+  font-family: 'open_sansregular';
+  color: #01172e; }
 
 p, li {
   font-size: 1rem;
@@ -358,7 +359,7 @@ img {
   width: 100%;
   height: auto; }
 
-.srt {
+.sr-only {
   clip: rect(1px, 1px, 1px, 1px);
   -webkit-clip-path: inset(50%);
           clip-path: inset(50%);
@@ -428,8 +429,8 @@ img {
   .site-branding img {
     max-width: 300px; }
 
-.entry-header .entry-title {
-  display: none; }
+.entry-title {
+  margin: 3rem 0 0; }
 
 p:not(.site-title) a,
 span a,
@@ -461,7 +462,7 @@ section {
   margin: 4rem 0; }
 
 section:first-of-type {
-  margin-top: 2rem; }
+  margin-top: .5rem; }
 
 .card-content {
   margin-bottom: 3rem; }
@@ -535,6 +536,12 @@ blockquote {
   blockquote p {
     font-size: 1.6rem; }
 
+/***** Home *****/
+.home .entry-header .entry-title {
+  display: none; }
+.home section:first-of-type {
+  margin-top: 2rem; }
+
 /***** Diensten *****/
 .partners-sec,
 .diensten-sec {
@@ -563,7 +570,7 @@ input[type="datetime-local"],
 input[type="color"],
 textarea {
   font-family: "open_sansregular";
-  outline: 1px solid #0575e6; }
+  border: 2px solid #0575e6; }
 
 input[type="text"]:focus,
 input[type="email"]:focus,
@@ -582,7 +589,7 @@ input[type="datetime-local"]:focus,
 input[type="color"]:focus,
 textarea:focus {
   background-color: #e6f1fc;
-  outline: 2px solid #0575e6; }
+  outline: 1px solid #0575e6; }
 
 input[type="submit"]:hover,
 input[type="submit"]:active,
@@ -594,14 +601,16 @@ input[type="submit"]:focus {
 
 .wpcf7 form.invalid .wpcf7-response-output,
 .wpcf7 form.unaccepted .wpcf7-response-output {
-  border-color: #0575e6; }
+  border-color: #F04040; }
 
 .wpcf7-not-valid-tip {
-  color: #0575e6; }
+  margin-top: .5rem;
+  color: #F04040; }
 
 .wpcf7 {
   padding: 0 .5rem; }
   .wpcf7 form fieldset {
+    border: 1px solid #0575e6;
     padding: 0 2rem 1.25rem; }
     .wpcf7 form fieldset legend {
       padding-top: 1rem; }
@@ -609,14 +618,14 @@ input[type="submit"]:focus {
       margin: 1.5rem 0 .5rem;
       font-family: "flama_semicondensedbold";
       font-size: 1.2rem;
-      color: #0575e6;
+      color: #01172e;
       text-transform: capitalize; }
-
-input[type="submit"] {
-  margin-top: 1rem;
-  background-color: #0575e6; }
-  input[type="submit"]:hover {
-    background-color: #0575e6; }
+    .wpcf7 form fieldset input[type="submit"] {
+      margin-top: 1rem;
+      background-color: #021b79;
+      border: 2px solid #0575e6; }
+      .wpcf7 form fieldset input[type="submit"]:hover {
+        background-color: #0575e6; }
 
 @media screen and (min-width: 37.5em) {
   .main-navigation {
@@ -949,9 +958,8 @@ input[type="submit"] {
   .dark input[type="datetime-local"],
   .dark input[type="color"],
   .dark textarea {
-    outline: 1px solid #0575e6;
     background-color: #01172e;
-    border: 2px solid #01172e; }
+    border: 2px solid #0575e6; }
   .dark input[type="text"]:focus,
   .dark input[type="email"]:focus,
   .dark input[type="url"]:focus,
@@ -983,11 +991,17 @@ input[type="submit"] {
     color: #0575e6; }
   .dark .wpcf7 {
     padding: 0 .5rem; }
-    .dark .wpcf7 form fieldset label {
-      color: #0575e6; }
-  .dark input[type="submit"] {
-    background-color: #0575e6; }
-    .dark input[type="submit"]:hover {
-      background-color: #0575e6; }
+    .dark .wpcf7 form fieldset {
+      border: 1px solid #0575e6; }
+      .dark .wpcf7 form fieldset legend {
+        color: #e6f1fc; }
+      .dark .wpcf7 form fieldset label {
+        color: #e6f1fc; }
+      .dark .wpcf7 form fieldset input[type="submit"] {
+        background-color: #021b79;
+        border: 2px solid #021b79; }
+        .dark .wpcf7 form fieldset input[type="submit"]:hover {
+          background-color: #0575e6;
+          border: 2px solid #0575e6; }
 
 /*# sourceMappingURL=style.css.map */

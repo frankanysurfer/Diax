@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.7.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-03-26 07:50:37+0000\n"
+"PO-Revision-Date: 2021-04-15 06:38:49+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -27,105 +27,105 @@ msgstr "1"
 msgid "Continue"
 msgstr "Doorgaan"
 
-#: wp-admin/about.php:110
+#: wp-admin/about.php:143
 msgid "<strong>Buttons block:</strong> now you can choose a vertical or a horizontal layout. And you can set the width of a button to a preset percentage."
 msgstr "<strong>Knoppen blok:</strong> je kan nu kiezen voor een verticale of horizontale lay-out. En je kunt de breedte van een knop instellen op een vooraf ingesteld percentage."
 
-#: wp-admin/about.php:206
+#: wp-admin/about.php:239
 msgid "Now it’s simple to let iframes lazy-load. By default, WordPress will add a <code>loading=\"lazy\"</code> attribute to iframe tags when both width and height are specified."
 msgstr "Het is nu eenvoudig om iframes ook lazy-load te laden. Standaard voegt WordPress het <code>loading=\"lazy\"</code> attribuut toe aan iframe tags wanneer zowel breedte als hoogte zijn opgegeven."
 
-#: wp-admin/about.php:204
+#: wp-admin/about.php:237
 msgid "In 5.7, jQuery gets more focused and less intrusive, with fewer messages in the console."
 msgstr "Vanaf 5.7, jQuery is meer gefocust en is minder indringend geworden met zelfs minder notificaties in de console. "
 
-#: wp-admin/about.php:197
+#: wp-admin/about.php:230
 msgid "The new Robots API lets you include the filter directives in the robots meta tag, and the API includes the <code>max-image-preview: large</code> directive by default. That means search engines can show bigger image previews, which can boost your traffic (unless the site is marked <em>not-public</em>)."
 msgstr "Met de nieuwe Robots API kun je de filter richtlijnen opnemen in de robots metatag, en de API bevat standaard de <code>max-image-preview: large</code> richtlijn. Dat betekent dat zoekmachines grotere afbeelding voorbeelden kunnen tonen, wat je verkeer kan stimuleren (maar niet als de website is gemarkeerd als <em>niet-openbaar</em>)."
 
-#: wp-admin/about.php:115
+#: wp-admin/about.php:148
 msgid "<strong>Social Icons block:</strong> now you can change the size of the icons."
 msgstr "<strong>Sociale pictogrammen blok: </strong> je kunt nu de grootte van de pictogrammen wijzigen."
 
-#: wp-admin/about.php:135
+#: wp-admin/about.php:168
 msgid "Dashboard with old color scheme."
 msgstr "Dashboard met oud kleurenschema"
 
-#: wp-admin/about.php:137
+#: wp-admin/about.php:170
 msgid "Dashboard with new color scheme."
 msgstr "Dashboard met nieuw kleurenschema"
 
-#: wp-admin/about.php:140
+#: wp-admin/about.php:173
 msgid "Above, the Dashboard before and after the color update in 5.7."
 msgstr "Hierboven, het dashboard voor en na de kleurenupdate in 5.7."
 
-#: wp-admin/about.php:205
+#: wp-admin/about.php:238
 msgid "Lazy-load your iframes"
 msgstr "Lazy-load jouw iFrames"
 
-#: wp-admin/about.php:203
+#: wp-admin/about.php:236
 msgid "For years jQuery helped make things move on the screen in ways the basic tools couldn’t—but that keeps changing, and so does jQuery."
 msgstr "Al voor verschillende jaren heeft JQuery geholpen om dingen op het scherm te laten bewegen op manieren die de basistools niet konden, maar dat blijft veranderen, en dat geldt ook voor jQuery."
 
-#: wp-admin/about.php:202
+#: wp-admin/about.php:235
 msgid "Ongoing cleanup after update to jQuery 3.5.1"
 msgstr "Het blijven opschonen van de code na de update naar jQuery 3.5.1"
 
-#: wp-admin/about.php:194
+#: wp-admin/about.php:227
 msgid "New Robots API"
 msgstr "Nieuwe Robots API"
 
-#: wp-admin/about.php:193
+#: wp-admin/about.php:226
 msgid "Starting now, switching a site from HTTP to HTTPS is a one-click move. WordPress will automatically update database URLs when you make the switch. No more hunting and guessing!"
 msgstr "Vanaf nu, het aanpassen van een website van HTTP naar HTTPS is een één-klik-gebeuren geworden! WordPress zal automatisch de database URLs bijwerken wanneer je de aanpassing doorvoert. Je zal dus geen jacht meer moeten maken op foute URLs en ze ook niet meer hoeven te raden! "
 
-#: wp-admin/about.php:192
+#: wp-admin/about.php:225
 msgid "From HTTP to HTTPS in a single click"
 msgstr "Van HTTP naar HTTPS in één klik"
 
 #. translators: %s: Color palette dev note link.
-#: wp-admin/about.php:171
+#: wp-admin/about.php:204
 msgid "Find the new palette in the default WordPress Dashboard color scheme, and use it when you’re building themes, plugins, or any other components. For all the details, <a href=\"%s\">check out the Color Palette dev note</a>."
 msgstr "Zoek het nieuwe palet in het standaardkleurenschema van WordPress Dashboard en gebruik het bij het bouwen van thema's, plugins of andere componenten. Voor alle details, <a href=\"%s\">bekijk de ontwikkelaar kleurpalet opmerkingen</a>."
 
-#: wp-admin/about.php:164
+#: wp-admin/about.php:197
 msgid "Half the range has a 4.5 or higher contrast ratio against black, and the other half maintains the same contrast against white."
 msgstr "De helft van het bereik heeft een contrastverhouding van 4,5 of hoger tegen zwart, en de andere helft behoudt hetzelfde contrast tegen wit."
 
 #. translators: %s: WCAG information link.
-#: wp-admin/about.php:150
+#: wp-admin/about.php:183
 msgid "This new streamlined color palette collapses all the colors that used to be in the WordPress source code down to seven core colors and a range of 56 shades that meet the <a href=\"%s\">WCAG 2.0 AA recommended contrast ratio</a> against white or black."
 msgstr "In dit nieuwe gestroomlijnde kleurenpalet worden alle kleuren die vroeger in de WordPress broncode zaten samengevouwen tot zeven core kleuren en een reeks van 56 tinten die voldoen aan de door <a href=\"%s\">WCAG 2.0 AA aanbevolen contrastverhouding</a> tegen wit of zwart."
 
-#: wp-admin/about.php:157
+#: wp-admin/about.php:190
 msgid "The colors are perceptually uniform from light to dark in each range, which means they start at white and get darker by the same amount with each step."
 msgstr "De kleuren zijn uniform van licht tot donker in elk bereik, wat betekent dat ze bij wit beginnen en bij elke stap even veel donkerder worden."
 
-#: wp-admin/about.php:128
+#: wp-admin/about.php:161
 msgid "A Simpler Default Color Palette"
 msgstr "Een eenvoudiger standaard kleurenpalet"
 
-#: wp-admin/about.php:100
+#: wp-admin/about.php:133
 msgid "You can do more without writing custom code"
 msgstr "Je kan nu meer doen zonder extra code te schrijven"
 
-#: wp-admin/about.php:86
+#: wp-admin/about.php:119
 msgid "<strong>Inserter drag-and-drop:</strong> drag blocks and block patterns from the inserter right into your post."
 msgstr "<strong>Inserter verslepen:</strong> sleep blokken en blokpatronen van de inserter rechtstreeks naar je bericht."
 
-#: wp-admin/about.php:105
+#: wp-admin/about.php:138
 msgid "<strong>Full-height alignment:</strong> have you ever wanted to make a block, like the Cover block, fill the whole window? Now you can."
 msgstr "<strong>Uitlijning op volledige hoogte:</strong> heb je ooit een blok willen maken, zoals het cover-blok, om het hele venster te vullen? Nu kan je dat."
 
-#: wp-admin/about.php:81
+#: wp-admin/about.php:114
 msgid "<strong>Reusable blocks:</strong> several enhancements make reusable blocks more stable and easier to use. And now they save automatically with the post when you click the Update button."
 msgstr "<strong>Herbruikbare blokken:</strong> verschillende verbeteringen maken herbruikbare blokken stabieler en gebruiksvriendelijker. En nu slaan ze automatisch op met het bericht wanneer je op de knop Update klikt."
 
-#: wp-admin/about.php:76
+#: wp-admin/about.php:109
 msgid "<strong>Font-size adjustment in more places:</strong> now, font-size controls are right where you need them in the List and Code blocks. No more trekking to another screen to make that single change!"
 msgstr "<strong>Aanpassing van lettertypegrootte op meerdere plaatsen:</strong> nu zijn de besturingselementen voor lettertypegrootte precies daar waar je ze nodig hebt in de lijst- en codeblokken. Je hoeft niet meer naar een ander scherm te gaan om die ene wijziging aan te brengen!"
 
-#: wp-admin/about.php:71
+#: wp-admin/about.php:104
 msgid "Now the editor is easier to use"
 msgstr "De editor is nu gebruiksvriendelijker"
 
@@ -503,7 +503,7 @@ msgid "https://developer.wordpress.org/rest-api/frequently-asked-questions/#why-
 msgstr "https://developer.wordpress.org/rest-api/frequently-asked-questions/#why-is-authentication-not-working"
 
 #. translators: %s: WordPress 5.7 Field Guide link.
-#: wp-admin/about.php:219
+#: wp-admin/about.php:252
 msgid "Check out the latest version of the WordPress Field Guide. It highlights developer notes for each change you may want to be aware of. <a href=\"%s\">WordPress 5.7 Field Guide.</a>"
 msgstr "Bekijk de nieuwste versie van de WordPress Field Guide. Het heeft opmerkingen van ontwikkelaars voor elke wijziging waarvan je op de hoogte wilt zijn: <a href=\"%s\">WordPress 5.7 Field Guide</a>."
 
@@ -591,7 +591,7 @@ msgstr "&larr; Ga naar de editor"
 msgid "&larr; Go to Users"
 msgstr "&larr; Ga naar gebruikers"
 
-#: wp-admin/about.php:232
+#: wp-admin/about.php:265
 msgid "Go to Updates"
 msgstr "Ga naar updates"
 
@@ -711,7 +711,7 @@ msgstr "Applicatiewachtwoorden"
 #. necessary.
 #: wp-admin/update-core.php:132
 msgid "You can update from WordPress %1$s to <a href=\"%2$s\">WordPress %3$s</a> manually:"
-msgstr "Je kan handmatig WordPress updaten van %1$s naar<a href=\"%2$s\">WordPress %3$s</a>:"
+msgstr "Je kan handmatig WordPress updaten van %1$s naar <a href=\"%2$s\">WordPress %3$s</a>:"
 
 #: wp-admin/includes/class-wp-application-passwords-list-table.php:31
 msgid "Last Used"
@@ -931,7 +931,7 @@ msgstr "De \"%1$s\" waarde is kleiner dan \"%2$s\"."
 msgid "Environment type"
 msgstr "Type omgeving"
 
-#: wp-admin/about.php:214
+#: wp-admin/about.php:247
 msgid "Check the Field Guide for more!"
 msgstr "Bekijk de Field Guide voor meer informatie!"
 
@@ -3990,7 +3990,7 @@ msgstr "Kan niet worden geïnstalleerd"
 
 #. translators: %s: WordPress version.
 #: wp-admin/includes/update.php:302 wp-admin/install.php:238
-#: wp-admin/update-core.php:84 wp-admin/upgrade.php:80
+#: wp-admin/update-core.php:84 wp-admin/upgrade.php:80 wp-admin/about.php:91
 msgid "https://wordpress.org/support/wordpress-version/version-%s/"
 msgstr "https://wordpress.org/support/wordpress-version/version-%s/"
 
@@ -6412,7 +6412,7 @@ msgid "(Currently set to: %s)"
 msgstr "(Huidige ingesteld op: %s)"
 
 #. translators: %s: WordPress version number.
-#: wp-admin/about.php:333
+#: wp-admin/about.php:366
 msgid "<strong>Version %s</strong> addressed one security issue."
 msgstr "<strong>Versie %s</strong> heeft een beveiligingsprobleem opgelost."
 
@@ -6424,15 +6424,15 @@ msgstr "https://en.gravatar.com/"
 msgid "Profile Picture"
 msgstr "Profiel afbeelding"
 
-#: wp-admin/about.php:330
+#: wp-admin/about.php:71 wp-admin/about.php:363
 msgid "Maintenance and Security Releases"
 msgstr "Onderhoud en beveiligingsreleases"
 
-#: wp-admin/about.php:327
+#: wp-admin/about.php:360
 msgid "Security Releases"
 msgstr "Beveiligingsreleases"
 
-#: wp-admin/about.php:324
+#: wp-admin/about.php:357
 msgid "Maintenance Releases"
 msgstr "Onderhoudsreleases"
 
@@ -9915,7 +9915,7 @@ msgid "Show Toolbar when viewing site"
 msgstr "Werkbalk weergeven op website"
 
 #. translators: 1: WordPress version number, 2: Plural number of bugs.
-#: wp-admin/about.php:338
+#: wp-admin/about.php:371
 msgid "<strong>Version %1$s</strong> addressed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed %2$s bugs."
 msgstr[0] "<strong>Versie %1$s</strong> bevat %2$s bugfix."
@@ -9923,7 +9923,7 @@ msgstr[1] "<strong>Versie %1$s</strong> bevat %2$s bugfixes."
 
 #. translators: 1: WordPress version number, 2: Plural number of bugs. More
 #. than one security issue.
-#: wp-admin/about.php:350
+#: wp-admin/about.php:76 wp-admin/about.php:383
 msgid "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bugs."
 msgstr[0] "<strong>Versie%1$s</strong> was gericht op enkele beveiligingsproblemen en herstelde %2$s bug."
@@ -9931,14 +9931,15 @@ msgstr[1] "<strong>Versie%1$s</strong> was gericht op enkele beveiligingsproblem
 
 #. translators: 1: WordPress version number, 2: Plural number of bugs. Singular
 #. security issue.
-#: wp-admin/about.php:344
+#: wp-admin/about.php:377
 msgid "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bugs."
 msgstr[0] "<strong>Versie %1$s</strong> biedt een oplossing voor een beveiligingsprobleem en een %2$s bug."
 msgstr[1] "<strong>Versie %1$s</strong> biedt een oplossing voor een beveiligingsprobleem en een %2$s bugs."
 
+#. translators: %s: HelpHub URL.
 #. translators: %s: Documentation URL.
-#: wp-admin/about.php:356
+#: wp-admin/about.php:88 wp-admin/about.php:389
 msgid "For more information, see <a href=\"%s\">the release notes</a>."
 msgstr "Voor meer informatie, bekijk de <a href=\"%s\">versie nota's</a>."
 
@@ -9947,19 +9948,19 @@ msgid "Welcome to your WordPress Dashboard! This is the screen you will see when
 msgstr "Welkom op je WordPress Dashboard! Dit scherm zie je wanneer je inlogt en geeft je toegang tot alle beheersfunctionaliteit van je WordPress website. Op elk scherm kan je hulp krijgen via de 'Help'-tab bovenaan het scherm."
 
 #. translators: %s: WordPress version number.
-#: wp-admin/about.php:335
+#: wp-admin/about.php:368
 msgid "<strong>Version %s</strong> addressed some security issues."
 msgstr "<strong>Versie %s</strong> lost enkele beveiligingsproblemen op."
 
-#: wp-admin/about.php:323
+#: wp-admin/about.php:356
 msgid "Maintenance Release"
 msgstr "Onderhoudsversie"
 
-#: wp-admin/about.php:326
+#: wp-admin/about.php:359
 msgid "Security Release"
 msgstr "Beveiligingsversie"
 
-#: wp-admin/about.php:329
+#: wp-admin/about.php:362
 msgid "Maintenance and Security Release"
 msgstr "Onderhouds- en beveiligingsversie"
 
@@ -10244,11 +10245,11 @@ msgstr "<strong>Bewerken</strong> brengt je naar het bewerkscherm van deze gebru
 msgid "Because this is a multisite installation, you may add accounts that already exist on the Network by specifying a username or email, and defining a role. For more options, such as specifying a password, you have to be a Network Administrator and use the hover link under an existing user&#8217;s name to Edit the user profile under Network Admin > All Users."
 msgstr "Omdat dit een Multisite-installatie is kan je accounts toevoegen die reeds bestaan in het netwerk door een gebruikersnaam of e-mailadres op te geven en een rol te definiëren. Voor méér opties, zoals het opgeven van een aangepast wachtwoord, moet je als Netwerkbeheerder aangeduid en de zwevende link onder de naam van een bestaande gebruiker gebruiken om het gebruikersprofiel te bewerken onder Netwerkbeheerder > Alle Gebruikers."
 
-#: wp-admin/about.php:235
+#: wp-admin/about.php:268
 msgid "Go to Dashboard &rarr; Home"
 msgstr "Ga naar Dashboard &rarr; Home"
 
-#: wp-admin/about.php:232
+#: wp-admin/about.php:265
 msgid "Go to Dashboard &rarr; Updates"
 msgstr "Ga naar Dashboard &rarr; Updates"
 
@@ -10434,11 +10435,6 @@ msgstr "Alle gebruikers"
 msgid "Role"
 msgstr "Rol"
 
-#: wp-admin/user-new.php:372 wp-admin/user-new.php:411
-#: wp-admin/user-new.php:472 wp-admin/network/site-users.php:298
-msgid "Add Existing User"
-msgstr "Bestaande gebruiker toevoegen"
-
 #: wp-admin/includes/class-wp-links-list-table.php:88
 #: wp-admin/includes/class-wp-links-list-table.php:336
 #: wp-admin/includes/class-wp-themes-list-table.php:233
@@ -10491,6 +10487,11 @@ msgstr "Verwijderen"
 #: wp-admin/network/settings.php:62 wp-admin/network/sites.php:44
 msgid "For more information:"
 msgstr "Voor meer info:"
+
+#: wp-admin/user-new.php:372 wp-admin/user-new.php:411
+#: wp-admin/user-new.php:472 wp-admin/network/site-users.php:298
+msgid "Add Existing User"
+msgstr "Bestaande gebruiker toevoegen"
 
 #: wp-admin/includes/dashboard.php:473 wp-admin/includes/dashboard.php:475
 #: wp-admin/users.php:643 wp-admin/network/site-users.php:274
@@ -12100,7 +12101,7 @@ msgstr "Alles bekijken"
 msgid "Please enter a valid menu name."
 msgstr "Voer een geldige menu-naam in."
 
-#: wp-admin/about.php:235 wp-admin/includes/network.php:148
+#: wp-admin/about.php:268 wp-admin/includes/network.php:148
 msgid "Go to Dashboard"
 msgstr "Ga naar Dashboard"
 

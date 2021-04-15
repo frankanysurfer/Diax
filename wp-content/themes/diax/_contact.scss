@@ -15,7 +15,7 @@ input[type="datetime-local"],
 input[type="color"],
 textarea {
 	font-family: "open_sansregular";
-    outline: 1px solid $blueBright;
+    border: 2px solid $blueBright;
 }
 
 input[type="text"]:focus,
@@ -35,7 +35,7 @@ input[type="datetime-local"]:focus,
 input[type="color"]:focus,
 textarea:focus {
 	background-color: $blueVeryLight;
-    outline: 2px solid $blueBright;
+    outline: 1px solid $blueBright;
 }
 
 input[type="submit"]:hover,
@@ -50,17 +50,19 @@ input[type="submit"]:focus {
 
 .wpcf7 form.invalid .wpcf7-response-output,
 .wpcf7 form.unaccepted .wpcf7-response-output {
-    border-color: $blueBright;
+    border-color: #F04040;
 }
 
 .wpcf7-not-valid-tip {
-	color: $blueBright;
+	margin-top: .5rem;
+	color: #F04040;
 }
 
 .wpcf7 {
 	padding: 0 .5rem;
 	form { 
 		fieldset {
+			border: 1px solid $blueBright;
 			padding: 0 2rem 1.25rem;
 			legend{ 
 				padding-top: 1rem;
@@ -69,17 +71,18 @@ input[type="submit"]:focus {
 				margin: 1.5rem 0 .5rem;
 				font-family: "flama_semicondensedbold";
 				font-size: 1.2rem;
-				color: $blueBright;
+				color: $blueVeryDark;
 				text-transform: capitalize;
+			}
+			input[type="submit"] {
+				margin-top: 1rem;
+				background-color: $blueDark;
+				border: 2px solid $blueBright;
+				&:hover {
+					background-color: $blueBright;
+				}
 			}
 		}
 	}
 }
 
-input[type="submit"] {
-	margin-top: 1rem;
-	background-color: $blueBright;
-	&:hover {
-		background-color: $blueBright;
-	}
-}
