@@ -138,6 +138,9 @@ section:first-of-type {
 	display: flex;
 	justify-content: center;
 	width: 100%;
+	img {
+		width: auto;
+	}
 }
 
 .card-partners {
@@ -157,19 +160,13 @@ section:first-of-type {
 }
 
 .card-item {
-	position: relative;
-	min-height: 21rem;
 	margin-bottom: 2rem;
-	padding: 1rem;
+	padding: 1rem 1rem 2rem;
 	border-radius: 2px;
 	box-shadow: 2px 2px 20px rgba(0,5,24,.1);	
 	h3 {
+		font-size: 1.5rem;
 		text-align: center;
-	}
-	.card-item-link {
-		position: absolute;
-		left: 1rem;
-		bottom: .5rem;
 	}
 }
 

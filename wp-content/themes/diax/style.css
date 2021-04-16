@@ -475,6 +475,8 @@ section:first-of-type {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%; }
+  .card-img img {
+    width: auto; }
 
 .card-partners .card-links {
   -webkit-box-orient: vertical;
@@ -496,19 +498,14 @@ section:first-of-type {
           flex-direction: column-reverse; }
 
 .card-item {
-  position: relative;
-  min-height: 21rem;
   margin-bottom: 2rem;
-  padding: 1rem;
+  padding: 1rem 1rem 2rem;
   border-radius: 2px;
   -webkit-box-shadow: 2px 2px 20px rgba(0, 5, 24, 0.1);
           box-shadow: 2px 2px 20px rgba(0, 5, 24, 0.1); }
   .card-item h3 {
+    font-size: 1.5rem;
     text-align: center; }
-  .card-item .card-item-link {
-    position: absolute;
-    left: 1rem;
-    bottom: .5rem; }
 
 .card-item:last-of-type {
   margin-bottom: 0; }
@@ -768,7 +765,6 @@ input[type="submit"]:focus {
       width: 60%; }
 
   blockquote p {
-    font-size: 2.2rem;
     width: 50%; } }
 @media only screen and (min-width: 64em) {
   html {
@@ -837,10 +833,7 @@ input[type="submit"]:focus {
       width: 100%;
       -ms-flex-preferred-size: 100%;
           flex-basis: 100%;
-      padding: 0; }
-
-  blockquote p {
-    font-size: 2.4rem; } }
+      padding: 0; } }
 @media only screen and (min-width: 80em) {
   h1 {
     font-size: 3.2rem; }
@@ -986,7 +979,8 @@ input[type="submit"]:focus {
     background-color: #e6f1fc !important; }
   .dark .wpcf7 form.invalid .wpcf7-response-output,
   .dark .wpcf7 form.unaccepted .wpcf7-response-output {
-    border-color: #0575e6; }
+    border-color: #0575e6;
+    color: #0575e6; }
   .dark .wpcf7-not-valid-tip {
     color: #0575e6; }
   .dark .wpcf7 {
