@@ -1,3 +1,4 @@
+// Logo alt tekst
 var b = document.querySelector(".site-branding a img");
 b.setAttribute("alt", "Diax Digital Accessibility Experts");
 
@@ -15,9 +16,7 @@ Array.prototype.forEach.call(cards, card => {
     }
 });
 
-// var c = document.getElementById("cookie-notice");
-// c.removeAttribute("role");
-
+// Dark mode
 var b = document.body;
 var d = document.getElementById("switch");
 
@@ -31,3 +30,9 @@ function myFunction() {
    
    imgElement.src = (imgElement.src === logo)? logodark : logo;
 }
+
+// Remove cookie role="banner"
+document.addEventListener('DOMContentLoaded', function(event) {
+  var c = document.getElementById("cookie-notice");
+  c.removeAttribute("role");
+})

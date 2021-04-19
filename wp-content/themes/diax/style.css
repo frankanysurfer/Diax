@@ -297,12 +297,12 @@ a:hover, a:active {
       font-weight: 400; }
     .site-footer .footer-row p {
       margin-top: 5rem;
-      font-size: .8rem;
+      font-size: .9rem;
       color: #e6f1fc;
       font-family: "flama_semicondensedbook"; }
       .site-footer .footer-row p a {
         text-decoration: underline;
-        font-size: .8rem;
+        font-size: .9rem;
         color: #e6f1fc;
         -webkit-transition-property: none;
         transition-property: none; }
@@ -336,9 +336,9 @@ a:hover, a:active {
       color: #e6f1fc; }
       .site-footer .footer-row .footerlist li {
         margin-bottom: .5rem;
-        font-size: .8rem; }
+        font-size: .9rem; }
         .site-footer .footer-row .footerlist li a {
-          font-size: .8rem; }
+          font-size: .9rem; }
       .site-footer .footer-row .footerlist .footer-icon {
         background-repeat: no-repeat;
         background-position: left 5px;
@@ -353,6 +353,16 @@ a:hover, a:active {
           margin-left: 1.3rem; }
       .site-footer .footer-row .footerlist:last-child {
         margin-bottom: 0; }
+  .site-footer .footer-row-1 {
+    position: relative; }
+    .site-footer .footer-row-1:after {
+      position: absolute;
+      content: "";
+      top: 20px;
+      left: 0;
+      width: 150px;
+      height: auto;
+      background-image: url("http://localhost/diax/wp-content/themes/diax/img/opsommingsteken.svg"); }
 
 img {
   max-width: 100%;
@@ -438,7 +448,7 @@ span a,
 .nav-next a,
 .entry-content a {
   border-bottom: 2px solid #021b79;
-  color: #0575e6;
+  color: #021b79;
   font-weight: normal; }
 
 p:not(.site-title) a:hover,

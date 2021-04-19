@@ -158,12 +158,12 @@ a:hover, a:active {
 		}
 		p {
 			margin-top: 5rem;
-			font-size: .8rem;
+			font-size: .9rem;
 			color: $blueVeryLight;
 			font-family: "flama_semicondensedbook";
 			a {	
 				text-decoration: underline;
-				font-size: .8rem;
+				font-size: .9rem;
 				color: $blueVeryLight;
 				transition-property: none;
 				&:hover {
@@ -200,9 +200,9 @@ a:hover, a:active {
 			color: $blueVeryLight;
 			li {
 				margin-bottom: .5rem;
-				font-size: .8rem;
+				font-size: .9rem;
 				a {
-					font-size: .8rem;	
+					font-size: .9rem;	
 				}
 			}
 			.footer-icon {
@@ -225,6 +225,18 @@ a:hover, a:active {
 			&:last-child {
 				margin-bottom: 0;
 			}
+		}
+	}
+	.footer-row-1 {
+		position: relative;
+		&:after {
+			position: absolute;
+			content: "";
+			top: 20px;
+			left: 0;
+			width: 150px;
+			height: auto;
+			background-image: url("http://localhost/diax/wp-content/themes/diax/img/opsommingsteken.svg");
 		}
 	}
 }
