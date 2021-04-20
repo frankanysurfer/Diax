@@ -147,6 +147,8 @@ a:hover, a:active {
 }
 
 .site-footer {
+	position: relative;
+	z-index: 1;
 	background-color: $blueDark;
 	.footer-row {
 		margin: 0 2rem;
@@ -225,18 +227,6 @@ a:hover, a:active {
 			&:last-child {
 				margin-bottom: 0;
 			}
-		}
-	}
-	.footer-row-1 {
-		position: relative;
-		&:after {
-			position: absolute;
-			content: "";
-			top: 20px;
-			left: 0;
-			width: 150px;
-			height: auto;
-			background-image: url("http://localhost/diax/wp-content/themes/diax/img/opsommingsteken.svg");
 		}
 	}
 }

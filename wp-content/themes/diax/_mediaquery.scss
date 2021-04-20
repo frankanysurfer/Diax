@@ -25,9 +25,43 @@
 		justify-content: space-around;
 	}
 
-	.footerlist {
-		margin-bottom: 0;
-		padding-inline-start: 0;
+	.site-footer {
+		.footer-row-1 {
+			position: relative;
+			&::before {
+				position: absolute;
+				content: "";
+				margin-top: -1px;
+				top: 0;
+				left: 0;
+				width: 200%;
+				height: 100%;
+				background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/opsommingsteken.svg");
+				background-repeat: no-repeat;
+				background-position: center top;
+				background-size: cover;
+				z-index: -1;
+			}
+			h3 {
+				color: $blueDark;
+			}
+			li {
+				color: $blueDark;
+				a {
+					color: $blueDark;
+				}
+			}
+			.footerlist {
+				margin-bottom: 0;
+				padding-inline-start: 0;
+				.mail {
+					background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/mail-media.svg");	
+				}
+				.tele {
+					background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/tele-media.svg");	
+				}
+			}
+		}
 	}
 
 	.partners-sec,
@@ -93,7 +127,6 @@
 			}
 		}
 	}
-
 }
 
 

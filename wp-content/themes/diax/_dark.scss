@@ -9,7 +9,8 @@
 	}
 
 	h3 {
-	    color: $blueBright;
+	    color: $blueVeryLight;
+	    font-weight: normal;
 	}
 
 	h4 {
@@ -29,15 +30,15 @@
 	}
 
 	/***** Links *****/
+
 	a {
 		color: $blueBright;
 		border-bottom-color: $blueBright;
-	}+
+	}
 
 	a:hover, a:active {
 		color: $blueVeryLight;
 	    border-bottom-color: $blueVeryLight;
-	    outline: 1px solid #333;
 	}
 
 	/***** Hoofdnavigatie *****/
@@ -112,6 +113,42 @@
 		}
 	}
 
+	.card-partners,
+	.card-diensten {
+		p:not(.site-title) a,
+		.entry-content a {
+		    border-bottom: 2px solid $blueBright;
+		    color: $blueBright;
+		}
+		p:not(.site-title) a:hover,
+		.entry-content a:hover {
+		    border-bottom: 2px solid $blueBright;
+		    color: $blueBright;
+		}
+
+		p:not(.site-title) a:after,
+		span a:after,
+		.nav-previous a:after,
+		.nav-next a:after,
+		.entry-content a:after {
+		    background-color: $blueBright;
+		    color: $blueBright;
+		    transition-property: none;
+		}
+	}
+
+	.card-item {
+		box-shadow: 2px 2px 20px rgba(230,241,252,.1);
+	}
+
+	.img-light {
+		display: none;
+	}
+
+	.img-dark {
+		display: block;
+	}
+
 	/***** Footer links *****/
 	.site-footer {
 		background-color: $blueBright;
@@ -145,6 +182,11 @@
 						color: $blueVeryDark;
 					}
 				}
+			}
+		}
+		.footer-row-1 {
+			&::before {
+				background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/opsommingsteken-dark.svg");
 			}
 		}
 	}
@@ -228,6 +270,34 @@
 					&:hover {
 						background-color: $blueBright;
 						border: 2px solid $blueBright;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 40em) {
+	.dark {
+		.site-footer {
+			.footer-row-1 {
+				h3 {
+					color: $blueBright;
+				}
+				.footerlist {
+					margin-bottom: 0;
+					padding-inline-start: 0;
+					li {
+					color: $blueBright;
+						a {
+							color: $blueBright;
+						}
+					}
+					.mail {
+						background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/mail-media-dark.svg");	
+					}
+					.tele {
+						background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/tele-media-dark.svg");	
 					}
 				}
 			}

@@ -100,6 +100,7 @@ span a,
     border-bottom: 2px solid $blueDark;
     color: $blueDark;
     font-weight: normal;
+    transition-property: none;
 }
 
 p:not(.site-title) a:hover,
@@ -109,6 +110,7 @@ span a:hover,
 .entry-content a:hover {
     border-bottom: 2px solid $blueAlmostBlack;
     color: $blueAlmostBlack;
+    transition-property: none;
 }
 
 p:not(.site-title) a:after,
@@ -116,8 +118,9 @@ span a:after,
 .nav-previous a:after,
 .nav-next a:after,
 .entry-content a:after {
-    background-color: $blueAlmostBlack;
+    background-color: none;
     color: $blueAlmostBlack;
+    transition-property: none;
 }
 
 /***** Main *****/
@@ -165,13 +168,21 @@ section:first-of-type {
 	border-radius: 2px;
 	box-shadow: 2px 2px 20px rgba(0,5,24,.1);	
 	h3 {
-		font-size: 1.5rem;
+		font-size: 1.25rem;
 		text-align: center;
 	}
 }
 
 .card-item:last-of-type {
 	margin-bottom: 0;
+}
+
+.img-light {
+	display: block;
+}
+
+.img-dark {
+	display: none;
 }
 
 figure {
@@ -194,6 +205,7 @@ figure {
 blockquote {
 	display: flex;
 	justify-content: center;
+	border-style: none;
 	p {
 	font-size: 1.6rem;
 	}

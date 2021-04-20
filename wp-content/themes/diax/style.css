@@ -113,7 +113,7 @@ h1 {
 h2 {
   font-family: 'flama_semicondensedbold';
   font-size: 2.8rem;
-  font-size: 1.8rem;
+  font-size: 2rem;
   line-height: 1.2;
   color: #021b79; }
 
@@ -287,6 +287,8 @@ a:hover, a:active {
   max-width: 1024px; }
 
 .site-footer {
+  position: relative;
+  z-index: 1;
   background-color: #021b79; }
   .site-footer .footer-row {
     margin: 0 2rem;
@@ -353,16 +355,6 @@ a:hover, a:active {
           margin-left: 1.3rem; }
       .site-footer .footer-row .footerlist:last-child {
         margin-bottom: 0; }
-  .site-footer .footer-row-1 {
-    position: relative; }
-    .site-footer .footer-row-1:after {
-      position: absolute;
-      content: "";
-      top: 20px;
-      left: 0;
-      width: 150px;
-      height: auto;
-      background-image: url("http://localhost/diax/wp-content/themes/diax/img/opsommingsteken.svg"); }
 
 img {
   max-width: 100%;
@@ -449,7 +441,9 @@ span a,
 .entry-content a {
   border-bottom: 2px solid #021b79;
   color: #021b79;
-  font-weight: normal; }
+  font-weight: normal;
+  -webkit-transition-property: none;
+  transition-property: none; }
 
 p:not(.site-title) a:hover,
 span a:hover,
@@ -457,15 +451,19 @@ span a:hover,
 .nav-next a:hover,
 .entry-content a:hover {
   border-bottom: 2px solid #000518;
-  color: #000518; }
+  color: #000518;
+  -webkit-transition-property: none;
+  transition-property: none; }
 
 p:not(.site-title) a:after,
 span a:after,
 .nav-previous a:after,
 .nav-next a:after,
 .entry-content a:after {
-  background-color: #000518;
-  color: #000518; }
+  background-color: none;
+  color: #000518;
+  -webkit-transition-property: none;
+  transition-property: none; }
 
 /***** Main *****/
 section {
@@ -514,11 +512,17 @@ section:first-of-type {
   -webkit-box-shadow: 2px 2px 20px rgba(0, 5, 24, 0.1);
           box-shadow: 2px 2px 20px rgba(0, 5, 24, 0.1); }
   .card-item h3 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     text-align: center; }
 
 .card-item:last-of-type {
   margin-bottom: 0; }
+
+.img-light {
+  display: block; }
+
+.img-dark {
+  display: none; }
 
 figure {
   margin-top: 5rem;
@@ -539,7 +543,8 @@ blockquote {
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  border-style: none; }
   blockquote p {
     font-size: 1.6rem; }
 
@@ -654,11 +659,36 @@ input[type="submit"]:focus {
     -ms-flex-pack: distribute;
         justify-content: space-around; }
 
-  .footerlist {
-    margin-bottom: 0;
-    -webkit-padding-start: 0;
-       -moz-padding-start: 0;
-            padding-inline-start: 0; }
+  .site-footer .footer-row-1 {
+    position: relative; }
+    .site-footer .footer-row-1::before {
+      position: absolute;
+      content: "";
+      margin-top: -1px;
+      top: 0;
+      left: 0;
+      width: 200%;
+      height: 100%;
+      background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/opsommingsteken.svg");
+      background-repeat: no-repeat;
+      background-position: center top;
+      background-size: cover;
+      z-index: -1; }
+    .site-footer .footer-row-1 h3 {
+      color: #021b79; }
+    .site-footer .footer-row-1 li {
+      color: #021b79; }
+      .site-footer .footer-row-1 li a {
+        color: #021b79; }
+    .site-footer .footer-row-1 .footerlist {
+      margin-bottom: 0;
+      -webkit-padding-start: 0;
+         -moz-padding-start: 0;
+              padding-inline-start: 0; }
+      .site-footer .footer-row-1 .footerlist .mail {
+        background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/mail-media.svg"); }
+      .site-footer .footer-row-1 .footerlist .tele {
+        background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/tele-media.svg"); }
 
   .partners-sec,
   .diensten-sec {
@@ -864,7 +894,8 @@ input[type="submit"]:focus {
   .dark h2 {
     color: #0575e6; }
   .dark h3 {
-    color: #0575e6; }
+    color: #e6f1fc;
+    font-weight: normal; }
   .dark h4 {
     color: #e6f1fc; }
   .dark h5 {
@@ -876,11 +907,9 @@ input[type="submit"]:focus {
   .dark a {
     color: #0575e6;
     border-bottom-color: #0575e6; }
-  .dark +
-  a:hover, .dark a:active {
+  .dark a:hover, .dark a:active {
     color: #e6f1fc;
-    border-bottom-color: #e6f1fc;
-    outline: 1px solid #333; }
+    border-bottom-color: #e6f1fc; }
   .dark .main-navigation a {
     color: #edeaf6; }
     .dark .main-navigation a:hover {
@@ -925,6 +954,39 @@ input[type="submit"]:focus {
       color: #e6f1fc;
       border-color: #000518;
       background-color: #000518; }
+  .dark .card-partners p:not(.site-title) a,
+  .dark .card-partners .entry-content a,
+  .dark .card-diensten p:not(.site-title) a,
+  .dark .card-diensten .entry-content a {
+    border-bottom: 2px solid #0575e6;
+    color: #0575e6; }
+  .dark .card-partners p:not(.site-title) a:hover,
+  .dark .card-partners .entry-content a:hover,
+  .dark .card-diensten p:not(.site-title) a:hover,
+  .dark .card-diensten .entry-content a:hover {
+    border-bottom: 2px solid #0575e6;
+    color: #0575e6; }
+  .dark .card-partners p:not(.site-title) a:after,
+  .dark .card-partners span a:after,
+  .dark .card-partners .nav-previous a:after,
+  .dark .card-partners .nav-next a:after,
+  .dark .card-partners .entry-content a:after,
+  .dark .card-diensten p:not(.site-title) a:after,
+  .dark .card-diensten span a:after,
+  .dark .card-diensten .nav-previous a:after,
+  .dark .card-diensten .nav-next a:after,
+  .dark .card-diensten .entry-content a:after {
+    background-color: #0575e6;
+    color: #0575e6;
+    -webkit-transition-property: none;
+    transition-property: none; }
+  .dark .card-item {
+    -webkit-box-shadow: 2px 2px 20px rgba(230, 241, 252, 0.1);
+            box-shadow: 2px 2px 20px rgba(230, 241, 252, 0.1); }
+  .dark .img-light {
+    display: none; }
+  .dark .img-dark {
+    display: block; }
   .dark .site-footer {
     background-color: #0575e6; }
     .dark .site-footer .footer-row h3 {
@@ -945,6 +1007,8 @@ input[type="submit"]:focus {
         border: none; }
         .dark .site-footer .footer-row p a:hover {
           color: #01172e; }
+    .dark .site-footer .footer-row-1::before {
+      background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/opsommingsteken-dark.svg"); }
   .dark input[type="text"],
   .dark input[type="email"],
   .dark input[type="url"],
@@ -1007,5 +1071,22 @@ input[type="submit"]:focus {
         .dark .wpcf7 form fieldset input[type="submit"]:hover {
           background-color: #0575e6;
           border: 2px solid #0575e6; }
+
+@media screen and (min-width: 40em) {
+  .dark .site-footer .footer-row-1 h3 {
+    color: #0575e6; }
+  .dark .site-footer .footer-row-1 .footerlist {
+    margin-bottom: 0;
+    -webkit-padding-start: 0;
+       -moz-padding-start: 0;
+            padding-inline-start: 0; }
+    .dark .site-footer .footer-row-1 .footerlist li {
+      color: #0575e6; }
+      .dark .site-footer .footer-row-1 .footerlist li a {
+        color: #0575e6; }
+    .dark .site-footer .footer-row-1 .footerlist .mail {
+      background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/mail-media-dark.svg"); }
+    .dark .site-footer .footer-row-1 .footerlist .tele {
+      background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/tele-media-dark.svg"); } }
 
 /*# sourceMappingURL=style.css.map */
