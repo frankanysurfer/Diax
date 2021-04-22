@@ -34,12 +34,12 @@ img {
 		margin: 1rem auto 0;
 		padding: 0 1rem;
 		border-top: none;
-		max-width: 1440px;
+		max-width: 1280px;
 	}
 	.site-header,
 	.site-content,
 	.site-footer {
-		max-width: 1440px;
+		max-width: 1280px;
 	}
 }
 
@@ -173,9 +173,9 @@ section:first-of-type {
 	}
 }
 
-.card-item:last-of-type {
-	margin-bottom: 0;
-}
+// .card-item:last-of-type {
+// 	margin-bottom: 0;
+// }
 
 .img-light {
 	display: block;

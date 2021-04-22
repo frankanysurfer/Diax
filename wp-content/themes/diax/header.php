@@ -56,7 +56,7 @@
 		</div><!-- .site-branding -->
         <ul class="language"><?php pll_the_languages();?></ul>
        <!--  <div class="maan"><img src="https://staging.di-ax.be/wp-content/themes/diax/img/moon.svg"></div> -->
-        <button  onclick="myFunction()" id="switch" class="maan"><span class="sr-only">Dark mode</span></button>
+        <button  onclick="modeSwitch()" id="switch" class="maan"><span class="sr-only">Dark - light mode switch</span></button>
 
 		<nav id="site-navigation" class="main-navigation">
             <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'slightly' ); ?></button>

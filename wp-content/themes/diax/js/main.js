@@ -24,7 +24,7 @@ var logo = document.getElementById("diax-logo").src;
 var logodark = "https://staging.di-ax.be/wp-content/themes/diax/img/diax-logo-dark.svg";
 var imgElement = document.getElementById('diax-logo');
 
-function myFunction() {
+function modeSwitch() {
    b.classList.toggle("dark");
    d.classList.toggle("zon");
    

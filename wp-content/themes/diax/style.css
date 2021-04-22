@@ -108,14 +108,16 @@ h1 {
   font-size: 3.6rem;
   font-size: 2.4em;
   line-height: 1.2;
-  color: #021b79; }
+  color: #021b79;
+  margin-bottom: 1.5rem; }
 
 h2 {
   font-family: 'flama_semicondensedbold';
   font-size: 2.8rem;
   font-size: 2rem;
   line-height: 1.2;
-  color: #021b79; }
+  color: #021b79;
+  margin-bottom: 1.5rem; }
 
 h3 {
   font-family: 'flama_semicondensedbold';
@@ -258,6 +260,7 @@ a:hover, a:active {
     color: #0575e6;
     background-color: #01172e;
     border: none;
+    font-weight: bold;
     -webkit-transition-property: none;
     transition-property: none; }
     .card-links a.linkb2:hover {
@@ -296,7 +299,7 @@ a:hover, a:active {
     .site-footer .footer-row h3 {
       font-size: 1.2rem;
       color: #e6f1fc;
-      font-weight: 400; }
+      font-weight: bold; }
     .site-footer .footer-row p {
       margin-top: 5rem;
       font-size: .9rem;
@@ -389,11 +392,11 @@ img {
     margin: 1rem auto 0;
     padding: 0 1rem;
     border-top: none;
-    max-width: 1440px; }
+    max-width: 1280px; }
   .page .site-header,
   .page .site-content,
   .page .site-footer {
-    max-width: 1440px; }
+    max-width: 1280px; }
 
 .row {
   margin: 0;
@@ -514,9 +517,6 @@ section:first-of-type {
   .card-item h3 {
     font-size: 1.25rem;
     text-align: center; }
-
-.card-item:last-of-type {
-  margin-bottom: 0; }
 
 .img-light {
   display: block; }
@@ -744,7 +744,7 @@ input[type="submit"]:focus {
           -ms-flex-pack: justify;
               justify-content: space-between;
       width: 100%;
-      margin-bottom: 3rem; }
+      margin-bottom: 2rem; }
       section .card-diensten .card-row .card-item,
       section .card-partners .card-row .card-item {
         width: auto;

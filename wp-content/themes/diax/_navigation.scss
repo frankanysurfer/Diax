@@ -113,6 +113,7 @@ a:hover, a:active {
 		color: $blueBright;
 		background-color: $blueVeryDark;
 		border: none;
+		font-weight: bold;
 		transition-property: none;
 		&:hover {
 			color: $blueVeryDark;
@@ -156,7 +157,7 @@ a:hover, a:active {
 		h3 {
 			font-size: 1.2rem;
 			color: $blueVeryLight;
-			font-weight: 400;
+			font-weight: bold;
 		}
 		p {
 			margin-top: 5rem;
