@@ -68,9 +68,6 @@
 	.diensten-sec {
 		display: flex;
 		flex-direction: column;
-		.card-content {
-			// width: 100%;
-		}
 	}
 
 }
@@ -132,13 +129,7 @@
 
 @media only screen and (min-width: 55em) {
 
-	.site-header {
-		// height: 21rem;
-	}
-
 	.site-header .row {
-		// margin-left: 8.33333333%;
-		// margin-right: 8.33333333%;
 		margin-left: 0;
 		margin-right: 0;
 	}
@@ -186,7 +177,6 @@
 
 	blockquote {
 		 p {
-			// font-size: 2.2rem;
 			width: 50%;
 		}
 	}
@@ -268,9 +258,6 @@
 				}
 			}
 		}
-	blockquote p {
-		// font-size: 2.4rem;
-	}
 }
 
 @media only screen and (min-width: 80em) {
