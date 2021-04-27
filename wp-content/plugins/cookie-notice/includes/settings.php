@@ -565,7 +565,7 @@ class Cookie_Notice_Settings {
 						<span class="cn_compliance_status">' . __( 'Proof-of-Consent', 'cookie-notice' ) . ': <label class="cn-inactive">' . __( 'Inactive', 'cookie-notice' ) . '</label></span>
 					</div>
 					<div id="cn_app_actions">
-						<a href="' . admin_url( 'index.php?page=cookie-notice-welcome' ) . '" class="button button-primary button-hero">' . __( 'Add GDPR/CCPA Compliance', 'cookie-notice' ) . '</a>
+						<a href="' . admin_url( 'index.php?page=cookie-notice-welcome&screen=2' ) . '" class="button button-primary button-hero">' . __( 'Add GDPR/CCPA Compliance', 'cookie-notice' ) . '</a>
 						<p class="description">' . __( 'Launch Cookie Compliance&trade; and add GDPR & CCPA compliance features.', 'cookie-notice' ) . '</p>
 					</div>
 				</fieldset>';

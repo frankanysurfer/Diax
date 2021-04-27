@@ -46,6 +46,7 @@ class Cookie_Notice_Frontend {
 			} else {
 				// actions
 				add_action( 'wp_enqueue_scripts', array( $this, 'wp_enqueue_notice_scripts' ) );
+				add_filter( 'script_loader_tag', array( $this, 'wp_enqueue_script_async' ), 10, 3 );
 				add_action( 'wp_head', array( $this, 'wp_print_header_scripts' ) );
 				add_action( 'wp_print_footer_scripts', array( $this, 'wp_print_footer_scripts' ) );
 				add_action( 'wp_footer', array( $this, 'add_cookie_notice' ), 1000 );
@@ -73,6 +74,11 @@ class Cookie_Notice_Frontend {
 		// get site language
 		$locale = get_locale();
 		$locale_code = explode( '_', $locale );
+		
+		// exceptions, norwegian
+		if ( in_array( $locale_code, array( 'nb', 'nn' ) ) ) {
+			$locale_code = 'no';
+		}
 	
 		$options = array(
 			'appID' => Cookie_Notice()->options['general']['app_id'],
@@ -185,7 +191,7 @@ class Cookie_Notice_Frontend {
 
 		// message output
 		$output = '
-		<!-- Cookie Notice plugin v' . Cookie_Notice()->defaults['version'] . ' by Digital Factory https://dfactory.eu/ -->
+		<!-- Cookie Notice plugin v' . Cookie_Notice()->defaults['version'] . ' -->
 		<div id="cookie-notice" role="banner" class="cookie-notice-hidden cookie-revoke-hidden cn-position-' . $options['position'] . '" aria-label="' . $options['aria_label'] . '" style="background-color: rgba(' . implode( ',', Cookie_Notice()->hex2rgb( $options['colors']['bar'] ) ) . ',' . $options['colors']['bar_opacity'] * 0.01 . ');">'
 			. '<div class="cookie-notice-container" style="color: ' . $options['colors']['text'] . ';">'
 			. '<span id="cn-notice-text" class="cn-text-container">'. $options['message_text'] . '</span>'
@@ -237,6 +243,21 @@ class Cookie_Notice_Frontend {
 		);
 
 		wp_enqueue_style( 'cookie-notice-front', plugins_url( '../css/front' . ( ! ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '.min' : '' ) . '.css', __FILE__ ) );
+	}
+	
+	/**
+	 * Make a JavaScript Asynchronous
+	 * 
+	 * @param string $tag The original enqueued script tag
+	 * @param string $handle The registered unique name of the script
+	 * @param string $src
+	 * @return string $tag The modified script tag
+	 */
+	public function wp_enqueue_script_async( $tag, $handle, $src ) {
+		if ( 'cookie-notice-front' === $handle ) {
+			$tag = str_replace( '<script', '<script async', $tag );
+		}
+		return $tag;
 	}
 
 	/**
@@ -308,7 +329,7 @@ class Cookie_Notice_Frontend {
 		
 		// save data
 		if ( $config_data && is_array( $config_data ) )
-			set_transient( 'cookie_notice_compliance_cache', $config_data, 24 * HOURS_IN_SECONDS );
+			set_transient( 'cookie_notice_compliance_cache', $config_data, 24 * HOUR_IN_SECONDS );
 		
 		return true;
 		exit;

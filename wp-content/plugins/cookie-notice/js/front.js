@@ -419,7 +419,7 @@
 					// Chrome double click event fix
 					e.stopPropagation();
 
-					_this.setStatus( this.dataset.cookieSet );
+					_this.setStatus( 'reject' );
 				} );
 			}
 

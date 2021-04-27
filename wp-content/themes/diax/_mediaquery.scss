@@ -56,9 +56,15 @@
 				padding-inline-start: 0;
 				.mail {
 					background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/mail-media.svg");	
+					a:focus {
+						outline: 1px solid $blueDark;
+					}
 				}
 				.tele {
-					background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/tele-media.svg");	
+					background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/tele-media.svg");
+					a:focus {
+						outline: 1px solid $blueDark;
+					}	
 				}
 			}
 		}
@@ -122,6 +128,16 @@
 					}
 				}
 			}
+		}
+	}
+
+	.home-berichten {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 100%;
+		article {
+			width: 45%;
 		}
 	}
 }

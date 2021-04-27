@@ -276,6 +276,9 @@ a:hover, a:active {
               transform: none;
       height: 0; }
 
+.home-wie-sec .card-links a.linkb1 {
+  margin-bottom: 1rem; }
+
 /***** Footer links *****/
 .site-footer {
   margin: 3rem auto 0;
@@ -348,7 +351,7 @@ a:hover, a:active {
           margin-left: 1.3rem; }
       .site-footer .footer-row .footerlist .tele {
         background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/tele.svg"); }
-        .site-footer .footer-row .footerlist .tele span {
+        .site-footer .footer-row .footerlist .tele a {
           margin-left: 1.3rem; }
       .site-footer .footer-row .footerlist:last-child {
         margin-bottom: 0; }
@@ -681,8 +684,12 @@ input[type="submit"]:focus {
               padding-inline-start: 0; }
       .site-footer .footer-row-1 .footerlist .mail {
         background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/mail-media.svg"); }
+        .site-footer .footer-row-1 .footerlist .mail a:focus {
+          outline: 1px solid #021b79; }
       .site-footer .footer-row-1 .footerlist .tele {
         background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/tele-media.svg"); }
+        .site-footer .footer-row-1 .footerlist .tele a:focus {
+          outline: 1px solid #021b79; }
 
   .partners-sec,
   .diensten-sec {
@@ -755,7 +762,22 @@ input[type="submit"]:focus {
           height: 30%; }
           section .card-diensten .card-row .card-item .card-img img,
           section .card-partners .card-row .card-item .card-img img {
-            width: 80px; } }
+            width: 80px; }
+
+  .home-berichten {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%; }
+    .home-berichten article {
+      width: 45%; } }
 @media only screen and (min-width: 55em) {
   .site-header .row {
     margin-left: 0;

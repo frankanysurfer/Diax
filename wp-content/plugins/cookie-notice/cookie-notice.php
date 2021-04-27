@@ -2,7 +2,7 @@
 /*
 Plugin Name: Cookie Notice & Compliance for GDPR / CCPA
 Description: Cookie Notice allows you to you elegantly inform users that your site uses cookies and helps you comply with GDPR, CCPA and other data privacy laws.
-Version: 2.0.3
+Version: 2.0.4
 Author: Hu-manity.co
 Author URI: https://hu-manity.co/
 Plugin URI: https://hu-manity.co/
@@ -29,7 +29,7 @@ if ( ! defined( 'ABSPATH' ) )
  * Cookie Notice class.
  *
  * @class Cookie_Notice
- * @version	2.0.3
+ * @version	2.0.4
  */
 class Cookie_Notice {
 
@@ -85,7 +85,7 @@ class Cookie_Notice {
 			'update_notice'				=> true,
 			'update_delay_date'			=> 0
 		),
-		'version'	=> '2.0.3'
+		'version'	=> '2.0.4'
 	);
 	
 	private static $_instance;
@@ -444,14 +444,20 @@ class Cookie_Notice {
 	 * Add WP Super Cache cookie.
 	 */
 	public function wpsc_add_cookie() {
-		do_action( 'wpsc_add_cookie', 'cookie_notice_accepted' );
+		if ( Cookie_Notice()->get_status() === 'active' )
+			do_action( 'wpsc_add_cookie', 'hu-consent' );
+		else
+			do_action( 'wpsc_add_cookie', 'cookie_notice_accepted' );
 	}
 	
 	/**
 	 * Delete WP Super Cache cookie.
 	 */
 	public function wpsc_delete_cookie() {
-		do_action( 'wpsc_delete_cookie', 'cookie_notice_accepted' );
+		if ( Cookie_Notice()->get_status() === 'active' )
+			do_action( 'wpsc_delete_cookie', 'hu-consent' );
+		else
+			do_action( 'wpsc_delete_cookie', 'cookie_notice_accepted' );
 	}
 
 	/**

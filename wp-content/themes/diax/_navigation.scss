@@ -138,6 +138,14 @@ a:hover, a:active {
 	}
 }
 
+.home-wie-sec {
+	.card-links {
+		a.linkb1 {
+			margin-bottom: 1rem;
+		}
+	}
+}
+
 /***** Footer links *****/
 
 .site-footer {
@@ -221,7 +229,7 @@ a:hover, a:active {
 			}
 			.tele {
 				background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/tele.svg");
-				span {	
+				a {	
 					margin-left: 1.3rem;
 				}
 			}

@@ -25,7 +25,7 @@
             <h3>Contacteer ons</h3>
             <ul class="footerlist contactgegevens">
                 <li class="footer-icon mail"><a href="mailto:info@di-ax.be">info@di-ax.be</a></li>
-                <li class="footer-icon tele"><span>02 210 61 40</span></li>
+                <li class="footer-icon tele"><a href="tel:022106140">02 210 61 40</a></li>
             </ul>
             </div>
             <div class="footer-row">
