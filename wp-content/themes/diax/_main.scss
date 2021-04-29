@@ -37,9 +37,16 @@ img {
 		max-width: 1280px;
 	}
 	.site-header,
-	.site-content,
-	.site-footer {
+	.site-content {
 		max-width: 1280px;
+	}
+	.site-footer {
+		display: flex;
+		justify-content: center;
+		max-width: 100%;
+		.row {
+			max-width: 1280px;	
+		}
 	}
 }
 
@@ -133,6 +140,10 @@ section:first-of-type {
 	margin-top: .5rem;
 }
 
+.partners-sec {
+	width: auto;
+}
+
 .card-content {
 	margin-bottom: 3rem;
 }
@@ -144,6 +155,10 @@ section:first-of-type {
 	img {
 		width: auto;
 	}
+}
+
+.home .entry-content .card-img img {
+	opacity: .6;
 }
 
 .card-partners {
@@ -170,6 +185,16 @@ section:first-of-type {
 	h3 {
 		font-size: 1.25rem;
 		text-align: center;
+	}
+	.card-item-link {
+		font-size: 1rem;
+	}
+}
+
+.partners-sec .card-content .card-item {
+	height: 100%;
+	a {
+		font-size: 1rem;
 	}
 }
 
@@ -221,6 +246,15 @@ blockquote {
 }
 
 /***** Diensten *****/
+.diensten-page {
+	h3 {
+		font-size: 1.25rem;
+	}
+	p {
+		max-width: 900px;
+	}
+}
+
 .partners-sec,
 .diensten-sec {
 	margin: 1rem 0;

@@ -152,16 +152,16 @@ a:hover, a:active {
 	margin: 3rem auto 0;
 	padding: 0;
 	border-top: none;
-	max-width: 1024px;
 }
 
 .site-footer {
 	position: relative;
 	z-index: 1;
 	background-color: $blueDark;
-	.footer-row {
+	.row {
 		margin: 0 2rem;
-		padding: 1rem 1rem 0;
+		padding: 0 1rem;
+		width: 100%;
 		h3 {
 			font-size: 1.2rem;
 			color: $blueVeryLight;
