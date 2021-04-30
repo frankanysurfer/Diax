@@ -70,7 +70,11 @@
 	/***** Maan *****/
 
 	.maan {
-		background-color: $blueVeryDark;
+		background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/zon.png");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 40px 40px;
+		background-color: $blueVeryDark
 	}
 
 	/***** Link knoppen *****/

@@ -33,7 +33,9 @@
             <ul class="footerlist nuttigelinks">    
                 <li><a href="http://staging.di-ax.be/">Home</a></li>
                 <li><a href="http://staging.di-ax.be/diensten/">Diensten</a></li>
-                <li><a href="http://staging.di-ax.be/partners/">Partners</a></li>
+                <li><a href="http://staging.di-ax.be/klanten/">Klanten</a></li>
+                <li><a href="http://staging.di-ax.be/wetgeving/">Wetgeving</a></li>
+                <li><a href="http://staging.di-ax.be/over/">Over DiAX</a></li>
                 <li><a href="http://staging.di-ax.be/contact/">Contact</a></li>
             </ul>
             </div>

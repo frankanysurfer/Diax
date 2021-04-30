@@ -30,7 +30,7 @@
 
 	.site-info {
 		display: flex;
-		justify-content: space-around;
+		justify-content: space-between;
 	}
 
 	.site-footer {
@@ -99,7 +99,8 @@
 	}
 
 	section,
-	.home-wat {
+	.home-wat,
+	.home-wie-sec {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;

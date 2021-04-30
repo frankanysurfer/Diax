@@ -145,8 +145,6 @@ h6 {
 
 /***** Links *****/
 a {
-  font-family: "flama_semicondensedbook";
-  font-size: .9rem;
   color: #021b79;
   border-bottom-color: #021b79; }
 
@@ -377,12 +375,6 @@ img {
   background-repeat: no-repeat;
   background-position: center; }
 
-.zon {
-  background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/zon.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 40px 40px; }
-
 .page {
   padding: 0; }
   .page .site {
@@ -511,7 +503,8 @@ section:first-of-type {
     width: 10.8rem;
     margin: 0 auto 0 0; }
 
-.home-wat {
+.home-wat,
+.home-wie-sec {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -683,8 +676,9 @@ input[type="submit"]:focus {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around; }
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
 
   .site-footer .footer-row-1 {
     position: relative;
@@ -741,7 +735,8 @@ input[type="submit"]:focus {
     max-width: 100%; }
 
   section,
-  .home-wat {
+  .home-wat,
+  .home-wie-sec {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -757,7 +752,9 @@ input[type="submit"]:focus {
     section .card-content,
     section .card-img,
     .home-wat .card-content,
-    .home-wat .card-img {
+    .home-wat .card-img,
+    .home-wie-sec .card-content,
+    .home-wie-sec .card-img {
       width: 45%; }
 
   .partners-sec {
@@ -982,6 +979,10 @@ input[type="submit"]:focus {
     color: #0575e6;
     background-color: none; }
   .dark .maan {
+    background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/zon.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40px 40px;
     background-color: #01172e; }
   .dark .card-links a.linkb1 {
     color: #000518;

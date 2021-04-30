@@ -21,13 +21,6 @@ img {
 	background-position: center;
 }
 
-.zon {
-	background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/zon.png");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 40px 40px;
-}
-
 .page {
 	padding: 0;
 	.site {
@@ -172,7 +165,8 @@ section:first-of-type {
 	}
 }
 
-.home-wat {
+.home-wat,
+.home-wie-sec {
 	display: flex;
 	flex-direction: column-reverse;
 }
