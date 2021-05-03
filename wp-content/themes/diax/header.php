@@ -55,7 +55,7 @@
 			 ?>
 		</div><!-- .site-branding -->
         <ul class="language"><?php pll_the_languages();?></ul>
-        <button  id="switch" class="maan"><span class="sr-only">Dark - light mode switch</span></button>
+        <button  id="switch" class="maan"><span class="sr-only"><span class="knop-donker">Donkere modus</span><span class="knop-licht">lichte modus</span></button>
 
 		<nav id="site-navigation" class="main-navigation">
             <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'slightly' ); ?></button>

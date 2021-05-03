@@ -370,6 +370,12 @@ img {
   padding: 0;
   position: absolute; }
 
+.knop-licht {
+  display: block; }
+
+.knop-donker {
+  display: none; }
+
 .maan {
   background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/moon.svg");
   background-repeat: no-repeat;
@@ -978,6 +984,10 @@ input[type="submit"]:focus {
   .dark .current-lang a {
     color: #0575e6;
     background-color: none; }
+  .dark .knop-licht {
+    display: none; }
+  .dark .knop-donker {
+    display: block; }
   .dark .maan {
     background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/zon.png");
     background-repeat: no-repeat;
@@ -1131,6 +1141,223 @@ input[type="submit"]:focus {
           border: 2px solid #0575e6; }
 
 @media screen and (min-width: 40em) {
+  .dark .site-footer .footer-row-1 h3 {
+    color: #0575e6; }
+  .dark .site-footer .footer-row-1 .footerlist {
+    margin-bottom: 0;
+    -webkit-padding-start: 0;
+       -moz-padding-start: 0;
+            padding-inline-start: 0; }
+    .dark .site-footer .footer-row-1 .footerlist li {
+      color: #0575e6; }
+      .dark .site-footer .footer-row-1 .footerlist li a {
+        color: #0575e6; }
+    .dark .site-footer .footer-row-1 .footerlist .mail {
+      background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/mail-media-dark.svg"); }
+    .dark .site-footer .footer-row-1 .footerlist .tele {
+      background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/tele-media-dark.svg"); } }
+/********** color scheme **********/
+@media (prefers-color-scheme: dark) {
+  .dark {
+    background-color: #01172e;
+    /***** Links *****/
+    /***** Hoofdnavigatie *****/
+    /***** Talenkeuze* ****/
+    /***** Maan *****/
+    /***** Link knoppen *****/
+    /***** Footer links *****/
+    /***** Contact *****/ }
+    .dark h1 {
+      color: #0575e6; }
+    .dark h2 {
+      color: #0575e6; }
+    .dark h3 {
+      color: #e6f1fc;
+      font-weight: normal; }
+    .dark h4 {
+      color: #e6f1fc; }
+    .dark h5 {
+      color: #e6f1fc; }
+    .dark h6 {
+      color: #e6f1fc; }
+    .dark p, .dark li {
+      color: #e6f1fc; }
+    .dark a {
+      color: #0575e6;
+      border-bottom-color: #0575e6; }
+    .dark a:hover, .dark a:active {
+      color: #e6f1fc;
+      border-bottom-color: #e6f1fc; }
+    .dark .main-navigation a {
+      color: #edeaf6; }
+      .dark .main-navigation a:hover {
+        border-bottom: 1px solid #e6f1fc; }
+    .dark .main-navigation .current_page_item > a {
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      border-bottom: 1px solid #e6f1fc; }
+    .dark .lang-item a {
+      color: #e6f1fc; }
+    .dark .lang-item a:hover,
+    .dark .current-lang a {
+      color: #0575e6;
+      background-color: none; }
+    .dark .knop-licht {
+      display: none; }
+    .dark .knop-donker {
+      display: block; }
+    .dark .maan {
+      background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/zon.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 40px 40px;
+      background-color: #01172e; }
+    .dark .card-links a.linkb1 {
+      color: #000518;
+      background-color: #0575e6; }
+      .dark .card-links a.linkb1:hover {
+        color: #021b79;
+        background-color: #e6f1fc; }
+      .dark .card-links a.linkb1:focus {
+        color: #021b79;
+        border-color: #021b79;
+        background-color: #01172e; }
+      .dark .card-links a.linkb1:active {
+        color: #0575e6;
+        border-color: #000518;
+        background-color: #000518; }
+    .dark .card-links a.linkb2 {
+      color: #01172e;
+      background-color: #e6f1fc; }
+      .dark .card-links a.linkb2:hover {
+        color: #e6f1fc;
+        background-color: #011A76; }
+      .dark .card-links a.linkb2:focus {
+        color: #e6f1fc;
+        border-color: #e6f1fc;
+        background-color: #01172e; }
+      .dark .card-links a.linkb2:active {
+        color: #e6f1fc;
+        border-color: #000518;
+        background-color: #000518; }
+    .dark .card-partners p:not(.site-title) a,
+    .dark .card-partners .entry-content a,
+    .dark .card-diensten p:not(.site-title) a,
+    .dark .card-diensten .entry-content a {
+      border-bottom: 2px solid #0575e6;
+      color: #0575e6; }
+    .dark .card-partners p:not(.site-title) a:hover,
+    .dark .card-partners .entry-content a:hover,
+    .dark .card-diensten p:not(.site-title) a:hover,
+    .dark .card-diensten .entry-content a:hover {
+      border-bottom: 2px solid #0575e6;
+      color: #0575e6; }
+    .dark .card-partners p:not(.site-title) a:after,
+    .dark .card-partners span a:after,
+    .dark .card-partners .nav-previous a:after,
+    .dark .card-partners .nav-next a:after,
+    .dark .card-partners .entry-content a:after,
+    .dark .card-diensten p:not(.site-title) a:after,
+    .dark .card-diensten span a:after,
+    .dark .card-diensten .nav-previous a:after,
+    .dark .card-diensten .nav-next a:after,
+    .dark .card-diensten .entry-content a:after {
+      background-color: #0575e6;
+      color: #0575e6;
+      -webkit-transition-property: none;
+      transition-property: none; }
+    .dark .card-item {
+      -webkit-box-shadow: 2px 2px 20px rgba(230, 241, 252, 0.1);
+              box-shadow: 2px 2px 20px rgba(230, 241, 252, 0.1); }
+    .dark .img-light {
+      display: none; }
+    .dark .img-dark {
+      display: block; }
+    .dark .site-footer {
+      background-color: #0575e6; }
+      .dark .site-footer .footer-row h3 {
+        color: #01172e; }
+      .dark .site-footer .footer-row a {
+        color: #01172e; }
+        .dark .site-footer .footer-row a:focus {
+          outline: 1px solid white; }
+      .dark .site-footer .footer-row .footerlist li {
+        color: #01172e; }
+      .dark .site-footer .footer-row .footerlist .mail {
+        background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/mail-dark.svg"); }
+      .dark .site-footer .footer-row .footerlist .tele {
+        background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/tele-dark.svg"); }
+      .dark .site-footer .footer-row p {
+        color: #01172e; }
+        .dark .site-footer .footer-row p a {
+          border: none; }
+          .dark .site-footer .footer-row p a:hover {
+            color: #01172e; }
+      .dark .site-footer .footer-row-1::before {
+        background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/opsommingsteken-dark.svg"); }
+    .dark input[type="text"],
+    .dark input[type="email"],
+    .dark input[type="url"],
+    .dark input[type="password"],
+    .dark input[type="search"],
+    .dark input[type="number"],
+    .dark input[type="tel"],
+    .dark input[type="range"],
+    .dark input[type="date"],
+    .dark input[type="month"],
+    .dark input[type="week"],
+    .dark input[type="time"],
+    .dark input[type="datetime"],
+    .dark input[type="datetime-local"],
+    .dark input[type="color"],
+    .dark textarea {
+      background-color: #01172e;
+      border: 2px solid #0575e6; }
+    .dark input[type="text"]:focus,
+    .dark input[type="email"]:focus,
+    .dark input[type="url"]:focus,
+    .dark input[type="password"]:focus,
+    .dark input[type="search"]:focus,
+    .dark input[type="number"]:focus,
+    .dark input[type="tel"]:focus,
+    .dark input[type="range"]:focus,
+    .dark input[type="date"]:focus,
+    .dark input[type="month"]:focus,
+    .dark input[type="week"]:focus,
+    .dark input[type="time"]:focus,
+    .dark input[type="datetime"]:focus,
+    .dark input[type="datetime-local"]:focus,
+    .dark input[type="color"]:focus,
+    .dark textarea:focus {
+      background-color: #e6f1fc;
+      outline: 2px solid #0575e6; }
+    .dark input[type="submit"]:hover,
+    .dark input[type="submit"]:active,
+    .dark input[type="submit"]:focus {
+      background-color: #e6f1fc; }
+    .dark .input:-internal-autofill-selected {
+      background-color: #e6f1fc !important; }
+    .dark .wpcf7 form.invalid .wpcf7-response-output,
+    .dark .wpcf7 form.unaccepted .wpcf7-response-output {
+      border-color: #0575e6;
+      color: #0575e6; }
+    .dark .wpcf7-not-valid-tip {
+      color: #0575e6; }
+    .dark .wpcf7 {
+      padding: 0 .5rem; }
+      .dark .wpcf7 form fieldset {
+        border: 1px solid #0575e6; }
+        .dark .wpcf7 form fieldset legend {
+          color: #e6f1fc; }
+        .dark .wpcf7 form fieldset label {
+          color: #e6f1fc; }
+        .dark .wpcf7 form fieldset input[type="submit"] {
+          background-color: #021b79;
+          border: 2px solid #021b79; }
+          .dark .wpcf7 form fieldset input[type="submit"]:hover {
+            background-color: #0575e6;
+            border: 2px solid #0575e6; } }
+@media screen and (prefers-color-scheme: dark) and (min-width: 40em) {
   .dark .site-footer .footer-row-1 h3 {
     color: #0575e6; }
   .dark .site-footer .footer-row-1 .footerlist {

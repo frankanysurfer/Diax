@@ -15,6 +15,14 @@ img {
 	position: absolute;
 }
 
+.knop-licht {
+	display: block;
+}
+
+.knop-donker {
+	display: none;	
+}
+
 .maan {
 	background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/moon.svg");
 	background-repeat: no-repeat;
