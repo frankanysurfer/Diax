@@ -98,7 +98,8 @@ body {
 
 p, li {
   font-size: 1rem;
-  line-height: 1.375; }
+  line-height: 1.375;
+  max-width: 720px; }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 1rem 0; }
@@ -142,6 +143,12 @@ h6 {
   font-size: .8rem;
   line-height: 1.2;
   color: #01172e; }
+
+p {
+  font-weight: 100; }
+
+b, strong {
+  font-weight: 900; }
 
 /***** Links *****/
 a {
@@ -354,6 +361,21 @@ a:hover, a:active {
       .site-footer .row .footerlist:last-child {
         margin-bottom: 0; }
 
+html, body {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch; }
+
 img {
   max-width: 100%;
   width: 100%;
@@ -384,6 +406,9 @@ img {
 .page {
   padding: 0; }
   .page .site {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
     margin: 1rem auto 0;
     padding: 0 1rem;
     border-top: none;
@@ -398,7 +423,7 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    max-width: 100%; }
+    width: 100%; }
     .page .site-footer .row {
       max-width: 1280px; }
 
@@ -497,7 +522,7 @@ section:first-of-type {
     width: auto; }
 
 .home .entry-content .card-img img {
-  opacity: .6; }
+  opacity: .7; }
 
 .card-partners .card-links {
   -webkit-box-orient: vertical;
@@ -575,8 +600,6 @@ blockquote {
 /***** Diensten *****/
 .diensten-page h3 {
   font-size: 1.25rem; }
-.diensten-page p {
-  max-width: 900px; }
 
 .partners-sec,
 .diensten-sec {
@@ -686,6 +709,8 @@ input[type="submit"]:focus {
         -ms-flex-pack: justify;
             justify-content: space-between; }
 
+  .site-footer .row {
+    margin: 0; }
   .site-footer .footer-row-1 {
     position: relative;
     padding: 0 1rem; }
@@ -784,7 +809,10 @@ input[type="submit"]:focus {
             justify-content: space-between;
     width: 100%; }
     .home-berichten article {
-      width: 45%; } }
+      width: 45%; }
+
+  .site-footer .row {
+    margin: 0 2rem; } }
 @media only screen and (min-width: 55em) {
   .site-header .row {
     margin-left: 0;
@@ -1158,7 +1186,7 @@ input[type="submit"]:focus {
       background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/tele-media-dark.svg"); } }
 /********** color scheme **********/
 @media (prefers-color-scheme: dark) {
-  .dark {
+  body {
     background-color: #01172e;
     /***** Links *****/
     /***** Hoofdnavigatie *****/
@@ -1167,194 +1195,194 @@ input[type="submit"]:focus {
     /***** Link knoppen *****/
     /***** Footer links *****/
     /***** Contact *****/ }
-    .dark h1 {
+    body h1 {
       color: #0575e6; }
-    .dark h2 {
+    body h2 {
       color: #0575e6; }
-    .dark h3 {
+    body h3 {
       color: #e6f1fc;
       font-weight: normal; }
-    .dark h4 {
+    body h4 {
       color: #e6f1fc; }
-    .dark h5 {
+    body h5 {
       color: #e6f1fc; }
-    .dark h6 {
+    body h6 {
       color: #e6f1fc; }
-    .dark p, .dark li {
+    body p, body li {
       color: #e6f1fc; }
-    .dark a {
+    body a {
       color: #0575e6;
       border-bottom-color: #0575e6; }
-    .dark a:hover, .dark a:active {
+    body a:hover, body a:active {
       color: #e6f1fc;
       border-bottom-color: #e6f1fc; }
-    .dark .main-navigation a {
+    body .main-navigation a {
       color: #edeaf6; }
-      .dark .main-navigation a:hover {
+      body .main-navigation a:hover {
         border-bottom: 1px solid #e6f1fc; }
-    .dark .main-navigation .current_page_item > a {
+    body .main-navigation .current_page_item > a {
       -webkit-box-shadow: none;
               box-shadow: none;
       border-bottom: 1px solid #e6f1fc; }
-    .dark .lang-item a {
+    body .lang-item a {
       color: #e6f1fc; }
-    .dark .lang-item a:hover,
-    .dark .current-lang a {
+    body .lang-item a:hover,
+    body .current-lang a {
       color: #0575e6;
       background-color: none; }
-    .dark .knop-licht {
+    body .knop-licht {
       display: none; }
-    .dark .knop-donker {
+    body .knop-donker {
       display: block; }
-    .dark .maan {
+    body .maan {
       background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/zon.png");
       background-repeat: no-repeat;
       background-position: center;
       background-size: 40px 40px;
       background-color: #01172e; }
-    .dark .card-links a.linkb1 {
+    body .card-links a.linkb1 {
       color: #000518;
       background-color: #0575e6; }
-      .dark .card-links a.linkb1:hover {
+      body .card-links a.linkb1:hover {
         color: #021b79;
         background-color: #e6f1fc; }
-      .dark .card-links a.linkb1:focus {
+      body .card-links a.linkb1:focus {
         color: #021b79;
         border-color: #021b79;
         background-color: #01172e; }
-      .dark .card-links a.linkb1:active {
+      body .card-links a.linkb1:active {
         color: #0575e6;
         border-color: #000518;
         background-color: #000518; }
-    .dark .card-links a.linkb2 {
+    body .card-links a.linkb2 {
       color: #01172e;
       background-color: #e6f1fc; }
-      .dark .card-links a.linkb2:hover {
+      body .card-links a.linkb2:hover {
         color: #e6f1fc;
         background-color: #011A76; }
-      .dark .card-links a.linkb2:focus {
+      body .card-links a.linkb2:focus {
         color: #e6f1fc;
         border-color: #e6f1fc;
         background-color: #01172e; }
-      .dark .card-links a.linkb2:active {
+      body .card-links a.linkb2:active {
         color: #e6f1fc;
         border-color: #000518;
         background-color: #000518; }
-    .dark .card-partners p:not(.site-title) a,
-    .dark .card-partners .entry-content a,
-    .dark .card-diensten p:not(.site-title) a,
-    .dark .card-diensten .entry-content a {
+    body .card-partners p:not(.site-title) a,
+    body .card-partners .entry-content a,
+    body .card-diensten p:not(.site-title) a,
+    body .card-diensten .entry-content a {
       border-bottom: 2px solid #0575e6;
       color: #0575e6; }
-    .dark .card-partners p:not(.site-title) a:hover,
-    .dark .card-partners .entry-content a:hover,
-    .dark .card-diensten p:not(.site-title) a:hover,
-    .dark .card-diensten .entry-content a:hover {
+    body .card-partners p:not(.site-title) a:hover,
+    body .card-partners .entry-content a:hover,
+    body .card-diensten p:not(.site-title) a:hover,
+    body .card-diensten .entry-content a:hover {
       border-bottom: 2px solid #0575e6;
       color: #0575e6; }
-    .dark .card-partners p:not(.site-title) a:after,
-    .dark .card-partners span a:after,
-    .dark .card-partners .nav-previous a:after,
-    .dark .card-partners .nav-next a:after,
-    .dark .card-partners .entry-content a:after,
-    .dark .card-diensten p:not(.site-title) a:after,
-    .dark .card-diensten span a:after,
-    .dark .card-diensten .nav-previous a:after,
-    .dark .card-diensten .nav-next a:after,
-    .dark .card-diensten .entry-content a:after {
+    body .card-partners p:not(.site-title) a:after,
+    body .card-partners span a:after,
+    body .card-partners .nav-previous a:after,
+    body .card-partners .nav-next a:after,
+    body .card-partners .entry-content a:after,
+    body .card-diensten p:not(.site-title) a:after,
+    body .card-diensten span a:after,
+    body .card-diensten .nav-previous a:after,
+    body .card-diensten .nav-next a:after,
+    body .card-diensten .entry-content a:after {
       background-color: #0575e6;
       color: #0575e6;
       -webkit-transition-property: none;
       transition-property: none; }
-    .dark .card-item {
+    body .card-item {
       -webkit-box-shadow: 2px 2px 20px rgba(230, 241, 252, 0.1);
               box-shadow: 2px 2px 20px rgba(230, 241, 252, 0.1); }
-    .dark .img-light {
+    body .img-light {
       display: none; }
-    .dark .img-dark {
+    body .img-dark {
       display: block; }
-    .dark .site-footer {
+    body .site-footer {
       background-color: #0575e6; }
-      .dark .site-footer .footer-row h3 {
+      body .site-footer .footer-row h3 {
         color: #01172e; }
-      .dark .site-footer .footer-row a {
+      body .site-footer .footer-row a {
         color: #01172e; }
-        .dark .site-footer .footer-row a:focus {
+        body .site-footer .footer-row a:focus {
           outline: 1px solid white; }
-      .dark .site-footer .footer-row .footerlist li {
+      body .site-footer .footer-row .footerlist li {
         color: #01172e; }
-      .dark .site-footer .footer-row .footerlist .mail {
+      body .site-footer .footer-row .footerlist .mail {
         background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/mail-dark.svg"); }
-      .dark .site-footer .footer-row .footerlist .tele {
+      body .site-footer .footer-row .footerlist .tele {
         background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/tele-dark.svg"); }
-      .dark .site-footer .footer-row p {
+      body .site-footer .footer-row p {
         color: #01172e; }
-        .dark .site-footer .footer-row p a {
+        body .site-footer .footer-row p a {
           border: none; }
-          .dark .site-footer .footer-row p a:hover {
+          body .site-footer .footer-row p a:hover {
             color: #01172e; }
-      .dark .site-footer .footer-row-1::before {
+      body .site-footer .footer-row-1::before {
         background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/opsommingsteken-dark.svg"); }
-    .dark input[type="text"],
-    .dark input[type="email"],
-    .dark input[type="url"],
-    .dark input[type="password"],
-    .dark input[type="search"],
-    .dark input[type="number"],
-    .dark input[type="tel"],
-    .dark input[type="range"],
-    .dark input[type="date"],
-    .dark input[type="month"],
-    .dark input[type="week"],
-    .dark input[type="time"],
-    .dark input[type="datetime"],
-    .dark input[type="datetime-local"],
-    .dark input[type="color"],
-    .dark textarea {
+    body input[type="text"],
+    body input[type="email"],
+    body input[type="url"],
+    body input[type="password"],
+    body input[type="search"],
+    body input[type="number"],
+    body input[type="tel"],
+    body input[type="range"],
+    body input[type="date"],
+    body input[type="month"],
+    body input[type="week"],
+    body input[type="time"],
+    body input[type="datetime"],
+    body input[type="datetime-local"],
+    body input[type="color"],
+    body textarea {
       background-color: #01172e;
       border: 2px solid #0575e6; }
-    .dark input[type="text"]:focus,
-    .dark input[type="email"]:focus,
-    .dark input[type="url"]:focus,
-    .dark input[type="password"]:focus,
-    .dark input[type="search"]:focus,
-    .dark input[type="number"]:focus,
-    .dark input[type="tel"]:focus,
-    .dark input[type="range"]:focus,
-    .dark input[type="date"]:focus,
-    .dark input[type="month"]:focus,
-    .dark input[type="week"]:focus,
-    .dark input[type="time"]:focus,
-    .dark input[type="datetime"]:focus,
-    .dark input[type="datetime-local"]:focus,
-    .dark input[type="color"]:focus,
-    .dark textarea:focus {
+    body input[type="text"]:focus,
+    body input[type="email"]:focus,
+    body input[type="url"]:focus,
+    body input[type="password"]:focus,
+    body input[type="search"]:focus,
+    body input[type="number"]:focus,
+    body input[type="tel"]:focus,
+    body input[type="range"]:focus,
+    body input[type="date"]:focus,
+    body input[type="month"]:focus,
+    body input[type="week"]:focus,
+    body input[type="time"]:focus,
+    body input[type="datetime"]:focus,
+    body input[type="datetime-local"]:focus,
+    body input[type="color"]:focus,
+    body textarea:focus {
       background-color: #e6f1fc;
       outline: 2px solid #0575e6; }
-    .dark input[type="submit"]:hover,
-    .dark input[type="submit"]:active,
-    .dark input[type="submit"]:focus {
+    body input[type="submit"]:hover,
+    body input[type="submit"]:active,
+    body input[type="submit"]:focus {
       background-color: #e6f1fc; }
-    .dark .input:-internal-autofill-selected {
+    body .input:-internal-autofill-selected {
       background-color: #e6f1fc !important; }
-    .dark .wpcf7 form.invalid .wpcf7-response-output,
-    .dark .wpcf7 form.unaccepted .wpcf7-response-output {
+    body .wpcf7 form.invalid .wpcf7-response-output,
+    body .wpcf7 form.unaccepted .wpcf7-response-output {
       border-color: #0575e6;
       color: #0575e6; }
-    .dark .wpcf7-not-valid-tip {
+    body .wpcf7-not-valid-tip {
       color: #0575e6; }
-    .dark .wpcf7 {
+    body .wpcf7 {
       padding: 0 .5rem; }
-      .dark .wpcf7 form fieldset {
+      body .wpcf7 form fieldset {
         border: 1px solid #0575e6; }
-        .dark .wpcf7 form fieldset legend {
+        body .wpcf7 form fieldset legend {
           color: #e6f1fc; }
-        .dark .wpcf7 form fieldset label {
+        body .wpcf7 form fieldset label {
           color: #e6f1fc; }
-        .dark .wpcf7 form fieldset input[type="submit"] {
+        body .wpcf7 form fieldset input[type="submit"] {
           background-color: #021b79;
           border: 2px solid #021b79; }
-          .dark .wpcf7 form fieldset input[type="submit"]:hover {
+          body .wpcf7 form fieldset input[type="submit"]:hover {
             background-color: #0575e6;
             border: 2px solid #0575e6; } }
 @media screen and (prefers-color-scheme: dark) and (min-width: 40em) {

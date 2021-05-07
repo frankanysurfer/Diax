@@ -167,8 +167,8 @@ class GDPR_Modules {
 		$data->wpml_lang = $wpml_lang;
 		$data->logo_url  = isset( $modal_options['moove_gdpr_company_logo'] ) && $modal_options['moove_gdpr_company_logo'] ? $modal_options['moove_gdpr_company_logo'] : plugin_dir_url( __FILE__ ) . 'dist/images/gdpr-logo.png';
 		$data->logo_url  = str_replace( plugin_dir_url( __FILE__ ) . 'dist/images/moove-logo.png', plugin_dir_url( __FILE__ ) . 'dist/images/gdpr-logo.png', $data->logo_url );
-		$logo_details 			= gdpr_get_logo_details( $data->logo_url );
-		$data->logo_alt  		= gdpr_get_logo_alt( $data->logo_url );
+		$logo_details 			= gdpr_get_logo_details( $data->logo_url, $modal_options );
+		$data->logo_alt  		= gdpr_get_logo_alt( $data->logo_url, $modal_options );
 		$data->logo_width 	= isset( $logo_details['width'] ) ? $logo_details['width'] : false;
 		$data->logo_height 	= isset( $logo_details['height'] ) ? $logo_details['height'] : false;
 		$data->logo_url 		= isset( $logo_details['logo_url'] ) ? $logo_details['logo_url'] : $data->logo_url;

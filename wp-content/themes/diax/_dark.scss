@@ -322,7 +322,7 @@
 
 /********** color scheme **********/
 @media (prefers-color-scheme: dark) {
-.dark {
+body {
 	background-color: $blueVeryDark;
 	h1 {
 	    color: $blueBright;

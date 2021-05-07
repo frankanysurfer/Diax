@@ -186,7 +186,7 @@ function gdpr_get_attachment_id( $url ) {
  *
  * @return Bool | String
  */
-function gdpr_get_logo_alt( $image_url ) {
+function gdpr_get_logo_alt( $image_url, $options = array() ) {
 	return apply_filters( 'gdpr_cc_custom_logo_alt', get_bloginfo( 'name' ), $image_url );
 }
 
@@ -195,22 +195,32 @@ function gdpr_get_logo_alt( $image_url ) {
  *
  * @param string $image_url Image URL
  */
-function gdpr_get_logo_details( $image_url ) {
+function gdpr_get_logo_details( $image_url, $options = array() ) {
 	$image_details = array(
 		'width' 	=> false,
 		'height'	=> false,
 	);
 	$image_size = apply_filters('gdpr_cc_company_logo_image_size', 'medium');
 	if ( $image_url && apply_filters( 'gdpr_cc_logo_details_enabled', true ) ) :
+
 		if ( strpos( $image_url,  'gdpr-cookie-compliance/dist/images/gdpr-logo.png' ) !== false ) :
 			$image_details = array(
 				'width' 	=> 350,
 				'height'	=> 233,
 			);
 		else :
-			$attachment_id = attachment_url_to_postid( $image_url );
+			if ( isset( $options['moove_gdpr_company_logo_id'] ) && intval( $options['moove_gdpr_company_logo_id'] ) ) :
+				$attachment_id = intval( $options['moove_gdpr_company_logo_id'] );
+			else :
+				$attachment_id = attachment_url_to_postid( $image_url );
+			endif;
 			if ( $attachment_id ) :
-				$_image = wp_get_attachment_image_src( $attachment_id, $image_size );
+				$_image = wp_get_attachment_image_src( $attachment_id, $image_size );			
+				$gdpr_default_content = new Moove_GDPR_Content();
+				$option_name          = $gdpr_default_content->moove_gdpr_get_option_name();	
+				$gdpr_options         = get_option( $option_name );
+				$gdpr_options['moove_gdpr_company_logo_id'] = $attachment_id;
+				update_option( $option_name, $gdpr_options );
 				if ( $_image ) :
 					$image_details = array(
 						'logo_url'	=> $_image[0],
@@ -218,7 +228,7 @@ function gdpr_get_logo_details( $image_url ) {
 						'height'		=> $_image[2],
 					);
 				endif;
-			endif;			
+			endif;
 		endif;
 	endif;
 	$image_details = apply_filters( 'gdpr_cc_logo_details_filter', $image_details );

@@ -25,24 +25,36 @@ if ( isset( $_POST ) && isset( $_POST['moove_gdpr_nonce'] ) ) :
 		if ( is_array( $_POST ) ) :
 			$gdpr_options = get_option( $option_name );
 			$gdpr_options = is_array( $gdpr_options ) ? $gdpr_options : array();
+
 			foreach ( $_POST as $form_key => $form_value ) :
 				if ( 'moove_gdpr_info_bar_content' === $form_key ) :
 					$value                                  = wpautop( wp_unslash( $form_value ) );
 					$gdpr_options[ $form_key . $wpml_lang ] = $value;
-					update_option( $option_name, $gdpr_options );
-					$gdpr_options = get_option( $option_name );
 				elseif ( 'moove_gdpr_modal_strictly_secondary_notice' . $wpml_lang === $form_key ) :
 					$value                     = wpautop( wp_unslash( $form_value ) );
 					$gdpr_options[ $form_key ] = $value;
-					update_option( $option_name, $gdpr_options );
-					$gdpr_options = get_option( $option_name );
-				elseif ( 'moove_gdpr_floating_button_enable' !== $form_key && 'moove_gdpr_modal_powered_by_disable' !== $form_key ) :
+				elseif ( 'moove_gdpr_floating_button_enable' !== $form_key && 'moove_gdpr_modal_powered_by_disable' !== $form_key && 'moove_gdpr_company_logo_id' !== $form_key ) :
 					$value                     = sanitize_text_field( wp_unslash( $form_value ) );
 					$gdpr_options[ $form_key ] = $value;
-					update_option( $option_name, $gdpr_options );
-					$gdpr_options = get_option( $option_name );
 				endif;
 			endforeach;
+			$logo_attachment_id = false;
+			
+			if ( isset( $gdpr_options['moove_gdpr_company_logo'] ) && $gdpr_options['moove_gdpr_company_logo'] ) :
+				$logo_attachment_id = attachment_url_to_postid( $gdpr_options['moove_gdpr_company_logo'] );
+				if ( $logo_attachment_id && intval( $logo_attachment_id ) ) :
+					$logo_attachment_id = intval( $logo_attachment_id );
+				endif;
+			endif;
+
+			if ( $logo_attachment_id && intval( $logo_attachment_id ) ) :
+				$gdpr_options['moove_gdpr_company_logo_id'] = $logo_attachment_id;
+			else :
+				$gdpr_options['moove_gdpr_company_logo_id'] = '';
+			endif;
+
+			update_option( $option_name, $gdpr_options );
+			$gdpr_options = get_option( $option_name );
 		endif;
 
 		do_action( 'gdpr_cookie_filter_settings' );
@@ -105,13 +117,15 @@ endif;
 					<?php
 					$plugin_dir = moove_gdpr_get_plugin_directory_url();
 					$image_url  = isset( $gdpr_options['moove_gdpr_company_logo'] ) && $gdpr_options['moove_gdpr_company_logo'] ? $gdpr_options['moove_gdpr_company_logo'] : $plugin_dir . 'dist/images/gdpr-logo.png';
+					$logo_attachment_id =  isset( $gdpr_options['moove_gdpr_company_logo_id'] ) && $gdpr_options['moove_gdpr_company_logo_id'] ? $gdpr_options['moove_gdpr_company_logo_id'] : '';
 					?>
 					<span class="moove_gdpr_company_logo_holder" style="background-image: url(<?php echo esc_url( $image_url ); ?>);"></span><br /><br />
 					<input class="regular-text code" type="text" name="moove_gdpr_company_logo" value="<?php echo esc_url( $image_url ); ?>" required> <br /><br />
+					<input type="hidden" name="moove_gdpr_company_logo_id" value='<?php echo $logo_attachment_id; ?>'>
 					<a href="#" class="button moove_gdpr_company_logo_upload">Upload Logo</a>
 					<script>
 						jQuery(document).ready(function($) {
-							$('.moove_gdpr_company_logo_upload').click(function(e) {
+							$('.moove_gdpr_company_logo_upload, .moove_gdpr_company_logo_holder').click(function(e) {
 								e.preventDefault();
 
 								var custom_uploader = wp.media({
@@ -125,7 +139,6 @@ endif;
 									var attachment = custom_uploader.state().get('selection').first().toJSON();
 									$('.moove_gdpr_company_logo_holder').css('background-image', 'url('+attachment.url+')');
 									$('input[name=moove_gdpr_company_logo]').val(attachment.url);
-
 								})
 								.open();
 							});
