@@ -164,22 +164,30 @@ a:hover, a:active {
   border-bottom-color: #000518;
   cursor: pointer; }
 
+li a {
+  color: #021b79;
+  border-bottom: 1px solid #021b79; }
+
+li a:hover, li a:active {
+  color: #000518;
+  border-bottom-color: #000518;
+  cursor: pointer; }
+
 /***** Hoofdnavigatie *****/
 .main-navigation {
   margin-top: 50px; }
   .main-navigation a {
     font-family: 'flama_semicondensedbasic';
     font-size: 1.2rem;
-    color: #01172e; }
+    color: #01172e;
+    border-bottom: none; }
 
 /***** Talenkeuze* ****/
 .language {
   position: absolute;
   top: 0px;
-  right: 45px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  right: 0;
+  display: none;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -197,7 +205,8 @@ a:hover, a:active {
   height: 40px;
   padding: .5rem;
   line-height: 2.2;
-  color: #01172e; }
+  color: #01172e;
+  border-bottom: none; }
 
 .lang-item a:hover,
 .current-lang a {
@@ -316,7 +325,8 @@ a:hover, a:active {
         font-size: .9rem;
         color: #e6f1fc;
         -webkit-transition-property: none;
-        transition-property: none; }
+        transition-property: none;
+        border-bottom: none; }
         .site-footer .row p a:hover {
           border: none;
           color: #e6f1fc;
@@ -330,7 +340,8 @@ a:hover, a:active {
           transition-property: none; }
     .site-footer .row a {
       text-decoration: underline;
-      color: #e6f1fc; }
+      color: #e6f1fc;
+      border-bottom: none; }
       .site-footer .row a:hover {
         border: none; }
       .site-footer .row a:focus {
@@ -355,11 +366,11 @@ a:hover, a:active {
         background-position: left 5px;
         background-size: 14px auto; }
       .site-footer .row .footerlist .mail {
-        background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/mail.svg"); }
+        background-image: url("img/mail.svg"); }
         .site-footer .row .footerlist .mail a {
           margin-left: 1.3rem; }
       .site-footer .row .footerlist .tele {
-        background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/tele.svg"); }
+        background-image: url("img/tele.svg"); }
         .site-footer .row .footerlist .tele a {
           margin-left: 1.3rem; }
       .site-footer .row .footerlist:last-child {
@@ -370,17 +381,10 @@ a:hover, a:active {
 html, body {
   width: 100%;
   height: 100%;
-  min-height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch; }
+  min-height: 100%; }
+
+#switch {
+  display: none; }
 
 .alignright {
   width: 15rem;
@@ -410,7 +414,7 @@ img {
   display: none; }
 
 .maan {
-  background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/moon.svg");
+  background-image: url("img/moon.svg");
   background-repeat: no-repeat;
   background-position: center; }
 
@@ -637,6 +641,7 @@ figure {
 .home section:first-of-type {
   margin-top: 2rem; }
 
+/***** Stoefbalk *****/
 .entry-content .stoefbalk {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -647,8 +652,9 @@ figure {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   list-style-type: none;
   margin: 2rem 0 4rem;
   -webkit-padding-start: 0;
@@ -661,24 +667,25 @@ figure {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    height: 150px;
+    height: 112.5px;
     max-width: none;
+    margin-right: 1rem;
     margin-bottom: 1rem;
     border: 1px solid #606060; }
     .entry-content .stoefbalk li img {
       height: 100%; }
   .entry-content .stoefbalk .digipolis-logo {
-    width: 272px; }
+    width: 204px; }
   .entry-content .stoefbalk .abb-logo {
-    width: 392px; }
+    width: 294px; }
   .entry-content .stoefbalk .bosa-logo {
-    width: 392px; }
+    width: 294px; }
   .entry-content .stoefbalk .kbc-logo {
-    width: 216px; }
+    width: 162px; }
   .entry-content .stoefbalk .betawerk-logo {
-    width: 348px; }
+    width: 261px; }
   .entry-content .stoefbalk .poolstok-logo {
-    width: 272px; }
+    width: 204px; }
 
 /***** Diensten *****/
 .diensten-page h3 {
@@ -791,47 +798,35 @@ input[type="submit"]:focus {
         -ms-flex-pack: justify;
             justify-content: space-between; }
 
-  .site-footer .row {
-    margin: 0; }
-    .site-footer .row .nuttigelinks {
-      margin-top: 8.5rem; }
-      .site-footer .row .nuttigelinks li:first-child {
-        margin-bottom: 2rem; }
-  .site-footer .footer-row-1 {
-    position: relative;
-    padding: 0 1rem; }
-    .site-footer .footer-row-1::before {
-      position: absolute;
-      content: "";
-      margin-top: -1px;
-      top: 0;
-      left: 0;
-      width: 200%;
-      height: 100%;
-      background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/opsommingsteken.svg");
-      background-repeat: no-repeat;
-      background-position: center top;
-      background-size: cover;
-      z-index: -1; }
-    .site-footer .footer-row-1 h3 {
-      color: #021b79; }
-    .site-footer .footer-row-1 li {
-      color: #021b79; }
-      .site-footer .footer-row-1 li a {
-        color: #021b79; }
-    .site-footer .footer-row-1 .footerlist {
-      margin-bottom: 0;
-      -webkit-padding-start: 0;
-         -moz-padding-start: 0;
-              padding-inline-start: 0; }
-      .site-footer .footer-row-1 .footerlist .mail {
-        background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/mail-media.svg"); }
-        .site-footer .footer-row-1 .footerlist .mail a:focus {
-          outline: 1px solid #021b79; }
-      .site-footer .footer-row-1 .footerlist .tele {
-        background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/tele-media.svg"); }
-        .site-footer .footer-row-1 .footerlist .tele a:focus {
-          outline: 1px solid #021b79; }
+  .site-footer {
+    min-height: 310px; }
+    .site-footer .row {
+      margin: 0; }
+      .site-footer .row .nuttigelinks {
+        margin-top: 4.3rem; }
+    .site-footer .footer-row-1 {
+      position: relative;
+      min-height: 310px;
+      padding: 0 1rem; }
+      .site-footer .footer-row-1 h3 {
+        color: #e6f1fc; }
+      .site-footer .footer-row-1 li {
+        color: #e6f1fc; }
+        .site-footer .footer-row-1 li a {
+          color: #e6f1fc; }
+      .site-footer .footer-row-1 .footerlist {
+        margin-bottom: 0;
+        -webkit-padding-start: 0;
+           -moz-padding-start: 0;
+                padding-inline-start: 0; }
+        .site-footer .footer-row-1 .footerlist .mail {
+          background-image: url("img/mail.svg"); }
+          .site-footer .footer-row-1 .footerlist .mail a:focus {
+            outline: 1px solid #e6f1fc; }
+        .site-footer .footer-row-1 .footerlist .tele {
+          background-image: url("img/tele.svg"); }
+          .site-footer .footer-row-1 .footerlist .tele a:focus {
+            outline: 1px solid #e6f1fc; }
 
   .partners-sec,
   .diensten-sec {
@@ -898,7 +893,34 @@ input[type="submit"]:focus {
       width: 45%; }
 
   .site-footer .row {
-    margin: 0 2rem; } }
+    margin: 0 2rem; }
+  .site-footer .footer-row-1 h3 {
+    color: #021b79; }
+  .site-footer .footer-row-1 li {
+    color: #021b79; }
+    .site-footer .footer-row-1 li a {
+      color: #021b79; }
+  .site-footer .footer-row-1::before {
+    position: absolute;
+    content: "";
+    margin-top: -1px;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background-image: url("img/opsommingsteken.svg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    z-index: -1; }
+  .site-footer .footer-row-1 .footerlist .mail {
+    background-image: url("img/mail-media.svg"); }
+    .site-footer .footer-row-1 .footerlist .mail a:focus {
+      outline: 1px solid #e6f1fc; }
+  .site-footer .footer-row-1 .footerlist .tele {
+    background-image: url("img/tele-media.svg"); }
+    .site-footer .footer-row-1 .footerlist .tele a:focus {
+      outline: 1px solid #e6f1fc; } }
 @media only screen and (min-width: 55em) {
   .site-header .row {
     margin-left: 0;
@@ -1096,7 +1118,13 @@ input[type="submit"]:focus {
         height: 110px; }
         section .card-diensten .card-row .card-item-vebes .card-img img,
         section .card-partners .card-row .card-item-vebes .card-img img {
-          width: 145px; } }
+          width: 145px; }
+
+  .footer-row-2 {
+    margin-left: 6rem; }
+    .footer-row-2 .footerlist {
+      -webkit-columns: 2 8rem;
+              columns: 2 8rem; } }
 @media only screen and (min-width: 80em) {
   h1 {
     font-size: 3.2rem; }
@@ -1135,7 +1163,13 @@ input[type="submit"]:focus {
           height: 30%; }
           section .card-diensten .card-row .card-item .card-img img,
           section .card-partners .card-row .card-item .card-img img {
-            width: 80px; } }
+            width: 80px; }
+
+  .footer-row-2 {
+    margin-left: 10rem; }
+    .footer-row-2 .footerlist {
+      -webkit-columns: 2 12rem;
+              columns: 2 12rem; } }
 .dark {
   background-color: #01172e;
   /***** Links *****/
@@ -1213,7 +1247,7 @@ input[type="submit"]:focus {
   .dark .knop-donker {
     display: block; }
   .dark .maan {
-    background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/zon.png");
+    background-image: url("img/zon.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 40px 40px;
@@ -1290,9 +1324,9 @@ input[type="submit"]:focus {
     .dark .site-footer .footer-row .footerlist li {
       color: #01172e; }
     .dark .site-footer .footer-row .footerlist .mail {
-      background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/mail-dark.svg"); }
+      background-image: url("img/mail-dark.svg"); }
     .dark .site-footer .footer-row .footerlist .tele {
-      background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/tele-dark.svg"); }
+      background-image: url("img/tele-dark.svg"); }
     .dark .site-footer .footer-row p {
       color: #01172e; }
       .dark .site-footer .footer-row p a {
@@ -1300,7 +1334,7 @@ input[type="submit"]:focus {
         .dark .site-footer .footer-row p a:hover {
           color: #01172e; }
     .dark .site-footer .footer-row-1::before {
-      background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/opsommingsteken-dark.svg"); }
+      background-image: url("img/opsommingsteken-dark.svg"); }
   .dark input[type="text"],
   .dark input[type="email"],
   .dark input[type="url"],
@@ -1360,7 +1394,7 @@ input[type="submit"]:focus {
         background-color: #0575e6;
         border: 2px solid #0575e6; }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 48em) {
   .dark .site-footer .footer-row-1 h3 {
     color: #0575e6; }
   .dark .site-footer .footer-row-1 .footerlist {
@@ -1373,9 +1407,9 @@ input[type="submit"]:focus {
       .dark .site-footer .footer-row-1 .footerlist li a {
         color: #0575e6; }
     .dark .site-footer .footer-row-1 .footerlist .mail {
-      background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/mail-media-dark.svg"); }
+      background-image: url("img/mail-media-dark.svg"); }
     .dark .site-footer .footer-row-1 .footerlist .tele {
-      background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/tele-media-dark.svg"); } }
+      background-image: url("img/tele-media-dark.svg"); } }
 /********** color scheme **********/
 @media (prefers-color-scheme: dark) {
   body {
@@ -1455,7 +1489,7 @@ input[type="submit"]:focus {
     body .knop-donker {
       display: block; }
     body .maan {
-      background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/zon.png");
+      background-image: url("img/zon.png");
       background-repeat: no-repeat;
       background-position: center;
       background-size: 40px 40px;
@@ -1532,9 +1566,9 @@ input[type="submit"]:focus {
       body .site-footer .footer-row .footerlist li {
         color: #01172e; }
       body .site-footer .footer-row .footerlist .mail {
-        background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/mail-dark.svg"); }
+        background-image: url("img/mail-dark.svg"); }
       body .site-footer .footer-row .footerlist .tele {
-        background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/tele-dark.svg"); }
+        background-image: url("img/tele-dark.svg"); }
       body .site-footer .footer-row p {
         color: #01172e; }
         body .site-footer .footer-row p a {
@@ -1542,7 +1576,7 @@ input[type="submit"]:focus {
           body .site-footer .footer-row p a:hover {
             color: #01172e; }
       body .site-footer .footer-row-1::before {
-        background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/opsommingsteken-dark.svg"); }
+        background-image: url("img/opsommingsteken-dark.svg"); }
     body input[type="text"],
     body input[type="email"],
     body input[type="url"],
@@ -1601,7 +1635,7 @@ input[type="submit"]:focus {
         body .wpcf7 form input[type="submit"]:hover {
           background-color: #0575e6;
           border: 2px solid #0575e6; } }
-@media screen and (prefers-color-scheme: dark) and (min-width: 40em) {
+@media screen and (prefers-color-scheme: dark) and (min-width: 48em) {
   .dark .site-footer .footer-row-1 h3 {
     color: #0575e6; }
   .dark .site-footer .footer-row-1 .footerlist {
@@ -1614,8 +1648,8 @@ input[type="submit"]:focus {
       .dark .site-footer .footer-row-1 .footerlist li a {
         color: #0575e6; }
     .dark .site-footer .footer-row-1 .footerlist .mail {
-      background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/mail-media-dark.svg"); }
+      background-image: url("img/mail-media-dark.svg"); }
     .dark .site-footer .footer-row-1 .footerlist .tele {
-      background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/tele-media-dark.svg"); } }
+      background-image: url("img/tele-media-dark.svg"); } }
 
 /*# sourceMappingURL=style.css.map */

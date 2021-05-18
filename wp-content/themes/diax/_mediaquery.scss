@@ -34,54 +34,39 @@
 	}
 
 	.site-footer {
+		min-height: 310px;
 		.row {
 			margin: 0;
 			.nuttigelinks {
-				margin-top: 8.5rem;
-				li:first-child {
-					margin-bottom: 2rem;
-				}
+				margin-top: 4.3rem;
 			}
 		}
 		.footer-row-1 {
 			position: relative;
+			min-height: 310px;
 			padding: 0 1rem;
-			&::before {
-				position: absolute;
-				content: "";
-				margin-top: -1px;
-				top: 0;
-				left: 0;
-				width: 200%;
-				height: 100%;
-				background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/opsommingsteken.svg");
-				background-repeat: no-repeat;
-				background-position: center top;
-				background-size: cover;
-				z-index: -1;
-			}
 			h3 {
-				color: $blueDark;
+				color: $blueVeryLight;
 			}
 			li {
-				color: $blueDark;
+				color: $blueVeryLight;
 				a {
-					color: $blueDark;
+					color: $blueVeryLight;
 				}
 			}
 			.footerlist {
 				margin-bottom: 0;
 				padding-inline-start: 0;
 				.mail {
-					background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/mail-media.svg");	
+					background-image: url("img/mail.svg");	
 					a:focus {
-						outline: 1px solid $blueDark;
+						outline: 1px solid $blueVeryLight;
 					}
 				}
 				.tele {
-					background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/tele-media.svg");
+					background-image: url("img/tele.svg");
 					a:focus {
-						outline: 1px solid $blueDark;
+						outline: 1px solid $blueVeryLight;
 					}	
 				}
 			}
@@ -144,6 +129,45 @@
 	.site-footer {
 		.row {
 			margin: 0 2rem;
+		}
+		.footer-row-1 {
+			h3 {
+				color: $blueDark;
+			}
+			li {
+				color: $blueDark;
+				a {
+					color: $blueDark;
+				}
+			}
+			&::before {
+				position: absolute;
+				content: "";
+				margin-top: -1px;
+				top: 0;
+				left: 0;
+				width: 200%;
+				height: 100%;
+				background-image: url("img/opsommingsteken.svg");
+				background-repeat: no-repeat;
+				background-position: center top;
+				background-size: cover;
+				z-index: -1;
+			}
+				.footerlist {
+				.mail {
+					background-image: url("img/mail-media.svg");	
+					a:focus {
+						outline: 1px solid $blueVeryLight;
+					}
+				}
+				.tele {
+					background-image: url("img/tele-media.svg");
+					a:focus {
+						outline: 1px solid $blueVeryLight;
+					}	
+				}
+			}
 		}
 	}
 }
@@ -391,6 +415,12 @@
 		}
 	}
 
+	.footer-row-2 {
+		margin-left: 6rem;
+		.footerlist {
+			columns: 2 8rem;
+		}
+	}
 }
 
 @media only screen and (min-width: 80em) {
@@ -434,5 +464,10 @@
 			}
 		}
 	}
-
+		.footer-row-2 {
+		margin-left: 10rem;
+		.footerlist {
+			columns: 2 12rem;
+		}
+	}
 }

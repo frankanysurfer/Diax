@@ -109,7 +109,7 @@
 	/***** Maan *****/
 
 	.maan {
-		background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/zon.png");
+		background-image: url("img/zon.png");
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: 40px 40px;
@@ -211,10 +211,10 @@
 					color: $blueVeryDark;
 				}
 				.mail {
-					background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/mail-dark.svg");	
+					background-image: url("img/mail-dark.svg");	
 				}
 				.tele {
-					background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/tele-dark.svg");
+					background-image: url("img/tele-dark.svg");
 				}
 			}
 			p {
@@ -229,7 +229,7 @@
 		}
 		.footer-row-1 {
 			&::before {
-				background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/opsommingsteken-dark.svg");
+				background-image: url("img/opsommingsteken-dark.svg");
 			}
 		}
 	}
@@ -314,7 +314,7 @@
 	}
 }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 48em) {
 	.dark {
 		.site-footer {
 			.footer-row-1 {
@@ -331,10 +331,10 @@
 						}
 					}
 					.mail {
-						background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/mail-media-dark.svg");	
+						background-image: url("img/mail-media-dark.svg");	
 					}
 					.tele {
-						background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/tele-media-dark.svg");	
+						background-image: url("img/tele-media-dark.svg");	
 					}
 				}
 			}
@@ -458,7 +458,7 @@ body {
 	/***** Maan *****/
 
 	.maan {
-		background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/zon.png");
+		background-image: url("img/zon.png");
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: 40px 40px;
@@ -560,10 +560,10 @@ body {
 					color: $blueVeryDark;
 				}
 				.mail {
-					background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/mail-dark.svg");	
+					background-image: url("img/mail-dark.svg");	
 				}
 				.tele {
-					background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/tele-dark.svg");
+					background-image: url("img/tele-dark.svg");
 				}
 			}
 			p {
@@ -578,7 +578,7 @@ body {
 		}
 		.footer-row-1 {
 			&::before {
-				background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/opsommingsteken-dark.svg");
+				background-image: url("img/opsommingsteken-dark.svg");
 			}
 		}
 	}
@@ -663,7 +663,7 @@ body {
 	}
 }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 48em) {
 	.dark {
 		.site-footer {
 			.footer-row-1 {
@@ -680,10 +680,10 @@ body {
 						}
 					}
 					.mail {
-						background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/mail-media-dark.svg");	
+						background-image: url("img/mail-media-dark.svg");	
 					}
 					.tele {
-						background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/tele-media-dark.svg");	
+						background-image: url("img/tele-media-dark.svg");	
 					}
 				}
 			}

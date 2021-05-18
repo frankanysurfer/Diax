@@ -2,9 +2,13 @@ html, body {
     width: 100%;
     height: 100%;
     min-height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: stretch;
+}
+
+#switch {
+	display: none;
 }
 
 .alignright {
@@ -39,7 +43,7 @@ img {
 }
 
 .maan {
-	background-image: url("https://staging.di-ax.be/wp-content/themes/diax/img/moon.svg");
+	background-image: url("img/moon.svg");
 	background-repeat: no-repeat;
 	background-position: center;
 }
@@ -295,19 +299,22 @@ section	.card-partners {
 	}
 }
 
+
+/***** Stoefbalk *****/
 .entry-content .stoefbalk {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: flex-start;
 	list-style-type: none;
 	margin:	2rem 0 4rem;
 	padding-inline-start: 0;
 	li {
 		display: flex;
 		justify-content: center;
-		height: 150px;
+		height: 112.5px;
 		max-width: none;
+		margin-right: 1rem;
 		margin-bottom: 1rem;
 		border: 1px solid #606060;
 		img {
@@ -315,12 +322,12 @@ section	.card-partners {
 			height: 100%;
 		}
 	}
-	.digipolis-logo {width: 272px;}
-	.abb-logo {width: 392px;}
-	.bosa-logo {width: 392px;}
-	.kbc-logo {width: 216px;}
-	.betawerk-logo {width: 348px;}
-	.poolstok-logo {width: 272px;}
+	.digipolis-logo {width: 204px;}
+	.abb-logo {width: 294px;}
+	.bosa-logo {width: 294px;}
+	.kbc-logo {width: 162px;}
+	.betawerk-logo {width: 261px;}
+	.poolstok-logo {width: 204px;}
 }
 
 /***** Diensten *****/

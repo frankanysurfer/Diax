@@ -42,7 +42,6 @@
             <div class="footer-row">
             <ul class="footerlist nuttigelinks">    
                 <li><a href="http://staging.di-ax.be/toegankelijkheidsverklaring">Toegankelijkheidsverklaring</a></li>
-                <li>&copy; Rechten gereserveerd door <a href="https://di-ax.be">DiAX</a></li>
             </ul>
 
             </div>
@@ -56,7 +55,7 @@
                 <li class="footer-icon tele"><a href="tel:022106140">02 210 61 40</a></li>
             </ul>
             </div>
-            <div class="footer-row">
+            <div class="footer-row footer-row-2">
             <h3>DiAX</h3>
             <ul class="footerlist">    
                 <li><a href="http://staging.di-ax.be/fr/diax-francais">Home</a></li>
@@ -70,7 +69,6 @@
             <div class="footer-row">
             <ul class="footerlist nuttigelinks">    
                 <li><a href="http://staging.di-ax.be/fr/toegankelijkheidsverklaring-fr">Déclaration d'accessibilité</a></li>
-                <li>&copy; Droits réservés par <a href="https://di-ax.be">DiAX</a></li>
             </ul>
             </div>
             <?php
@@ -83,7 +81,7 @@
                 <li class="footer-icon tele"><a href="tel:022106140">02 210 61 40</a></li>
             </ul>
             </div>
-            <div class="footer-row">
+            <div class="footer-row footer-row-2">
             <h3>DiAX</h3>
             <ul class="footerlist">    
                 <li><a href="http://staging.di-ax.be/en/diax-english">Home</a></li>
@@ -97,7 +95,6 @@
             <div class="footer-row">
             <ul class="footerlist nuttigelinks">    
                 <li><a href="http://staging.di-ax.be/en/toegankelijkheidsverklaring-en">Accessibility statement</a></li>
-                <li>&copy; Rights reserved by <a href="https://di-ax.be">DiAX</a></li>
             </ul>
             </div>
              <?php                }  
