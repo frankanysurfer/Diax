@@ -36,6 +36,12 @@
 	.site-footer {
 		.row {
 			margin: 0;
+			.nuttigelinks {
+				margin-top: 8.5rem;
+				li:first-child {
+					margin-bottom: 2rem;
+				}
+			}
 		}
 		.footer-row-1 {
 			position: relative;
@@ -191,20 +197,28 @@
 	    max-width: 100%;
 	  }
 
-	.post-15 .entry-content,
 	.post-223 .entry-content,
 	.post-225 .entry-content,
+	.post-369 .entry-content,
 	.post-367 .entry-content,
-	.post-369 .entry-content {
-		display: flex;
-		.wpcf7 {
+	.post-15 .entry-content .wpcf7 {
 			width: 60%;
 		}
-	}	
 
-	blockquote {
-		 p {
+	figure {
+		flex-direction: row;
+		justify-content: space-between;
+		margin: 1rem auto;
+		.blocktekst {
+			margin-left: 2rem;
 			width: 50%;
+			blockquote p {
+				font-size: 1.5rem;
+				text-align: left;
+			}
+			figcaption {
+				text-align: left;
+			}
 		}
 	}
 
@@ -214,19 +228,21 @@
 		.card-row {
 			display: flex;
 			flex-direction: row;
+			flex-wrap: wrap;
 			justify-content: space-between;
 			width: 100%;
 			height: auto;
 			margin-bottom: 2rem;
 			.card-item {
-				width: 30%;
-				margin: 0 2%;
-				&:first-of-type {
-					margin: 0;
-				}
-				&:last-of-type {
-					margin: 0;
-				}
+				width: 45%;
+				min-height: 45rem;
+				margin: 0 2% 4rem;
+				// &:first-of-type {
+				// 	margin: 0;
+				// }
+				// &:last-of-type {
+				// 	margin: 0;
+				// }
 				.card-img {
 					width: 100%;
 					height: 30%;
@@ -235,6 +251,14 @@
 					}
 				}
 			}
+			.card-item-vebes {
+				.card-img {
+					height: 110px;
+					img {
+						width: 145px;
+					}
+				}
+			}	
 		}
 	}
 
@@ -247,6 +271,7 @@
 			width: auto;
 		}
 	}
+
 }
 
 @media only screen and (min-width: 64em) {
@@ -325,6 +350,47 @@
 				}
 			}
 		}
+
+	section	.card-diensten,
+	section	.card-partners {
+		width: 100%;
+		.card-row {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			width: 100%;
+			height: auto;
+			margin-bottom: 2rem;
+			.card-item {
+				width: 45%;
+				min-height: 38rem;
+				margin: 0 2% 4rem;
+				// &:first-of-type {
+				// 	margin: 0;
+				// }
+				// &:last-of-type {
+				// 	margin: 0;
+				// }
+				.card-img {
+					width: 100%;
+					height: 30%;
+					img {
+						width: 80px;
+					}
+				}
+			}
+			.card-item-vebes {
+				.card-img {
+					height: 110px;
+					img {
+						width: 145px;
+					}
+				}
+			}	
+		}
+	}
+
 }
 
 @media only screen and (min-width: 80em) {
@@ -335,6 +401,38 @@
 
 	h2 {
 		font-size: 2.4rem;
+	}
+
+	section	.card-diensten,
+	section	.card-partners {
+		width: 100%;
+		.card-row {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			width: 100%;
+			height: auto;
+			margin-bottom: 2rem;
+			.card-item {
+				width: 45%;
+				min-height: 33rem;
+				margin: 0 2% 4rem;
+				// &:first-of-type {
+				// 	margin: 0;
+				// }
+				// &:last-of-type {
+				// 	margin: 0;
+				// }
+				.card-img {
+					width: 100%;
+					height: 30%;
+					img {
+						width: 80px;
+					}
+				}
+			}
+		}
 	}
 
 }

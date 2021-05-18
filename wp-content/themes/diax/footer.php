@@ -28,9 +28,9 @@
                 <li class="footer-icon tele"><a href="tel:022106140">02 210 61 40</a></li>
             </ul>
             </div>
-            <div class="footer-row">
+            <div class="footer-row footer-row-2">
             <h3>DiAX</h3>
-            <ul class="footerlist nuttigelinks">    
+            <ul class="footerlist">    
                 <li><a href="http://staging.di-ax.be">Home</a></li>
                 <li><a href="http://staging.di-ax.be/diensten">Diensten</a></li>
                 <li><a href="http://staging.di-ax.be/contracten">Contracten</a></li>
@@ -40,13 +40,11 @@
             </ul>
             </div>
             <div class="footer-row">
-            <h3>Legal</h3>
             <ul class="footerlist nuttigelinks">    
-                <li><a href="http://staging.di-ax.be/privacybeleid">Privacyverklaring</a></li>
-                <li><a href="http://staging.di-ax.be/algemene-voorwaarden">Algemene voorwaarden</a></li>
                 <li><a href="http://staging.di-ax.be/toegankelijkheidsverklaring">Toegankelijkheidsverklaring</a></li>
+                <li>&copy; Rechten gereserveerd door <a href="https://di-ax.be">DiAX</a></li>
             </ul>
-            <p>&copy; Rechten gereserveerd door <a href="https://di-ax.be">DiAX</a></p>
+
             </div>
             <?php 
                 } else if(pll_current_language() == 'fr') {?>
@@ -60,7 +58,7 @@
             </div>
             <div class="footer-row">
             <h3>DiAX</h3>
-            <ul class="footerlist nuttigelinks">    
+            <ul class="footerlist">    
                 <li><a href="http://staging.di-ax.be/fr/diax-francais">Home</a></li>
                 <li><a href="http://staging.di-ax.be/fr/services-2">Services</a></li>
                 <li><a href="http://staging.di-ax.be/fr/contrats">Contrats</a></li>
@@ -70,13 +68,10 @@
             </ul>
             </div>
             <div class="footer-row">
-            <h3>Legal</h3>
             <ul class="footerlist nuttigelinks">    
-                <li><a href="http://staging.di-ax.be/fr/privacybeleid-fr">Déclaration de confidentialité</a></li>
-                <li><a href="http://staging.di-ax.be/fr/algemene-voorwaarden-fr">Conditions générales</a></li>
                 <li><a href="http://staging.di-ax.be/fr/toegankelijkheidsverklaring-fr">Déclaration d'accessibilité</a></li>
+                <li>&copy; Droits réservés par <a href="https://di-ax.be">DiAX</a></li>
             </ul>
-            <p>&copy; Rechten gereserveerd door <a href="https://di-ax.be">DiAX</a></p>
             </div>
             <?php
                 } else if(pll_current_language() == 'en') {?>
@@ -90,7 +85,7 @@
             </div>
             <div class="footer-row">
             <h3>DiAX</h3>
-            <ul class="footerlist nuttigelinks">    
+            <ul class="footerlist">    
                 <li><a href="http://staging.di-ax.be/en/diax-english">Home</a></li>
                 <li><a href="http://staging.di-ax.be/en/services">Services</a></li>
                 <li><a href="http://staging.di-ax.be/en/contracts">Contracts</a></li>
@@ -100,13 +95,10 @@
             </ul>
             </div>
             <div class="footer-row">
-            <h3>Legal</h3>
             <ul class="footerlist nuttigelinks">    
-                <li><a href="http://staging.di-ax.be/en/privacybeleid-e">Privacy declaration</a></li>
-                <li><a href="http://staging.di-ax.be/en/algemene-voorwaarden-en">Terms and Conditions</a></li>
                 <li><a href="http://staging.di-ax.be/en/toegankelijkheidsverklaring-en">Accessibility statement</a></li>
+                <li>&copy; Rights reserved by <a href="https://di-ax.be">DiAX</a></li>
             </ul>
-            <p>&copy; Rights reserved by <a href="https://di-ax.be">DiAX</a></p>
             </div>
              <?php                }  
         ?>
@@ -120,6 +112,15 @@
 
 
 <?php wp_footer(); ?>
+
+<script type="application/json">{
+  "utility": "cck",
+  "url": {
+    "en": "https://di-ax.be/en",
+    "nl": "https://di-ax.be",
+    "fr": "https://di-ax.be/fr"
+  }
+}</script>
 
 </body>
 </html>

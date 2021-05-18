@@ -237,12 +237,12 @@ function cmplz_data_sold_us() {
 }
 add_action( 'cmplz_notice_data_sold_us', 'cmplz_data_sold_us' );
 
-function cmplz_notice_personalized_ads_based_on_consent() {
-	cmplz_sidebar_notice( __( "With Tag Manager, you can also configure your (personalized) advertising based on consent.",
-			'complianz-gdpr' )
-	              . cmplz_read_more( 'https://complianz.io/setting-up-consent-based-advertising/' ) );
-}
-add_action( 'cmplz_notice_uses_ad_cookies_personalized', 'cmplz_notice_personalized_ads_based_on_consent' );
+// function cmplz_notice_personalized_ads_based_on_consent() {
+// 	cmplz_sidebar_notice( __( "With Tag Manager, you can also configure your (personalized) advertising based on consent.",
+// 			'complianz-gdpr' )
+// 	              . cmplz_read_more( 'https://complianz.io/setting-up-consent-based-advertising/' ) );
+// }
+// add_action( 'cmplz_notice_uses_ad_cookies_personalized', 'cmplz_notice_personalized_ads_based_on_consent' );
 
 function cmplz_notice_block_recaptcha_service() {
 	cmplz_sidebar_notice( __( "If you choose to block reCAPTCHA, please make sure you add a placeholder to your forms.",
@@ -290,7 +290,7 @@ function cmplz_notice_add_pages_to_menu() {
 	$pages_not_in_menu = COMPLIANZ::$document->pages_not_in_menu();
 	if ( $pages_not_in_menu ) {
 		if ( cmplz_ccpa_applies() ) {
-			cmplz_sidebar_notice( sprintf( __( 'You sell personal data from your customers. This means you are required to put the "%s" page clearly visible on your homepage.',
+			cmplz_sidebar_notice( sprintf( __( 'You are required to put the "%s" page clearly visible on your homepage.',
 					'complianz-gdpr' ),
 					cmplz_us_cookie_statement_title() ) );
 		}

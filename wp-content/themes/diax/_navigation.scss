@@ -1,7 +1,5 @@
 /***** Links *****/
 a {
-	// font-family: "flama_semicondensedbook";
-	// font-size: .9rem;
 	color: $blueDark;
 	border-bottom-color: $blueDark;
 }
@@ -110,7 +108,7 @@ a:hover, a:active {
 	}
 	a.linkb2 {
 		text-decoration: none;
-		color: $blueBright;
+		color: #0783FF;
 		background-color: $blueVeryDark;
 		border: none;
 		font-weight: bold;
@@ -168,7 +166,7 @@ a:hover, a:active {
 			font-weight: bold;
 		}
 		p {
-			margin-top: 5rem;
+			margin-top: 2rem;
 			font-size: .9rem;
 			color: $blueVeryLight;
 			font-family: "flama_semicondensedbook";
@@ -236,6 +234,9 @@ a:hover, a:active {
 			&:last-child {
 				margin-bottom: 0;
 			}
+		}
+		.nuttigelinks {
+			margin-top: 2rem;
 		}
 	}
 }

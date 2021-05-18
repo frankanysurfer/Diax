@@ -7,6 +7,12 @@ html, body {
     align-items: stretch;
 }
 
+.alignright {
+	width: 15rem;
+	float: right;
+	margin: 0 0 1rem 1rem;
+}
+
 img {
 	max-width: 100%;
 	width: 100%;
@@ -203,6 +209,20 @@ section:first-of-type {
 	}
 }
 
+section	.card-partners {
+	.card-row {
+		.card-item-vebes {
+			.card-img {
+				height: 110px;
+				img {
+					width: 145px;
+				}
+			}
+		}	
+	}
+}
+
+
 .partners-sec .card-content .card-item {
 	height: 100%;
 	a {
@@ -218,31 +238,49 @@ section:first-of-type {
 	display: none;
 }
 
-figure {
-	margin-top: 5rem;
-	width: 100%;
-	img {
-		display: block;
-		margin:	0 auto 2rem;
-		width: auto;
-	}
-	> p {
-		display: none;
-	}
-	figcaption {
-		text-align: center;
-		font-weight: bold;
+.quote {
+	margin-top: 2rem;
+	margin-bottom: 4rem;
+}
+	figure {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin-top: 5rem;
+		width: 100%;
+		img {
+			display: block;
+			margin:	0 auto 2rem;
+			width: auto;
+		}
+		> p {
+			display: none;
+		}
+		.blocktekst {
+			margin: 0 auto;
+			width: 70%;
+			blockquote {
+			border-left: none;
+			margin-block-start: 0;
+	    	margin-block-end: 0;
+	    	margin-inline-start: 0;
+	    	margin-inline-end: 0;
+	    	margin: 0;
+	    	padding: 0;
+	    	p {
+	    		max-width: 100%;
+	    		font-size: 1.25rem;
+	    		text-align: center;
+	    	}
+		}
+		figcaption {
+			text-align: center;
+			font-weight: bold;
+		}
 	}
 }
 
-blockquote {
-	display: flex;
-	justify-content: center;
-	border-style: none;
-	p {
-	font-size: 1.6rem;
-	}
-}
+
 
 
 /***** Home *****/
@@ -255,6 +293,34 @@ blockquote {
 	section:first-of-type {
 		margin-top: 2rem;
 	}
+}
+
+.entry-content .stoefbalk {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	list-style-type: none;
+	margin:	2rem 0 4rem;
+	padding-inline-start: 0;
+	li {
+		display: flex;
+		justify-content: center;
+		height: 150px;
+		max-width: none;
+		margin-bottom: 1rem;
+		border: 1px solid #606060;
+		img {
+			// width: 50%;
+			height: 100%;
+		}
+	}
+	.digipolis-logo {width: 272px;}
+	.abb-logo {width: 392px;}
+	.bosa-logo {width: 392px;}
+	.kbc-logo {width: 216px;}
+	.betawerk-logo {width: 348px;}
+	.poolstok-logo {width: 272px;}
 }
 
 /***** Diensten *****/

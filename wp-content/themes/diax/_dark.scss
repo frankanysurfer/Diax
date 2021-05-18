@@ -41,6 +41,37 @@
 	    border-bottom-color: $blueVeryLight;
 	}
 
+	p:not(.site-title) a,
+	span a,
+	.nav-previous a,
+	.nav-next a,
+	.entry-content a {
+	    border-bottom: 2px solid $blueBright;
+	    color: $blueBright;
+	    font-weight: normal;
+	    transition-property: none;
+	}
+
+	p:not(.site-title) a:hover,
+	span a:hover,
+	.nav-previous a:hover,
+	.nav-next a:hover,
+	.entry-content a:hover {
+	    border-bottom: 2px solid $blueBright;
+	    color: $blueBright;
+	    transition-property: none;
+	}
+
+	p:not(.site-title) a:after,
+	span a:after,
+	.nav-previous a:after,
+	.nav-next a:after,
+	.entry-content a:after {
+	    background: none;
+	    color: $blueBright;
+	    transition-property: none;
+	}
+
 	/***** Hoofdnavigatie *****/
 	.main-navigation {
 		a {
@@ -266,26 +297,20 @@
 	}
 
 	.wpcf7 {
-		padding: 0 .5rem;
 		form { 
-			fieldset {
-				border: 1px solid $blueBright;
-				legend{ 
-					color: $blueVeryLight;
-				}
-				label {
-					color: $blueVeryLight;
-				}
-				input[type="submit"] {
-					background-color: $blueDark;
-					border: 2px solid $blueDark;
-					&:hover {
-						background-color: $blueBright;
-						border: 2px solid $blueBright;
-					}
+			border: 1px solid $blueBright;
+			label {
+				color: $blueVeryLight;
+			}
+			input[type="submit"] {
+				background-color: $blueDark;
+				border: 2px solid $blueDark;
+				&:hover {
+					background-color: $blueBright;
+					border: 2px solid $blueBright;
 				}
 			}
-		}
+		}		
 	}
 }
 
@@ -365,6 +390,37 @@ body {
 	    border-bottom-color: $blueVeryLight;
 	}
 
+	p:not(.site-title) a,
+	span a,
+	.nav-previous a,
+	.nav-next a,
+	.entry-content a {
+	    border-bottom: 2px solid $blueBright;
+	    color: $blueBright;
+	    font-weight: normal;
+	    transition-property: none;
+	}
+
+	p:not(.site-title) a:hover,
+	span a:hover,
+	.nav-previous a:hover,
+	.nav-next a:hover,
+	.entry-content a:hover {
+	    border-bottom: 2px solid $blueBright;
+	    color: $blueBright;
+	    transition-property: none;
+	}
+
+	p:not(.site-title) a:after,
+	span a:after,
+	.nav-previous a:after,
+	.nav-next a:after,
+	.entry-content a:after {
+	    background-color: none;
+	    color: $blueBright;
+	    transition-property: none;
+	}
+
 	/***** Hoofdnavigatie *****/
 	.main-navigation {
 		a {
@@ -590,25 +646,19 @@ body {
 	}
 
 	.wpcf7 {
-		padding: 0 .5rem;
 		form { 
-			fieldset {
-				border: 1px solid $blueBright;
-				legend{ 
-					color: $blueVeryLight;
-				}
-				label {
-					color: $blueVeryLight;
-				}
-				input[type="submit"] {
-					background-color: $blueDark;
-					border: 2px solid $blueDark;
-					&:hover {
-						background-color: $blueBright;
-						border: 2px solid $blueBright;
-					}
-				}
+			border: 1px solid $blueBright;
+			label {
+				color: $blueVeryLight;
 			}
+			input[type="submit"] {
+				background-color: $blueDark;
+				border: 2px solid $blueDark;
+				&:hover {
+					background-color: $blueBright;
+					border: 2px solid $blueBright;
+				}
+			}			
 		}
 	}
 }

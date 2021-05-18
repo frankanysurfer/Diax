@@ -132,13 +132,16 @@ html {
 
 body {
 	font-family: 'open_sansregular';
-    color: $blueVeryDark	;
 }
 
 p, li {
     font-size: 1rem;
-    line-height: 1.375;
+    line-height: 1.5;
     max-width: 720px;
+}
+
+p, ul {
+    margin-bottom: 1rem;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -158,14 +161,16 @@ h2 {
     font-size: 2rem;
     line-height: 1.2;
     color: $blueDark;
+    margin-top: 2.5rem;
     margin-bottom: 1.5rem;
 }
 
 h3 {
     font-family: 'flama_semicondensedbold';
-    font-size: .8rem;
+    font-size: 1.5rem;
     line-height: 1.2;
     color: $blueVeryDark;
+    margin-top: 2rem;
     text-transform: none;    
 }
 
@@ -196,5 +201,5 @@ p {
 }
 
 b, strong {
-   font-weight: 900;
+    font-weight: 900 !important;
 }
