@@ -55,7 +55,26 @@
 			 ?>
 		</div><!-- .site-branding -->
         <ul class="language"><?php pll_the_languages();?></ul>
-        <button  id="switch" class="maan"><span class="sr-only"><span class="knop-licht">Donkere modus</span><span class="knop-donker">lichte modus</span></button>
+        <button  id="switch" class="switch maan"><span class="sr-only">
+
+            <?php
+            if(pll_current_language() == 'nl') {?>
+            <span class="knop-licht">Donkere modus</span>
+            <span class="knop-donker">lichte modus</span>
+
+            <?php 
+            } else if(pll_current_language() == 'fr') {?>
+            <span class="knop-licht">Mode sombre</span>
+            <span class="knop-donker">Mode lumière</span>
+        
+            <?php
+            } else if(pll_current_language() == 'en') {?>
+            <span class="knop-licht">Dark mode</span>
+            <span class="knop-donker">light mode</span>
+             <?php                }  
+            ?>
+
+        </span></button>
 
 		<nav id="site-navigation" class="main-navigation">
             <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'slightly' ); ?></button>

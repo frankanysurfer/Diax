@@ -67,8 +67,19 @@
 					background-image: url("img/tele.svg");
 					a:focus {
 						outline: 1px solid $blueVeryLight;
-					}	
+					}
 				}
+				.social {
+					a:focus {
+						outline: 1px solid $blueVeryLight;
+					}
+					.twitter {
+						background-image: url("img/twitter.svg");
+					}
+					.linkedin {
+						background-image: url("img/linkedin.svg");
+					}
+				}	
 			}
 		}
 	}
@@ -166,6 +177,17 @@
 					a:focus {
 						outline: 1px solid $blueVeryLight;
 					}	
+				}
+				.social {
+					a:focus {
+						outline: 1px solid $blueVeryLight;
+					}
+					.twitter {
+						background-image: url("img/twitter-media.svg");
+					}
+					.linkedin {
+						background-image: url("img/linkedin-media.svg");
+					}
 				}
 			}
 		}

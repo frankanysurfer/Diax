@@ -26,6 +26,7 @@
             <ul class="footerlist contactgegevens">
                 <li class="footer-icon mail"><a href="mailto:info@di-ax.be">info@di-ax.be</a></li>
                 <li class="footer-icon tele"><a href="tel:022106140">02 210 61 40</a></li>
+                <li class="footer-icon social"><a class="footer-icon twitter" href="https://twitter.com/DiAX_be"><span class=sr-only>Twitter</span></a><a class="footer-icon linkedin" href="https://www.linkedin.com/company/di-ax/"><span class="sr-only">Linkedin</span></a></li>
             </ul>
             </div>
             <div class="footer-row footer-row-2">
@@ -53,6 +54,7 @@
             <ul class="footerlist contactgegevens">
                 <li class="footer-icon mail"><a href="mailto:info@di-ax.be">info@di-ax.be</a></li>
                 <li class="footer-icon tele"><a href="tel:022106140">02 210 61 40</a></li>
+                <li class="footer-icon social"><a class="footer-icon twitter" href="https://twitter.com/DiAX_be"><span class=sr-only>Twitter</span></a><a class="footer-icon linkedin" href="https://www.linkedin.com/company/di-ax/"><span class="sr-only">Linkedin</span></a></li>
             </ul>
             </div>
             <div class="footer-row footer-row-2">
@@ -79,6 +81,7 @@
             <ul class="footerlist contactgegevens">
                 <li class="footer-icon mail"><a href="mailto:info@di-ax.be">info@di-ax.be</a></li>
                 <li class="footer-icon tele"><a href="tel:022106140">02 210 61 40</a></li>
+                <li class="footer-icon social"><a class="footer-icon twitter" href="https://twitter.com/DiAX_be"><span class=sr-only>Twitter</span></a><a class="footer-icon linkedin" href="https://www.linkedin.com/company/di-ax/"><span class="sr-only">Linkedin</span></a></li>
             </ul>
             </div>
             <div class="footer-row footer-row-2">

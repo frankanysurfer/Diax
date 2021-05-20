@@ -251,6 +251,23 @@ li a:hover, li a:active {
 			&:last-child {
 				margin-bottom: 0;
 			}
+			.social {
+				height: 1.3rem;
+				a {
+					display: inline-block;
+					width: 1.3rem;
+					height: 1.3rem;
+					background-position: center;
+					background-size: 20px auto
+				}
+				.twitter {
+					margin-right: .7rem;
+					background-image: url("img/twitter.svg");
+				}
+				.linkedin {
+					background-image: url("img/linkedin.svg");
+				}
+			}
 		}
 		.nuttigelinks {
 			margin-top: 2rem;
