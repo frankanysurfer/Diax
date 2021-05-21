@@ -1,11 +1,11 @@
 .dark {
 	background-color: $blueVeryDark;
 	h1 {
-	    color: $blueBright;
+	    color: $blueBrightD;
 	}
 
 	h2 {
-	    color: $blueBright;
+	    color: $blueBrightD;
 	}
 
 	h3 {
@@ -32,8 +32,8 @@
 	/***** Links *****/
 
 	a {
-		color: $blueBright;
-		border-bottom-color: $blueBright;
+		color: $blueBrightD;
+		border-bottom-color: $blueBrightD;
 	}
 
 	a:hover, a:active {
@@ -41,13 +41,17 @@
 	    border-bottom-color: $blueVeryLight;
 	}
 
+	a:focus {
+		outline: 2px solid $white;
+	}
+
 	p:not(.site-title) a,
 	span a,
 	.nav-previous a,
 	.nav-next a,
 	.entry-content a {
-	    border-bottom: 2px solid $blueBright;
-	    color: $blueBright;
+	    border-bottom: 2px solid $blueBrightD;
+	    color: $blueBrightD;
 	    font-weight: normal;
 	    transition-property: none;
 	}
@@ -57,8 +61,8 @@
 	.nav-previous a:hover,
 	.nav-next a:hover,
 	.entry-content a:hover {
-	    border-bottom: 2px solid $blueBright;
-	    color: $blueBright;
+	    border-bottom: 2px solid $white;
+	    color: $blueBrightD;
 	    transition-property: none;
 	}
 
@@ -68,7 +72,7 @@
 	.nav-next a:after,
 	.entry-content a:after {
 	    background: none;
-	    color: $blueBright;
+	    color: $blueBrightD;
 	    transition-property: none;
 	}
 
@@ -79,6 +83,7 @@
 		a {
 			color: $white;
 			&:hover {
+				color: $white;
 				border-bottom: 0px solid $blueVeryLight;
 			}
 			&:after {
@@ -86,7 +91,7 @@
 			    bottom: 0;
 			    left: 0;
 			    width: 100%;
-			    height: 2px;
+			    height: 1px;
 			    content: '';
 			    // transform: scaleX(0);
 			    background-color: #fff;
@@ -94,8 +99,10 @@
 			}
 		}
 		.current_page_item > a {
-			box-shadow: none;
-			border-bottom: 0px solid $blueVeryLight;
+			box-shadow: inset 0px -2px 0px 0px #fff;	
+		}
+		&:after {
+			background: none;
 		}
 	}
 	.menu-toggle,
@@ -115,7 +122,7 @@
 
 	.lang-item a:hover,
 	.current-lang a {
-		color: $blueBright;
+		color: $blueBrightD;
 		background-color: none;
 	}
 
@@ -141,7 +148,7 @@
 	.card-links {
 		a.linkb1 {
 			color: $blueAlmostBlack;
-			background-color: $blueBright;
+			background-color: $blueBrightD;
 			&:hover {
 				color: $blueDark;
 				background-color: $blueVeryLight;
@@ -152,7 +159,7 @@
 				background-color: $blueVeryDark;
 			}
 			&:active {
-				color: $blueBright;
+				color: $blueBrightD;
 				border-color: $blueAlmostBlack;
 				background-color: $blueAlmostBlack;
 			}
@@ -162,6 +169,7 @@
 			background-color: $blueVeryLight;
 			&:hover {
 				color: $blueVeryLight;
+				border-color: #011A76;
 				background-color: #011A76;
 			}
 			&:focus {
@@ -181,13 +189,13 @@
 	.card-diensten {
 		p:not(.site-title) a,
 		.entry-content a {
-		    border-bottom: 2px solid $blueBright;
-		    color: $blueBright;
+		    border-bottom: 2px solid $blueBrightD;
+		    color: $blueBrightD;
 		}
 		p:not(.site-title) a:hover,
 		.entry-content a:hover {
-		    border-bottom: 2px solid $blueBright;
-		    color: $blueBright;
+		    border-bottom: 2px solid $blueBrightD;
+		    color: $blueBrightD;
 		}
 
 		p:not(.site-title) a:after,
@@ -195,8 +203,8 @@
 		.nav-previous a:after,
 		.nav-next a:after,
 		.entry-content a:after {
-		    background-color: $blueBright;
-		    color: $blueBright;
+		    background-color: $blueBrightD;
+		    color: $blueBrightD;
 		    transition-property: none;
 		}
 	}
@@ -213,9 +221,13 @@
 		display: block;
 	}
 
+	.quote figure figcaption {
+		color: $blueVeryLight;
+	}
+
 	/***** Footer links *****/
 	.site-footer {
-		background-color: $blueBright;
+		background-color: $blueBrightD;
 		.footer-row {
 			h3 {
 				color: $blueVeryDark;
@@ -282,7 +294,7 @@
 	input[type="color"],
 	textarea {
 	    background-color: $blueVeryDark;
-	    border: 2px solid $blueBright;
+	    border: 2px solid $blueBrightD;
 	}
 
 	input[type="text"]:focus,
@@ -302,7 +314,7 @@
 	input[type="color"]:focus,
 	textarea:focus {
 		background-color: $blueVeryLight;
-	    outline: 2px solid $blueBright;
+	    outline: 2px solid $blueBrightD;
 	}
 
 	input[type="submit"]:hover,
@@ -317,23 +329,23 @@
 
 	.wpcf7 form.invalid .wpcf7-response-output,
 	.wpcf7 form.unaccepted .wpcf7-response-output {
-	    border-color: $blueBright;
-	    color: $blueBright;
+	    border-color: $blueBrightD;
+	    color: $blueBrightD;
 	}
 
 	.wpcf7-not-valid-tip {
-		color: $blueBright;
+		color: $blueBrightD;
 	}
 
 	.wpcf7 {
 		form { 
-			border: 1px solid $blueBright;
+			border: 1px solid $blueBrightD;
 			label {
 				color: $blueVeryLight;
 			}
 			input[type="submit"] {
-				background-color: $blueDark;
-				border: 2px solid $blueDark;
+				background-color: $blueBright;
+				border: 2px solid $blueBright;
 				&:hover {
 					background-color: $blueBright;
 					border: 2px solid $blueBright;
@@ -348,15 +360,15 @@
 		.site-footer {
 			.footer-row-1 {
 				h3 {
-					color: $blueBright;
+					color: $blueBrightD;
 				}
 				.footerlist {
 					margin-bottom: 0;
 					padding-inline-start: 0;
 					li {
-					color: $blueBright;
+					color: $blueBrightD;
 						a {
-							color: $blueBright;
+							color: $blueBrightD;
 						}
 					}
 					.mail {
@@ -390,11 +402,11 @@
 body {
 	background-color: $blueVeryDark;
 	h1 {
-	    color: $blueBright;
+	    color: $blueBrightD;
 	}
 
 	h2 {
-	    color: $blueBright;
+	    color: $blueBrightD;
 	}
 
 	h3 {
@@ -421,8 +433,8 @@ body {
 	/***** Links *****/
 
 	a {
-		color: $blueBright;
-		border-bottom-color: $blueBright;
+		color: $blueBrightD;
+		border-bottom-color: $blueBrightD;
 	}
 
 	a:hover, a:active {
@@ -430,13 +442,17 @@ body {
 	    border-bottom-color: $blueVeryLight;
 	}
 
+	a:focus {
+		outline: 2px solid $white;
+	}
+
 	p:not(.site-title) a,
 	span a,
 	.nav-previous a,
 	.nav-next a,
 	.entry-content a {
-	    border-bottom: 2px solid $blueBright;
-	    color: $blueBright;
+	    border-bottom: 2px solid $blueBrightD;
+	    color: $blueBrightD;
 	    font-weight: normal;
 	    transition-property: none;
 	}
@@ -446,8 +462,8 @@ body {
 	.nav-previous a:hover,
 	.nav-next a:hover,
 	.entry-content a:hover {
-	    border-bottom: 2px solid $blueBright;
-	    color: $blueBright;
+	    border-bottom: 2px solid $blueBrightD;
+	    color: $blueBrightD;
 	    transition-property: none;
 	}
 
@@ -456,8 +472,8 @@ body {
 	.nav-previous a:after,
 	.nav-next a:after,
 	.entry-content a:after {
-	    background-color: none;
-	    color: $blueBright;
+	    background: none;
+	    color: $blueBrightD;
 	    transition-property: none;
 	}
 
@@ -468,23 +484,26 @@ body {
 		a {
 			color: $white;
 			&:hover {
-				border-bottom: 1px solid $blueVeryLight;
+				color: $white;
+				border-bottom: 0px solid $blueVeryLight;
+			}
+			&:after {
+			    position: absolute;
+			    bottom: 0;
+			    left: 0;
+			    width: 100%;
+			    height: 1px;
+			    content: '';
+			    // transform: scaleX(0);
+			    background-color: #fff;
+			    transition: all .2s ease-out;
 			}
 		}
-		&:after {
-		    position: absolute;
-		    bottom: 0;
-		    left: 0;
-		    width: 100%;
-		    height: 2px;
-		    content: '';
-		    // transform: scaleX(0);
-		    background-color: #fff;
-		    transition: all .2s ease-out;
-		}
 		.current_page_item > a {
-			box-shadow: none;
-			border-bottom: 1px solid $blueVeryLight;
+			box-shadow: inset 0px -2px 0px 0px #fff;
+		}
+		&:after {
+			background: none;
 		}
 	}
 	.menu-toggle,
@@ -494,7 +513,7 @@ body {
     	color: $white;
     	outline: 2px solid $white;
     	background-color: inherit;
-	}
+	}	
 
 	/***** Talenkeuze* ****/
 
@@ -504,7 +523,7 @@ body {
 
 	.lang-item a:hover,
 	.current-lang a {
-		color: $blueBright;
+		color: $blueBrightD;
 		background-color: none;
 	}
 
@@ -530,7 +549,7 @@ body {
 	.card-links {
 		a.linkb1 {
 			color: $blueAlmostBlack;
-			background-color: $blueBright;
+			background-color: $blueBrightD;
 			&:hover {
 				color: $blueDark;
 				background-color: $blueVeryLight;
@@ -541,7 +560,7 @@ body {
 				background-color: $blueVeryDark;
 			}
 			&:active {
-				color: $blueBright;
+				color: $blueBrightD;
 				border-color: $blueAlmostBlack;
 				background-color: $blueAlmostBlack;
 			}
@@ -570,13 +589,13 @@ body {
 	.card-diensten {
 		p:not(.site-title) a,
 		.entry-content a {
-		    border-bottom: 2px solid $blueBright;
-		    color: $blueBright;
+		    border-bottom: 2px solid $blueBrightD;
+		    color: $blueBrightD;
 		}
 		p:not(.site-title) a:hover,
 		.entry-content a:hover {
-		    border-bottom: 2px solid $blueBright;
-		    color: $blueBright;
+		    border-bottom: 2px solid $blueBrightD;
+		    color: $blueBrightD;
 		}
 
 		p:not(.site-title) a:after,
@@ -584,8 +603,8 @@ body {
 		.nav-previous a:after,
 		.nav-next a:after,
 		.entry-content a:after {
-		    background-color: $blueBright;
-		    color: $blueBright;
+		    background-color: $blueBrightD;
+		    color: $blueBrightD;
 		    transition-property: none;
 		}
 	}
@@ -602,9 +621,13 @@ body {
 		display: block;
 	}
 
+	.quote figure figcaption {
+		color: $blueVeryLight;
+	}
+
 	/***** Footer links *****/
 	.site-footer {
-		background-color: $blueBright;
+		background-color: $blueBrightD;
 		.footer-row {
 			h3 {
 				color: $blueVeryDark;
@@ -671,7 +694,7 @@ body {
 	input[type="color"],
 	textarea {
 	    background-color: $blueVeryDark;
-	    border: 2px solid $blueBright;
+	    border: 2px solid $blueBrightD;
 	}
 
 	input[type="text"]:focus,
@@ -691,7 +714,7 @@ body {
 	input[type="color"]:focus,
 	textarea:focus {
 		background-color: $blueVeryLight;
-	    outline: 2px solid $blueBright;
+	    outline: 2px solid $blueBrightD;
 	}
 
 	input[type="submit"]:hover,
@@ -706,29 +729,29 @@ body {
 
 	.wpcf7 form.invalid .wpcf7-response-output,
 	.wpcf7 form.unaccepted .wpcf7-response-output {
-	    border-color: $blueBright;
-	    color: $blueBright;
+	    border-color: $blueBrightD;
+	    color: $blueBrightD;
 	}
 
 	.wpcf7-not-valid-tip {
-		color: $blueBright;
+		color: $blueBrightD;
 	}
 
 	.wpcf7 {
 		form { 
-			border: 1px solid $blueBright;
+			border: 1px solid $blueBrightD;
 			label {
 				color: $blueVeryLight;
 			}
 			input[type="submit"] {
-				background-color: $blueDark;
-				border: 2px solid $blueDark;
+				background-color: $blueBright;
+				border: 2px solid $blueBright;
 				&:hover {
 					background-color: $blueBright;
 					border: 2px solid $blueBright;
 				}
-			}			
-		}
+			}
+		}		
 	}
 }
 
@@ -737,15 +760,15 @@ body {
 		.site-footer {
 			.footer-row-1 {
 				h3 {
-					color: $blueBright;
+					color: $blueBrightD;
 				}
 				.footerlist {
 					margin-bottom: 0;
 					padding-inline-start: 0;
 					li {
-					color: $blueBright;
+					color: $blueBrightD;
 						a {
-							color: $blueBright;
+							color: $blueBrightD;
 						}
 					}
 					.mail {
@@ -755,6 +778,9 @@ body {
 						background-image: url("img/tele-media-dark.svg");	
 					}
 					.social {
+						a:focus {
+							outline: 1px solid $blueVeryLight;
+						}
 						.twitter {
 							background-image: url("img/twitter-media-dark.svg");
 						}
@@ -766,5 +792,6 @@ body {
 			}
 		}
 	}
-}
+
+	}
 }

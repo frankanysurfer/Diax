@@ -35,11 +35,11 @@ li a:hover, li a:active {
 /***** Talenkeuze* ****/
 .language {
 	position: absolute;
-	top: 0px;
-	// right: 45px;
-	right: 0;
-	// display: flex;
-	display: none;
+	top: 0;
+	right: 45px;
+	// right: 0;
+	display: flex;
+	// display: none;
 	flex-direction: row;
 	justify-content: flex-end;
 	list-style-type: none;

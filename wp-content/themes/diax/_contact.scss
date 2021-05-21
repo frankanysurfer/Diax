@@ -74,9 +74,9 @@ input[type="submit"]:focus {
 		input[type="submit"] {
 			margin-top: 1rem;
 			background-color: $blueDark;
-			border: 2px solid $blueBright;
+			border: 2px solid $blueDark;
 			&:hover {
-				background-color: $blueBright;
+				background-color: $blueDark;
 			}
 		}
 	}
