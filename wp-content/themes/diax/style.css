@@ -818,6 +818,7 @@ input[type="submit"]:focus {
         margin-top: 4.3rem; }
     .site-footer .footer-row-1 {
       position: relative;
+      min-width: 200px;
       min-height: 310px;
       padding: 0 1rem; }
       .site-footer .footer-row-1 h3 {
