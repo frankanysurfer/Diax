@@ -25,6 +25,26 @@ if ( ! function_exists( 'cmplz_upgraded_to_five' ) ) {
 	}
 }
 
+if ( !function_exists('cmplz_upgraded_to')){
+
+	/**
+	 * Check if the user has upgraded to the current version, or if this is a fresh install with this version.
+	 */
+
+	function cmplz_upgraded_to_current() {
+		$first_version = get_option( 'cmplz_first_version' );
+		//if there's no first version yet, we assume it's not upgraded
+		if ( !$first_version ) {
+			return false;
+		}
+		//if the first version is below current, we just upgraded.
+		if ( version_compare($first_version,cmplz_version ,'<') ){
+			return true;
+		}
+		return false;
+	}
+}
+
 if ( ! function_exists('cmplz_subscription_type') ) {
     /**
      * Get subscription type
@@ -1951,7 +1971,8 @@ if ( ! function_exists( 'cmplz_update_cookie_policy_title' ) ) {
 
 if ( ! function_exists( 'cmplz_ccpa_applies' ) ) {
 	function cmplz_ccpa_applies() {
-		return cmplz_get_value( 'california' , false, 'wizard' ) === 'yes'
+
+		return cmplz_has_region('us') && cmplz_get_value( 'california' , false, 'wizard' ) === 'yes'
 		       && cmplz_sells_personal_data();
 	}
 }
@@ -2158,6 +2179,7 @@ if ( ! function_exists( 'cmplz_uses_marketing_cookies' ) ) {
      * @return bool
      */
     function cmplz_uses_marketing_cookies() {
+
         $uses_marketing_cookies =
 				cmplz_get_value('uses_ad_cookies') === 'yes'
 			|| cmplz_get_value('uses_firstparty_marketing_cookies') === 'yes'

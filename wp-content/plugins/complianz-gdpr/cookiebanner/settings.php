@@ -142,7 +142,9 @@ function cmplz_add_cookiebanner_settings($fields){
                 'type'    => 'checkbox',
                 'label'   => __( "Use Custom CSS", 'complianz-gdpr' ),
                 'default' => false,
+                'help'   => __("You can customize the cookie banner with custom CSS for endless possibilities.","complianz-gdpr") . cmplz_read_more( 'https://complianz.io/docs/customization/' ),
                 'comment'   => __("The custom CSS editor will appear at the bottom of this page when enabled.","complianz-gdpr"),
+
             ),
 
             /* ----- Appearance ----- */
@@ -493,9 +495,7 @@ function cmplz_add_cookiebanner_settings($fields){
 				'type'    => 'checkbox',
 				'default' => false,
 				'label'   => __( "Show as soft cookie wall", 'complianz-gdpr' ),
-				'help'    => sprintf( __( "Read more about the soft cookie wall in this %sarticle%s.",
-					'complianz-gdpr' ),
-					'<a href="https://complianz.io/the-soft-cookie-wall/" target="_blank">', "</a>" ),
+				'help'    => __( "A privacy-friendly cookie wall.", 'complianz-gdpr' ) . cmplz_read_more( 'https://complianz.io/the-soft-cookie-wall/' ),
 				'tooltip' => __( 'After saving, a preview of the soft cookie wall will be shown for 3 seconds', 'complianz-gdpr' ),
 				'condition'          => array(
 					'type' => 'NOT optout',
@@ -766,19 +766,6 @@ function cmplz_add_cookiebanner_settings($fields){
                 'condition'          => array( 'type' => 'optout' ),
             ),
 
-            'dismiss_on_scroll' => array(
-                'source'             => 'CMPLZ_COOKIEBANNER',
-                'step'               => 'settings',
-                'type'               => 'checkbox',
-                'label'              => __( "Dismiss on scroll", 'complianz-gdpr' ),
-                'tooltip'               => __( 'When dismiss on scroll is enabled, the cookie banner will be dismissed as soon as the user scrolls.',
-                    'complianz-gdpr' ),
-                'default'            => false,
-                //setting this to true will set it always to true, as the get_cookie settings will see an empty value
-                'callback_condition' => 'cmplz_uses_optout',
-                'condition'          => array( 'type' => 'optout' ),
-            ),
-
             'readmore_privacy' => array(
                 'source'             => 'CMPLZ_COOKIEBANNER',
                 'step'               => 'settings',
@@ -788,6 +775,19 @@ function cmplz_add_cookiebanner_settings($fields){
                 'label'              => __( "Text on link to Privacy Statement",
                     'complianz-gdpr' ),
 
+                'callback_condition' => 'cmplz_uses_optout',
+                'condition'          => array( 'type' => 'optout' ),
+            ),
+
+            'dismiss_on_scroll' => array(
+                'source'             => 'CMPLZ_COOKIEBANNER',
+                'step'               => 'settings',
+                'type'               => 'checkbox',
+                'label'              => __( "Dismiss on scroll", 'complianz-gdpr' ),
+                'tooltip'               => __( 'When dismiss on scroll is enabled, the cookie banner will be dismissed as soon as the user scrolls.',
+                    'complianz-gdpr' ),
+                'default'            => false,
+                //setting this to true will set it always to true, as the get_cookie settings will see an empty value
                 'callback_condition' => 'cmplz_uses_optout',
                 'condition'          => array( 'type' => 'optout' ),
             ),

@@ -16,5 +16,5 @@ if ( $content->show ) : ?>
     </div>
     <!-- moove-gdpr-info-bar-container -->
   </aside>
-  <!-- #moove_gdpr_cookie_info_bar  -->
+  <!-- #moove_gdpr_cookie_info_bar -->
 <?php endif; ?>

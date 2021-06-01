@@ -33,7 +33,7 @@ class Moove_GDPR_License_Manager {
 	 * @param string $type Type.
 	 * @param string $action Action.
 	 */
-	public function validate_license( $license_key = false, $type, $action ) {
+	public function validate_license( $license_key = false, $type = 'gdpr', $action = 'check' ) {
 		$content       = new Moove_GDPR_Content();
 		$license_token = $content->get_license_token();
 		$request_url	 = MOOVE_SHOP_URL . "/wp-json/license-manager/v1/validate_licence/?license_key=$license_key&license_token=$license_token&license_type=$type&license_action=$action";

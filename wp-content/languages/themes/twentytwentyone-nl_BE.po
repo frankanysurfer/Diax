@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Themes - Twenty Twenty-One package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-05-16 10:27:22+0000\n"
+"PO-Revision-Date: 2021-05-29 12:42:52+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -13,7 +13,7 @@ msgstr ""
 
 #. Description of the theme
 msgid "Twenty Twenty-One is a blank canvas for your ideas and it makes the block editor your best brush. With new block patterns, which allow you to create a beautiful layout in a matter of seconds, this theme’s soft colors and eye-catching — yet timeless — design will let your work shine. Take it for a spin! See how Twenty Twenty-One elevates your portfolio, business website, or personal blog."
-msgstr "Twenty Twenty-One is een leeg canvas voor je ideeën en het maak de blok-editor je beste penseel. Met nieuwe blokpatronen, waarmee je binnen enkele seconden een prachtige lay-out kunt maken, zullen de zachte kleuren en het opvallende, maar tijdloze ontwerp van dit thema je werk laten schitteren. Probeer het eens! Zie hoe Twenty Twenty-One je portfolio, zakelijke site of persoonlijke blog verbetert."
+msgstr "Twenty Twenty-One is een leeg canvas voor je ideeën en het maak de blok-editor je beste penseel. Met nieuwe blokpatronen, waarmee je binnen enkele seconden een prachtige lay-out kunt maken, zullen de zachte kleuren en het opvallende, maar tijdloze ontwerp van dit thema je werk laten schitteren. Probeer het eens! Zie hoe Twenty Twenty-One je portfolio, zakelijke website of persoonlijke blog verbetert."
 
 #. Theme Name of the theme
 #: inc/block-patterns.php:20
@@ -44,7 +44,7 @@ msgstr "De donkere modus kan ook worden in- en uitgeschakeld met een knop die je
 
 #: classes/class-twenty-twenty-one-dark-mode.php:408
 msgid "This website uses LocalStorage to save the setting when Dark Mode support is turned on or off.<br> LocalStorage is necessary for the setting to work and is only used when a user clicks on the Dark Mode button.<br> No data is saved in the database or transferred."
-msgstr "Deze site gebruikt LocalStorage om de instelling op te slaan wanneer donkere modus ondersteuning aan of uit is gezet.<br>LocalStorage is noodzakelijk voor de instelling om te werken en wordt alleen gebruikt wanneer een gebruiker op de donkere modus knop klikt.<br>Er wordt geen data opgeslagen in de database of overgezet."
+msgstr "Deze website gebruikt LocalStorage om de instelling op te slaan wanneer donkere modus ondersteuning aan of uit is gezet.<br>LocalStorage is noodzakelijk voor de instelling om te werken en wordt alleen gebruikt wanneer een gebruiker op de donkere modus knop klikt.<br>Er wordt geen data opgeslagen in de database of overgezet."
 
 #: classes/class-twenty-twenty-one-dark-mode.php:407
 msgid "Suggested text:"
@@ -269,7 +269,7 @@ msgstr "Voeg blokpatronen toe"
 #: inc/starter-content.php:30 inc/starter-content.php:33
 msgctxt "Theme starter content"
 msgid "Create your website with blocks"
-msgstr "Maak je site met blokken"
+msgstr "Maak je website met blokken"
 
 #: inc/block-patterns.php:107
 msgid "Reading"
@@ -711,7 +711,7 @@ msgstr "Volledige tekst"
 
 #: classes/class-twenty-twenty-one-customize.php:80
 msgid "Display Site Title & Tagline"
-msgstr "Toon site titel & slogan"
+msgstr "Toon website titel & slogan"
 
 #: 404.php:21
 msgid "It looks like nothing was found at this location. Maybe try a search?"

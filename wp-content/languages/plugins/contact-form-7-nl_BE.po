@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Contact Form 7 - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-05-16 09:57:02+0000\n"
+"PO-Revision-Date: 2021-05-29 12:21:27+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -309,7 +309,7 @@ msgstr "App Secret"
 
 #: modules/constant-contact.php:519
 msgid "API Key"
-msgstr "API Sleutel"
+msgstr "API sleutel"
 
 #: modules/constant-contact.php:507 modules/recaptcha/recaptcha.php:470
 msgid "Setup Integration"
@@ -325,7 +325,7 @@ msgstr "https://contactform7.com/constant-contact-integration/"
 
 #: modules/constant-contact.php:484
 msgid "The Constant Contact integration module allows you to send contact data collected through your contact forms to the Constant Contact API. You can create reliable email subscription services in a few easy steps. For details, see %s."
-msgstr "Met de Constant Contact integratiemodule kan je contactgegevens die via jouw contactformulieren zijn verzameld, naar de Constant Contact API verzenden. Je kan in een paar eenvoudige stappen betrouwbare e-mail abonnement services maken . Voor meer informatie, zie %s."
+msgstr "Met de Constant Contact integratiemodule kan je contactgegevens die via jouw contactformulieren zijn verzameld, naar de Constant Contact API verzenden. Je kan in een paar eenvoudige stappen betrouwbare e-mail abonnement services maken. Voor meer informatie, zie %s."
 
 #: modules/constant-contact.php:236
 msgid "Constant Contact"
@@ -515,7 +515,7 @@ msgstr "Er worden HTML-tags in een bericht gebruikt."
 
 #: includes/config-validator.php:140
 msgid "Sender email address does not belong to the site domain."
-msgstr "Het e-mailadres van de verzender behoort niet tot het domeinnaam van de site."
+msgstr "Het e-mailadres van de verzender behoort niet tot het domeinnaam van de website."
 
 #: includes/config-validator.php:138
 msgid "Invalid mailbox syntax is used."
@@ -747,7 +747,7 @@ msgstr "Geheime sleutel"
 
 #: modules/recaptcha/recaptcha.php:485
 msgid "Site Key"
-msgstr "Site-sleutel"
+msgstr "Website sleutel"
 
 #: modules/sendinblue/service.php:141 modules/recaptcha/recaptcha.php:444
 msgid "Settings saved."
@@ -1066,7 +1066,7 @@ msgstr "Datumnotatie die de verzender heeft ingevuld is ongeldig"
 #: modules/text.php:329 modules/select.php:231 modules/textarea.php:204
 #: modules/checkbox.php:302 modules/date.php:245 modules/number.php:242
 msgid "To use the value input through this field in a mail field, you need to insert the corresponding mail-tag (%s) into the field on the Mail tab."
-msgstr "Om de ingevoerde waarde van dit veld te kunnen gebruiken in een e-mail veld, moet de corresponderende  e-mail-tag (%s) in het veld op de Mail tab ingevoegd worden."
+msgstr "Om de ingevoerde waarde van dit veld te kunnen gebruiken in een e-mail veld, moet de corresponderende e-mail-tag (%s) in het veld op de Mail tab ingevoegd worden."
 
 #: modules/checkbox.php:272
 msgid "Make checkboxes exclusive"
@@ -1309,7 +1309,7 @@ msgstr "Alle informatie die je verstrekt zal niet zonder jouw toestemming met di
 
 #: admin/includes/help-tabs.php:82
 msgid "You may need to first sign up for an account with the service that you plan to use. When you do so, you would need to authorize Contact Form 7 to access the service with your account."
-msgstr "Mogelijk moet je je eerst aanmelden met een account voor de service die je wilt gaan gebruiken. Wanneer je dat doet, moet je Contact Formulier 7  machtigen om toegang te krijgen tot die dienst via je account."
+msgstr "Mogelijk moet je je eerst aanmelden met een account voor de service die je wilt gaan gebruiken. Wanneer je dat doet, moet je Contact Formulier 7 machtigen om toegang te krijgen tot die dienst via je account."
 
 #: admin/includes/help-tabs.php:81
 msgid "On this screen, you can manage services that are available through Contact Form 7. Using API will allow you to collaborate with any services that are available."
@@ -1325,7 +1325,7 @@ msgstr "Een e-mail-tag is ook een short code omgegeven door rechte haakjes die j
 
 #: admin/includes/help-tabs.php:76
 msgid "While form-tags have a comparatively complex syntax, you don&#8217;t need to know the syntax to add form-tags because you can use the straightforward tag generator (<strong>Generate Tag</strong> button on this screen)."
-msgstr "Terwijl form-tags een relatief complexe syntax hebben, hoef je deze syntax niet te weten om formulier-tags toe te voegen omdat je de eenvoudige tag-generator kan gebruiken  (<strong>Genereer tag</strong> knop in dit scherm)."
+msgstr "Terwijl form-tags een relatief complexe syntax hebben, hoef je deze syntax niet te weten om formulier-tags toe te voegen omdat je de eenvoudige tag-generator kan gebruiken (<strong>Genereer tag</strong> knop in dit scherm)."
 
 #: admin/includes/help-tabs.php:75
 msgid "A form-tag is a short code enclosed in square brackets used in a form content. A form-tag generally represents an input field, and its components can be separated into four parts: type, name, options, and values. Contact Form 7 supports several types of form-tags including text fields, number fields, date fields, checkboxes, radio buttons, menus, file-uploading fields, CAPTCHAs, and quiz fields."
@@ -1373,7 +1373,7 @@ msgstr "Als je met je muis over een rij in de contactformulieren lijst gaat word
 
 #: admin/includes/help-tabs.php:61
 msgid "On this screen, you can manage contact forms provided by Contact Form 7. You can manage an unlimited number of contact forms. Each contact form has a unique ID and Contact Form 7 shortcode ([contact-form-7 ...]). To insert a contact form into a post or a text widget, insert the shortcode into the target."
-msgstr "In dit scherm kun je de contactformulieren van Contact Form 7 beheren. Je kunt een onbeperkt aantal contactformulieren beheren. Elk contactformulier heeft een unieke ID en Contact Form 7 shortcode  ([contact-form-7 ...]). Om een contactformulier in een bericht of tekst widget te tonen voeg je die shortcode toe."
+msgstr "In dit scherm kun je de contactformulieren van Contact Form 7 beheren. Je kunt een onbeperkt aantal contactformulieren beheren. Elk contactformulier heeft een unieke ID en Contact Form 7 shortcode ([contact-form-7 ...]). Om een contactformulier in een bericht of tekst widget te tonen voeg je die shortcode toe."
 
 #: admin/includes/help-tabs.php:40
 msgid "Mail-tags"
@@ -1442,7 +1442,7 @@ msgstr "Mail (2) is een extra e-mail sjabloon dat vaak gebruikt wordt als een au
 
 #: admin/includes/editor.php:85
 msgid "Use Mail (2)"
-msgstr "Gebruik E-mail (2)"
+msgstr "Gebruik e-mail (2)"
 
 #: admin/includes/editor.php:84
 msgid "Mail (2)"

@@ -51,4 +51,4 @@
   </div>
   <!--  .moove-gdpr-modal-content -->
 </div>
-<!-- #moove_gdpr_cookie_modal  -->
+<!-- #moove_gdpr_cookie_modal -->

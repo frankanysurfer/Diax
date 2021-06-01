@@ -285,7 +285,7 @@ if ( ! class_exists( "cmplz_config" ) ) {
 			 * 6: CA as separate region
 			 * 7: Impressum in germany
 			 * */
-			define( 'CMPLZ_LEGAL_VERSION', '7' );
+			define( 'CMPLZ_LEGAL_VERSION', '8' );
 
 			//common options type
 			$this->yes_no = array(
@@ -318,6 +318,7 @@ if ( ! class_exists( "cmplz_config" ) ) {
 			require_once( cmplz_path . '/config/documents/cookie-policy-us.php' );
 			require_once( cmplz_path . '/config/documents/cookie-policy-uk.php' );
 			require_once( cmplz_path . '/config/documents/cookie-policy-ca.php' );
+			require_once( cmplz_path . '/config/documents/cookie-policy-au.php' );
 			require_once(cmplz_path . '/cookiebanner/settings.php' );
 
 			if ( file_exists( cmplz_path . '/pro/config/' ) ) {
@@ -445,6 +446,12 @@ if ( ! class_exists( "cmplz_config" ) ) {
 				'upgraded_to_five' => array(
 					'warning_condition' => 'cmplz_upgraded_to_five',
 					'open' => __( 'Complianz GDPR/CCPA 5.0. Learn more about our newest major release.', 'complianz-gdpr' ).cmplz_read_more('https://complianz.io/meet-complianz-5-0/'),
+					'plus_one' => true,
+				),
+
+				'new_australia' => array(
+					'warning_condition' => 'cmplz_upgraded_to_current',
+					'open' => __( 'We have added a new region: Australia. Start the wizard to configure this new region.', 'complianz-gdpr' ).cmplz_read_more('https://complianz.io/australia/'),
 					'plus_one' => true,
 				),
 				'wizard-incomplete'  => array(

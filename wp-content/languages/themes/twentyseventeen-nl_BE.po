@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Themes - Twenty Seventeen package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-03-24 17:11:22+0000\n"
+"PO-Revision-Date: 2021-05-29 12:40:16+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -13,7 +13,7 @@ msgstr ""
 
 #. Description of the theme
 msgid "Twenty Seventeen brings your site to life with header video and immersive featured images. With a focus on business sites, it features multiple sections on the front page as well as widgets, navigation and social menus, a logo, and more. Personalize its asymmetrical grid with a custom color scheme and showcase your multimedia content with post formats. Our default theme for 2017 works great in many languages, for any abilities, and on any device."
-msgstr "Twenty Seventeen brengt uw website tot leven met header video en meeslepende uitgelichte afbeeldingen. Met focus op zakelijke websites kenmerkt het thema zich door een startpagina met verschillende onderdelen en door widgets, navigatie- en sociale menu's, een logo en meer. Personaliseer het asymmetrische grid met een aangepast kleurschema en toon multimedia inhoud met verschillende berichtformaten. Ons standaard thema voor 2017 werkt fantastisch in meerdere talen, voor alle omstandigheden en op elk apparaat."
+msgstr "Twenty Seventeen brengt je website tot leven met header video en meeslepende uitgelichte afbeeldingen. Met focus op zakelijke websites kenmerkt het thema zich door een startpagina met verschillende onderdelen en door widgets, navigatie- en sociale menu's, een logo en meer. Personaliseer het asymmetrische raster met een aangepast kleurschema en toon multimedia inhoud met verschillende berichtformaten. Ons standaard thema voor 2017 werkt fantastisch in meerdere talen, voor alle omstandigheden en op elk apparaat."
 
 #. Theme Name of the theme
 #: inc/block-patterns.php:17
@@ -62,7 +62,7 @@ msgstr "Direct licht"
 
 #: inc/block-patterns.php:117
 msgid "Design"
-msgstr "Design"
+msgstr "Ontwerp"
 
 #: inc/block-patterns.php:90
 msgid "Images with Link"
@@ -272,11 +272,11 @@ msgstr "Antwoord"
 
 #: template-parts/post/content-none.php:33
 msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
-msgstr "Het lijkt dat we niet kunnen vinden wat u zoekt. Misschien kan de zoekfunctie helpen."
+msgstr "Het lijkt dat we niet kunnen vinden wat je zoekt. Misschien kan de zoekfunctie helpen."
 
 #: search.php:59
 msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
-msgstr "Helaas, niets komt overeen met uw zoektermen. Probeer opnieuw met andere zoektermen."
+msgstr "Helaas, niets komt overeen met je zoektermen. Probeer opnieuw met andere trefwoorden."
 
 #. translators: %s: Post editor URL.
 #: template-parts/post/content-none.php:27
@@ -425,9 +425,9 @@ msgstr "het WordPress team"
 
 #. Theme URI of the theme
 msgid "https://wordpress.org/themes/twentyseventeen/"
-msgstr "https://nl-be.wordpress.org/themes/twentyseventeen/"
+msgstr "https://wordpress.org/themes/twentyseventeen/"
 
 #. Author URI of the theme
 #: template-parts/footer/site-info.php:18
 msgid "https://wordpress.org/"
-msgstr "https://nl-be.wordpress.org/"
+msgstr "https://wordpress.org/"

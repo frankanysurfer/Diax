@@ -532,7 +532,7 @@ class Moove_GDPR_Controller {
 				foreach ( $cookies as $cookie ) {					
 					$parts = explode( '=', $cookie );
 					$name  = trim( $parts[0] );
-					if ( $name !== 'moove_gdpr_popup' && strpos( $name, 'woocommerce' ) === false && strpos( $name, 'wordpress' ) === false ) :
+					if ( $name !== 'moove_gdpr_popup' && strpos( $name, 'woocommerce' ) === false  && strpos( $name, 'wc_' ) === false && strpos( $name, 'wordpress' ) === false ) :
 						if ( 'language' === $name || 'currency' === $name ) {
 							setcookie( $name, null, -1, '/', 'www.' . $domain );
 						} elseif ( '_ga' === $name || '_gid' === $name || '_gat' === $name || strpos( $name, '_ga' ) !== false ) {
@@ -547,7 +547,7 @@ class Moove_GDPR_Controller {
 
 			if ( isset( $_COOKIE ) && is_array( $_COOKIE ) && $domain ) :
 				foreach ( $_COOKIE as $key => $value ) {
-					if ( $key !== 'moove_gdpr_popup' && strpos( $key, 'woocommerce' ) === false && strpos( $key, 'wordpress' ) === false ) : 
+					if ( $key !== 'moove_gdpr_popup' && strpos( $key, 'woocommerce' ) === false && strpos( $key, 'wc_' ) === false && strpos( $key, 'wordpress' ) === false ) : 
 						if ( 'language' === $key || 'currency' === $key ) {
 							setcookie( $key, null, -1, '/', 'www.' . $domain );
 							$cookies_removed[$key] = $domain;
@@ -573,7 +573,7 @@ class Moove_GDPR_Controller {
 		$cookies_removed = array();
 		if ( isset( $_COOKIE ) && is_array( $_COOKIE ) && $domain ) :
 			foreach ( $_COOKIE as $key => $value ) {
-				if ( $key !== 'moove_gdpr_popup' && strpos( $key, 'woocommerce' ) === false && strpos( $key, 'wordpress' ) === false ) : 
+				if ( $key !== 'moove_gdpr_popup' && strpos( $key, 'woocommerce' ) === false && strpos( $key, 'wc_' ) === false && strpos( $key, 'wordpress' ) === false ) : 
 					if ( 'language' === $key || 'currency' === $key ) {
 						setcookie( $key, null, -1, '/', 'www.' . $domain );
 						$cookies_removed[$key] = $domain;
@@ -590,7 +590,7 @@ class Moove_GDPR_Controller {
 			foreach ( $cookies as $cookie ) {
 				$parts = explode( '=', $cookie );
 				$name  = trim( $parts[0] );
-				if ( $name && $name !== 'moove_gdpr_popup' && strpos( $name, 'woocommerce' ) === false && strpos( $name, 'wordpress' ) === false ) :
+				if ( $name && $name !== 'moove_gdpr_popup' && strpos( $name, 'woocommerce' ) === false && strpos( $name, 'wc_' ) === false && strpos( $name, 'wordpress' ) === false ) :
 					setcookie( $name, '', time() - 1000 );
 					setcookie( $name, '', time() - 1000, '/' );
 					if ( 'language' === $name || 'currency' === $name ) {

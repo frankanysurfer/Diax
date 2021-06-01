@@ -244,11 +244,13 @@ class Moove_GDPR_Content {
 	public static function gdpr_licence_action_button( $response, $gdpr_key ) {
 		$type = isset( $response['type'] ) ? $response['type'] : false;
 		if ( 'expired' === $type || 'activated' === $type || 'max_activation_reached' === $type ) :
-			?>
-			<button type="submit" name="gdpr_activate_license" class="button button-primary button-inverse">
-				<?php esc_html_e( 'Activate', 'gdpr-cookie-compliance' ); ?>
-			</button>
-			<?php
+			if ( 'activated' !== $type ) :
+				?>
+				<button type="submit" name="gdpr_activate_license" class="button button-primary button-inverse">
+					<?php esc_html_e( 'Activate', 'gdpr-cookie-compliance' ); ?>
+				</button>
+				<?php
+			endif;
 		elseif ( 'invalid' === $type ) :
 			?>
 			<button type="submit" name="gdpr_activate_license" class="button button-primary button-inverse">
@@ -331,13 +333,7 @@ class Moove_GDPR_Content {
 					</p>
 					<br />
 					<hr />
-					<h4 style="margin-bottom: 0;"><?php esc_html_e( 'Enter new licence key', 'gdpr-cookie-compliance' ); ?></h4>
 				</th>
-			</tr>
-			<tr>
-				<td style="padding: 0;">
-					<input name="moove_gdpr_license_key" required min="35" type="text" id="moove_gdpr_license_key" value="" class="regular-text">
-				</td>
 			</tr>
 			<?php
 		elseif ( 'invalid' === $type ) :

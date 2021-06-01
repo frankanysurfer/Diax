@@ -471,6 +471,7 @@ class Moove_GDPR_Actions {
 			'hide_save_btn'			=> $hide_save_btn,
 			'current_user'    	=> get_current_user_id(),
 			'cookie_expiration' => apply_filters( 'gdpr_cookie_expiration_days', $cookie_expiration ),
+			'script_delay'			=> apply_filters( 'gdpr_init_script_delay', 2000 ),
 		);
 
 		$ajax_script_handler = apply_filters( 'gdpr_cc_prevent_ajax_script_inject', false );
