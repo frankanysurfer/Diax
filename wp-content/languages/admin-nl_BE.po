@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.7.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-06-01 05:43:26+0000\n"
+"PO-Revision-Date: 2021-06-03 14:45:14+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1665,15 +1665,15 @@ msgstr "Je WordPress versie is %1$s, echter het geüploade thema vereist %2$s."
 msgid "Block Editor Patterns"
 msgstr "Blok-editor patronen"
 
-#: wp-admin/includes/theme.php:314
-msgid "Full Site Editing"
-msgstr "Bewerking volledige site"
-
 #: wp-admin/includes/theme.php:1006 wp-admin/theme-install.php:395
 #: wp-admin/theme-install.php:427
 msgctxt "theme"
 msgid "Cannot Install"
 msgstr "Kan niet installeren"
+
+#: wp-admin/includes/theme.php:314
+msgid "Full Site Editing"
+msgstr "Full Site Editing"
 
 #: wp-admin/includes/class-wp-debug-data.php:716
 msgid "PHP memory limit (only for admin screens)"

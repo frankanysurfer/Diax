@@ -47,3 +47,4 @@ if (localStorage.getItem('theme') === 'dark') {
 //   var c = document.getElementById("cookie-notice");
 //   c.removeAttribute("role");
 // })
+

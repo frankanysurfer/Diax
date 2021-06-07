@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Complianz &#8211; GDPR/CCPA Cookie Consent - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-05-25 10:44:09+0000\n"
+"PO-Revision-Date: 2021-06-01 08:29:14+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,14 @@ msgstr ""
 "X-Generator: GlotPress/3.0.0-alpha.2\n"
 "Language: nl_BE\n"
 "Project-Id-Version: Plugins - Complianz &#8211; GDPR/CCPA Cookie Consent - Stable (latest release)\n"
+
+#: config/countries.php:71
+msgid "APA"
+msgstr "APA"
+
+#: config/countries.php:69
+msgid "AU"
+msgstr "AU"
 
 #: config/purpose.php:12
 msgid "Deliveries"
@@ -27,15 +35,11 @@ msgstr "Voer je aangepaste Google Tag Manager-categorieën in, door komma's gesc
 msgid "This button will reject all, but necessary cookies, and dismisses the cookie banner."
 msgstr "Deze knop weigert alle, behalve noodzakelijke cookies, en sluit de cookie-banner af."
 
-#: cookiebanner/settings.php:496
-msgid "Read more about the soft cookie wall in this %sarticle%s."
-msgstr "Lees meer over de soft cookie wall in dit %sartikel%s."
-
-#: callback-notices.php:293
+#: callback-notices.php:294
 msgid "You are required to put the \"%s\" page clearly visible on your homepage."
 msgstr "Je bent verplicht om de \"%s\" pagina duidelijk zichtbaar op je homepage te zetten."
 
-#: config/questions-wizard.php:56
+#: config/questions-wizard.php:57
 msgid "Which banner do you want to display in other regions?"
 msgstr "Welke banner wil je in andere regio's laten zien?"
 
@@ -47,56 +51,56 @@ msgstr "Je moet je instellingen opslaan"
 msgid "Your settings indicate you need consent for statistics. Remove your current statistics tracking, and configure it in Complianz"
 msgstr "Je instellingen geven aan dat instemming nodig hebt voor statistieken. Verwijder je huidige statistieken tracering en configureer deze in Complianz"
 
-#: cookie/class-cookie-admin.php:3550
+#: cookie/class-cookie-admin.php:3531
 msgid "Syncing..."
 msgstr "Synchroniseren..."
 
-#: cookie/class-cookie-admin.php:3527
+#: cookie/class-cookie-admin.php:3508
 msgid "Sync"
 msgstr "Synchroniseer"
 
-#: cookie/class-cookie-admin.php:3476
+#: cookie/class-cookie-admin.php:3457
 msgid "Scan"
 msgstr "Scan"
 
-#: cookie/class-cookie-admin.php:3273 cookie/class-cookie-admin.php:3288
-#: cookie/class-cookie-admin.php:3303
+#: cookie/class-cookie-admin.php:3254 cookie/class-cookie-admin.php:3269
+#: cookie/class-cookie-admin.php:3284
 msgid "Nothing found yet."
 msgstr "Nog niets gevonden."
 
-#: cookie/class-cookie-admin.php:1588
+#: cookie/class-cookie-admin.php:1569
 msgid "Create"
 msgstr "Aanmaken"
 
-#: cookie/class-cookie-admin.php:1577
+#: cookie/class-cookie-admin.php:1558
 msgid "A Processor or Service Provider is the party that processes personal data on behalf of a responsible organization or person. If you are this organization or person, you should probably sign a Processing Agreement with them. You can use a Processing Agreement outside of Complianz, or generate one here."
 msgstr "Een Verwerker of Dienstverlener is de partij die persoonsgegevens verwerkt namens een verantwoordelijke organisatie of persoon. Als je deze organisatie of persoon bent, moet je waarschijnlijk een Verwerkersovereenkomst met hen ondertekenen. Je kunt een Verwerkersovereenkomst buiten Complianz gebruiken, of er hier een genereren."
 
-#: cookie/class-cookie-admin.php:1010 cookie/class-cookie-admin.php:1296
+#: cookie/class-cookie-admin.php:1017 cookie/class-cookie-admin.php:1294
 msgid "You haven't accepted the usage of the cookiedatabase.org API. To automatically complete your cookie descriptions, please choose yes."
 msgstr "Je hebt nog geen toestemming gegeven voor de cookiedatabase.org API. Om je cookiebeschrijvingen automatisch in te vullen, kies Ja."
 
-#: cookie/class-cookie-admin.php:534
+#: cookie/class-cookie-admin.php:543
 msgid "Either try again, or if this fails; our moderators will investigate further and automatically update the descriptions."
 msgstr "Probeer het nogmaals, of indien dit niet lukt zullen onze beheerders automatisch de beschrijvingen updaten."
 
-#: cookie/class-cookie-admin.php:532
+#: cookie/class-cookie-admin.php:541
 msgid "Our moderators will keep the cookies up-to-date."
 msgstr "Onze beheerders zullen de cookiebeschrijvingen up-to-date houden."
 
-#: config/steps.php:85
+#: config/steps.php:89
 msgid "Service descriptions"
 msgstr "Dienst beschrijvingen"
 
-#: config/steps.php:79
+#: config/steps.php:83
 msgid "We connect to this open-source database using an external API, which sends the results of the cookiescan (a list of found cookies, used plugins and your domain) to cookiedatabase.org, for the sole purpose of providing you with accurate descriptions and keeping them up-to-date at a weekly schedule."
 msgstr "We maken verbinding met deze open-source database via een externe API, die de resultaten van de cookie scan (een lijst van gevonden cookies, gebruikte plugins en je domein) naar cookiedatabase.org stuurt, met als enige doel je te voorzien van accurate beschrijvingen welke wekelijks up-to-date worden gehouden."
 
-#: config/steps.php:77
+#: config/steps.php:81
 msgid "Complianz provides your Cookie Policy with comprehensive cookie descriptions, supplied by cookiedatabase.org."
 msgstr "Complianz voorziet je Cookiebeleid van uitgebreide cookiebeschrijvingen, geleverd door cookiedatabase.org"
 
-#: config/steps.php:75
+#: config/steps.php:79
 msgid "Cookie descriptions"
 msgstr "Cookie beschrijvingen"
 
@@ -162,71 +166,71 @@ msgstr "Wanneer inhoud wordt geladen met behulp van Ajax, zoals met een laad mee
 msgid "Enable GEO IP"
 msgstr "GeoIP inschakelen"
 
-#: config/class-config.php:620
+#: config/class-config.php:627
 msgid "Pretty permalinks are not enabled on your site. This can cause issues with the REST API, used by Complianz."
 msgstr "Pretty permalinks zijn niet ingeschakeld voor je site. Dit kan problemen veroorzaken met de REST API, die gebruikt wordt door Complianz."
 
-#: config/class-config.php:611
+#: config/class-config.php:618
 msgid "Your site does not require a cookie banner."
 msgstr "Je site heeft geen cookie banner nodig."
 
-#: config/class-config.php:577
+#: config/class-config.php:584
 msgid "After the issue has been resolved, please re-run a scan to clear this message."
 msgstr "Voer een nieuwe scan uit nadat het probleem is opgelost, om de melding te laten verdwijnen."
 
-#: config/class-config.php:511
+#: config/class-config.php:518
 msgid "Not all required pages have been generated."
 msgstr "Alle benodigde pagina's zijn not niet gegenereerd."
 
-#: config/class-config.php:510
+#: config/class-config.php:517
 msgid "All required pages have been generated."
 msgstr "Alle benodigde pagina's zijn gegenereerd."
 
-#: config/class-config.php:501
+#: config/class-config.php:508
 msgid "No cookie scan has been completed yet."
 msgstr "Nog geen cookie scan voltooid."
 
-#: config/class-config.php:500
+#: config/class-config.php:507
 msgid "Last cookie scan completed on %s."
 msgstr "Laatste cookie scan uitgevoerd op %s."
 
-#: config/class-config.php:481
+#: config/class-config.php:488
 msgid "You have currently selected an informal language, which will result in informal use of language on the legal documents. If you prefer the formal style, you can activate this in the %sgeneral settings%s."
 msgstr "Je hebt op dit moment een informele taalvariant geselecteerd, wat resulteert in informeel taalgebruik in de juridische documenten. Indien je formeel taalgebruik prefereert dan kun je dit instellen in de %salgemene instellingen%s."
 
-#: config/class-config.php:447
+#: config/class-config.php:448
 msgid "Complianz GDPR/CCPA 5.0. Learn more about our newest major release."
 msgstr "Complianz AVG/CCPA 5.0. Leer meer over onze nieuwste grote release."
 
-#: config/questions-wizard.php:557
+#: config/questions-wizard.php:567
 msgid "Complianz integrates with the consent module of HubSpot. Did you enable the consent module in your HubSpot account?"
 msgstr "Complianz integreert met de toestemming module van HubSpot. Heb je de toestemming module in je HubSpot account ingeschakeld?"
 
-#: config/questions-wizard.php:533
+#: config/questions-wizard.php:543
 msgid "When possible a placeholder is activated. You can also disable or configure the placeholder to your liking. You can disable services and placeholders under Integrations."
 msgstr "Waar mogelijk wordt een plaatshouder geactiveerd. Je kunt het invoegen van plaatshouders ook uitschakelen of naar wens configureren. Je kunt diensten en plaatshouders uitschakelen via Integraties."
 
-#: config/questions-wizard.php:410
+#: config/questions-wizard.php:424
 msgid "In some countries, like Germany, Austria, Belgium or Spain, consent is required for statistics, even if the data is anonymized."
 msgstr "In bepaalde landen zoals Duitsland, Oostenrijk, België of Spanje is toestemming voor statistieken altijd vereist, ook als gegevens worden geanonimiseerd."
 
-#: config/questions-wizard.php:394
+#: config/questions-wizard.php:409
 msgid "If IP addresses are anonymized, the statistics cookies do not require a separate category on your banner."
 msgstr "Indien IP adressen worden geanonimiseerd is het niet nodig om een afzonderlijke categorie voor statistieken cookies te gebruiken op je banner."
 
-#: config/questions-wizard.php:335
+#: config/questions-wizard.php:350
 msgid "If you do not check to let Complianz anonymize IP addresses, the IP addresses will get collected as soon as the user consents to the category statistics or higher."
 msgstr "Indien je er niet voor kiest om Complianz IP adressen te laten anonimiseren dan zullen IP adressen worden vergaard na toestemming op de statistieken categorie of hoger."
 
-#: config/questions-wizard.php:333
+#: config/questions-wizard.php:348
 msgid "Let Complianz anonymize IP addresses"
 msgstr "Laat Complianz IP adressen anonimiseren"
 
-#: config/questions-wizard.php:281
+#: config/questions-wizard.php:296
 msgid "These links will be added with HTML attributes so it won't hurt SEO."
 msgstr "Deze links worden toegevoegd met HTML attributen zodat ze geen invloed hebben op SEO."
 
-#: config/questions-wizard.php:280
+#: config/questions-wizard.php:295
 msgid "Do you want to hyperlink cookie names so visitors can find more information on Cookiedatabase.org?"
 msgstr "Wil je een hyperlink toevoegen aan cookie namen zodat bezoekers meer informatie kunnen lezen op cookiedatabase.org?"
 
@@ -266,99 +270,99 @@ msgstr "Cookies verwijderen tekst"
 msgid "Dismiss"
 msgstr "Negeren"
 
-#: cookiebanner/settings.php:484
+#: cookiebanner/settings.php:486
 msgid "Manage Cookie Consent"
 msgstr "Beheer cookie toestemming"
 
-#: cookiebanner/settings.php:483
+#: cookiebanner/settings.php:485
 msgid "Title"
 msgstr "Titel"
 
-#: cookiebanner/settings.php:423 config/general-settings.php:308
+#: config/general-settings.php:308 cookiebanner/settings.php:425
 msgid "You can add additional custom CSS here. For tips and CSS lessons, check out our %sdocumentation%s"
 msgstr "Je kunt aanvullende eigen CSS hier toevoegen. Voor tips en CSS lessen, zie onze %sdocumentatie%s"
 
-#: cookiebanner/settings.php:329
+#: cookiebanner/settings.php:331
 msgid "Buttons"
 msgstr "Knoppen"
 
-#: cookiebanner/settings.php:322
+#: cookiebanner/settings.php:324
 msgid "Border width"
 msgstr "Border width"
 
-#: cookiebanner/settings.php:309 cookiebanner/settings.php:415
+#: cookiebanner/settings.php:311 cookiebanner/settings.php:417
 msgid "Border radius"
 msgstr "Border radius"
 
-#: cookiebanner/settings.php:292
+#: cookiebanner/settings.php:294
 msgid "Inactive"
 msgstr "Inactief"
 
-#: cookiebanner/settings.php:288
+#: cookiebanner/settings.php:290
 msgid "Bullet"
 msgstr "Opsommingsteken"
 
-#: cookiebanner/settings.php:275
+#: cookiebanner/settings.php:277
 msgid "Toggles"
 msgstr "Schakelaars"
 
-#: cookiebanner/settings.php:266
+#: cookiebanner/settings.php:268
 msgid "Hyperlink"
 msgstr "Hyperlink"
 
-#: cookiebanner/settings.php:262
+#: cookiebanner/settings.php:264
 msgid "Color"
 msgstr "Kleur"
 
-#: cookiebanner/settings.php:254 cookiebanner/settings.php:347
-#: cookiebanner/settings.php:373 cookiebanner/settings.php:399
+#: cookiebanner/settings.php:256 cookiebanner/settings.php:349
+#: cookiebanner/settings.php:375 cookiebanner/settings.php:401
 msgid "Text"
 msgstr "Tekst"
 
-#: cookiebanner/settings.php:245 cookiebanner/settings.php:343
-#: cookiebanner/settings.php:369 cookiebanner/settings.php:395
+#: cookiebanner/settings.php:247 cookiebanner/settings.php:345
+#: cookiebanner/settings.php:371 cookiebanner/settings.php:397
 msgid "Border"
 msgstr "Border"
 
-#: cookiebanner/settings.php:233 cookiebanner/settings.php:241
-#: cookiebanner/settings.php:284 cookiebanner/settings.php:339
-#: cookiebanner/settings.php:365 cookiebanner/settings.php:391
+#: cookiebanner/settings.php:235 cookiebanner/settings.php:243
+#: cookiebanner/settings.php:286 cookiebanner/settings.php:341
+#: cookiebanner/settings.php:367 cookiebanner/settings.php:393
 msgid "Background"
 msgstr "Achtergrond"
 
-#: cookiebanner/settings.php:232
+#: cookiebanner/settings.php:234
 msgid "Cookie notice"
 msgstr "Cookie melding"
 
-#: cookiebanner/settings.php:224
+#: cookiebanner/settings.php:226
 msgid "Box shadow"
 msgstr "Box schaduw"
 
-#: cookiebanner/settings.php:196
+#: cookiebanner/settings.php:198
 msgid "Slide"
 msgstr "Schuiven"
 
-#: cookiebanner/settings.php:195
+#: cookiebanner/settings.php:197
 msgid "Fade"
 msgstr "Vervagen"
 
-#: cookiebanner/settings.php:194 config/questions-wizard.php:55
+#: config/questions-wizard.php:56 cookiebanner/settings.php:196
 msgid "None"
 msgstr "Geen"
 
-#: cookiebanner/settings.php:192
+#: cookiebanner/settings.php:194
 msgid "Animation"
 msgstr "Animatie"
 
-#: cookiebanner/settings.php:169
+#: cookiebanner/settings.php:171
 msgid "Template"
 msgstr "Sjabloon"
 
-#: cookiebanner/settings.php:154
+#: cookiebanner/settings.php:156
 msgid "Position"
 msgstr "Positie"
 
-#: cookiebanner/settings.php:145
+#: cookiebanner/settings.php:146
 msgid "The custom CSS editor will appear at the bottom of this page when enabled."
 msgstr "De eigen CSS editor zal onderaan deze pagina verschijnen indien ingeschakeld."
 
@@ -390,11 +394,11 @@ msgstr "Zoals benoemd in de handleiding, verwijder &lt;script&gt; tags en contro
 msgid "We strongly advise you to read our instructions manual for the script center. Make sure you're not missing out on all of the possibilities!"
 msgstr "We raden je ten zeerste aan om de handleiding voor het script centrum te lezen. Op deze manier benut je alle mogelijkheden optimaal!"
 
-#: integrations/integrations.php:616
+#: integrations/integrations.php:628
 msgid "We have enabled the %s integration."
 msgstr "We hebben de %s integratie ingeschakeld."
 
-#: integrations/integrations.php:587
+#: integrations/integrations.php:599
 msgid "Placeholder"
 msgstr "Plaatshouder"
 
@@ -410,27 +414,27 @@ msgstr "Import"
 msgid "Choose file"
 msgstr "Kies bestand"
 
-#: class-field.php:1389 class-field.php:1463 cookiebanner/settings.php:158
+#: class-field.php:1389 class-field.php:1463 cookiebanner/settings.php:160
 msgid "Left"
 msgstr "Links"
 
-#: class-field.php:1384 class-field.php:1458 cookiebanner/settings.php:160
+#: class-field.php:1384 class-field.php:1458 cookiebanner/settings.php:162
 msgid "Bottom"
 msgstr "Onder"
 
-#: class-field.php:1379 class-field.php:1453 cookiebanner/settings.php:159
+#: class-field.php:1379 class-field.php:1453 cookiebanner/settings.php:161
 msgid "Right"
 msgstr "Rechts"
 
-#: class-field.php:1374 class-field.php:1448 cookiebanner/settings.php:156
+#: class-field.php:1374 class-field.php:1448 cookiebanner/settings.php:158
 msgid "Top"
 msgstr "Boven"
 
-#: functions.php:943
+#: functions.php:963
 msgid "the page source"
 msgstr "De pagina broncode"
 
-#: functions.php:107
+#: functions.php:127
 msgid "Due to the French CNIL guidelines we suggest using the Accept + View preferences template. For more information, read about the CNIL updated privacy guidelines in this %sarticle%s."
 msgstr "In verband met de Franse CNIL richtlijnen raden wij de Alles accepteren + bekijk voorkeuren banner aan. Lees %sdit artikel%s voor meer informatie over de nieuwste CNIL privacy richtlijnen"
 
@@ -514,8 +518,8 @@ msgstr "Verouderd"
 msgid "View all"
 msgstr "Bekijk alle"
 
-#: templates/dashboard/other-plugins.php:28
 #: templates/dashboard/documents.php:77
+#: templates/dashboard/other-plugins.php:28
 msgid "Terms and Conditions"
 msgstr "Terms and Conditions"
 
@@ -539,44 +543,44 @@ msgstr "Notificaties"
 msgid "You will find tips and tricks on your dashboard after you have configured your cookie banner."
 msgstr "Nadat je cookiebanner is geconfigureerd vind je tips en trucs op het Dashboard."
 
-#: class-admin.php:1270
+#: class-admin.php:1281
 msgid "Document Styling"
 msgstr "Document Styling"
 
-#: class-admin.php:1262 templates/dashboard/progress-footer.php:16
+#: templates/dashboard/progress-footer.php:16 class-admin.php:1273
 msgid "Cookie blocker"
 msgstr "Cookie blocker"
 
-#: class-admin.php:1169
+#: class-admin.php:1180
 msgid "Other plugins"
 msgstr "Andere plugins"
 
-#: class-admin.php:1161
+#: class-admin.php:1172
 msgid "Tips & Tricks"
 msgstr "Tips & truckjes"
 
-#: class-admin.php:1148
+#: class-admin.php:1159
 msgid "Last update"
 msgstr "Laatste update"
 
-#: class-admin.php:1132
+#: class-admin.php:1143
 msgid "Remaining tasks (%s)"
 msgstr "Openstaande taken(%s)"
 
-#: class-admin.php:1130
+#: class-admin.php:1141
 msgid "All tasks (%s)"
 msgstr "Alle taken (%s)"
 
-#: class-admin.php:1113
+#: class-admin.php:1124
 msgid "Upgrade to pro"
 msgstr "Upgrade naar Pro"
 
-#: class-admin.php:1110
+#: class-admin.php:1121
 msgid "Installed"
 msgstr "Geïnstalleerd"
 
-#: DNSMPD/class-DNSMPD.php:68 templates/dashboard/tools.php:26
-#: config/general-settings.php:224
+#: config/general-settings.php:224 DNSMPD/class-DNSMPD.php:68
+#: templates/dashboard/tools.php:26
 msgid "Export"
 msgstr "Exporteren"
 
@@ -584,15 +588,15 @@ msgstr "Exporteren"
 msgid "Cookiedatabase.org synchronization disabled."
 msgstr "Cookiedatabase.org synchronisatie uitgeschakeld."
 
-#: config/questions-wizard.php:502
+#: config/questions-wizard.php:512
 msgid "Because Clicky always sets a so-called unique identifier cookie, consent for statistics is always required."
 msgstr "Omdat Clicky altijd een zogenaamde unieke identifier cookie instelt, is instemming voor statistieken altijd vereist."
 
-#: config/questions-wizard.php:498
+#: config/questions-wizard.php:508
 msgid "Enter your Clicky site ID"
 msgstr "Voer je Clicky website ID in"
 
-#: config/questions-wizard.php:314
+#: config/questions-wizard.php:329
 msgid "Yes, with Clicky"
 msgstr "Ja, met Clicky"
 
@@ -733,14 +737,14 @@ msgctxt "notification email"
 msgid "Your legal documents on %s have not been updated in 12 months. Please log in and run the %swizard%s in the Complianz plugin to check if everything is up to date."
 msgstr "Je juridische documenten op %s zijn meer dan 12 maanden geleden voor het laatst geüpdatet. Log alsjeblieft in en bekijk de %swizard%s in de Complianz plugin om na te kijken of alles up-to-date is."
 
-#: config/documents/cookie-policy-ca.php:79
 #: config/documents/cookie-policy-eu.php:73
+#: config/documents/cookie-policy-ca.php:79
 msgctxt "cookie policy"
 msgid "Marketing/Tracking cookies are cookies or any other form of local storage, used to create user profiles to display advertising or to track the user on this website or across several websites for similar marketing purposes."
 msgstr "Marketing/Tracking cookies zijn cookies of enige andere vorm van local storage, die worden gebruikt om gebruikersprofielen te maken met het doel om advertenties te tonen of om de gebruiker te volgen op deze of verschillende websites voor soortgelijke marketingdoeleinden."
 
-#: config/documents/cookie-policy-ca.php:78
 #: config/documents/cookie-policy-eu.php:72
+#: config/documents/cookie-policy-ca.php:78
 msgctxt "cookie policy"
 msgid "Marketing/Tracking cookies"
 msgstr "Marketing/Tracking cookies"
@@ -754,7 +758,7 @@ msgctxt "cookie policy"
 msgid "We have received a privacy signal from your browser. For this reason we have set your privacy settings on this website to strictly necessary. If you want to have full functionality, please consider excluding %s from your privacy settings."
 msgstr "We hebben een privacy signaal ontvangen van je browser. Om deze reden hebben we je privacy instellingen op deze website ingesteld op strikt noodzakelijk. Indien je volledige functionaliteit wilt genieten kun je overwegen om %s uit te sluiten van je privacy instellingen."
 
-#: functions.php:155
+#: functions.php:175
 msgid "Manage Consent"
 msgstr "Beheer toestemming"
 
@@ -762,7 +766,7 @@ msgstr "Beheer toestemming"
 msgid "To enable Google Maps cookies, click on I Agree"
 msgstr "Klik op 'accepteren' om Google Maps cookies te accepteren"
 
-#: callback-notices.php:146
+#: callback-notices.php:147
 msgid "You have Do Not Track or Global Privacy Control enabled. This will prevent most cookies from being placed. Please run the scan with these options disabled."
 msgstr "Je hebt Do Not Track of Global Privacy Control ingeschakeld. Dit voorkomt dat de meeste cookies worden geplaatst. Voer de scan uit met deze opties uitgeschakeld."
 
@@ -774,11 +778,11 @@ msgstr "Do Not Track en Global Privacy Control worden nog niet gerespecteerd - (
 msgid "Do Not Track & Global Privacy Control are respected."
 msgstr "Do Not Track en Global Privacy Control worden gerespecteerd."
 
-#: config/questions-wizard.php:458
+#: config/questions-wizard.php:468
 msgid "For the Google Analytics tracking-ID, log on and click Admin and copy the Tracking-ID."
 msgstr "Voor het Google Analytics tracking-ID, login en klik Beheer en kopieer het tracking-ID."
 
-#: config/questions-wizard.php:455
+#: config/questions-wizard.php:465
 msgid "Enter your tracking-ID"
 msgstr "Voer je tracking-ID in"
 
@@ -787,15 +791,15 @@ msgctxt "cookie policy"
 msgid "Usage"
 msgstr "Gebruik"
 
-#: functions.php:2228
+#: functions.php:2250
 msgid "TCF"
 msgstr "TCF"
 
-#: functions.php:1730
+#: functions.php:1750
 msgid "Sharing of data is pending investigation"
 msgstr "Delen van gegevens wordt onderzocht"
 
-#: functions.php:946
+#: functions.php:966
 msgid "%s on line %s of %s"
 msgstr "%s op regel %s van %s"
 
@@ -803,29 +807,29 @@ msgstr "%s op regel %s van %s"
 msgid "Complianz detected settings that suggest your site shares data, which means the answer should probably be Yes, or Limited"
 msgstr "Complianz detecteerde instellingen die suggereren dat je website gegevens deelt, wat betekent dat het antwoord waarschijnlijk \"Ja\", of \"Beperkt\" moet zijn."
 
-#: config/warnings.php:104 config/class-config.php:597
+#: config/class-config.php:604 config/warnings.php:104
 msgid "Last error in the console:"
 msgstr "Laatste foutmelding in het console:"
 
-#: config/warnings.php:103 config/class-config.php:596
+#: config/class-config.php:603 config/warnings.php:103
 msgid "Javascript errors are detected on the front-end of your site. This may break the cookie banner functionality."
 msgstr "Javascript fouten gedetecteerd aan de front-end van je website. Dit kan er voor zorgen dat de cookie banner niet functioneert."
 
-#: config/warnings.php:99 config/class-config.php:587
+#: config/class-config.php:594 config/warnings.php:99
 msgid "jQuery was not detected on the front-end of your site. Complianz requires jQuery."
 msgstr "Geen jQuery gedetecteerd aan de front-end van je website. Complianz vereist jQuery."
 
-#: config/questions-wizard.php:652
+#: config/questions-wizard.php:662
 msgid "Google recommends an integration with TCF V2.0 to avoid loss of revenue."
 msgstr "Google beveelt een integratie met TCF V2.0 aan om inkomstenverlies te voorkomen."
 
-#: config/questions-wizard.php:648
+#: config/questions-wizard.php:658
 msgid "Enable TCF"
 msgstr "TCF inschakelen"
 
+#: config/documents/cookie-policy-eu.php:126
 #: config/documents/cookie-policy-uk.php:124
 #: config/documents/cookie-policy-ca.php:114
-#: config/documents/cookie-policy-eu.php:126
 msgctxt "Legal document cookie policy:paragraph title"
 msgid "Vendors"
 msgstr "Leveranciers"
@@ -839,23 +843,23 @@ msgstr "reCAPTCHA is verbonden en zal worden geblokkeerd voor de bezoeker toeste
 msgid "Because you're using %s, you can choose which plugin should insert the relevant snippet."
 msgstr "Omdat je %s gebruikt, kun je kiezen welke plugin de relevante snippet plaatst."
 
-#: config/questions-wizard.php:620
+#: config/questions-wizard.php:630
 msgid "Complianz cannot automatically block first-party marketing cookies unless these plugins conform to the WP Consent API. Look for any possible integrations on our website if you're not sure. When you answer 'No' to this question, the marketing category will be removed."
 msgstr "Complianz kan niet automatisch first-party marketing cookies blokkeren tenzij deze plugins conformeren aan de WP Consent API. Zoek naar mogelijke integraties op onze website voor meer informatie. Indien je 'Nee' antwoord op deze vraag, zal de marketing categorie worden verwijderd."
 
-#: config/questions-wizard.php:619
+#: config/questions-wizard.php:629
 msgid "You have stated that you don't use third-party services. Do you use plugins that might set marketing cookies?"
 msgstr "Je hebt aangegeven geen third-party diensten te gebruiken. Gebruik je plugins die marketing cookies kunnen plaatsen?"
 
-#: config/questions-wizard.php:545
+#: config/questions-wizard.php:555
 msgid "Do you want to block reCAPTCHA before consent, and when consent is revoked?"
 msgstr "Wil je reCAPTCHA blokkeren voor toestemming is gegeven of nadat toestemming is teruggetrokken?"
 
-#: callback-notices.php:361
+#: callback-notices.php:362
 msgid "You use plugins which place first-party marketing cookies. You can view these plugins on the integrations page. Complianz cannot automatically block first-party marketing cookies unless these plugins conform to the WP Consent API."
 msgstr "Je gebruikt plugins die first-party marketing cookies plaatsen. Je kunt zien welke plugins dit zijn op de integraties pagina. Complianz kan deze first-party cookies niet automatisch blokkeren tenzij deze plugins conformeren aan de WP Consent API."
 
-#: callback-notices.php:248
+#: callback-notices.php:249
 msgid "If you choose to block reCAPTCHA, please make sure you add a placeholder to your forms."
 msgstr "Denk er aan om een melding of plaatshouder te gebruiken in je contactformulieren indien je er voor kiest om reCAPTCHA te blokkeren."
 
@@ -900,23 +904,23 @@ msgctxt "intro company info"
 msgid "Here you can select which legal documents you want to generate with Complianz. You can also use existing legal documents."
 msgstr "Hier kun je selecteren welke juridische documenten je met Complianz wilt genereren. Je kunt ook verwijzen naar bestaande documenten."
 
-#: config/questions-wizard.php:688
+#: config/questions-wizard.php:698
 msgid "Do you want to disable the storage of personal data by the WP comments function and the checkbox?"
 msgstr "Wil je het opslaan van persoonsgegevens door de WP reacties functie en de checkbox uitschakelen?"
 
-#: config/questions-wizard.php:604
+#: config/questions-wizard.php:614
 msgid "Select which social media are used on the website."
 msgstr "Selecteer welke sociale media op je site worden gebruikt."
 
-#: config/questions-wizard.php:591
+#: config/questions-wizard.php:601
 msgid "Content from social media is mostly embedded through iFrames. These often place third party (tracking) cookies, so must be blocked based on visitor consent. If your website only contains buttons or links to a social media profile on an external page you can answer No."
 msgstr "Inhoud van sociale media wordt meestal ingesloten middels iFrames. Deze plaatsen doorgaans third-party (tracking) cookies, en moeten afhankelijk van toestemming van de gebruiker geblokkeerd worden. Indien je website alleen knoppen of links naar externe social media pagina's bevat kun je deze vraag met Nee beantwoorden. "
 
-#: config/questions-wizard.php:589
+#: config/questions-wizard.php:599
 msgid "Does your website contain embedded social media content, like buttons, timelines, videos or pixels?"
 msgstr "Bevat je website ingesloten inhoud van sociale media, zoals (like) knoppen, tijdlijnen, video's of pixels?"
 
-#: config/questions-wizard.php:391
+#: config/questions-wizard.php:406
 msgid "Do you anonymize IP addresses in Matomo?"
 msgstr "Anonimiseer je IP adressen in Matomo?"
 
@@ -928,8 +932,8 @@ msgstr "Indien dit het geval is wordt de scan uitgebreid naar het wp-admin gedee
 msgid "Does your site have users with access to the wp-admin part of the website?"
 msgstr "Heb je gebruikers met toegang tot het wp-admin gedeelte van de website?"
 
-#: templates/dashboard/documents-conditional.php:31
-#: config/questions-wizard.php:134 src/block/block.js:272
+#: config/questions-wizard.php:134
+#: templates/dashboard/documents-conditional.php:31 src/block/block.js:272
 msgid "Disclaimer"
 msgstr "Disclaimer"
 
@@ -937,7 +941,7 @@ msgstr "Disclaimer"
 msgid "A Cookie Policy is required to inform your visitors about the way cookies and similar techniques are used on your website. A link to this document is placed on your cookie banner."
 msgstr "Een Cookiebeleid is verplicht om je gebruikers te informeren over de wijze waarop cookies en vergelijkbare technieken worden gebruikt op je site. Er wordt een link naar dit document op je cookie banner getoond."
 
-#: config/questions-wizard.php:38
+#: config/questions-wizard.php:39
 msgid "You don’t need to configure your website for ‘accidental’ visitors. Only choose the regions your website is intended for."
 msgstr "Je hoeft niet te configureren voor bezoekers die 'per ongeluk' op de site komen. Kies alleen de regio's waar de site voor bedoeld it."
 
@@ -945,7 +949,7 @@ msgstr "Je hoeft niet te configureren voor bezoekers die 'per ongeluk' op de sit
 msgid "Click to accept marketing cookies and enable this content"
 msgstr "Klik hier om marketing cookies te accepteren en deze inhoud te weergeven"
 
-#: callback-notices.php:346 callback-notices.php:348
+#: callback-notices.php:347 callback-notices.php:349
 msgid "It is recommended to select a Privacy Statement."
 msgstr "Het is aan te raden een privacyverklaring te selecteren."
 
@@ -962,8 +966,8 @@ msgstr "Really Simple Plugins"
 msgid "Accept all"
 msgstr "Alles accepteren"
 
-#: cookiebanner/settings.php:619 cookiebanner/settings.php:620
-#: cookiebanner/settings.php:621 cookiebanner/class-cookiebanner.php:703
+#: cookiebanner/class-cookiebanner.php:703 cookiebanner/settings.php:619
+#: cookiebanner/settings.php:620 cookiebanner/settings.php:621
 msgid "Functional"
 msgstr "Strikt noodzakelijk"
 
@@ -995,7 +999,7 @@ msgstr "Cookie voorkeuren"
 msgid "Hide manage consent tab"
 msgstr "Verberg Toestemming beheren knop"
 
-#: cookiebanner/settings.php:185
+#: cookiebanner/settings.php:187
 msgid "Min width of banner in pixels"
 msgstr "Minimale breedte van de banner in pixels"
 
@@ -1003,44 +1007,44 @@ msgstr "Minimale breedte van de banner in pixels"
 msgid "After saving, a preview of the soft cookie wall will be shown for 3 seconds"
 msgstr "Na opslaan wordt drie seconden lang een voorbeeld van de cookiewall getoond"
 
-#: cookiebanner/settings.php:212
+#: cookiebanner/settings.php:214
 msgid "Slider"
 msgstr "Slider"
 
-#: cookiebanner/settings.php:211
+#: cookiebanner/settings.php:213
 msgid "Square"
 msgstr "Vierkant"
 
-#: cookiebanner/settings.php:208
+#: cookiebanner/settings.php:210
 msgid "This style is for the checkboxes on the cookie banner, as well as on your policy for managing consent."
 msgstr "Deze stijl wordt toegepast op de checkboxen op de cookie banner en in het Cookiebeleid"
 
-#: cookiebanner/settings.php:207
+#: cookiebanner/settings.php:209
 msgid "Checkbox style"
 msgstr "Checkbox stijl"
 
-#: callback-notices.php:224 callback-notices.php:233
+#: callback-notices.php:225 callback-notices.php:234
 msgid "The cookie scan detected cookies from services which share data with Third Parties. If these cookies were also used in the past 12 months, you should at least select the option 'Internet activity...'"
 msgstr "De cookie-scan heeft cookies gedetecteerd van diensten die gegevens delen met derden. Indien deze cookies ook in de afgelopen 12 maanden zijn gebruikt, dien je in ieder geval de optie 'Internetactiviteit...' te selecteren."
 
-#: callback-notices.php:188
+#: callback-notices.php:189
 msgid "Your site uses Divi. If you use reCAPTCHA on your site, you may need to disable the reCAPTCHA integration in Complianz. "
 msgstr "Je site gebruikt Divi. Indien je reCAPTCHA gebruikt op de site dan kan het nodig zijn om de reCAPTCHA integratie uit te schakelen in Complianz."
 
-#: callback-notices.php:132
+#: callback-notices.php:133
 msgid "The cookie scan detected cookies from services that share data with Third Parties. According to the CCPA, your website is considered to sell personal data in terms of the CCPA if it collects and shares with a Third Party any personal data in return for money or services. This includes services like Google Analytics."
 msgstr "De cookie scan heeft cookies gedetecteerd van diensten die gegevens delen met derden. In het licht van de CCPA wordt een website geacht persoonsgegevens te verkopen als deze persoonsgegevens verzamelt en deelt met een derde partij in ruil voor geld of diensten. Dit omvat diensten zoals Google Analytics."
 
-#: class-field.php:1895 cookie/class-cookie-admin.php:3578
+#: cookie/class-cookie-admin.php:3559 class-field.php:1895
 msgid "Services in %s"
 msgstr "Diensten in %s"
 
-#: config/questions-wizard.php:705
+#: config/questions-wizard.php:715
 msgid "Connect with Cookiedatabase.org"
 msgstr "Verbinden met Cookiedatabase.org"
 
-#: config/documents/cookie-policy-ca.php:107
 #: config/documents/cookie-policy-eu.php:120
+#: config/documents/cookie-policy-ca.php:107
 msgctxt "Legal document cookie policy:paragraph title"
 msgid "Manage your consent settings"
 msgstr "Beheer uw cookie toestemming"
@@ -1049,43 +1053,43 @@ msgstr "Beheer uw cookie toestemming"
 msgid "Complianz will generate the Impressum based on the answers in the wizard, but you can also create your own, custom document."
 msgstr "Complianz zal een Impressum genereren op basis van de gegeven antwoorden in de wizard, maar je kunt ook een eigen document aanmaken."
 
-#: config/questions-wizard.php:43
+#: config/questions-wizard.php:44
 msgid "If you want to dynamically apply privacy laws based on the visitor's location, consider upgrading to the %spremium version%s, which allows you to apply a privacy law specific for that region."
 msgstr "Als je privacywetgeving dynamisch wilt toepassen op basis van de locatie van de bezoeker, overweeg dan een upgrade naar de %sPremium versie%s, waardoor je privacywetten kunt toepassen specifiek voor die regio."
 
-#: config/questions-wizard.php:37
+#: config/questions-wizard.php:38
 msgid "Which privacy law or guideline do you want to use as the default for your worldwide visitors?"
 msgstr "Welke privacywet of -richtlijn wil je gebruiken voor alle bezoekers wereldwijd?"
 
-#: config/countries.php:74
+#: config/countries.php:80
 msgid "PIPEDA (Canada)"
 msgstr "PIPEDA (Canada)"
 
-#: config/countries.php:73
+#: config/countries.php:79
 msgid "CCPA / United States"
 msgstr "CCPA / Verenigde Staten"
 
-#: config/countries.php:72
+#: config/countries.php:78
 msgid "UK-GDPR, PECR, Data Protection Act (United Kingdom)"
 msgstr "UK-GDPR, PECR, Data Protection Act (Verenigd Koninkrijk)"
 
-#: config/countries.php:71
+#: config/countries.php:77
 msgid "GDPR (European Union)"
 msgstr "AVG (Europese Unie)"
 
+#: config/questions-wizard.php:107 config/steps.php:35
+#: cookiebanner/settings.php:558 cookiebanner/settings.php:559
+#: cookiebanner/settings.php:560
 #: templates/dashboard/documents-conditional.php:14
 #: templates/dashboard/documents-conditional.php:38
-#: cookiebanner/settings.php:558 cookiebanner/settings.php:559
-#: cookiebanner/settings.php:560 config/questions-wizard.php:107
-#: config/steps.php:35
 msgid "Impressum"
 msgstr "Impressum"
 
-#: callback-notices.php:348
+#: callback-notices.php:349
 msgid "The link to the Privacy Statement is used in your Cookie Policy."
 msgstr "De link naar de Privacyverklaring wordt gebruikt in je Cookiebeleid."
 
-#: callback-notices.php:346
+#: callback-notices.php:347
 msgid "The link to the Privacy Statement is used in the cookie banner and in your Cookie Policy."
 msgstr "De link naar de Privacyverklaring wordt gebruikt op de cookie banner en in je Cookiebeleid."
 
@@ -1121,20 +1125,20 @@ msgstr "Selecteer hoe je je %s wilt toevoegen."
 msgid "Enable cookie blocker for ajax loaded content"
 msgstr "Cookie blocker voor Ajax-geladen inhoud inschakelen."
 
-#: config/steps.php:107
+#: config/steps.php:111
 msgid "Link to menu"
 msgstr "Aan menu koppelen"
 
-#: config/steps.php:104
+#: config/steps.php:108
 msgid "Create documents"
 msgstr "Documenten genereren"
 
-#: config/steps.php:100
+#: config/steps.php:104
 msgctxt "intro menu"
 msgid "Generate your documents, then you can add them to your menu directly or do it manually after the wizard is finished."
 msgstr "Genereer je documenten, daarna kun je ze direct aan een menu toevoegen of het handmatig doen nadat de wizard is voltooid."
 
-#: callback-notices.php:267
+#: callback-notices.php:268
 msgid "You haven't created all required pages yet. You can add missing pages in the previous step, or create them manually with the shortcode. You can come back later to this step to add your pages to the desired menu, or do it manually via Appearance > Menu."
 msgstr "Je hebt nog niet alle benodigde pagina's aangemaakt. Je kunt ontbrekende pagina's toevoegen in de vorige stap, of ze handmatig aanmaken met de shortcode. Je kunt later naar deze stap terugkomen om uw pagina's aan het gewenste menu toe te voegen, of het handmatig doen via Weergave > Menu."
 
@@ -1158,11 +1162,11 @@ msgstr "Alle betreffende pagina's zijn reeds gegenereerd. Je kunt de pagina tite
 msgid "The pages marked with X should be added to your website. You can create these pages with a shortcode, a Gutenberg block or use the below \"Create missing pages\" button."
 msgstr "De met X gemarkeerde pagina's moeten nog aan uw website worden toegevoegd. Je kunt deze pagina's aanmaken met een shortcode, een Gutenberg blok of gebruik maken van de onderstaande \"Creëer ontbrekende pagina's\" knop."
 
-#: class-field.php:1895 cookie/class-cookie-admin.php:3578
+#: cookie/class-cookie-admin.php:3559 class-field.php:1895
 msgid "Cookies in %s"
 msgstr "Cookies in %s"
 
-#: cookie/class-cookie-admin.php:3547
+#: cookie/class-cookie-admin.php:3528
 msgid "Show deleted cookies"
 msgstr "Toon verwijderde cookies"
 
@@ -1170,47 +1174,47 @@ msgstr "Toon verwijderde cookies"
 msgid "Region %s not activated for %s."
 msgstr "Regio %s niet geactiveerd voor %s."
 
-#: config/countries.php:345
+#: config/countries.php:352
 msgid "Swedish"
 msgstr "Zweeds"
 
-#: config/countries.php:344
+#: config/countries.php:351
 msgid "Norwegian"
 msgstr "Noors"
 
-#: config/countries.php:343
+#: config/countries.php:350
 msgid "Dutch"
 msgstr "Nederlands"
 
-#: config/countries.php:342
+#: config/countries.php:349
 msgid "Italian"
 msgstr "Italiaans"
 
-#: config/countries.php:341
+#: config/countries.php:348
 msgid "French"
 msgstr "Frans"
 
-#: config/countries.php:340
+#: config/countries.php:347
 msgid "Estonian"
 msgstr "Estlands"
 
-#: config/countries.php:339
+#: config/countries.php:346
 msgid "Spanish"
 msgstr "Spaans"
 
-#: config/countries.php:338
+#: config/countries.php:345
 msgid "Greek"
 msgstr "Grieks"
 
-#: config/countries.php:337
+#: config/countries.php:344
 msgid "German"
 msgstr "Duits"
 
-#: config/countries.php:336
+#: config/countries.php:343
 msgid "Danish"
 msgstr "Deens"
 
-#: config/countries.php:335
+#: config/countries.php:342
 msgid "English"
 msgstr "Engels"
 
@@ -1313,7 +1317,7 @@ msgstr "Activeer"
 msgid "Update"
 msgstr "Update"
 
-#: class-admin.php:1107 templates/dashboard/documents.php:83
+#: templates/dashboard/documents.php:83 class-admin.php:1118
 #: integrations/TGM/class-tgm-plugin-activation.php:2809
 msgid "Install"
 msgstr "Installeer"
@@ -1625,9 +1629,9 @@ msgstr "Installeer plugins"
 msgid "Install Required Plugins"
 msgstr "Installeer benodigde plugins"
 
-#: cookiebanner/settings.php:633 cookiebanner/settings.php:634
-#: cookiebanner/settings.php:635 cookiebanner/settings.php:683
-#: cookiebanner/settings.php:685 cookiebanner/class-cookiebanner.php:706
+#: cookiebanner/class-cookiebanner.php:706 cookiebanner/settings.php:633
+#: cookiebanner/settings.php:634 cookiebanner/settings.php:635
+#: cookiebanner/settings.php:683 cookiebanner/settings.php:685
 msgid "Preferences"
 msgstr "Voorkeuren"
 
@@ -1635,7 +1639,7 @@ msgstr "Voorkeuren"
 msgid "Audio, electronic, visual, thermal, olfactory, or similar information"
 msgstr "Audio-, elektronische, visuele, thermische, olfactorische of soortgelijke informatie"
 
-#: functions.php:2221
+#: functions.php:2243
 msgid "Opt-in settings (consent for statistics)"
 msgstr "Opt-in instellingen (toestemming voor statistieken)"
 
@@ -1771,12 +1775,7 @@ msgctxt "Legal document cookie policy"
 msgid "When you visit our website for the first time, we will show you a pop-up with an explanation about cookies. You do have the right to opt-out and to object against the further use of non-functional cookies."
 msgstr "Wanneer u onze website voor het eerst bezoekt, tonen wij u een pop-up met uitleg over cookies. U heeft het recht om u af te melden en bezwaar te maken tegen het verdere gebruik van niet-functionele cookies."
 
-#: config/documents/cookie-policy-ca.php:10
-msgctxt "Legal document cookie policy"
-msgid "This page was last changed on %s, last checked on %s and applies to citizens of Canada."
-msgstr "Deze pagina is voor het laatst gewijzigd op %s, laatst gecontroleerd op %s en geldt voor burgers van Canada."
-
-#: config/documents/documents.php:41
+#: config/documents/documents.php:42
 msgid "Cookie Policy (CA)"
 msgstr "Cookiebeleid (CA)"
 
@@ -1792,7 +1791,7 @@ msgstr "Tekst op de link naar het Cookiebeleid"
 msgid "plugins"
 msgstr "plugins"
 
-#: callback-notices.php:373
+#: callback-notices.php:374
 msgid "You have selected options that indicate your site processes sensitive, personal data. You should select 'Yes'"
 msgstr "Je hebt opties geselecteerd die aangeven dat je site bijzondere persoonsgegevens verwerkt. Het antwoord zou 'Ja' moeten zijn"
 
@@ -1800,11 +1799,11 @@ msgstr "Je hebt opties geselecteerd die aangeven dat je site bijzondere persoons
 msgid "services"
 msgstr "diensten"
 
-#: templates/integrations/services.php:15 templates/integrations/plugins.php:4
+#: templates/integrations/plugins.php:4 templates/integrations/services.php:15
 msgid "Enabled %s will be blocked on the front-end of your website until the user has given consent (opt-in), or after the user has revoked consent (opt-out). When possible a placeholder is activated. You can also disable or configure the placeholder to your liking."
 msgstr "Ingeschakelde %s worden aan de front-end van de website geblokkeerd totdat de gebruiker toestemming heeft gegeven (opt-in), of nadat de gebruiker zijn toestemming heeft ingetrokken (opt-out). Indien mogelijk wordt een plaatsvervangende afbeelding geactiveerd. Je kunt de plaatshouder ook naar wens uitschakelen of configureren."
 
-#: functions.php:2109
+#: functions.php:2130
 msgid "Opt-in statistics"
 msgstr "Opt-in statistieken"
 
@@ -1824,15 +1823,15 @@ msgstr "Klik om marketing cookies te accepteren en dit formulier te activeren"
 msgid "Proof of consent generation failed. Check your write permissions in the uploads directory"
 msgstr "Bewijs van toestemming genereren mislukt. Check je schrijfbevoegdheden in de uploads map"
 
-#: cookie/class-cookie-admin.php:608
+#: cookie/class-cookie-admin.php:617
 msgid "View service on cookiedatabase.org"
 msgstr "Bekijk dienst op cookiedatabase.org"
 
-#: cookie/class-cookie-admin.php:482
+#: cookie/class-cookie-admin.php:491
 msgid "View cookie on cookiedatabase.org"
 msgstr "Bekijk cookie op cookiedatabase.org"
 
-#: class-review.php:90
+#: class-review.php:100
 msgid "Don't show again"
 msgstr "Niet weer vertonen"
 
@@ -1844,15 +1843,11 @@ msgstr "Het inschakelen van deze instelling verwijderd al je instellingen en Com
 msgid "Clear all data from Complianz on uninstall"
 msgstr "Wis alle data van Complianz bij deactivatie"
 
-#: config/questions-wizard.php:407
+#: config/questions-wizard.php:422
 msgid "Do you want to ask consent for statistics?"
 msgstr "Wil je toestemming vragen voor statistieken?"
 
-#: config/questions-wizard.php:68
-msgid "Do you target visitors from Germany and/or Austria?"
-msgstr "Richt je je op bezoekers uit Duitsland en/of Oostenrijk?"
-
-#: config/questions-wizard.php:41
+#: config/questions-wizard.php:42
 msgid "The plugin will apply the above-selected region's settings to all visitors worldwide."
 msgstr "De plugin zal de instellingen van de hierboven geselecteerde regio toepassen op alle bezoekers van de website."
 
@@ -1860,16 +1855,12 @@ msgstr "De plugin zal de instellingen van de hierboven geselecteerde regio toepa
 msgid "Details per purpose"
 msgstr "Details per doel"
 
-#: callback-notices.php:80
-msgid "You have configured your statistics tracking privacy-friendly with Google Analytics. Therefore, in most EU countries, asking for consent for placing these particular cookies is generally not required. For some countries, like Germany, asking consent for Google Analytics is always required."
-msgstr "Je hebt het bijhouden van statistieken privacy vriendelijk ingesteld in Google Analytics. Daarom is het vragen van toestemming in de meeste EU-landen niet verplicht. In sommige landen, zoals Duitsland, is het vragen van toestemming voor Google Analytics altijd verplicht."
-
 #: integrations/plugins/google-analytics-dashboard-for-wp.php:86
 msgid "You have selected you do not share data with third-party networks. Display advertising is now disabled in %s."
 msgstr "Je hebt geselecteerd dat je geen gegevens deelt met netwerken van derden. Display adverteren is nu uitgeschakeld in %s."
 
-#: integrations/plugins/google-tagmanager-for-wordpress.php:139
 #: integrations/plugins/google-analytics-dashboard-for-wp.php:82
+#: integrations/plugins/google-tagmanager-for-wordpress.php:139
 msgid "You have selected you anonymize IP addresses. This setting is now enabled in %s."
 msgstr "Je hebt geselecteerd dat je IP adressen anonimiseert. Deze instelling is nu ingeschakeld in %s."
 
@@ -1877,15 +1868,15 @@ msgstr "Je hebt geselecteerd dat je IP adressen anonimiseert. Deze instelling is
 msgid "You haven't accepted the usage of the cookiedatabase.org API. To automatically complete your cookie descriptions, please choose yes in the integrations step."
 msgstr "Je hebt nog geen toestemming gegeven voor de cookiedatabase.org API. Om je cookiebeschrijvingen automatisch in te vullen, kies Ja bij de stap integraties."
 
-#: config/warnings.php:86 config/class-config.php:576
+#: config/class-config.php:583 config/warnings.php:86
 msgid "You have a duplicate implementation of your statistics tool on your site."
 msgstr "Je hebt een dubbele implementatie van je statistieken tool op je website."
 
-#: config/warnings.php:76 config/class-config.php:564
+#: config/class-config.php:571 config/warnings.php:76
 msgid "Enable the cookiedatabase.org API for automatic descriptions, or add these %smanually%s."
 msgstr "Schakel de cookiedatabase.org API in voor automatische beschrijvingen, of voeg deze %shandmatig%s toe."
 
-#: config/warnings.php:74 config/class-config.php:563
+#: config/class-config.php:570 config/warnings.php:74
 msgid "You have cookies with incomplete descriptions."
 msgstr "Je hebt cookies met incomplete beschrijvingen"
 
@@ -1901,32 +1892,33 @@ msgstr "(delen van) URL's of unieke delen van inline scripts van third party scr
 msgid "Scripts to add services, for example, Facebook Pixel, Hotjar, etcetera."
 msgstr "Scripts om services toe te voegen, zoals Facebook Pixel, Hotjar en anderen."
 
-#: config/questions-wizard.php:728
+#: config/questions-wizard.php:738
 msgid "Add the services to which your cookies belong here"
 msgstr "Voeg hier de services toe waar de cookies bij horen "
 
-#: config/questions-wizard.php:262
+#: config/questions-wizard.php:277
 msgid "Without the API, you will have to manually describe all found cookies, their purpose, function, service and service types. "
 msgstr "Zonder gebruik van de API dien je handmatig cookiebeschrijvingen toe te voegen, inclusief het doel, de functie, de dienst en het type dienst."
 
-#: config/questions-wizard.php:261
+#: config/questions-wizard.php:276
 msgid "Do you consent to the use of the cookiedatabase.org API?"
 msgstr "Verleen je toestemming voor het gebruik van de cookiedatabase.org API?"
 
-#: config/steps.php:86
+#: config/steps.php:90
 msgctxt "intro used cookies"
 msgid "Below services use cookies on your website to add functionality. You can use cookiedatabase.org to synchronize information or edit the service if needed. Unknown services will be moderated and added by cookiedatabase.org as soon as possible."
 msgstr "Onderstaande diensten gebruiken cookies op je website om functionaliteiten toe te voegen. Je kunt cookiedatabase.org gebruiken om informatie te synchroniseren, of de dienst aan te passen indien nodig. Onbekende diensten zullen zo spoedig mogelijk beheerd en toegevoegd worden aan cookiedatabase.org."
 
+#: config/documents/cookie-policy-us.php:205
+#: config/documents/cookie-policy-eu.php:178
+#: config/documents/cookie-policy-au.php:144
 #: config/documents/cookie-policy-uk.php:174
 #: config/documents/cookie-policy-ca.php:163
-#: config/documents/cookie-policy-eu.php:178
-#: config/documents/cookie-policy-us.php:205
 msgctxt "Legal document cookie policy"
 msgid "This Cookie Policy was synchronized with %scookiedatabase.org%s on %s"
 msgstr "Dit Cookiebeleid is gesynchroniseerd met %scookiedatabase.org%s op %s"
 
-#: config/questions-wizard.php:264
+#: config/questions-wizard.php:279
 msgid "Complianz provides your Cookie Policy with comprehensive cookie descriptions, supplied by %scookiedatabase.org%s. We connect to this open-source database using an external API, which sends the results of the cookiescan (a list of found cookies, used plugins and your domain) to cookiedatabase.org, for the sole purpose of providing you with accurate descriptions and keeping them up-to-date at a weekly schedule. For more information, read the %sPrivacy Statement%s"
 msgstr "Complianz voorziet je Cookiebeleid van uitgebreide cookiebeschrijvingen, afkomstig van %scookiedatabase.org%s. We sturen de resultaten van de cookiescan (een lijst van gevonden cookies, gebruikte plugins en de domeinnaam) via een externe API naar cookiedatabase.org, met als enige doel om je te voorzien van accurate beschrijvingen en deze wekelijks up to date te houden. Voor meer informatie, lees de %sPrivacyverklaring%s"
 
@@ -1946,143 +1938,143 @@ msgstr "Je server heeft geen cURL geïnstalleerd, wat vereist is voor de synchro
 msgid "Synchronization disabled: This happens when all cookies have synchronized to cookiedatabase.org in the last week."
 msgstr "Synchronisatie uitgeschakeld: Dit gebeurt wanneer alle cookies in de afgelopen week zijn gesynchroniseerd met cookiedatabase.org."
 
-#: config/questions-wizard.php:292
+#: config/questions-wizard.php:307
 msgid "If you want to clear all cookies from the plugin, you can do so here. You'll need to run a scan again afterwards. If you want to start with a clean slate, you might need to clear your browsercache, to make sure all cookies are removed from your browser as well."
 msgstr "Als je alle cookies uit de plugin wilt verwijderen dan kan dat hier. Je zult achteraf een nieuwe scan moeten uitvoeren. Als je echt een betrouwbare nieuwe scan wilt uitvoeren valt het aan te raden om je browsercache te legen, om er zeker van te zijn dat oude cookies uit je browser zijn verwijderd."
 
-#: cookie/class-cookie-admin.php:3484
+#: cookie/class-cookie-admin.php:3465
 msgid "Clear cookies"
 msgstr "Cookies wissen"
 
-#: cookie/class-cookie-admin.php:3483
+#: cookie/class-cookie-admin.php:3464
 msgid "Are you sure? This will permanently delete the list of cookies."
 msgstr "Weet je het zeker? Dit zal de lijst met cookies permanent verwijderen."
 
-#: callback-notices.php:139
+#: callback-notices.php:140
 msgid "Your server does not have CURL installed, which is required for the scan. Please contact your hosting company to install CURL."
 msgstr "Je server heeft geen cURL geïnstalleerd, wat vereist is voor de scan. Neem contact op met je hosting provider om cURL te installeren."
 
-#: cookie/class-cookie-admin.php:3163
+#: cookie/class-cookie-admin.php:3144
 msgid "(not synced yet)"
 msgstr "(nog niet gesynchroniseerd)"
 
-#: cookie/class-cookie-admin.php:2819
+#: cookie/class-cookie-admin.php:2800
 msgid "Purpose pending investigation"
 msgstr "Doel wordt onderzocht"
 
-#: cookie/class-cookie-admin.php:1066 cookie/class-cookie-admin.php:1351
+#: cookie/class-cookie-admin.php:1073 cookie/class-cookie-admin.php:1349
 msgid "Could not connect to cookiedatabase.org"
 msgstr "Kon niet verbinden met cookiedatabase.org"
 
-#: cookie/class-cookie-admin.php:1025 cookie/class-cookie-admin.php:1311
+#: cookie/class-cookie-admin.php:1032 cookie/class-cookie-admin.php:1309
 msgid "A request is already running. Please be patient until the current request finishes"
 msgstr "Er loopt al een verzoek. Wacht aub tot het huidige verzoek is verwerkt."
 
-#: cookie/class-cookie-admin.php:712 cookie/class-cookie-admin.php:840
+#: cookie/class-cookie-admin.php:719 cookie/class-cookie-admin.php:847
 msgid "Cookies without selected service"
 msgstr "Cookies zonder geselecteerde dienst"
 
-#: cookie/class-cookie-admin.php:658
+#: cookie/class-cookie-admin.php:667
 msgid "Service \"%s\""
 msgstr "Dienst \"%s\""
 
-#: cookie/class-cookie-admin.php:651
+#: cookie/class-cookie-admin.php:660
 msgid "Synchronization with cookiedatabase.org is not enabled for this service"
 msgstr "Synchroniseren met cookiedatabase.org is niet ingeschakeld voor deze dienst"
 
-#: cookie/class-cookie-admin.php:655
+#: cookie/class-cookie-admin.php:664
 msgid "This service is not synchronized with cookiedatabase.org"
 msgstr "Deze dienst wordt niet gesynchroniseerd met cookiedatabase.org"
 
-#: cookie/class-cookie-admin.php:653
+#: cookie/class-cookie-admin.php:662
 msgid "This service has been synchronized with cookiedatabase.org"
 msgstr "Deze dienst is gesynchroniseerd met cookiedatabase.org"
 
-#: cookie/class-cookie-admin.php:647
+#: cookie/class-cookie-admin.php:656
 msgid "This service has missing fields"
 msgstr "Deze dienst is incompleet"
 
-#: cookie/class-cookie-admin.php:645
+#: cookie/class-cookie-admin.php:654
 msgid "The data for this service is complete"
 msgstr "De informatie voor deze dienst is compleet"
 
-#: cookie/class-cookie-admin.php:556
+#: cookie/class-cookie-admin.php:565
 msgid "Cookie \"%s\"%s%s"
 msgstr "Cookie \"%s\"%s%s"
 
-#: cookie/class-cookie-admin.php:554
+#: cookie/class-cookie-admin.php:563
 msgid "(Logged in users only, will be ignored)"
 msgstr "(Alleen voor ingelogde gbruikers, wordt genegeerd)"
 
-#: cookie/class-cookie-admin.php:552
+#: cookie/class-cookie-admin.php:561
 msgid "(Administrator cookie, will be ignored)"
 msgstr "(Admin cookie, wordt genegeerd)"
 
-#: cookie/class-cookie-admin.php:549
+#: cookie/class-cookie-admin.php:558
 msgid "This cookie has not been found in the scan for three months. Please check if you are still using this cookie"
 msgstr "Dit cookie is de afgelopen drie maanden niet gedetecteerd op je site. Kijk aub na of dit cookie nog in gebruik is."
 
-#: cookie/class-cookie-admin.php:546
+#: cookie/class-cookie-admin.php:555
 msgid "This cookie has not been detected on your site in the last three months"
 msgstr "Dit cookie is de afgelopen drie maanden niet gedetecteerd op je site"
 
-#: cookie/class-cookie-admin.php:544
+#: cookie/class-cookie-admin.php:553
 msgid "This cookie has recently been detected"
 msgstr "Dit cookie is recent gedetecteerd"
 
-#: cookie/class-cookie-admin.php:540
+#: cookie/class-cookie-admin.php:549
 msgid "This cookie is not shown on the Cookie Policy"
 msgstr "Dit cookie wordt niet getoond in het Cookiebeleid"
 
-#: cookie/class-cookie-admin.php:538
+#: cookie/class-cookie-admin.php:547
 msgid "This cookie will be on your Cookie Policy"
 msgstr "Dit cookie wordt vertoond op je Cookiebeleid"
 
-#: cookie/class-cookie-admin.php:530
+#: cookie/class-cookie-admin.php:539
 msgid "Synchronization with cookiedatabase.org is not enabled for this cookie"
 msgstr "Synchroniseren met cookiedatabase.org is niet ingeschakeld voor dit cookie"
 
-#: cookie/class-cookie-admin.php:534
+#: cookie/class-cookie-admin.php:543
 msgid "This cookie is not yet synchronized with cookiedatabase.org."
 msgstr "Dit cookie is niet gesynchroniseerd met cookiedatabase.org."
 
-#: cookie/class-cookie-admin.php:532
+#: cookie/class-cookie-admin.php:541
 msgid "This cookie has been synchronized with cookiedatabase.org."
 msgstr "Dit cookie is gesynchroniseerd met cookiedatabase.org."
 
-#: cookie/class-cookie-admin.php:526
+#: cookie/class-cookie-admin.php:535
 msgid "This cookie has missing fields"
 msgstr "Dit cookie is incompleet"
 
-#: cookie/class-cookie-admin.php:524
+#: cookie/class-cookie-admin.php:533
 msgid "The data for this cookie is complete"
 msgstr "De informatie voor dit cookie is compleet"
 
-#: cookie/class-cookie-admin.php:433
+#: cookie/class-cookie-admin.php:442
 msgid "No purposes listed"
 msgstr "Geen doelen "
 
-#: cookie/class-cookie-admin.php:389
+#: cookie/class-cookie-admin.php:398
 msgid "Select a purpose"
 msgstr "Selecteer een doel"
 
-#: cookie/class-cookie-admin.php:367
+#: cookie/class-cookie-admin.php:376
 msgid "No service types listed"
 msgstr "Geen diensttypen"
 
-#: cookie/class-cookie-admin.php:322
+#: cookie/class-cookie-admin.php:331
 msgid "Select a service type"
 msgstr "Selecteer een diensttype"
 
-#: cookie/class-cookie-admin.php:299
+#: cookie/class-cookie-admin.php:308
 msgid "No services listed"
 msgstr "Geen diensten"
 
-#: cookie/class-cookie-admin.php:283
+#: cookie/class-cookie-admin.php:292
 msgid "Select or add a service"
 msgstr "Selecteer of voeg een dienst toe"
 
-#: cookie/class-cookie.php:320 cookie/class-cookie.php:376
+#: cookie/class-cookie.php:320 cookie/class-cookie.php:375
 msgid "%s days"
 msgstr "%s dagen"
 
@@ -2126,7 +2118,7 @@ msgstr "Diensttype"
 msgid "Function"
 msgstr "Functie"
 
-#: templates/cookiepolicy_cookies_row.php:6 templates/cookie_settings.php:19
+#: templates/cookie_settings.php:19 templates/cookiepolicy_cookies_row.php:6
 msgid "Retention"
 msgstr "Retentie"
 
@@ -2138,25 +2130,25 @@ msgstr "Het document wordt niet up to date gehouden door Complianz"
 msgid "Document is kept up to date by Complianz"
 msgstr "Het document wordt up to date gehouden door Complianz"
 
-#: templates/dashboard/documents.php:47 templates/dashboard/documents.php:79
-#: templates/dashboard/documents.php:99 class-document.php:1697
+#: class-document.php:1697 templates/dashboard/documents.php:47
+#: templates/dashboard/documents.php:79 templates/dashboard/documents.php:99
 msgid "Click to copy the document shortcode"
 msgstr "Klik om de document shortcode te kopiëren"
 
-#: functions.php:1734
+#: functions.php:1754
 msgctxt "Legal document cookie policy"
 msgid "We use %s for %s."
 msgstr "We gebruiken %s voor %s."
 
-#: functions.php:1727
+#: functions.php:1747
 msgid "This data is not shared with third parties."
 msgstr "Deze data wordt niet gedeeld met derde partijen."
 
-#: functions.php:1723
+#: functions.php:1743
 msgid "For more information, please read the %s%s Privacy Statement%s."
 msgstr "Voor meer informatie, lees de %s%s Privacyverklaring%s."
 
-#: functions.php:1714
+#: functions.php:1734
 msgid "Miscellaneous"
 msgstr "Diversen"
 
@@ -2217,7 +2209,7 @@ msgstr "Excuses, het is niet gelukt om de Complianz integratie te activeren"
 msgid "Integrate Forminator with Complianz Privacy Suite"
 msgstr "Integreer Forminator met Complianz Privacy Suite"
 
-#: callback-notices.php:211
+#: callback-notices.php:212
 msgid "Because your site uses third-party cookies, the cookie blocker is now activated. If you experience issues on the front-end of your site due to blocked scripts, you can disable specific services or plugin integrations in the %sintegrations section%s, or you can disable the cookie blocker entirely on the %ssettings page%s"
 msgstr "Omdat je site third-party cookies gebruikt is de cookie blocker nu geactiveerd. Indien je problemen ervaart aan de front-end van je website door geblokkeerde scripts kun je het blokkeren van specifieke diensten of plugins uitschakelen via de %sintegraties sectie%s. Je kunt ook de cookie blocker volledig uitschakelen via de %sinstellingen pagina%s"
 
@@ -2225,7 +2217,7 @@ msgstr "Omdat je site third-party cookies gebruikt is de cookie blocker nu geact
 msgid "You have selected you anonymize IP addresses. This setting is now enabled in MonsterInsights."
 msgstr "Je hebt aangegeven dat je IP adressen anonimiseert. Deze instelling is zojuist ingeschakeld in Monsterinsights."
 
-#: config/documents/documents.php:29
+#: config/documents/documents.php:30
 msgid "Cookie Policy (UK)"
 msgstr "Cookiebeleid (VK)"
 
@@ -2233,19 +2225,19 @@ msgstr "Cookiebeleid (VK)"
 msgid "Cookie Policy (EU)"
 msgstr "Cookiebeleid (EU)"
 
-#: config/questions-wizard.php:606
+#: config/questions-wizard.php:616
 msgid "Checking services here will add the associated cookies to your Cookie Policy, and block the service until consent is given (opt-in), or after consent is revoked (opt-out)"
 msgstr "Diensten die je hier aanvinkt zal de bijbehorende cookies toevoegen aan je Cookiebeleid en deze blokkeren tot bezoekers toestemming hebben gegeven (opt in) of ingetrokken (opt uit)"
 
-#: config/questions-wizard.php:573
+#: config/questions-wizard.php:583
 msgid "You can configure Hotjar privacy-friendly, if you do this, no consent is required for Hotjar."
 msgstr "Je kunt Hotjar privacyvriendelijk configureren, als je dit doet, is er geen toestemming vereist voor Hotjar."
 
-#: config/questions-wizard.php:571
+#: config/questions-wizard.php:581
 msgid "Is Hotjar configured in a privacy-friendly way?"
 msgstr "Is Hotjar privacyvriendelijk geconfigureerd?"
 
-#: config/questions-wizard.php:531
+#: config/questions-wizard.php:541
 msgid "Checking services here will add the associated cookies to your Cookie Policy, and block the service until consent is given (opt-in), or after consent is revoked (opt-out)."
 msgstr "Diensten die je hier aanvinkt zal de bijbehorende cookies toevoegen aan je Cookiebeleid en deze blokkeren tot bezoekers toestemming hebben gegeven (opt in) of ingetrokken (opt uit)"
 
@@ -2257,7 +2249,7 @@ msgstr "UK-GDPR"
 msgid "UK"
 msgstr "UK"
 
-#: config/steps.php:67
+#: config/steps.php:69
 msgid "Statistics - configuration"
 msgstr "Statistieken - Configuratie"
 
@@ -2294,16 +2286,16 @@ msgstr "Goed gedaan! Jouw website is klaar voor de geselecteerde regio's."
 msgid "Your website is not ready for your selected regions yet."
 msgstr "Jouw website is nog niet klaar voor de geselecteerde regio's."
 
+#: config/steps.php:75 shepherd/tour.php:95
 #: integrations/integrations-menu.php:8 integrations/integrations-menu.php:9
-#: config/steps.php:71 shepherd/tour.php:95
 msgid "Integrations"
 msgstr "Integraties"
 
-#: callback-notices.php:311 callback-notices.php:330
+#: callback-notices.php:312 callback-notices.php:331
 msgid "Categories are mandatory for your statistics configuration"
 msgstr "Categorieën zijn verplicht voor jouw statistieken configuratie"
 
-#: callback-notices.php:307 callback-notices.php:326
+#: callback-notices.php:308 callback-notices.php:327
 msgid "If you want to specify the categories used by Tag Manager, you need to enable categories."
 msgstr "Als je de categorieën wilt opgeven die door Tag Manager worden gebruikt, moet je categorieën inschakelen."
 
@@ -2331,36 +2323,36 @@ msgstr "Genereer nu"
 msgid "Proof of consent updated!"
 msgstr "Bewijs van toestemming vernieuwd!"
 
-#: proof-of-consent/class-cookiestatement-snapshot-table.php:173
 #: class-cookiestatement-snapshot-table.php:171
+#: proof-of-consent/class-cookiestatement-snapshot-table.php:173
 msgid "Created"
 msgstr "Gemaakt"
 
-#: proof-of-consent/class-cookiestatement-snapshot-table.php:172
 #: class-cookiestatement-snapshot-table.php:170
+#: proof-of-consent/class-cookiestatement-snapshot-table.php:172
 msgid "File"
 msgstr "Bestand"
 
-#: proof-of-consent/class-cookiestatement-snapshot-table.php:146
 #: class-cookiestatement-snapshot-table.php:144
+#: proof-of-consent/class-cookiestatement-snapshot-table.php:146
 msgid "File not found"
 msgstr "Bestand niet gevonden"
 
-#: proof-of-consent/class-cookiestatement-snapshot-table.php:103
 #: class-cookiestatement-snapshot-table.php:100
+#: proof-of-consent/class-cookiestatement-snapshot-table.php:103
 msgid "Search"
 msgstr "Zoeken"
 
-#: cookiebanner/settings.php:495
+#: cookiebanner/settings.php:497
 msgid "Show as soft cookie wall"
 msgstr "Vertoon als 'soft cookiewall'"
 
-#: config/countries.php:211
+#: config/countries.php:218
 msgid "North Macedonia"
 msgstr "Noord Macedonië"
 
-#: config/documents/cookie-policy-ca.php:23
 #: config/documents/cookie-policy-eu.php:18
+#: config/documents/cookie-policy-ca.php:23
 msgctxt "Legal document cookie policy"
 msgid "A script is a piece of program code that is used to make our website function properly and interactively. This code is executed on our server or on your device."
 msgstr "Een script is een stukje programmacode dat wordt gebruikt om onze website goed te laten functioneren en interactief te maken. Deze code wordt uitgevoerd op onze server, of op uw apparatuur."
@@ -2381,11 +2373,11 @@ msgstr "Via uw internetbrowser kunt u cookies automatisch of handmatig verwijder
 msgid "The email address will be obfuscated on the front-end to prevent spidering."
 msgstr "Het e-mail adres wordt verborgen aan de front-end om spidering te voorkomen."
 
-#: config/questions-wizard.php:690
+#: config/questions-wizard.php:700
 msgid "If you enable this, WordPress will not store personal data with comments and you won't need a consent checkbox for the comment form. The consent box will not be displayed."
 msgstr "Als je dit inschakelt, zal WordPress geen persoonlijke data opslaan met reacties en heb je geen checkbox nodig voor toestemming bij het reactieformulier. Het vinkje zal niet worden weergeven."
 
-#: callback-notices.php:175
+#: callback-notices.php:176
 msgid "Your site uses Google Fonts. For best privacy compliance, we recommend to self host Google Fonts. To self host, follow the instructions in %sthis article%s"
 msgstr "Je site gebruikt Google Fonts. Om volledig aan privacywetgeving te voldoen raden we aan om Google Fonts te zelf-hosten. Lees %sdit artikel%s voor meer informatie."
 
@@ -2401,10 +2393,10 @@ msgstr "Indien je styling problemen ervaart met video's of iFrames dan kun je de
 msgid "Disable placeholder insertion"
 msgstr "Schakel placeholder uit"
 
+#: config/documents/cookie-policy-us.php:149
+#: config/documents/cookie-policy-eu.php:92
 #: config/documents/cookie-policy-uk.php:90
 #: config/documents/cookie-policy-ca.php:93
-#: config/documents/cookie-policy-eu.php:92
-#: config/documents/cookie-policy-us.php:149
 msgid "%s is located in the United States."
 msgid_plural "%s are located in the United States."
 msgstr[0] "%s is gevestigd in de Verenigde Staten."
@@ -2414,14 +2406,14 @@ msgstr[1] "%s zijn gevestigd in de Verenigde Staten."
 msgid "Please read the privacy statement of these social networks (which can change regularly) to read what they do with your (personal) data which they process using these cookies. The data that is retrieved is anonymized as much as possible."
 msgstr "Leest u de privacyverklaring van deze partijen door (welke regelmatig kunnen wijzigen) om te weten wat zij met uw (persoons)gegevens doen die zij via deze cookies verwerken. De informatie die zij verzamelen, wordt zo veel mogelijk geanonimiseerd."
 
-#: config/documents/cookie-policy-ca.php:88
 #: config/documents/cookie-policy-eu.php:87
+#: config/documents/cookie-policy-ca.php:88
 msgctxt "Legal document cookie policy"
 msgid "On our website we have included buttons for %s to promote webpages (e.g. “like”, “pin”) or share (e.g. “tweet”) on social networks like %s. These buttons work using pieces of code coming from %s themselves. This code places cookies. These social media buttons also can store and process certain information, so a personalized advertisement can be shown to you."
 msgstr "Op onze website zijn buttons opgenomen van %s om webpagina’s te kunnen promoten (o.a. “liken”, “pinnen”) of delen (o.a. “tweeten”) op sociale netwerken zoals %s. Deze buttons werken door middel van stukjes code die van %s zelf afkomstig zijn. Door middel van deze code worden cookies geplaatst. De social media buttons kunnen ook bepaalde gegevens opslaan en verwerken, zodat er aan u gepersonaliseerde advertenties getoond kunnen worden. "
 
-#: config/documents/cookie-policy-ca.php:63
 #: config/documents/cookie-policy-eu.php:64
+#: config/documents/cookie-policy-ca.php:63
 msgctxt "Legal document cookie policy"
 msgid "On this website we use advertising cookies, enabling us to gain insights into the campaign results. This happens based on a profile we create based on your behavior on %s. With these cookies you, as website visitor, are linked to a unique ID but these cookies will not profile your behavior and interests to serve personalized ads."
 msgstr "Op deze website gebruiken wij advertentiecookies, waarmee wij inzicht vergaren in campagneresultaten. Dit gebeurt gebaseerd op een profiel die wij creëren op basis van je browsegedrag op %s. Met deze cookies wordt je als websitebezoeker gelinkt aan een unieke ID. Echter profileren we je niet met als doel om gepersonaliseerde advertenties te tonen."
@@ -2446,15 +2438,15 @@ msgstr "Beschrijvende titel van de cookie banner"
 msgid "Cookie banner title"
 msgstr "Cookie banner titel"
 
-#: config/questions-wizard.php:653
+#: config/questions-wizard.php:663
 msgid "If you only use Google for advertising, and have activated the option to use only non personalized ads, you can select no here."
 msgstr "Als je Google alleen gebruikt om te adverteren en deze hebt ingesteld om enkel niet-gepersonaliseerde advertenties te tonen, dan kun je hier nee selecteren."
 
-#: config/questions-wizard.php:651
+#: config/questions-wizard.php:661
 msgid "Are any of your advertising cookies used to show personalized ads?"
 msgstr "Worden sommige van je advertentiecookies gebruikt om gepersonaliseerde advertenties te laten zien?"
 
-#: config/questions-wizard.php:671
+#: config/questions-wizard.php:681
 msgid "Does your website use WordPress comments?"
 msgstr "Maakt je website gebruik van de WordPress reacties functie?"
 
@@ -2475,8 +2467,8 @@ msgstr "Filter"
 msgid "Cookie banner settings"
 msgstr "Cookie banner instellingen"
 
-#: templates/dashboard/progress-footer.php:18 cookiebanner/cookiebanner.php:86
-#: cookiebanner/cookiebanner.php:87
+#: cookiebanner/cookiebanner.php:86 cookiebanner/cookiebanner.php:87
+#: templates/dashboard/progress-footer.php:18
 msgid "Cookie banner"
 msgstr "Cookie banner"
 
@@ -2497,14 +2489,14 @@ msgstr "Naamloze cookie banner"
 msgid "Archive"
 msgstr "Archief"
 
-#: templates/cookie_settings.php:93
 #: cookiebanner/class-cookiebanner-table.php:177
+#: templates/cookie_settings.php:93
 msgid "Restore"
 msgstr "Herstel"
 
 #: cookiebanner/class-cookiebanner-table.php:137
-#: proof-of-consent/class-cookiestatement-snapshot-table.php:121
 #: class-cookiestatement-snapshot-table.php:118
+#: proof-of-consent/class-cookiestatement-snapshot-table.php:121
 msgid "name"
 msgstr "naam"
 
@@ -2517,15 +2509,15 @@ msgid "Active cookiebanners"
 msgstr "Actieve cookiebanners"
 
 #: cookiebanner/class-cookiebanner-table.php:74
-#: proof-of-consent/class-cookiestatement-snapshot-table.php:68
 #: class-cookiestatement-snapshot-table.php:66
+#: proof-of-consent/class-cookiestatement-snapshot-table.php:68
 msgid "Cookiebanners"
 msgstr "Cookiebanners"
 
 #: cookiebanner/class-cookiebanner-table.php:73
 #: cookiebanner/cookiebanner.php:314
-#: proof-of-consent/class-cookiestatement-snapshot-table.php:67
 #: class-cookiestatement-snapshot-table.php:65
+#: proof-of-consent/class-cookiestatement-snapshot-table.php:67
 msgid "Cookiebanner"
 msgstr "Cookiebanner"
 
@@ -2533,15 +2525,15 @@ msgstr "Cookiebanner"
 msgid "Complianz GDPR Cookie Consent does not process any personally identifiable information, which means there's no need to add text about this plugin to your Privacy Statement. The used cookies (all functional) will be added to your Cookie Policy automatically. You can find our Privacy Statement %shere%s."
 msgstr "Complianz GDPR Cookie Consent verwerkt geen persoonlijk identificeerbare informatie, wat betekent dat het niet nodig is om tekst over deze plugin toe te voegen aan je Privacyverklaring. De gebruikte cookies (allemaal functioneel) worden automatisch toegevoegd aan je Cookiebeleid. Je vindt onze Privacyverklaring %shier%s."
 
-#: functions.php:2230
+#: functions.php:2252
 msgid "All consent types"
 msgstr "alle consent typen"
 
-#: functions.php:2107 functions.php:2226
+#: functions.php:2128 functions.php:2248
 msgid "Opt-out"
 msgstr "Opt-out"
 
-#: functions.php:2112 functions.php:2224
+#: functions.php:2133 functions.php:2246
 msgid "Opt-in"
 msgstr "Opt- in"
 
@@ -2557,7 +2549,7 @@ msgstr "Complianz GDPR kan niet geactiveerd worden. De plugin vereist WordPress 
 msgid "Complianz GDPR cannot be activated. The plugin requires PHP 5.6 or higher"
 msgstr "Complianz GDPR kan niet geactiveerd worden. De plugin vereist PHP 5.6 of hoger."
 
-#: cron/cron.php:44
+#: cron/cron.php:43
 msgid "Once every month"
 msgstr "Eens per maand"
 
@@ -2567,18 +2559,18 @@ msgstr "Geblokkeerde inhoud tekst"
 
 #: config/documents/cookie-policy-eu.php:46
 msgctxt "Legal document cookie policy"
-msgid "Because statistics are being tracked anonymously, no permission is asked to place analytical cookies."
+msgid "Because statistics are being tracked anonymously, no permission is asked to place statistics cookies."
 msgstr "Omdat statistieken anoniem worden verzameld, wordt er geen toestemming gevraagd voor het plaatsen van analytische cookies."
 
 #: config/documents/cookie-policy-eu.php:39
 msgctxt "Legal document cookie policy"
-msgid "We ask your permission to place analytical cookies."
+msgid "We ask your permission to place statistics cookies."
 msgstr "Wij vragen je toestemming om analytische cookies te plaatsen."
 
-#: config/documents/cookie-policy-ca.php:46
 #: config/documents/cookie-policy-eu.php:38
+#: config/documents/cookie-policy-ca.php:46
 msgctxt "Legal document cookie policy"
-msgid "We use analytical cookies to optimize the website experience for our users. With these analytical cookies we get insights in the usage of our website."
+msgid "We use statistics cookies to optimize the website experience for our users. With these statistics cookies we get insights in the usage of our website."
 msgstr "Analytische cookies gebruiken wij om onze website zo goed mogelijk te laten aansluiten bij de wensen van onze bezoekers. Wij krijgen door middel van analytische cookies inzicht in het gebruik van onze website. Voor het plaatsen van analytische cookies vragen wij uw toestemming."
 
 #: cookiebanner/settings.php:811
@@ -2593,11 +2585,11 @@ msgstr "Wanneer \"Verbergen na timeout\" is ingeschakeld wordt de cookie banner 
 msgid "Dismiss on time out"
 msgstr "Verbergen na timeout"
 
-#: cookiebanner/settings.php:774
+#: cookiebanner/settings.php:787
 msgid "When dismiss on scroll is enabled, the cookie banner will be dismissed as soon as the user scrolls."
 msgstr "Wanneer \"Verbergen na scrollen\" is ingeschakeld, wordt de cookie banner verborgen zodra de gebruiker scrollt."
 
-#: cookiebanner/settings.php:773
+#: cookiebanner/settings.php:786
 msgid "Dismiss on scroll"
 msgstr "Verbergen bij scrollen"
 
@@ -2605,7 +2597,7 @@ msgstr "Verbergen bij scrollen"
 msgid "Are you sure? This will remove all Complianz data."
 msgstr "Weet je het zeker? Dit zal alle gegevens uit Complianz verwijderen"
 
-#: config/questions-wizard.php:423
+#: config/questions-wizard.php:434
 msgid "Do you want Complianz to configure your statistics?"
 msgstr "Wil je Complianz je statistieken laten configureren?"
 
@@ -2621,7 +2613,7 @@ msgstr "Complianz | GDPR/CCPA Cookie Consent"
 msgid "Privacy Statements"
 msgstr "Privacyverklaringen"
 
-#: config/questions-wizard.php:426
+#: config/questions-wizard.php:436
 msgid "It's recommended to let Complianz handle the statistics script. This way, the plugin can detect if it needs to be hooked into the cookie consent code or not. But if you have set it up yourself and don't want to change this, you can choose to do so"
 msgstr "Het is aan te raden om Complianz het statistieken-script te laten verwerken. Op deze manier kan de plugin detecteren of de plugin al dan niet in de toestemmingscode van de cookie moet worden gekoppeld. Maar als je het zelf hebt ingesteld en dit niet wilt veranderen, kun je ervoor kiezen om dit te doen"
 
@@ -2629,11 +2621,11 @@ msgstr "Het is aan te raden om Complianz het statistieken-script te laten verwer
 msgid "Website information"
 msgstr "Website informatie"
 
-#: functions.php:1149
+#: functions.php:1169
 msgid "For more information on this subject, please read this %sarticle%s."
 msgstr "Voor meer informatie over dit onderwerp, lees dit %sartikel%s."
 
-#: callback-notices.php:255
+#: callback-notices.php:256
 msgid "You have indicated you use a statistics tool which tracks personal data. You can insert this script here so it only fires if the user consents to this."
 msgstr "Je hebt aangegeven dat je een statistiekentool gebruikt die persoonsgegevens verzamelt. Je kunt het script hier invoeren om te zorgen dat het alleen wordt geplaatst na toestemming van de bezoeker."
 
@@ -2641,7 +2633,7 @@ msgstr "Je hebt aangegeven dat je een statistiekentool gebruikt die persoonsgege
 msgid "If you add the ID for your statistics tool here, Complianz will configure your site for statistics tracking."
 msgstr "Als je het ID van je statistiekentool hier invult, zal Complianz je site configureren voor het bijhouden van statistieken."
 
-#: class-admin.php:649
+#: class-admin.php:655
 msgid "Manage your privacy"
 msgstr "Beheer je privacy"
 
@@ -2666,11 +2658,11 @@ msgstr "email@email.com"
 msgid "Your name"
 msgstr "Je naam"
 
-#: cron/cron.php:52
+#: cron/cron.php:51
 msgid "Once every day"
 msgstr "Eens per dag"
 
-#: cron/cron.php:48
+#: cron/cron.php:47
 msgid "Once every week"
 msgstr "Eens per week"
 
@@ -2678,7 +2670,7 @@ msgstr "Eens per week"
 msgid "Privacy Statement for Children"
 msgstr "Privacyverklaring voor kinderen"
 
-#: class-admin.php:1254
+#: class-admin.php:1265
 msgid "Data"
 msgstr "Gegevens"
 
@@ -2706,24 +2698,24 @@ msgstr "Je kunt dit gebruiken om je instellingen te exporteren naar een andere s
 msgid "IP address"
 msgstr "IP adres"
 
-#: config/dynamic-fields.php:26
+#: config/dynamic-fields.php:27
 msgid "What data do you collect for this purpose?"
 msgstr "Welke gegevens verzamel je voor dit doel?"
 
-#: class-review.php:86
+#: class-review.php:96
 msgid "Maybe later"
 msgstr "misschien later"
 
-#: class-review.php:81
+#: class-review.php:91
 msgid "Leave a review"
 msgstr "laat een recensie achter"
 
-#: class-review.php:74
+#: class-review.php:84
 msgid "Hi, you have been using Complianz | GDPR cookie consent for a month now, awesome! If you have a moment, please consider leaving a review on WordPress.org to spread the word. We greatly appreciate it! If you have any questions or feedback, leave us a %smessage%s."
 msgstr "Je hebt Complianz nu een maand lang gebruikt, super! Als je een moment hebt, overweeg dan om een beoordeling achter te laten op WordPress.org. We zouden het enorm waarderen! Indien je vragen of feedback hebt, stuur ons een %sbericht%s."
 
-#: integrations/plugins/contact-form-7.php:190
 #: integrations/plugins/wpforms.php:61
+#: integrations/plugins/contact-form-7.php:190
 msgid "To submit this form, you need to accept our %sPrivacy Statement%s"
 msgstr "Als u dit formulier wilt verzenden, moet u onze %sPrivacyverklaring%s accepteren"
 
@@ -2775,11 +2767,11 @@ msgstr "Do Not Sell My Personal Information verzoeken"
 msgid "DNSMPI"
 msgstr "DNSMPI"
 
-#: DNSMPD/class-DNSMPD-table.php:150 templates/service_settings.php:52
-#: templates/cookie_settings.php:90
 #: cookiebanner/class-cookiebanner-table.php:210
-#: proof-of-consent/class-cookiestatement-snapshot-table.php:156
+#: DNSMPD/class-DNSMPD-table.php:150
 #: class-cookiestatement-snapshot-table.php:154
+#: templates/cookie_settings.php:90 templates/service_settings.php:52
+#: proof-of-consent/class-cookiestatement-snapshot-table.php:156
 msgid "Delete"
 msgstr "Verwijderen"
 
@@ -2799,39 +2791,39 @@ msgstr "Gebruiker"
 msgid "Complianz Privacy Suite for GDPR, CaCPA, DSVGO, AVG with a conditional cookie warning and customized cookie policy"
 msgstr "Complianz Privacy Suite voor AVG en CaCPA met een Cookie Melding en een speciaal gegenereerd Cookiebeleid."
 
-#: functions.php:1187
+#: functions.php:1207
 msgid "(select a region)"
 msgstr "(selecteer een regio)"
 
-#: functions.php:165
+#: functions.php:185
 msgid "Denied"
 msgstr "Geweigerd"
 
-#: functions.php:162
+#: functions.php:182
 msgid "Accepted"
 msgstr "Geaccepteerd"
 
-#: functions.php:161 functions.php:164
+#: functions.php:181 functions.php:184
 msgid "Current status: %s"
 msgstr "Huidige status: %s"
 
-#: config/warnings.php:69 config/class-config.php:555
+#: config/class-config.php:562 config/warnings.php:69
 msgid "Your documents have not been updated in the past 12 months. Run the wizard to check your settings."
 msgstr "Je documenten zijn de laatste 12 maanden niet geüpdatet. Loop de wizard door om je instellingen na te kijken. "
 
-#: config/warnings.php:21 config/class-config.php:455
+#: config/class-config.php:462 config/warnings.php:21
 msgid "Not all fields have been entered, or you have not clicked the \"finish\" button yet."
 msgstr "Niet alle velden zijn ingevoerd of u hebt nog niet op \"Voltooien\" geklikt."
 
-#: config/class-config.php:474
+#: config/class-config.php:481
 msgid "The browser setting Do Not Track is not respected yet - (%spremium%s)"
 msgstr "De browserinstelling Do Not Track wordt nog niet gerespecteerd - (%spremium%s)"
 
-#: config/class-config.php:473
+#: config/class-config.php:480
 msgid "Do Not Track is respected."
 msgstr "Do Not Track wordt gerespecteerd."
 
-#: config/steps.php:97
+#: config/steps.php:101
 msgctxt "intro menu"
 msgid "Get ready to finish your configuration."
 msgstr "Bereid je voor om je configuratie te voltooien."
@@ -2907,14 +2899,14 @@ msgctxt "Legal document cookie policy"
 msgid "Website:"
 msgstr "Website:"
 
-#: config/documents/cookie-policy-ca.php:149
 #: config/documents/cookie-policy-eu.php:165
+#: config/documents/cookie-policy-ca.php:149
 msgctxt "Legal document cookie policy:paragraph title"
 msgid "Contact details"
 msgstr "Contactinformatie"
 
-#: config/documents/cookie-policy-ca.php:144
 #: config/documents/cookie-policy-eu.php:156
+#: config/documents/cookie-policy-ca.php:144
 msgctxt "Legal document cookie policy:paragraph title"
 msgid "Enabling/disabling and deleting cookies"
 msgstr "Cookies in- / uitschakelen en verwijderen"
@@ -2934,14 +2926,14 @@ msgctxt "Legal document cookie policy"
 msgid "You have the right to know why your personal data is needed, what will happen to it, and how long it will be retained for."
 msgstr "U hebt het recht om te weten waarom uw persoonsgegevens nodig zijn, wat ermee gebeurt en hoe lang deze worden bewaard."
 
-#: config/documents/cookie-policy-ca.php:131
 #: config/documents/cookie-policy-eu.php:135
+#: config/documents/cookie-policy-ca.php:131
 msgctxt "Legal document cookie policy"
 msgid "You have the following rights with respect to your personal data:"
 msgstr "U heeft de volgende rechten met betrekking tot uw persoonsgegevens:"
 
-#: config/documents/cookie-policy-ca.php:128
 #: config/documents/cookie-policy-eu.php:133
+#: config/documents/cookie-policy-ca.php:128
 msgctxt "Legal document cookie policy:paragraph title"
 msgid "Your rights with respect to personal data"
 msgstr "Uw rechten met betrekking tot persoonsgegevens"
@@ -2951,14 +2943,14 @@ msgctxt "Legal document cookie policy"
 msgid "Sharing data"
 msgstr "Delen van gegevens"
 
-#: config/documents/cookie-policy-ca.php:98
 #: config/documents/cookie-policy-eu.php:97
+#: config/documents/cookie-policy-ca.php:98
 msgctxt "Legal document cookie policy:paragraph title"
 msgid "Placed cookies"
 msgstr "Geplaatste cookies"
 
-#: config/documents/cookie-policy-ca.php:87
 #: config/documents/cookie-policy-eu.php:86
+#: config/documents/cookie-policy-ca.php:87
 msgctxt "Legal document cookie policy:paragraph title"
 msgid "Social media buttons"
 msgstr "Social media knoppen"
@@ -2968,29 +2960,29 @@ msgctxt "Legal document cookie policy"
 msgid "Because these cookies are marked as tracking cookies, we ask your permission to place these."
 msgstr "Aangezien deze cookies worden aangemerkt als tracking cookies, vragen wij voor het plaatsen hiervan dan ook uw toestemming."
 
-#: config/documents/cookie-policy-ca.php:53
-#: config/documents/cookie-policy-ca.php:62
 #: config/documents/cookie-policy-eu.php:54
 #: config/documents/cookie-policy-eu.php:63
+#: config/documents/cookie-policy-ca.php:53
+#: config/documents/cookie-policy-ca.php:62
 msgctxt "Legal document cookie policy:paragraph title"
 msgid "Advertising cookies"
 msgstr "Advertentie cookies"
 
-#: config/documents/cookie-policy-ca.php:45
 #: config/documents/cookie-policy-eu.php:37
 #: config/documents/cookie-policy-eu.php:45
+#: config/documents/cookie-policy-ca.php:45
 msgctxt "Legal document cookie policy:paragraph title"
-msgid "Analytical cookies"
+msgid "Statistics cookies"
 msgstr "Analytische cookies"
 
-#: config/documents/cookie-policy-ca.php:39
 #: config/documents/cookie-policy-eu.php:31
+#: config/documents/cookie-policy-ca.php:39
 msgctxt "Legal document cookie policy:paragraph title"
 msgid "Technical or functional cookies"
 msgstr "Technische of functionele cookies"
 
-#: config/documents/cookie-policy-ca.php:36
 #: config/documents/cookie-policy-eu.php:27
+#: config/documents/cookie-policy-ca.php:36
 msgctxt "Legal document cookie policy:paragraph title"
 msgid "Cookies"
 msgstr "Cookies"
@@ -3000,41 +2992,36 @@ msgctxt "Legal document cookie policy:paragraph title"
 msgid "Third parties"
 msgstr "Derden"
 
-#: config/documents/cookie-policy-ca.php:103
 #: config/documents/cookie-policy-eu.php:102
 #: config/documents/cookie-policy-eu.php:111
+#: config/documents/cookie-policy-ca.php:103
 msgctxt "Legal document cookie policy:paragraph title"
 msgid "Consent"
 msgstr "Toestemming"
 
-#: config/documents/cookie-policy-ca.php:26
 #: config/documents/cookie-policy-eu.php:21
+#: config/documents/cookie-policy-ca.php:26
 msgctxt "Legal document cookie policy:paragraph title"
 msgid "What is a web beacon?"
 msgstr "Wat is een web beacon?"
 
-#: config/documents/cookie-policy-ca.php:22
 #: config/documents/cookie-policy-eu.php:17
+#: config/documents/cookie-policy-ca.php:22
 msgctxt "Legal document cookie policy:paragraph title"
 msgid "What are scripts?"
 msgstr "Wat zijn scripts?"
 
-#: config/documents/cookie-policy-ca.php:18
 #: config/documents/cookie-policy-eu.php:13
+#: config/documents/cookie-policy-ca.php:18
 msgctxt "Legal document cookie policy:paragraph title"
 msgid "What are cookies?"
 msgstr "Wat zijn cookies"
 
-#: config/documents/cookie-policy-ca.php:13
 #: config/documents/cookie-policy-eu.php:9
+#: config/documents/cookie-policy-ca.php:13
 msgctxt "Legal document cookie policy:paragraph title"
 msgid "Introduction"
 msgstr "Introductie"
-
-#: config/documents/cookie-policy-eu.php:6
-msgctxt "Legal document cookie policy"
-msgid "This Cookie Policy was last updated on %s and applies to citizens of the European Economic Area."
-msgstr "Deze Cookieverklaring is voor het laatst bijgewerkt op %s en is van toepassing op inwoners van de Europese Economische Ruimte."
 
 #: config/countries.php:59
 msgid "GDPR"
@@ -3048,12 +3035,12 @@ msgstr "EU"
 msgid "US"
 msgstr "VS"
 
-#: cookiebanner/settings.php:788
+#: cookiebanner/settings.php:775
 msgid "Text on link to Privacy Statement"
 msgstr "Tekst op link naar Privacyverklaring"
 
-#: integrations/plugins/gravity-forms.php:148 cookiebanner/settings.php:786
-#: cookiebanner/settings.php:787 config/questions-wizard.php:121
+#: config/questions-wizard.php:121 cookiebanner/settings.php:773
+#: cookiebanner/settings.php:774 integrations/plugins/gravity-forms.php:148
 #: src/block/block.js:270
 msgid "Privacy Statement"
 msgstr "Privacyverklaring"
@@ -3283,11 +3270,11 @@ msgctxt "Subject in notification email"
 msgid "Your legal documents on %s need to be updated."
 msgstr "Je juridische documenten op %s moeten worden geupdate."
 
-#: callback-notices.php:154
+#: callback-notices.php:155
 msgid "You are using an anonymous window. This will prevent most cookies from being placed. Please run the scan in a normal browser window."
 msgstr "U gebruikt een anoniem venster. Dit voorkomt dat de meeste cookies kunnenworden geplaatst. Voer de scan uit in een normaal browservenster voor een correct resultaat."
 
-#: callback-notices.php:151
+#: callback-notices.php:152
 msgid "You are using an ad blocker. This will prevent most cookies from being placed. Please run the scan without an adblocker enabled."
 msgstr "U gebruikt een adblocker. Dit voorkomt dat de meeste cookies kunnen worden geplaatst. Voer de scan uit zonder dat een adblocker is ingeschakeld voor een correct resultaat."
 
@@ -3300,7 +3287,7 @@ msgstr "Het scriptcentrum kan worden gebruikt om scripts en iFrames van derden t
 msgid "System Status"
 msgstr "Systeem status"
 
-#: class-admin.php:1145 config/steps.php:23 config/steps.php:95
+#: config/steps.php:23 config/steps.php:99 class-admin.php:1156
 msgid "Documents"
 msgstr "Documenten"
 
@@ -3308,15 +3295,15 @@ msgstr "Documenten"
 msgid "Data successfully cleared"
 msgstr "Gegevens succesvol gewist"
 
-#: callback-notices.php:108
+#: callback-notices.php:109
 msgid "The scan found forms on your site, which means answer should probably include \"contact\"."
 msgstr "De scan vond formulieren op je site, wat betekent dat het antwoord waarschijnlijk \"contact\" moet bevatten."
 
 #: integrations/plugins/woocommerce-google-analytics-pro.php:139
 #: integrations/plugins/caos-host-analytics-local.php:108
-#: integrations/plugins/monsterinsights.php:46
-#: integrations/plugins/beehive.php:45
 #: integrations/plugins/woocommerce-google-analytics-integration.php:133
+#: integrations/plugins/beehive.php:45
+#: integrations/plugins/monsterinsights.php:46
 msgid "You use %s, which means the answer to this question should be Google Analytics."
 msgstr "Je gebruikt %s, wat betekent dat het antwoord op deze vraag Google Analytics moet zijn."
 
@@ -3325,41 +3312,41 @@ msgctxt "Legal document cookie policy"
 msgid "When you visit our website for the first time, we will show you a pop-up with an explanation about cookies. As soon as you click on \"%s\", you consent to us using the categories of cookies and plug-ins you selected in the pop-up, as described in this Cookie Policy. You can disable the use of cookies via your browser, but please note that our website may no longer work properly."
 msgstr "Wanneer u onze website voor het eerst bezoekt, tonen wij een pop-up met uitleg over cookies. Zodra u klikt op ‘%s’ geeft u ons toestemming om de categorieën cookies en plug-ins te gebruiken die u heeft geselecteerd in de pop-up en welke zijn omschreven in de cookieverklaring. U kunt via uw browser het plaatsen van cookies uitschakelen, u moet er dan wel rekening mee houden dat onze website dan mogelijk niet meer optimaal werkt."
 
-#: functions.php:92
+#: functions.php:112
 msgid "Based on your Analytics configuration you should fire Analytics as a non-functional cookie with a category of your choice, for example cmplz_event_0."
 msgstr "Op basis van je Analytics configuratie moet je Analytics als een niet-functionele cookie plaatsen met een categorie naar keuze, bijvoorbeeld cmplz_event_0."
 
-#: functions.php:88
+#: functions.php:108
 msgid "Based on your Analytics configuration you should fire Analytics as a functional cookie on event cmplz_event_functional."
 msgstr "Op basis van je Analytics configuratie kan je deze als functionele cookie op \"event cmplz_event_functional\" laten vuren."
 
-#: DNSMPD/class-DNSMPD-table.php:166 DNSMPD/csv.php:59
+#: DNSMPD/csv.php:59 DNSMPD/class-DNSMPD-table.php:166
 #: templates/do-not-sell-my-personal-data-form.php:19
 msgid "Email"
 msgstr "E-mail"
 
-#: proof-of-consent/class-cookiestatement-snapshot-table.php:154
 #: class-cookiestatement-snapshot-table.php:152
+#: proof-of-consent/class-cookiestatement-snapshot-table.php:154
 msgid "Download"
 msgstr "Download"
 
-#: config/warnings.php:7 config/class-config.php:465
+#: config/class-config.php:472 config/warnings.php:7
 msgid "The Complianz plugin has new features. Please check the wizard to see if all your settings are still up to date."
 msgstr "De Complianz plugin heeft nieuwe functies. Controleer de wizard om te zien of al je instellingen nog steeds actueel zijn."
 
-#: config/questions-wizard.php:443
+#: config/questions-wizard.php:453
 msgid "For the Google Tag Manager code, log on. Then, you will immediatly see Container codes. The one next to your website name is the code you will need to fill in here, the Container ID."
 msgstr "Voor de Google Tag Manager code dien je in te loggen bij Tag Manager. Hier zul je meteen een Container ID zien staan. Dit is jouw Google Tag Manager code."
 
-#: config/questions-wizard.php:380
+#: config/questions-wizard.php:395
 msgid "If you use Tag Manager to fire scripts on your site, Complianz will automatically enable categories."
 msgstr "Als je Tag Manager gebruikt om scripts op je website af te vuren dan schakelt Complianz automatisch categoriën in"
 
-#: config/questions-wizard.php:378
+#: config/questions-wizard.php:393
 msgid "Tag Manager fires scripts which place cookies"
 msgstr "Tag Manager voert scripts uit die cookies plaatsen "
 
-#: config/questions-wizard.php:359
+#: config/questions-wizard.php:374
 msgid "With Tag Manager you can configure the selective firing of cookies in the Tag Manager dashboard."
 msgstr "Met Tag Manager kan je het selectief aanzetten van cookies via het Tag Manager dashboard configureren. "
 
@@ -3391,14 +3378,14 @@ msgstr "Met categorieën kun je website bezoekers laten kiezen welke categorie c
 msgid "It depends on your settings if this category is necessary, so it will show conditionally"
 msgstr "Het is afhankelijk van je instellingen of deze categorie is benodigd en zal worden getoond"
 
+#: config/steps.php:64 cookiebanner/class-cookiebanner.php:710
 #: cookiebanner/settings.php:647 cookiebanner/settings.php:648
-#: cookiebanner/settings.php:649 cookiebanner/class-cookiebanner.php:710
-#: config/steps.php:64
+#: cookiebanner/settings.php:649
 msgid "Statistics"
 msgstr "Statistieken"
 
-#: cookiebanner/settings.php:666 cookiebanner/settings.php:667
-#: cookiebanner/settings.php:668 cookiebanner/class-cookiebanner.php:725
+#: cookiebanner/class-cookiebanner.php:725 cookiebanner/settings.php:666
+#: cookiebanner/settings.php:667 cookiebanner/settings.php:668
 msgid "Marketing"
 msgstr "Marketing"
 
@@ -3407,11 +3394,11 @@ msgstr "Marketing"
 msgid "Save preferences"
 msgstr "Voorkeuren bewaren"
 
-#: cookiebanner/settings.php:174
+#: cookiebanner/settings.php:176
 msgid "Minimal"
 msgstr "Minimaal"
 
-#: cookiebanner/settings.php:157
+#: cookiebanner/settings.php:159
 msgid "Center"
 msgstr "Gecentreerd"
 
@@ -3447,23 +3434,23 @@ msgstr "Geen overeenkomst geselecteerd"
 msgid "Select the Processing Agreement you made with this %s, or %screate one%s"
 msgstr "Selecteer de Verwerkersovereenkomst die je met deze %s hebt gesloten of %smaak er een%s"
 
-#: config/warnings.php:64 config/class-config.php:548
+#: config/class-config.php:555 config/warnings.php:64
 msgid "Matomo is being used, but is not configured in Complianz."
 msgstr "Matomo wordt gebruikt, maar is niet geconfigureerd in de wizard"
 
-#: config/warnings.php:59 config/class-config.php:539
+#: config/class-config.php:546 config/warnings.php:59
 msgid "Google Tag Manager is being used, but is not configured in Complianz."
 msgstr "Google Tag Manager wordt gebruikt, maar is niet in Complianz geconfigureerd."
 
-#: config/questions-wizard.php:473
+#: config/questions-wizard.php:483
 msgid "e.g. https://domain.com/stats"
 msgstr "e.g. https://domain.com/stats"
 
-#: config/questions-wizard.php:469
+#: config/questions-wizard.php:479
 msgid "Enter the URL of Matomo"
 msgstr "Vul hier de URL van Matomo in"
 
-#: config/questions-wizard.php:485
+#: config/questions-wizard.php:495
 msgid "Enter your Matomo site ID"
 msgstr "Vul je Matomo ID in"
 
@@ -3475,15 +3462,15 @@ msgstr "Aangepaste CSS"
 msgid "Script Center"
 msgstr "Script centrum"
 
-#: config/questions-wizard.php:529
+#: config/questions-wizard.php:539
 msgid "Select the types of third-party services you use on your site."
 msgstr "Selecteer de third-party diensten die je gebruikt op je site."
 
-#: config/questions-wizard.php:516
+#: config/questions-wizard.php:526
 msgid "e.g. services like Google Fonts, Maps or reCAPTCHA usually place cookies."
 msgstr "Bijvoorbeeld diensten zoals Google Fonts, Google Maps, of reCAPTCHA plaatsen meestal cookies. "
 
-#: config/questions-wizard.php:514
+#: config/questions-wizard.php:524
 msgid "Does your website use third-party services?"
 msgstr "Gebruikt je website third-party diensten?"
 
@@ -3491,15 +3478,15 @@ msgstr "Gebruikt je website third-party diensten?"
 msgid "Custom CSS"
 msgstr "Eigen CSS"
 
-#: cookie/class-cookie-admin.php:3296
+#: cookie/class-cookie-admin.php:3277
 msgid "Third-party services"
 msgstr "Third-party diensten"
 
-#: cookie/class-cookie-admin.php:3281
+#: cookie/class-cookie-admin.php:3262
 msgid "Social media"
 msgstr "Sociale media"
 
-#: cookie/class-cookie-admin.php:3261
+#: cookie/class-cookie-admin.php:3242
 msgid "Cookies on your own domain"
 msgstr "Cookies op je eigen domein"
 
@@ -3507,7 +3494,7 @@ msgstr "Cookies op je eigen domein"
 msgid "Documentation"
 msgstr "Documentatie"
 
-#: callback-notices.php:121
+#: callback-notices.php:122
 msgid "The scan found third-party services on your website: %s, this means the answer should be yes."
 msgstr "De scan vond diensten van derden op je website: %s, dit betekent dat het antwoord ja zou moeten zijn."
 
@@ -3515,12 +3502,12 @@ msgstr "De scan vond diensten van derden op je website: %s, dit betekent dat het
 msgid "View document"
 msgstr "Document bekijken"
 
-#: DNSMPD/class-DNSMPD-table.php:165 DNSMPD/csv.php:58
-#: templates/service_settings.php:3
+#: cookiebanner/class-cookiebanner-table.php:231 DNSMPD/csv.php:58
+#: DNSMPD/class-DNSMPD-table.php:165
 #: templates/do-not-sell-my-personal-data-form.php:15
 #: templates/do-not-sell-my-personal-data-form.php:17
-#: templates/cookiepolicy_cookies_row.php:2 templates/cookie_settings.php:4
-#: cookiebanner/class-cookiebanner-table.php:231
+#: templates/cookie_settings.php:4 templates/cookiepolicy_cookies_row.php:2
+#: templates/service_settings.php:3
 msgid "Name"
 msgstr "Naam"
 
@@ -3528,7 +3515,7 @@ msgstr "Naam"
 msgid "No options found"
 msgstr "Geen opties gevonden."
 
-#: config/questions-wizard.php:312
+#: config/questions-wizard.php:327
 msgid "Yes, with Matomo"
 msgstr "Ja, met Matomo"
 
@@ -3536,19 +3523,19 @@ msgstr "Ja, met Matomo"
 msgid "Disable cookie banner"
 msgstr "Cookie banner uitschakelen"
 
-#: cookie/class-cookie-admin.php:1673
+#: cookie/class-cookie-admin.php:1654
 msgid "You use Matomo for statistics on your site, but ip numbers are not anonymized. Therefore you should add your tracking script here."
 msgstr "Je gebruikt Matomo voor statistieken op je site, maar IP adressen worden niet geanonimiseerd. Daarom zou je je tracking script hier moeten toevoegen."
 
-#: cookie/class-cookie-admin.php:1670
+#: cookie/class-cookie-admin.php:1651
 msgid "You use Matomo for statistics on your site, with ip numbers anonymized. Therefore it is not necessary to add the script here."
 msgstr "Je gebruikt Matomo voor statistieken op je site en IP adressen worden geanonimiseerd. Daarom is het niet nodig om het script hier toe te voegen."
 
-#: class-admin.php:1138
+#: class-admin.php:1149
 msgid "Your progress"
 msgstr "Voortgang"
 
-#: class-admin.php:786 class-admin.php:1069
+#: class-admin.php:797 class-admin.php:1080
 msgid "Upgrade to premium"
 msgstr "Upgrade naar premium"
 
@@ -3564,11 +3551,11 @@ msgstr "Exporteer persoonsgegevens"
 msgid "Create Processing Agreements"
 msgstr "Maak Verwerkersovereenkomsten"
 
-#: class-admin.php:1153
+#: class-admin.php:1164
 msgid "Tools"
 msgstr "Tools"
 
-#: config/warnings.php:30 config/class-config.php:493
+#: config/class-config.php:500 config/warnings.php:30
 msgid "Please review step %s of the wizard for changes in cookies."
 msgstr "Controleer stap %s van de wizard voor wijzigingen in cookies."
 
@@ -3576,7 +3563,7 @@ msgstr "Controleer stap %s van de wizard voor wijzigingen in cookies."
 msgid "Please complete the wizard to check if you need a cookie banner."
 msgstr "Voltooi de wizard om te controleren of je een cookie banner nodig hebt."
 
-#: class-admin.php:1091
+#: class-admin.php:1102
 msgid "Your license needs to be %sactivated%s to unlock the wizard"
 msgstr "Je licentie moet %sgeactiveerd%s zijn om de wizard te ontgrendelen"
 
@@ -3589,12 +3576,12 @@ msgctxt "intro company info"
 msgid "We need some information to be able to generate your documents."
 msgstr "We hebben wat informatie nodig om je documenten te genereren."
 
-#: class-admin.php:1246 functions.php:435 cookiebanner/edit.php:39
-#: config/steps.php:9
+#: config/steps.php:9 cookiebanner/edit.php:39 functions.php:455
+#: class-admin.php:1257
 msgid "General"
 msgstr "Algemeen"
 
-#: config/questions-wizard.php:716
+#: config/questions-wizard.php:726
 msgid "Add the used cookies here"
 msgstr "Voeg hier de gebruikte cookies toe"
 
@@ -3602,47 +3589,47 @@ msgstr "Voeg hier de gebruikte cookies toe"
 msgid "Statistics script"
 msgstr "Statistieken script"
 
-#: config/questions-wizard.php:635
+#: config/questions-wizard.php:645
 msgid "Does your website use cookies for advertising?"
 msgstr "Gebruikt de website cookies voor advertentiedoeleinden?"
 
-#: config/questions-wizard.php:439
+#: config/questions-wizard.php:449
 msgid "Enter your Google Tag Manager code"
 msgstr "Voer je Google Tag Manager code in"
 
-#: config/questions-wizard.php:356
+#: config/questions-wizard.php:371
 msgid "Acquiring IP-addresses is blocked"
 msgstr "Het verzamelen van IP adressen is geblokkeerd"
 
-#: config/questions-wizard.php:332 config/questions-wizard.php:354
+#: config/questions-wizard.php:347 config/questions-wizard.php:369
 msgid "Google is not allowed to use this data for other Google services"
 msgstr "Het is Google niet toegestaan deze data te gebruiken voor andere services"
 
-#: config/questions-wizard.php:331 config/questions-wizard.php:352
+#: config/questions-wizard.php:346 config/questions-wizard.php:367
 msgid "I have accepted the Google data processing amendment"
 msgstr "Het Google-amendement voor gegevensverwerking is door ons aanvaard"
 
-#: config/questions-wizard.php:329 config/questions-wizard.php:349
+#: config/questions-wizard.php:344 config/questions-wizard.php:364
 msgid "Regarding the previous question, can you give more information?"
 msgstr "Kunt u meer informatie geven over de vorige vraag?"
 
-#: config/questions-wizard.php:316
+#: config/questions-wizard.php:331
 msgid "Yes, with Google Tag Manager"
 msgstr "Ja, met Google Tag Manager"
 
-#: config/questions-wizard.php:310
+#: config/questions-wizard.php:325
 msgid "Yes, with Google Analytics"
 msgstr "Ja, met Google Analytics"
 
-#: config/questions-wizard.php:308
+#: config/questions-wizard.php:323
 msgid "Yes, and the personal data is available to us"
 msgstr "Ja, en de persoonlijke gegevens zijn voor ons beschikbaar"
 
-#: config/questions-wizard.php:306
+#: config/questions-wizard.php:321
 msgid "Yes, anonymous"
 msgstr "Ja, anoniem"
 
-#: config/questions-wizard.php:303
+#: config/questions-wizard.php:318
 msgid "Do you compile statistics of this website?"
 msgstr "Verzamel je statistieken via deze website?"
 
@@ -3666,16 +3653,15 @@ msgstr "Wat is het land van vestiging?"
 msgid "What is your address?"
 msgstr "Wat is het adres?"
 
+#: config/questions-wizard.php:94 cookiebanner/settings.php:547
+#: cookiebanner/settings.php:548 cookiebanner/settings.php:764
 #: templates/dashboard/documents-conditional.php:9
-#: templates/dashboard/documents-conditional.php:38
-#: cookiebanner/settings.php:547 cookiebanner/settings.php:548
-#: cookiebanner/settings.php:764 config/questions-wizard.php:94
-#: src/block/block.js:271
+#: templates/dashboard/documents-conditional.php:38 src/block/block.js:271
 msgid "Cookie Policy"
 msgstr "Cookiebeleid"
 
-#: config/documents/cookie-policy-ca.php:150
 #: config/documents/cookie-policy-eu.php:166
+#: config/documents/cookie-policy-ca.php:150
 msgctxt "Legal document cookie policy"
 msgid "For questions and/or comments about our Cookie Policy and this statement, please contact us by using the following contact details:"
 msgstr "Voor vragen en/of opmerkingen met betrekking tot ons Cookiebeleid en deze verklaring kunt u contact met ons opnemen via de volgende contactinformatie:"
@@ -3710,12 +3696,12 @@ msgctxt "Legal document cookie policy"
 msgid "If you give us your consent to process your data, you have the right to revoke that consent and to have your personal data deleted."
 msgstr "Als u ons toestemming geeft om uw gegevens te verwerken, heeft u het recht om die toestemming in te trekken en uw persoonlijke gegevens te laten verwijderen."
 
-#: config/dynamic-fields.php:19
+#: config/dynamic-fields.php:21
 msgid "Purpose:"
 msgstr "Doel:"
 
-#: config/documents/cookie-policy-ca.php:54
 #: config/documents/cookie-policy-eu.php:55
+#: config/documents/cookie-policy-ca.php:54
 msgctxt "Legal document cookie policy"
 msgid "On this website we use advertising cookies, enabling us to personalize the advertisements for you, and we (and third parties) gain insights into the campaign results. This happens based on a profile we create based on your click and surfing on and outside %s. With these cookies you, as website visitor are linked to a unique ID, so you do not see the same ad more than once for example."
 msgstr "Op deze website gebruiken wij advertentiecookies, zodat het online advertentieaanbod voor je kan worden gepersonaliseerd, en wij (en derde partijen) inzicht kunnen verkrijgen in campagneprestaties. Dit gebeurt op basis van een profiel dat wij opstellen op basis van je klik- en surfgedrag binnen en buiten %s. Middels de cookies wordt aan je als websitebezoeker een unieke cookie-ID gekoppeld, zodat je onder andere niet meerdere keren dezelfde advertentie te zien krijgt."
@@ -3735,997 +3721,997 @@ msgctxt "Legal document cookie policy"
 msgid "When you visit our website for the first time, we will show you a pop-up with an explanation about cookies. As soon as you click on \"%s\", you consent to us using all cookies and plug-ins as described in the pop-up and this Cookie Policy. You can disable the use of cookies via your browser, but please note that our website may no longer work properly."
 msgstr "Wanneer u onze website voor het eerst bezoekt, tonen wij een pop-up met uitleg over cookies. Zodra u klikt op ‘%s’ geeft u ons toestemming om alle cookies en plugins te gebruiken zoals omschreven in de pop-up en deze cookieverklaring. U kunt via uw browser het plaatsen van cookies uitschakelen, u moet er dan wel rekening mee houden dat onze website dan mogelijk niet meer optimaal werkt. "
 
-#: config/documents/cookie-policy-ca.php:27
 #: config/documents/cookie-policy-eu.php:22
+#: config/documents/cookie-policy-ca.php:27
 msgctxt "Legal document cookie policy"
 msgid "A web beacon (or a pixel tag) is a small, invisible piece of text or image on a website that is used to monitor traffic on a website. In order to do this, various data about you is stored using web beacons."
 msgstr "Een web beacon (ook pixeltag) is een klein, onzichtbaar stukje tekst of afbeelding op een website dat gebruikt wordt om verkeer op een website in kaart te brengen. Om dit te doen worden er met behulp van web beacons verschillende gegevens van je opgeslagen."
 
-#: config/documents/cookie-policy-ca.php:19
 #: config/documents/cookie-policy-eu.php:14
+#: config/documents/cookie-policy-ca.php:19
 msgctxt "Legal document cookie policy"
 msgid "A cookie is a small simple file that is sent along with pages of this website and stored by your browser on the hard drive of your computer or another device. The information stored therein may be returned to our servers or to the servers of the relevant third parties during a subsequent visit."
 msgstr "Een cookie is een eenvoudig klein bestandje dat met pagina’s van deze website wordt meegestuurd en door uw browser op uw harde schrijf van uw computer of ander apparaat wordt opgeslagen. De daarin opgeslagen informatie kan bij een volgend bezoek weer naar onze servers of die van de betreffende derde partijen teruggestuurd worden."
 
-#: config/documents/cookie-policy-ca.php:14
 #: config/documents/cookie-policy-eu.php:10
+#: config/documents/cookie-policy-ca.php:14
 msgctxt "Legal document cookie policy"
 msgid "Our website, %s (hereinafter: \"the website\") uses cookies and other related technologies (for convenience all technologies are referred to as \"cookies\"). Cookies are also placed by third parties we have engaged. In the document below we inform you about the use of cookies on our website."
 msgstr "Op onze website, %s (hierna: “de website”) wordt gebruikgemaakt van cookies en andere aanverwante technieken. (Hierna geldt dat alle technieken voor het gemak “cookies” worden genoemd). Ook via derden die door ons zijn ingeschakeld, worden cookies geplaatst. In het onderstaande document informeren wij je over het gebruik van cookies op onze website."
 
-#: config/countries.php:327
+#: config/countries.php:334
 msgid "Zimbabwe"
 msgstr "Zimbabwe"
 
-#: config/countries.php:326
+#: config/countries.php:333
 msgid "Zambia"
 msgstr "Zambia"
 
-#: config/countries.php:325
+#: config/countries.php:332
 msgid "Yemen"
 msgstr "Yemen"
 
-#: config/countries.php:324
+#: config/countries.php:331
 msgid "Western Sahara"
 msgstr "Westerlijke Sahara"
 
-#: config/countries.php:323
+#: config/countries.php:330
 msgid "Wallis And Futuna"
 msgstr "Wallis en Futuna"
 
-#: config/countries.php:322
+#: config/countries.php:329
 msgid "Virgin Islands, U.S."
 msgstr "Maagdeneilanden, V.S."
 
-#: config/countries.php:321
+#: config/countries.php:328
 msgid "Virgin Islands, British"
 msgstr "Britse Maagdeneilanden"
 
-#: config/countries.php:320
+#: config/countries.php:327
 msgid "Viet Nam"
 msgstr "Vietnam"
 
-#: config/countries.php:319
+#: config/countries.php:326
 msgid "Venezuela"
 msgstr "Venezuela"
 
-#: config/countries.php:318
+#: config/countries.php:325
 msgid "Vanuatu"
 msgstr "Vanuatu"
 
-#: config/countries.php:317
+#: config/countries.php:324
 msgid "Uzbekistan"
 msgstr "Oezbekistan"
 
-#: config/countries.php:316
+#: config/countries.php:323
 msgid "Uruguay"
 msgstr "Uruguay"
 
-#: config/countries.php:315
+#: config/countries.php:322
 msgid "United States Outlying Islands"
 msgstr "Verenigde Staten Perifere Eilanden"
 
-#: config/countries.php:314
+#: config/countries.php:321
 msgid "United States"
 msgstr "Verenigde Staten"
 
-#: config/countries.php:313
+#: config/countries.php:320
 msgid "United Kingdom"
 msgstr "Verenigd Koninkrijk"
 
-#: config/countries.php:312
+#: config/countries.php:319
 msgid "United Arab Emirates"
 msgstr "Verenigde Arabische Emiraten"
 
-#: config/countries.php:311
+#: config/countries.php:318
 msgid "Ukraine"
 msgstr "Oekraïne"
 
-#: config/countries.php:310
+#: config/countries.php:317
 msgid "Uganda"
 msgstr "Oeganda"
 
-#: config/countries.php:309
+#: config/countries.php:316
 msgid "Tuvalu"
 msgstr "Tuvalu"
 
-#: config/countries.php:308
+#: config/countries.php:315
 msgid "Turks And Caicos Islands"
 msgstr "Turks en Caicoseilanden"
 
-#: config/countries.php:307
+#: config/countries.php:314
 msgid "Turkmenistan"
 msgstr "Turkmenistan"
 
-#: config/countries.php:306
+#: config/countries.php:313
 msgid "Turkey"
 msgstr "Turkije"
 
-#: config/countries.php:305
+#: config/countries.php:312
 msgid "Tunisia"
 msgstr "Tunesië"
 
-#: config/countries.php:304
+#: config/countries.php:311
 msgid "Trinidad And Tobago"
 msgstr "Trinidad en Tobago"
 
-#: config/countries.php:303
+#: config/countries.php:310
 msgid "Tonga"
 msgstr "Tonga"
 
-#: config/countries.php:302
+#: config/countries.php:309
 msgid "Tokelau"
 msgstr "Tokelau"
 
-#: config/countries.php:301
+#: config/countries.php:308
 msgid "Togo"
 msgstr "Togo"
 
-#: config/countries.php:300
+#: config/countries.php:307
 msgid "Timor-Leste"
 msgstr "Oost-Timor"
 
-#: config/countries.php:299
+#: config/countries.php:306
 msgid "Thailand"
 msgstr "Thailand"
 
-#: config/countries.php:298
+#: config/countries.php:305
 msgid "Tanzania"
 msgstr "Tanzania"
 
-#: config/countries.php:297
+#: config/countries.php:304
 msgid "Tajikistan"
 msgstr "Tajikistan"
 
-#: config/countries.php:296
+#: config/countries.php:303
 msgid "Taiwan"
 msgstr "Taiwan"
 
-#: config/countries.php:295
+#: config/countries.php:302
 msgid "Syrian Arab Republic"
 msgstr "Syrië"
 
-#: config/countries.php:294
+#: config/countries.php:301
 msgid "Switzerland"
 msgstr "Zwitserland"
 
-#: config/countries.php:293
+#: config/countries.php:300
 msgid "Sweden"
 msgstr "Zweden"
 
-#: config/countries.php:292
+#: config/countries.php:299
 msgid "Swaziland"
 msgstr "Swaziland"
 
-#: config/countries.php:291
+#: config/countries.php:298
 msgid "Svalbard And Jan Mayen"
 msgstr "Svalbard en Jan Mayen"
 
-#: config/countries.php:290
+#: config/countries.php:297
 msgid "Suriname"
 msgstr "Suriname"
 
-#: config/countries.php:289
+#: config/countries.php:296
 msgid "Sudan"
 msgstr "Soedan"
 
-#: config/countries.php:288
+#: config/countries.php:295
 msgid "Sri Lanka"
 msgstr "Sri Lanka"
 
-#: config/countries.php:287
+#: config/countries.php:294
 msgid "Spain"
 msgstr "Spanje"
 
-#: config/countries.php:286
+#: config/countries.php:293
 msgid "South Georgia And Sandwich Isl."
 msgstr "Zuid-Georgië en Sandwich Eilanden"
 
-#: config/countries.php:285
+#: config/countries.php:292
 msgid "South Africa"
 msgstr "Zuid Afrika"
 
-#: config/countries.php:284
+#: config/countries.php:291
 msgid "Somalia"
 msgstr "Somalia"
 
-#: config/countries.php:283
+#: config/countries.php:290
 msgid "Solomon Islands"
 msgstr "Solomon Islands"
 
-#: config/countries.php:282
+#: config/countries.php:289
 msgid "Slovenia"
 msgstr "Slovenië"
 
-#: config/countries.php:281
+#: config/countries.php:288
 msgid "Slovakia"
 msgstr "Slowakije"
 
-#: config/countries.php:280
+#: config/countries.php:287
 msgid "Singapore"
 msgstr "Singapore"
 
-#: config/countries.php:279
+#: config/countries.php:286
 msgid "Sierra Leone"
 msgstr "Sierra Leone"
 
-#: config/countries.php:278
+#: config/countries.php:285
 msgid "Seychelles"
 msgstr "Seychellen"
 
-#: config/countries.php:277
+#: config/countries.php:284
 msgid "Serbia"
 msgstr "Servië"
 
-#: config/countries.php:276
+#: config/countries.php:283
 msgid "Senegal"
 msgstr "Senegal"
 
-#: config/countries.php:275
+#: config/countries.php:282
 msgid "Saudi Arabia"
 msgstr "Saoedi-Arabië"
 
-#: config/countries.php:274
+#: config/countries.php:281
 msgid "Sao Tome And Principe"
 msgstr "Sao Tomé en Principe"
 
-#: config/countries.php:273
+#: config/countries.php:280
 msgid "San Marino"
 msgstr "San Marino"
 
-#: config/countries.php:272
+#: config/countries.php:279
 msgid "Samoa"
 msgstr "Samoa"
 
-#: config/countries.php:271
+#: config/countries.php:278
 msgid "Saint Vincent And Grenadines"
 msgstr "Saint Vincent en de Grenadinen"
 
-#: config/countries.php:270
+#: config/countries.php:277
 msgid "Saint Pierre And Miquelon"
 msgstr "Saint Pierre en Miquelon"
 
-#: config/countries.php:269
+#: config/countries.php:276
 msgid "Saint Martin"
 msgstr "Sint Martin"
 
-#: config/countries.php:268
+#: config/countries.php:275
 msgid "Saint Lucia"
 msgstr "SInt Lucia"
 
-#: config/countries.php:267
+#: config/countries.php:274
 msgid "Saint Kitts And Nevis"
 msgstr "Saint Kitts en Nevis"
 
-#: config/countries.php:266
+#: config/countries.php:273
 msgid "Saint Helena"
 msgstr "Sint Helena"
 
-#: config/countries.php:265
+#: config/countries.php:272
 msgid "Saint Barthelemy"
 msgstr "Sint Barthelemy"
 
-#: config/countries.php:264
+#: config/countries.php:271
 msgid "Rwanda"
 msgstr "Rwanda"
 
-#: config/countries.php:263
+#: config/countries.php:270
 msgid "Russian Federation"
 msgstr "Rusland"
 
-#: config/countries.php:262
+#: config/countries.php:269
 msgid "Romania"
 msgstr "Roemenië"
 
-#: config/countries.php:261
+#: config/countries.php:268
 msgid "Reunion"
 msgstr "Reunion"
 
-#: config/countries.php:260
+#: config/countries.php:267
 msgid "Qatar"
 msgstr "Qatar"
 
-#: config/countries.php:259
+#: config/countries.php:266
 msgid "Puerto Rico"
 msgstr "Puerto Rico"
 
-#: config/countries.php:258
+#: config/countries.php:265
 msgid "Portugal"
 msgstr "Portugal"
 
-#: config/countries.php:257
+#: config/countries.php:264
 msgid "Poland"
 msgstr "Polen"
 
-#: config/countries.php:256
+#: config/countries.php:263
 msgid "Pitcairn"
 msgstr "Pitcairn"
 
-#: config/countries.php:255
+#: config/countries.php:262
 msgid "Philippines"
 msgstr "Filippijnen"
 
-#: config/countries.php:254
+#: config/countries.php:261
 msgid "Peru"
 msgstr "Peru"
 
-#: config/countries.php:253
+#: config/countries.php:260
 msgid "Paraguay"
 msgstr "Paraguay"
 
-#: config/countries.php:252
+#: config/countries.php:259
 msgid "Papua New Guinea"
 msgstr "Papua Nieuw Guinea"
 
-#: config/countries.php:251
+#: config/countries.php:258
 msgid "Panama"
 msgstr "Panama"
 
-#: config/countries.php:250
+#: config/countries.php:257
 msgid "Palestinian Territory, Occupied"
 msgstr "Palestijns Gebied, bezet"
 
-#: config/countries.php:249
+#: config/countries.php:256
 msgid "Palau"
 msgstr "Palau"
 
-#: config/countries.php:248
+#: config/countries.php:255
 msgid "Pakistan"
 msgstr "Pakistan"
 
-#: config/countries.php:247
+#: config/countries.php:254
 msgid "Oman"
 msgstr "Oman"
 
-#: config/countries.php:246
+#: config/countries.php:253
 msgid "Norway"
 msgstr "Noorwegen"
 
-#: config/countries.php:245
+#: config/countries.php:252
 msgid "Northern Mariana Islands"
 msgstr "Noordelijke Marianen"
 
-#: config/countries.php:244
+#: config/countries.php:251
 msgid "Norfolk Island"
 msgstr "Norfolk Eiland"
 
-#: config/countries.php:243
+#: config/countries.php:250
 msgid "Niue"
 msgstr "Niue"
 
-#: config/countries.php:242
+#: config/countries.php:249
 msgid "Nigeria"
 msgstr "Nigeria"
 
-#: config/countries.php:241
+#: config/countries.php:248
 msgid "Niger"
 msgstr "Niger"
 
-#: config/countries.php:240
+#: config/countries.php:247
 msgid "Nicaragua"
 msgstr "Nicaragua"
 
-#: config/countries.php:239
+#: config/countries.php:246
 msgid "New Zealand"
 msgstr "Nieuw Zeeland"
 
-#: config/countries.php:238
+#: config/countries.php:245
 msgid "New Caledonia"
 msgstr "Nieuw Caledonië"
 
-#: config/countries.php:237
+#: config/countries.php:244
 msgid "Netherlands Antilles"
 msgstr "Nederlandse Antillen"
 
-#: config/countries.php:236
+#: config/countries.php:243
 msgid "Netherlands"
 msgstr "Nederland"
 
-#: config/countries.php:235
+#: config/countries.php:242
 msgid "Nepal"
 msgstr "Nepal"
 
-#: config/countries.php:234
+#: config/countries.php:241
 msgid "Nauru"
 msgstr "Nauru"
 
-#: config/countries.php:233
+#: config/countries.php:240
 msgid "Namibia"
 msgstr "Namibië"
 
-#: config/countries.php:232
+#: config/countries.php:239
 msgid "Myanmar"
 msgstr "Myanmar"
 
-#: config/countries.php:231
+#: config/countries.php:238
 msgid "Mozambique"
 msgstr "Mozambique"
 
-#: config/countries.php:230
+#: config/countries.php:237
 msgid "Morocco"
 msgstr "Marokko"
 
-#: config/countries.php:229
+#: config/countries.php:236
 msgid "Montserrat"
 msgstr "Montserrat"
 
-#: config/countries.php:228
+#: config/countries.php:235
 msgid "Montenegro"
 msgstr "Montenegro"
 
-#: config/countries.php:227
+#: config/countries.php:234
 msgid "Mongolia"
 msgstr "Mongolië"
 
-#: config/countries.php:226
+#: config/countries.php:233
 msgid "Monaco"
 msgstr "Monaco"
 
-#: config/countries.php:225
+#: config/countries.php:232
 msgid "Moldova"
 msgstr "Moldavië"
 
-#: config/countries.php:224
+#: config/countries.php:231
 msgid "Micronesia, Federated States Of"
 msgstr "Micronesië, Federale Staten van"
 
-#: config/countries.php:223
+#: config/countries.php:230
 msgid "Mexico"
 msgstr "Mexico"
 
-#: config/countries.php:222
+#: config/countries.php:229
 msgid "Mayotte"
 msgstr "Mayotte"
 
-#: config/countries.php:221
+#: config/countries.php:228
 msgid "Mauritius"
 msgstr "Mauritius"
 
-#: config/countries.php:220
+#: config/countries.php:227
 msgid "Mauritania"
 msgstr "Mauritanië"
 
-#: config/countries.php:219
+#: config/countries.php:226
 msgid "Martinique"
 msgstr "Martinique"
 
-#: config/countries.php:218
+#: config/countries.php:225
 msgid "Marshall Islands"
 msgstr "Marshall Eilanden"
 
-#: config/countries.php:217
+#: config/countries.php:224
 msgid "Malta"
 msgstr "Malta"
 
-#: config/countries.php:216
+#: config/countries.php:223
 msgid "Mali"
 msgstr "Mali"
 
-#: config/countries.php:215
+#: config/countries.php:222
 msgid "Maldives"
 msgstr "Malediven"
 
-#: config/countries.php:214
+#: config/countries.php:221
 msgid "Malaysia"
 msgstr "Maleisië"
 
-#: config/countries.php:213
+#: config/countries.php:220
 msgid "Malawi"
 msgstr "Malawi"
 
-#: config/countries.php:212
+#: config/countries.php:219
 msgid "Madagascar"
 msgstr "Madagascar"
 
-#: config/countries.php:210
+#: config/countries.php:217
 msgid "Macao"
 msgstr "Macao"
 
-#: config/countries.php:209
+#: config/countries.php:216
 msgid "Luxembourg"
 msgstr "Luxemburg"
 
-#: config/countries.php:208
+#: config/countries.php:215
 msgid "Lithuania"
 msgstr "Litouwen"
 
-#: config/countries.php:207
+#: config/countries.php:214
 msgid "Liechtenstein"
 msgstr "Liechtenstein"
 
-#: config/countries.php:206
+#: config/countries.php:213
 msgid "Libyan Arab Jamahiriya"
 msgstr "Libisch-Arabisch Jamahiriya"
 
-#: config/countries.php:205
+#: config/countries.php:212
 msgid "Liberia"
 msgstr "Liberia"
 
-#: config/countries.php:204
+#: config/countries.php:211
 msgid "Lesotho"
 msgstr "Lesotho"
 
-#: config/countries.php:203
+#: config/countries.php:210
 msgid "Lebanon"
 msgstr "Libanon"
 
-#: config/countries.php:202
+#: config/countries.php:209
 msgid "Latvia"
 msgstr "Letland"
 
-#: config/countries.php:201
+#: config/countries.php:208
 msgid "Lao People's Democratic Republic"
 msgstr "Democratische Volksrepubliek Laos"
 
-#: config/countries.php:200
+#: config/countries.php:207
 msgid "Kyrgyzstan"
 msgstr "Kirgizië"
 
-#: config/countries.php:199
+#: config/countries.php:206
 msgid "Kuwait"
 msgstr "Koeweit"
 
-#: config/countries.php:198
+#: config/countries.php:205
 msgid "Korea"
 msgstr "Zuid-Korea"
 
-#: config/countries.php:197
+#: config/countries.php:204
 msgid "Kiribati"
 msgstr "Kiribati"
 
-#: config/countries.php:196
+#: config/countries.php:203
 msgid "Kenya"
 msgstr "Kenia"
 
-#: config/countries.php:195
+#: config/countries.php:202
 msgid "Kazakhstan"
 msgstr "Kazachstan"
 
-#: config/countries.php:194
+#: config/countries.php:201
 msgid "Jordan"
 msgstr "Jordanië"
 
-#: config/countries.php:193
+#: config/countries.php:200
 msgid "Jersey"
 msgstr "Jersey"
 
-#: config/countries.php:192
+#: config/countries.php:199
 msgid "Japan"
 msgstr "Japan"
 
-#: config/countries.php:191
+#: config/countries.php:198
 msgid "Jamaica"
 msgstr "Jamaica"
 
-#: config/countries.php:190
+#: config/countries.php:197
 msgid "Italy"
 msgstr "Italië"
 
-#: config/countries.php:189
+#: config/countries.php:196
 msgid "Israel"
 msgstr "Israel"
 
-#: config/countries.php:188
+#: config/countries.php:195
 msgid "Isle Of Man"
 msgstr "Isle Of Man"
 
-#: config/countries.php:187
+#: config/countries.php:194
 msgid "Ireland"
 msgstr "Ierland"
 
-#: config/countries.php:186
+#: config/countries.php:193
 msgid "Iraq"
 msgstr "Irak"
 
-#: config/countries.php:185
+#: config/countries.php:192
 msgid "Iran, Islamic Republic Of"
 msgstr "Iran, Islamitische Republiek"
 
-#: config/countries.php:184
+#: config/countries.php:191
 msgid "Indonesia"
 msgstr "Indonesië"
 
-#: config/countries.php:183
+#: config/countries.php:190
 msgid "India"
 msgstr "India"
 
-#: config/countries.php:182
+#: config/countries.php:189
 msgid "Iceland"
 msgstr "IJsland"
 
-#: config/countries.php:181
+#: config/countries.php:188
 msgid "Hungary"
 msgstr "Hongarije"
 
-#: config/countries.php:180
+#: config/countries.php:187
 msgid "Hong Kong"
 msgstr "Hong Kong"
 
-#: config/countries.php:179
+#: config/countries.php:186
 msgid "Honduras"
 msgstr "Honduras"
 
-#: config/countries.php:178
+#: config/countries.php:185
 msgid "Holy See (Vatican City State)"
 msgstr "Heilige Stoel (Vaticaanstad)"
 
-#: config/countries.php:177
+#: config/countries.php:184
 msgid "Heard Island & Mcdonald Islands"
 msgstr "Heard Eiland & McDonald Islands"
 
-#: config/countries.php:176
+#: config/countries.php:183
 msgid "Haiti"
 msgstr "Haiti"
 
-#: config/countries.php:175
+#: config/countries.php:182
 msgid "Guyana"
 msgstr "Guyana"
 
-#: config/countries.php:174
+#: config/countries.php:181
 msgid "Guinea-Bissau"
 msgstr "Guinea-Bissau"
 
-#: config/countries.php:173
+#: config/countries.php:180
 msgid "Guinea"
 msgstr "Guinea"
 
-#: config/countries.php:172
+#: config/countries.php:179
 msgid "Guernsey"
 msgstr "Guernsey"
 
-#: config/countries.php:171
+#: config/countries.php:178
 msgid "Guatemala"
 msgstr "Guatemala"
 
-#: config/countries.php:170
+#: config/countries.php:177
 msgid "Guam"
 msgstr "Guam"
 
-#: config/countries.php:169
+#: config/countries.php:176
 msgid "Guadeloupe"
 msgstr "Guadeloupe"
 
-#: config/countries.php:168
+#: config/countries.php:175
 msgid "Grenada"
 msgstr "Grenada"
 
-#: config/countries.php:167
+#: config/countries.php:174
 msgid "Greenland"
 msgstr "Groenland"
 
-#: config/countries.php:166
+#: config/countries.php:173
 msgid "Greece"
 msgstr "Griekenland"
 
-#: config/countries.php:165
+#: config/countries.php:172
 msgid "Gibraltar"
 msgstr "Gibraltar"
 
-#: config/countries.php:164
+#: config/countries.php:171
 msgid "Ghana"
 msgstr "Ghana"
 
-#: config/countries.php:163
+#: config/countries.php:170
 msgid "Germany"
 msgstr "Duitsland"
 
-#: config/countries.php:162
+#: config/countries.php:169
 msgid "Georgia"
 msgstr "Georgië"
 
-#: config/countries.php:161
+#: config/countries.php:168
 msgid "Gambia"
 msgstr "Gambia"
 
-#: config/countries.php:160
+#: config/countries.php:167
 msgid "Gabon"
 msgstr "Gabon"
 
-#: config/countries.php:159
+#: config/countries.php:166
 msgid "French Southern Territories"
 msgstr "Franse Zuidelijke Gebieden"
 
-#: config/countries.php:158
+#: config/countries.php:165
 msgid "French Polynesia"
 msgstr "Frans-Polynesië"
 
-#: config/countries.php:157
+#: config/countries.php:164
 msgid "French Guiana"
 msgstr "Frans-Guyana"
 
-#: config/countries.php:156
+#: config/countries.php:163
 msgid "France"
 msgstr "Frankrijk"
 
-#: config/countries.php:155
+#: config/countries.php:162
 msgid "Finland"
 msgstr "Finland"
 
-#: config/countries.php:154
+#: config/countries.php:161
 msgid "Fiji"
 msgstr "Fiji"
 
-#: config/countries.php:153
+#: config/countries.php:160
 msgid "Faroe Islands"
 msgstr "Faeröer"
 
-#: config/countries.php:152
+#: config/countries.php:159
 msgid "Falkland Islands (Malvinas)"
 msgstr "Falklandeilanden (Malvinas)"
 
-#: config/countries.php:151
+#: config/countries.php:158
 msgid "Ethiopia"
 msgstr "Ethiopie"
 
-#: config/countries.php:150
+#: config/countries.php:157
 msgid "Estonia"
 msgstr "Estland"
 
-#: config/countries.php:149
+#: config/countries.php:156
 msgid "Eritrea"
 msgstr "Eritrea"
 
-#: config/countries.php:148
+#: config/countries.php:155
 msgid "Equatorial Guinea"
 msgstr "Equatoriaal-Guinea"
 
-#: config/countries.php:147
+#: config/countries.php:154
 msgid "El Salvador"
 msgstr "El Salvador"
 
-#: config/countries.php:146
+#: config/countries.php:153
 msgid "Egypt"
 msgstr "Egypte"
 
-#: config/countries.php:145
+#: config/countries.php:152
 msgid "Ecuador"
 msgstr "Ecuador"
 
-#: config/countries.php:144
+#: config/countries.php:151
 msgid "Dominican Republic"
 msgstr "Dominicaanse Republiek"
 
-#: config/countries.php:143
+#: config/countries.php:150
 msgid "Dominica"
 msgstr "Dominica"
 
-#: config/countries.php:142
+#: config/countries.php:149
 msgid "Djibouti"
 msgstr "Djibouti"
 
-#: config/countries.php:141
+#: config/countries.php:148
 msgid "Denmark"
 msgstr "Denemarken"
 
-#: config/countries.php:140
+#: config/countries.php:147
 msgid "Czech Republic"
 msgstr "Tsjechië"
 
-#: config/countries.php:139
+#: config/countries.php:146
 msgid "Cyprus"
 msgstr "Cyprus"
 
-#: config/countries.php:138
+#: config/countries.php:145
 msgid "Cuba"
 msgstr "Cuba"
 
-#: config/countries.php:137
+#: config/countries.php:144
 msgid "Croatia"
 msgstr "Kroatië"
 
-#: config/countries.php:136
+#: config/countries.php:143
 msgid "Cote D'Ivoire"
 msgstr "Ivoorkust"
 
-#: config/countries.php:135
+#: config/countries.php:142
 msgid "Costa Rica"
 msgstr "Costa Rica"
 
-#: config/countries.php:134
+#: config/countries.php:141
 msgid "Cook Islands"
 msgstr "Cook Eilanden"
 
-#: config/countries.php:133
+#: config/countries.php:140
 msgid "Congo, Democratic Republic"
 msgstr "Congo, Democratische Republiek"
 
-#: config/countries.php:132
+#: config/countries.php:139
 msgid "Congo"
 msgstr "Congo"
 
-#: config/countries.php:131
+#: config/countries.php:138
 msgid "Comoros"
 msgstr "Comoren"
 
-#: config/countries.php:130
+#: config/countries.php:137
 msgid "Colombia"
 msgstr "Colombia"
 
-#: config/countries.php:129
+#: config/countries.php:136
 msgid "Cocos (Keeling) Islands"
 msgstr "Cocos (Keeling) Eilanden"
 
-#: config/countries.php:128
+#: config/countries.php:135
 msgid "Christmas Island"
 msgstr "Christmaseiland"
 
-#: config/countries.php:127
+#: config/countries.php:134
 msgid "China"
 msgstr "China"
 
-#: config/countries.php:126
+#: config/countries.php:133
 msgid "Chile"
 msgstr "Chili"
 
-#: config/countries.php:125
+#: config/countries.php:132
 msgid "Chad"
 msgstr "Tsjaad"
 
-#: config/countries.php:124
+#: config/countries.php:131
 msgid "Central African Republic"
 msgstr "Centraal-Afrikaanse Republiek"
 
-#: config/countries.php:123
+#: config/countries.php:130
 msgid "Cayman Islands"
 msgstr "Kaaimaneilanden"
 
-#: config/countries.php:122
+#: config/countries.php:129
 msgid "Cape Verde"
 msgstr "Kaapverdië"
 
-#: config/countries.php:121
+#: config/countries.php:128
 msgid "Canada"
 msgstr "Canada"
 
-#: config/countries.php:120
+#: config/countries.php:127
 msgid "Cameroon"
 msgstr "Kameroen"
 
-#: config/countries.php:119
+#: config/countries.php:126
 msgid "Cambodia"
 msgstr "Cambodja"
 
-#: config/countries.php:118
+#: config/countries.php:125
 msgid "Burundi"
 msgstr "Burundi"
 
-#: config/countries.php:117
+#: config/countries.php:124
 msgid "Burkina Faso"
 msgstr "Burkina Faso"
 
-#: config/countries.php:116
+#: config/countries.php:123
 msgid "Bulgaria"
 msgstr "Bulgarije"
 
-#: config/countries.php:115
+#: config/countries.php:122
 msgid "Brunei Darussalam"
 msgstr "Brunei Darussalam"
 
-#: config/countries.php:114
+#: config/countries.php:121
 msgid "British Indian Ocean Territory"
 msgstr "Brits gebied in de Indische Oceaan"
 
-#: config/countries.php:113
+#: config/countries.php:120
 msgid "Brazil"
 msgstr "Brazilië"
 
-#: config/countries.php:112
+#: config/countries.php:119
 msgid "Bouvet Island"
 msgstr "Bouvet eiland"
 
-#: config/countries.php:111
+#: config/countries.php:118
 msgid "Botswana"
 msgstr "Botswana"
 
-#: config/countries.php:110
+#: config/countries.php:117
 msgid "Bosnia And Herzegovina"
 msgstr "Bosnië en Herzegovina"
 
-#: config/countries.php:109
+#: config/countries.php:116
 msgid "Bolivia"
 msgstr "Bolivia"
 
-#: config/countries.php:108
+#: config/countries.php:115
 msgid "Bhutan"
 msgstr "Bhutan"
 
-#: config/countries.php:107
+#: config/countries.php:114
 msgid "Bermuda"
 msgstr "Bermuda"
 
-#: config/countries.php:106
+#: config/countries.php:113
 msgid "Benin"
 msgstr "Benin"
 
-#: config/countries.php:105
+#: config/countries.php:112
 msgid "Belize"
 msgstr "Belize"
 
-#: config/countries.php:104
+#: config/countries.php:111
 msgid "Belgium"
 msgstr "België"
 
-#: config/countries.php:103
+#: config/countries.php:110
 msgid "Belarus"
 msgstr "Wit-Rusland"
 
-#: config/countries.php:102
+#: config/countries.php:109
 msgid "Barbados"
 msgstr "Barbados"
 
-#: config/countries.php:101
+#: config/countries.php:108
 msgid "Bangladesh"
 msgstr "Bangladesh"
 
-#: config/countries.php:100
+#: config/countries.php:107
 msgid "Bahrain"
 msgstr "Bahrein"
 
-#: config/countries.php:99
+#: config/countries.php:106
 msgid "Bahamas"
 msgstr "Bahamas"
 
-#: config/countries.php:98
+#: config/countries.php:105
 msgid "Azerbaijan"
 msgstr "Azerbeidzjan"
 
-#: config/countries.php:97
+#: config/countries.php:104
 msgid "Austria"
 msgstr "Oostenrijk"
 
-#: config/countries.php:96
+#: config/countries.php:103
 msgid "Australia"
 msgstr "Australië"
 
-#: config/countries.php:95
+#: config/countries.php:102
 msgid "Aruba"
 msgstr "Aruba"
 
-#: config/countries.php:94
+#: config/countries.php:101
 msgid "Armenia"
 msgstr "Armenie"
 
-#: config/countries.php:93
+#: config/countries.php:100
 msgid "Argentina"
 msgstr "Argentinië"
 
-#: config/countries.php:92
+#: config/countries.php:99
 msgid "Antigua And Barbuda"
 msgstr "Antigua en Barbuda"
 
-#: config/countries.php:91
+#: config/countries.php:98
 msgid "Antarctica"
 msgstr "Antartica"
 
-#: config/countries.php:90
+#: config/countries.php:97
 msgid "Anguilla"
 msgstr "Anguilla"
 
-#: config/countries.php:89
+#: config/countries.php:96
 msgid "Angola"
 msgstr "Angola"
 
-#: config/countries.php:88
+#: config/countries.php:95
 msgid "Andorra"
 msgstr "Andorra"
 
-#: config/countries.php:87
+#: config/countries.php:94
 msgid "American Samoa"
 msgstr "Amerikaans-Samoa"
 
-#: config/countries.php:86
+#: config/countries.php:93
 msgid "Algeria"
 msgstr "Algerije"
 
-#: config/countries.php:85
+#: config/countries.php:92
 msgid "Albania"
 msgstr "Albanië"
 
-#: config/countries.php:84
+#: config/countries.php:91
 msgid "Aland Islands"
 msgstr "Aland Eilanden"
 
-#: config/countries.php:83
+#: config/countries.php:90
 msgid "Afghanistan"
 msgstr "Afghanistan"
 
@@ -4733,39 +4719,39 @@ msgstr "Afghanistan"
 msgid "Default"
 msgstr "Standaard"
 
-#: cookiebanner/settings.php:173
+#: cookiebanner/settings.php:175
 msgid "Edgeless"
 msgstr "Randloos"
 
-#: cookiebanner/settings.php:172 cookiebanner/settings.php:210
+#: cookiebanner/settings.php:174 cookiebanner/settings.php:212
 msgid "Classic"
 msgstr "Klassiek"
 
-#: cookiebanner/settings.php:171
+#: cookiebanner/settings.php:173
 msgid "Block"
 msgstr "Blok"
 
+#: cookiebanner/settings.php:549
 #: templates/dashboard/documents-conditional.php:47
 #: templates/dashboard/documents-conditional.php:81
 #: templates/dashboard/tools-conditional.php:9
 #: templates/dashboard/tools-conditional.php:19
 #: templates/dashboard/tools-conditional.php:29
-#: templates/dashboard/tools-conditional.php:39 functions.php:1746
-#: cookiebanner/settings.php:549
+#: templates/dashboard/tools-conditional.php:39 functions.php:1766
 #: proof-of-consent/class-proof-of-consent.php:261
 msgid "Read more"
 msgstr "Lees meer"
 
-#: integrations/plugins/gravity-forms.php:131
+#: cookiebanner/settings.php:332 cookiebanner/settings.php:588
+#: cookiebanner/settings.php:589 cookiebanner/settings.php:590
+#: cookiebanner/settings.php:752 cookiebanner/settings.php:753
+#: cookiebanner/settings.php:754 integrations/plugins/gravity-forms.php:131
 #: integrations/plugins/gravity-forms.php:136
-#: integrations/plugins/gravity-forms.php:137 cookiebanner/settings.php:330
-#: cookiebanner/settings.php:588 cookiebanner/settings.php:589
-#: cookiebanner/settings.php:590 cookiebanner/settings.php:752
-#: cookiebanner/settings.php:753 cookiebanner/settings.php:754
+#: integrations/plugins/gravity-forms.php:137
 msgid "Accept"
 msgstr "Accepteren"
 
-#: cookiebanner/settings.php:356
+#: cookiebanner/settings.php:358
 msgid "Deny"
 msgstr "Afwijzen"
 
@@ -4782,15 +4768,15 @@ msgstr "Wij gebruiken cookies om onze website en onze service te optimaliseren."
 msgid "Cookie banner expiration in days"
 msgstr "Cookie banner expiratie in dagen"
 
-#: config/warnings.php:38 config/class-config.php:520
+#: config/class-config.php:527 config/warnings.php:38
 msgid "You don't have SSL on your site yet. Most hosting companies can install SSL for you, which you can quickly enable with %sReally Simple SSL%s"
 msgstr "Je hebt nog geen SSL op de site. De meeste hostingbedrijven kunnen SSL voor je installeren, wat je snel kunt inschakelen met %sReally Simple SSL%s"
 
-#: config/warnings.php:36 config/class-config.php:519
+#: config/class-config.php:526 config/warnings.php:36
 msgid "Great! You're already on SSL!"
 msgstr "Geweldig! Je website wordt beveiligd door SSL."
 
-#: config/warnings.php:54 config/class-config.php:530
+#: config/class-config.php:537 config/warnings.php:54
 msgid "Google Analytics is being used, but is not configured in Complianz."
 msgstr "Google Analytics wordt gebruikt, maar is niet geconfigureerd in Complianz."
 
@@ -4806,15 +4792,15 @@ msgstr "Er zijn veranderingen in plugins gedetecteerd."
 msgid "No plugin changes have been detected."
 msgstr "Er zijn geen pluginwijzigingen gedetecteerd."
 
-#: config/warnings.php:28 config/class-config.php:493
+#: config/class-config.php:500 config/warnings.php:28
 msgid "Cookie changes have been detected."
 msgstr "Er zijn wijzigingen in cookies gedetecteerd."
 
-#: config/warnings.php:26 config/class-config.php:492
+#: config/class-config.php:499 config/warnings.php:26
 msgid "No cookie changes have been detected."
 msgstr "Er zijn geen wijzigingen in cookies gedetecteerd."
 
-#: config/warnings.php:19 config/class-config.php:454
+#: config/class-config.php:461 config/warnings.php:19
 msgid "The wizard has been completed."
 msgstr "De wizard is voltooid."
 
@@ -4822,12 +4808,12 @@ msgstr "De wizard is voltooid."
 msgid "To enable the warning only for countries with a cookie law, %sget premium%s."
 msgstr "Om de cookie melding alleen te tonen aan bezoekers uit landen met een strenge cookiewet; %supgrade dan naar premium%s."
 
-#: config/questions-wizard.php:318 config/questions-wizard.php:647
+#: config/questions-wizard.php:333 config/questions-wizard.php:657
 #: config/class-config.php:293
 msgid "No"
 msgstr "Nee"
 
-#: config/questions-wizard.php:646 config/class-config.php:292
+#: config/questions-wizard.php:656 config/class-config.php:292
 msgid "Yes"
 msgstr "Ja"
 
@@ -4851,7 +4837,7 @@ msgstr "datalek rapporten"
 msgid "Changes saved successfully"
 msgstr "Wijzigingen succesvol opgeslagen"
 
-#: class-wizard.php:105 class-wizard.php:709 config/steps.php:113
+#: config/steps.php:117 class-wizard.php:105 class-wizard.php:709
 msgid "Finish"
 msgstr "Afronden"
 
@@ -4867,7 +4853,7 @@ msgstr "De wizard is nog niet voltooid. Als je alle vereiste vragen hebt beantwo
 msgid "Great, the main wizard is completed. This means the general data is already in the system, and you can continue with the next question. This will start a new, empty document."
 msgstr "Super! de eerste stap is voltooid. Dit betekent dat alle algemene bekend zijn en je kunt doorgaan met de volgende vraag. Hiermee start je een nieuw, leeg document."
 
-#: class-wizard.php:668 cookie/class-cookie-admin.php:1575
+#: cookie/class-cookie-admin.php:1556 class-wizard.php:668
 msgid "Processing Agreements"
 msgstr "Verwerkersovereenkomsten"
 
@@ -4887,8 +4873,8 @@ msgstr "Derde toevoegen"
 msgid "Add new cookie"
 msgstr "Voeg nieuwe cookie toe"
 
-#: templates/cookie_settings.php:34 class-field.php:2043 class-field.php:2157
-#: config/steps.php:39
+#: config/steps.php:39 class-field.php:2043 class-field.php:2157
+#: templates/cookie_settings.php:34
 msgid "Purpose"
 msgstr "Doel"
 
@@ -4908,10 +4894,11 @@ msgstr "Beschrijving"
 msgid "Add new"
 msgstr "Voeg nieuwe toe"
 
-#: class-wizard.php:725 templates/settings/footer.php:3
-#: templates/service_settings.php:49 templates/integrations/footer.php:3
-#: templates/CMPLZ_COOKIEBANNER/footer.php:3 templates/cookie_settings.php:87
 #: class-field.php:1807 class-field.php:2068 class-field.php:2179
+#: class-wizard.php:725 templates/cookie_settings.php:87
+#: templates/service_settings.php:49 templates/settings/footer.php:3
+#: templates/CMPLZ_COOKIEBANNER/footer.php:3
+#: templates/integrations/footer.php:3
 msgid "Save"
 msgstr "Opslaan"
 
@@ -4943,11 +4930,11 @@ msgstr "Bijlage"
 msgid "Select a menu"
 msgstr "Selecteer een menu"
 
-#: callback-notices.php:285
+#: callback-notices.php:286
 msgid "Great! All your generated documents have been assigned to a menu, so you can skip this step."
 msgstr "Super! Alle gegenereerde documenten zijn toegewezen aan een menu, dus je kunt deze stap overslaan."
 
-#: callback-notices.php:279
+#: callback-notices.php:280
 msgid "The generated document %s has not been assigned to a menu yet, you can do this now, or skip this step and do it later."
 msgid_plural "The generated documents have not been assigned to a menu yet, you can do this now, or skip this step and do it later."
 msgstr[0] "Het gegenereerde document %s is nog niet toegewezen aan een menu. Je kunt dit nu doen, of deze stap overslaan en later doen."
@@ -4957,19 +4944,19 @@ msgstr[1] "De gegenereerde documenten %s zijn nog niet toegewezen aan een menu. 
 msgid "No menus were found. Skip this step, or %screate a menu%s first."
 msgstr "Geen menu's gevonden. Sla deze stap over of %smaak direct een menu%s."
 
-#: config/steps.php:58 cookie/class-cookie-admin.php:3489
+#: config/steps.php:58 cookie/class-cookie-admin.php:3470
 msgid "Cookie scan"
 msgstr "Cookie scan"
 
-#: cookie/class-cookie-admin.php:3253
+#: cookie/class-cookie-admin.php:3234
 msgid "Cookie scan in progress"
 msgstr "Cookie scan in uitvoering"
 
-#: cookie/class-cookie-admin.php:3251
+#: cookie/class-cookie-admin.php:3232
 msgid "No cookies detected"
 msgstr "Geen cookies gedetecteerd"
 
-#: cookie/class-cookie-admin.php:3141
+#: cookie/class-cookie-admin.php:3122
 msgid "%s at %s"
 msgstr "%s om %s"
 
@@ -4981,38 +4968,38 @@ msgstr "De cookiescan detecteerde %s op je site, wat betekent dat het antwoord o
 msgid "Your website does not require a cookie banner, so these settings do not apply."
 msgstr "Je website heeft geen cookie banner nodig, dus deze instellingen zijn niet van toepassing."
 
-#: config/class-config.php:610
+#: config/class-config.php:617
 msgid "Your site requires a cookie banner, which has been enabled."
 msgstr "Je website vereist een cookie banner, welke is ingeschakeld."
 
-#: class-admin.php:1033 class-admin.php:1034 shepherd/tour.php:73
+#: class-admin.php:1044 class-admin.php:1045 shepherd/tour.php:73
 msgid "Dashboard"
 msgstr "Dashboard"
 
-#: class-admin.php:1042 class-admin.php:1043
+#: class-admin.php:1053 class-admin.php:1054
 msgid "Wizard"
 msgstr "Wizard"
 
-#: class-admin.php:1022
+#: class-admin.php:1033
 msgid "Complianz"
 msgstr "Complianz"
 
-#: class-admin.php:1015
+#: class-admin.php:1026
 msgid "Complianz %s"
 msgstr "Complianz %s"
 
-#: class-admin.php:780 templates/dashboard/tools-footer.php:4
-#: templates/admin_wrap.php:9
+#: templates/dashboard/tools-footer.php:4 templates/admin_wrap.php:9
+#: class-admin.php:791
 msgid "Support"
 msgstr "Support"
 
-#: class-admin.php:773 class-admin.php:1055 class-admin.php:1056
-#: class-admin.php:1280 templates/dashboard/tools.php:46
-#: integrations/integrations-menu.php:51 cookiebanner/settings.php:382
-#: cookiebanner/settings.php:684
+#: cookiebanner/settings.php:384 cookiebanner/settings.php:684
+#: templates/dashboard/tools.php:46 class-admin.php:784 class-admin.php:1066
+#: class-admin.php:1067 class-admin.php:1291
+#: integrations/integrations-menu.php:51
 msgid "Settings"
 msgstr "Instellingen"
 
-#: callback-notices.php:98
+#: callback-notices.php:99
 msgid "The scan found social media buttons or widgets for %s on your site, which means the answer should be yes"
 msgstr "De scan heeft social media knoppen of widgets gevonden voor %s op je site, wat betekent dat het antwoord ja moet zijn"
