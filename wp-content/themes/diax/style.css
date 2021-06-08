@@ -25,16 +25,6 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: 'flama_semicondensedlight';
-  src: url("font/flamasemicondensed-light-webfont.woff2") format("woff2"), url("font/flamasemicondensed-light-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'flama_semicondensedmedium';
-  src: url("font/flamasemicondensed-medium-webfont.woff2") format("woff2"), url("font/flamasemicondensed-medium-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
   font-family: 'flama_semicondensedsemibold';
   src: url("font/flamasemicondensed-semibold-webfont.woff2") format("woff2"), url("font/flamasemicondensed-semibold-webfont.woff") format("woff");
   font-weight: normal;
@@ -45,48 +35,13 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: 'open_sansbold_italic';
-  src: url("font/opensans-bolditalic-webfont.woff2") format("woff2"), url("font/opensans-bolditalic-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'open_sansextrabold';
-  src: url("font/opensans-extrabold-webfont.woff2") format("woff2"), url("font/opensans-extrabold-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'open_sansextrabold_italic';
-  src: url("font/opensans-extrabolditalic-webfont.woff2") format("woff2"), url("font/opensans-extrabolditalic-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
   font-family: 'open_sansitalic';
   src: url("font/opensans-italic-webfont.woff2") format("woff2"), url("font/opensans-italic-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: 'open_sanslight';
-  src: url("font/opensans-light-webfont.woff2") format("woff2"), url("font/opensans-light-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'open_sanslight_italic';
-  src: url("font/opensans-lightitalic-webfont.woff2") format("woff2"), url("font/opensans-lightitalic-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
   font-family: 'open_sansregular';
   src: url("font/opensans-regular-webfont.woff2") format("woff2"), url("font/opensans-regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'open_sanssemibold';
-  src: url("font/opensans-semibold-webfont.woff2") format("woff2"), url("font/opensans-semibold-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'open_sanssemibold_italic';
-  src: url("font/opensans-semibolditalic-webfont.woff2") format("woff2"), url("font/opensans-semibolditalic-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 html {
@@ -148,11 +103,11 @@ h6 {
   line-height: 1.2;
   color: #01172e; }
 
-p {
-  font-weight: 100; }
-
 b, strong {
-  font-weight: 900 !important; }
+  font-family: 'open_sansbold'; }
+
+i, em {
+  font-family: 'open_sansitalic'; }
 
 /***** Links *****/
 a {
