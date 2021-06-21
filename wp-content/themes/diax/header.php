@@ -14,13 +14,28 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <?php wp_head(); ?>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-198965149"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-198965149');
+</script>
+
 </head> 
 
 <body <?php body_class(); ?>>
 
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php
+
+	<header id="masthead" class="site-header">
+
+    <a class="skip-link screen-reader-text" href="#content"><?php
 
     if(pll_current_language() == 'nl') {
                     esc_html_e( 'Naar de inhoud', 'slightly' );
@@ -31,8 +46,6 @@
                 } 
       ?></a>
 
-
-	<header id="masthead" class="site-header">
   <div class="row">
     <div class="col-xs-12 site-header-col">
 		<div class="site-branding">
@@ -65,7 +78,7 @@
             <?php 
             } else if(pll_current_language() == 'fr') {?>
             <span class="knop-licht">Mode sombre</span>
-            <span class="knop-donker">Mode lumière</span>
+            <span class="knop-donker">Mode clair</span>
         
             <?php
             } else if(pll_current_language() == 'en') {?>

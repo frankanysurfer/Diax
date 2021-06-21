@@ -18,5 +18,11 @@ add_action( 'wp_enqueue_scripts', 'childtheme_parent_styles');
 
 add_filter( 'wpcf7_autop_or_not', '__return_false' );
 
+
+
+// function add_google_fonts() {
+// wp_enqueue_style( ' add_google_fonts ', ' https://fonts.googleapis.com/css?family=Open+Sans:300,400', false );}
+// add_action( 'wp_enqueue_scripts', 'add_google_fonts' );
+
 ?>
 

@@ -1,5 +1,8 @@
 .dark {
 	background-color: $blueVeryDark;
+	.page {
+		background-color: $blueVeryDark;
+	}
 	h1 {
 	    color: $blueBrightD;
 	}
@@ -93,7 +96,6 @@
 			    width: 100%;
 			    height: 1px;
 			    content: '';
-			    // transform: scaleX(0);
 			    background-color: #fff;
 			    transition: all .2s ease-out;
 			}
@@ -494,7 +496,6 @@ body {
 			    width: 100%;
 			    height: 1px;
 			    content: '';
-			    // transform: scaleX(0);
 			    background-color: #fff;
 			    transition: all .2s ease-out;
 			}

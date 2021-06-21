@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.7.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-06-03 14:45:14+0000\n"
+"PO-Revision-Date: 2021-06-11 15:54:17+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -941,7 +941,7 @@ msgstr "Auto-updates zijn alleen beschikbaar voor plugins die erkend worden door
 
 #: wp-admin/includes/theme.php:842 wp-admin/themes.php:1002
 msgid "Update Incompatible"
-msgstr "Update niet compatibel"
+msgstr "Update incompatibel"
 
 #: wp-admin/update-core.php:638
 msgid "This update doesn&#8217;t work with your versions of WordPress and PHP."
@@ -2005,10 +2005,6 @@ msgstr "<a href=\"https://wordpress.org/support/article/appearance-widgets-scree
 msgid "<a href=\"https://wordpress.org/support/article/tools-import-screen/\">Documentation on Import</a>"
 msgstr "<a href=\"https://wordpress.org/support/article/tools-import-screen/\">Documentatie over Importeren</a>"
 
-#: wp-admin/tools.php:55
-msgid "<a href=\"https://wordpress.org/support/article/tools-screen/\">Documentation on Tools</a>"
-msgstr "<a href=\"https://wordpress.org/support/article/tools-screen/\">Documentatie over Gereedschap</a>"
-
 #: wp-admin/options.php:351
 msgid "This page allows direct access to your site settings. You can break things here. Please be cautious!"
 msgstr "Deze pagina geeft je directe toegang tot je website instellingen. Hier kan je website breken, dus pas op wat je doet!"
@@ -2017,6 +2013,10 @@ msgstr "Deze pagina geeft je directe toegang tot je website instellingen. Hier k
 #: wp-admin/options.php:299
 msgid "The %s setting is unregistered. Unregistered settings are deprecated. See https://developer.wordpress.org/plugins/settings/settings-api/"
 msgstr "De %s instelling is unregistered. Unregistered instellingen zijn verouderd. Zie https://developer.wordpress.org/plugins/settings/settings-api/"
+
+#: wp-admin/tools.php:55
+msgid "<a href=\"https://wordpress.org/support/article/tools-screen/\">Documentation on Tools</a>"
+msgstr "<a href=\"https://wordpress.org/support/article/tools-screen/\">Documentatie over tools</a>"
 
 #: wp-admin/edit-form-advanced.php:380
 msgid "<strong>Format</strong> &mdash; Post Formats designate how your theme will display a specific post. For example, you could have a <em>standard</em> blog post with a title and paragraphs, or a short <em>aside</em> that omits the title and contains a short text blurb. Your theme could enable all or some of 10 possible formats. <a href=\"https://wordpress.org/support/article/post-formats/#supported-formats\">Learn more about each post format</a>."
@@ -3213,10 +3213,6 @@ msgid_plural "Your site has %d themes waiting to be updated."
 msgstr[0] "Jouw website heeft %d thema dat geüpdatet kan worden."
 msgstr[1] "Jouw website heeft %d thema's die geüpdatet kunnen worden."
 
-#: wp-admin/includes/class-wp-site-health.php:562
-msgid "You have themes waiting to be updated"
-msgstr "Je hebt thema's die geüpdatet kunnen worden"
-
 #: wp-admin/includes/class-wp-site-health.php:442
 msgid "You should remove inactive plugins"
 msgstr "Het is aangeraden om inactieve plugins te verwijderen."
@@ -3232,9 +3228,9 @@ msgid_plural "Your site has %d installed themes, and they are all up to date."
 msgstr[0] "Je website heeft %d geïnstalleerd thema en deze is up-to-date."
 msgstr[1] "Je website heeft %d geïnstalleerd thema's en deze zijn up-to-date."
 
-#: wp-admin/includes/class-wp-site-health.php:394
-msgid "You have plugins waiting to be updated"
-msgstr "Je hebt plugins die geüpdatet kunnen worden."
+#: wp-admin/includes/class-wp-site-health.php:562
+msgid "You have themes waiting to be updated"
+msgstr "Je hebt thema's die bijgewerkt kunnen worden"
 
 #. translators: %d: The number of active plugins.
 #: wp-admin/includes/class-wp-site-health.php:425
@@ -3257,6 +3253,10 @@ msgid "Your site has %d plugin waiting to be updated."
 msgid_plural "Your site has %d plugins waiting to be updated."
 msgstr[0] "Je website heeft %d plugin waarvoor een update beschikbaar is."
 msgstr[1] "Je website heeft %d plugins waarvoor een update beschikbaar is."
+
+#: wp-admin/includes/class-wp-site-health.php:394
+msgid "You have plugins waiting to be updated"
+msgstr "Je hebt plugins die bijgewerkt kunnen worden."
 
 #: wp-admin/includes/class-wp-site-health.php:327
 msgid "You are currently running the latest version of WordPress available, keep it up!"
@@ -4803,12 +4803,6 @@ msgstr ""
 msgid "Email sent."
 msgstr "E-mail verstuurd!"
 
-#. translators: Personal data export notification email subject. %s: Site
-#. title.
-#: wp-admin/includes/privacy-tools.php:616
-msgid "[%s] Personal Data Export"
-msgstr "[%s] Persoonlijke Gegevens Export"
-
 #: wp-admin/includes/privacy-tools.php:726
 msgid "Unable to send personal data export email."
 msgstr "Het is niet gelukt om de persoonlijke gegevens export e-mail te versturen."
@@ -4821,14 +4815,11 @@ msgstr "Download persoonlijke gegevens opnieuw"
 msgid "Sending email..."
 msgstr "E-mail aan het verzenden ..."
 
-#: wp-admin/includes/privacy-tools.php:445
-msgid "Personal Data Export"
-msgstr "Persoonlijke Data Export"
-
-#. translators: %s: User's email address.
-#: wp-admin/includes/privacy-tools.php:361
-msgid "Personal Data Export for %s"
-msgstr "Persoonlijke Data Export voor %s"
+#. translators: Personal data export notification email subject. %s: Site
+#. title.
+#: wp-admin/includes/privacy-tools.php:616
+msgid "[%s] Personal Data Export"
+msgstr "[%s] Persoonlijke gegevens export"
 
 #: wp-admin/includes/privacy-tools.php:571
 msgid "Invalid request ID when sending personal data export email."
@@ -4837,6 +4828,15 @@ msgstr "Ongeldig request ID tijdens het versturen van de persoonlijke data expor
 #: wp-admin/includes/ajax-actions.php:4762
 msgid "A valid email address must be given."
 msgstr "Een geldig e-mailadres moet opgegeven worden."
+
+#. translators: %s: User's email address.
+#: wp-admin/includes/privacy-tools.php:361
+msgid "Personal Data Export for %s"
+msgstr "Persoonlijke gegevens export voor %s"
+
+#: wp-admin/includes/privacy-tools.php:445
+msgid "Personal Data Export"
+msgstr "Persoonlijke gegevens export"
 
 #: wp-admin/includes/class-wp-privacy-requests-table.php:45
 msgid "Requested"
@@ -5824,25 +5824,25 @@ msgstr "<a href=\"%1$s\">WordPress %2$s</a> is beschikbaar! Informeer de website
 msgid "<a href=\"%1$s\">WordPress %2$s</a> is available! <a href=\"%3$s\" aria-label=\"%4$s\">Please update now</a>."
 msgstr "<a href=\"%1$s\">WordPress %2$s</a> is beschikbaar! <a href=\"%3$s\" aria-label=\"%4$s\">Nu bijwerken</a>."
 
-#. translators: %s: Number of plugins.
-#: wp-admin/includes/update.php:879
-msgid "%s plugins successfully updated."
-msgstr "%s plugins succesvol geüpdatet."
-
 #. translators: %s: Number of themes.
 #: wp-admin/includes/update.php:884
 msgid "%s themes successfully updated."
-msgstr "%s thema's is succesvol geüpdatet."
+msgstr "%s thema's is succesvol bijgewerkt."
+
+#. translators: %s: Number of plugins.
+#: wp-admin/includes/update.php:879
+msgid "%s plugins successfully updated."
+msgstr "%s plugins succesvol bijgewerkt."
 
 #. translators: %s: Number of themes.
 #: wp-admin/includes/update.php:872
 msgid "%s theme successfully updated."
-msgstr "%s thema succesvol geüpdatet."
+msgstr "%s thema succesvol bijgewerkt."
 
 #. translators: %s: Number of plugins.
 #: wp-admin/includes/update.php:867
 msgid "%s plugin successfully updated."
-msgstr "%s plugin succesvol geüpdatet."
+msgstr "%s plugin succesvol bijgewerkt."
 
 #: wp-admin/includes/template.php:2588
 msgid "This will replace the current editor content with the last backup version. You can use undo and redo in the editor to get the old content back or to return to the restored version."
@@ -6919,7 +6919,7 @@ msgstr "Pagina gepland voor: %s."
 
 #: wp-admin/edit-form-advanced.php:208
 msgid "Page draft updated."
-msgstr "Pagina concept geüpdatet."
+msgstr "Pagina concept bijgewerkt."
 
 #: wp-admin/edit-form-advanced.php:205
 msgid "Page submitted."
@@ -7748,7 +7748,7 @@ msgstr "Insluiten van %s mislukt."
 #: wp-admin/includes/class-wp-theme-install-list-table.php:67
 msgctxt "themes"
 msgid "Recently Updated"
-msgstr "Recent geüpdatet"
+msgstr "Recent bijgewerkt"
 
 #: wp-admin/includes/class-wp-automatic-updater.php:812
 msgid "If you reach out to us, we'll also ensure you'll never have this problem again."
@@ -8185,7 +8185,7 @@ msgstr "Activiteit"
 #. translators: %s: WordPress version.
 #: wp-admin/includes/class-wp-automatic-updater.php:1275
 msgid "SUCCESS: WordPress was successfully updated to %s"
-msgstr "WordPress is succesvol geüpdatet naar %s"
+msgstr "WordPress is succesvol bijgewerkt naar %s"
 
 #. translators: %s: WordPress version.
 #: wp-admin/includes/class-wp-automatic-updater.php:826
@@ -8297,12 +8297,6 @@ msgstr "Vertalingen"
 msgid "Error code: %s"
 msgstr "Foutcode: %s"
 
-#. translators: Site updated notification email subject. 1: Site title, 2:
-#. WordPress version.
-#: wp-admin/includes/class-wp-automatic-updater.php:695
-msgid "[%1$s] Your site has updated to WordPress %2$s"
-msgstr "[%1$s] Je website is geüpdatet naar WordPress %2$s"
-
 #: wp-admin/includes/class-language-pack-upgrader.php:114
 #: wp-admin/update-core.php:757
 msgid "Your translations are all up to date."
@@ -8328,13 +8322,15 @@ msgstr "[%1$s] WordPress %2$s is beschikbaar. Graag bijwerken!"
 msgid "Background updates"
 msgstr "Achtergrond updates"
 
+#. translators: Site updated notification email subject. 1: Site title, 2:
+#. WordPress version.
+#: wp-admin/includes/class-wp-automatic-updater.php:695
+msgid "[%1$s] Your site has updated to WordPress %2$s"
+msgstr "[%1$s] Je website is bijgewerkt naar WordPress %2$s"
+
 #: wp-admin/includes/update-core.php:1177
 msgid "There is not enough free disk space to complete the update."
 msgstr "Er is onvoldoende schijfruimte om de update te voltooien."
-
-#: wp-admin/includes/class-language-pack-upgrader.php:120
-msgid "Translation updated successfully."
-msgstr "Vertaling succesvol geüpdatet."
 
 #: wp-admin/includes/class-language-pack-upgrader.php:113
 msgid "Some of your translations need updating. Sit tight for a few more seconds while we update them as well."
@@ -8353,6 +8349,10 @@ msgstr "Thema bijwerken: %s"
 #: wp-admin/includes/class-language-pack-upgrader.php:119
 msgid "Translation update failed."
 msgstr "Bijwerken van vertaling is mislukt."
+
+#: wp-admin/includes/class-language-pack-upgrader.php:120
+msgid "Translation updated successfully."
+msgstr "Vertaling succesvol bijgewerkt."
 
 #. translators: %s: Link to documentation on child themes.
 #: wp-admin/theme-editor.php:42
@@ -10047,11 +10047,6 @@ msgstr "Dit scherm geeft je toegang naar al je berichten. Je kunt de weergave va
 msgid "Authors can publish and manage their own posts, and are able to upload files."
 msgstr "Auteurs kunnen publiceren en hun eigen berichten beheren, en kunnen ook bestanden uploaden."
 
-#. translators: %s: URL to Import screen.
-#: wp-admin/tools.php:77
-msgid "If you want to convert your categories to tags (or vice versa), use the <a href=\"%s\">Categories and Tags Converter</a> available from the Import screen."
-msgstr "Indien je de categorieën op je website naar tags (of vice versa) wil converteren, dan moet je de<a href=\"%s\">Categorieën & Tags-conversietool</a> gebruiken die beschikbaar is in het Importeren-tabblad."
-
 #: wp-admin/user-new.php:283
 msgid "Subscribers can read comments/comment/receive newsletters, etc. but cannot create regular site content."
 msgstr "Abonnees kunnen reacties lezen/plaatsen, nieuwsbrieven ontvangen, enz., maar kunnen geen content aan de website toevoegen."
@@ -10076,6 +10071,11 @@ msgstr "Je kunt ook meerdere berichten tegelijk verplaatsen naar de prullenmand.
 #: wp-admin/update-core.php:946
 msgid "How to Update"
 msgstr "Hoe bijwerken"
+
+#. translators: %s: URL to Import screen.
+#: wp-admin/tools.php:77
+msgid "If you want to convert your categories to tags (or vice versa), use the <a href=\"%s\">Categories and Tags Converter</a> available from the Import screen."
+msgstr "Indien je de categorieën op je website naar tags (of vice versa) wil converteren, dan moet je de <a href=\"%s\">Categorieën & Tags-conversietool</a> gebruiken die beschikbaar is in het Importeren tabblad."
 
 #: wp-admin/options-permalink.php:52
 msgid "Custom Structures"
@@ -10757,7 +10757,7 @@ msgstr "Netwerk configureren"
 
 #: wp-admin/menu.php:279
 msgid "Available Tools"
-msgstr "Beschikbare hulpmiddelen"
+msgstr "Beschikbare tools"
 
 #: wp-admin/includes/credits.php:104
 msgctxt "Translate this to be the equivalent of English Translators in your language for the credits page Translators section"
@@ -12061,12 +12061,6 @@ msgstr "Het wachtwoord dat je gekozen hebt tijdens de installatie."
 msgid "WordPress updated successfully."
 msgstr "WordPress met succes bijgewerkt."
 
-#: wp-admin/update-core.php:449 wp-admin/update-core.php:578
-#: wp-admin/update-core.php:1103 wp-admin/update-core.php:1108
-#: wp-admin/plugins.php:156
-msgid "Update Plugins"
-msgstr "Bijwerken plugins"
-
 #: wp-admin/update-core.php:807
 msgid "Update WordPress"
 msgstr "WordPress bijwerken"
@@ -12077,6 +12071,12 @@ msgstr "WordPress bijwerken"
 #: wp-admin/update-core.php:103 wp-admin/upgrade.php:99
 msgid "You cannot update because <a href=\"%1$s\">WordPress %2$s</a> requires PHP version %3$s or higher and MySQL version %4$s or higher. You are running PHP version %5$s and MySQL version %6$s."
 msgstr "Je kan niet bijwerken omdat <a href=\"%1$s\">WordPress %2$s</a> PHP-versie %3$s of nieuwer en MySQL versie %4$s of nieuwer vereist. Je gebruikt PHP-versie %5$s en MySQL versie %6$s."
+
+#: wp-admin/update-core.php:449 wp-admin/update-core.php:578
+#: wp-admin/update-core.php:1103 wp-admin/update-core.php:1108
+#: wp-admin/plugins.php:156
+msgid "Update Plugins"
+msgstr "Plugins bijwerken"
 
 #: wp-admin/update-core.php:922 wp-admin/update-core.php:983
 msgid "WordPress Updates"
@@ -13366,13 +13366,13 @@ msgstr "Wanneer je een thema in .zip formaat hebt, kun je die installeren door h
 msgid "This theme is already installed."
 msgstr "Dit thema is al geïnstalleerd."
 
-#: wp-admin/options-discussion.php:209
-msgid "When a comment contains any of these words in its content, author name, URL, email, IP address, or browser&#8217;s user agent string, it will be put in the Trash. One word or IP address per line. It will match inside words, so &#8220;press&#8221; will match &#8220;WordPress&#8221;."
-msgstr "Wanneer een reactie één van deze woorden bevat in zijn inhoud, auteursnaam, URL, e-mail, IP-adres of browser user agent string, wordt deze in de prullenbak geplaatst. Eén woord of IP-adres per regel. Het zal matchen binnen woorden, dus &#8220;press&#8221; zal matchen met &#8220;WordPress&#8221;."
-
 #: wp-admin/options-discussion.php:200
 msgid "When a comment contains any of these words in its content, author name, URL, email, IP address, or browser&#8217;s user agent string, it will be held in the <a href=\"edit-comments.php?comment_status=moderated\">moderation queue</a>. One word or IP address per line. It will match inside words, so &#8220;press&#8221; will match &#8220;WordPress&#8221;."
 msgstr "Wanneer een reactie één van deze woorden bevat in zijn inhoud, naam, URL, e-mailadres of IP-adres, wordt deze in de <a href=\"edit-comments.php?comment_status=moderated\">moderatiewachtrij</a> vastgehouden. Eén woord of IP-adres per regel. Het zal matchen binnen woorden, dus &#8220;press&#8221; zal matchen met &#8220;WordPress&#8221;."
+
+#: wp-admin/options-discussion.php:209
+msgid "When a comment contains any of these words in its content, author name, URL, email, IP address, or browser&#8217;s user agent string, it will be put in the Trash. One word or IP address per line. It will match inside words, so &#8220;press&#8221; will match &#8220;WordPress&#8221;."
+msgstr "Wanneer een reactie één van deze woorden bevat in zijn inhoud, auteursnaam, URL, e-mail, IP-adres of browser user agent string, wordt deze in de prullenbak geplaatst. Eén woord of IP-adres per regel. Het zal matchen binnen woorden, dus &#8220;press&#8221; zal matchen met &#8220;WordPress&#8221;."
 
 #. translators: 1, 2, 3: Examples of random email addresses.
 #: wp-admin/options-writing.php:145

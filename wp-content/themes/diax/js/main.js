@@ -1,6 +1,6 @@
 // Logo alt tekst
 var b = document.querySelector(".site-branding a img");
-b.setAttribute("alt", "Diax Digital Accessibility Experts");
+b.setAttribute("alt", "DiAX Digital Accessibility Experts");
 
 // Cards klikgebied
 const cards = document.querySelectorAll('.card-item');
@@ -17,19 +17,12 @@ Array.prototype.forEach.call(cards, card => {
 });
 
 // Dark mode
-// var b = document.body;
 var d = document.getElementById("switch");
 
 var logo = document.getElementById("diax-logo").src;
-var logodark = "https://staging.di-ax.be/wp-content/themes/diax/img/diax-logo-dark.svg";
+var logodark = "https://di-ax.be/wp-content/themes/diax/img/diax-logo-dark.svg";
 var imgElement = document.getElementById('diax-logo');
 
-// function modeSwitch() {
-//    b.classList.toggle("dark");
-//    d.classList.toggle("zon");
-   
-//    imgElement.src = (imgElement.src === logo)? logodark : logo;
-// }
 
 d.addEventListener('click', () => {
     document.body.classList.toggle('dark');
@@ -42,9 +35,14 @@ if (localStorage.getItem('theme') === 'dark') {
     imgElement.src = (imgElement.src === logo)? logodark : logo;
 }
 
-// Remove cookie role="banner"
-// document.addEventListener('DOMContentLoaded', function(event) {
-//   var c = document.getElementById("cookie-notice");
-//   c.removeAttribute("role");
-// })
 
+// cookie talen
+var cookieaccept = document.querySelector(".rcc-accept-btn");
+var cookieinfo = document.querySelector(".rcc-wrapper p");
+if (document.documentElement.lang === "fr") {
+  cookieaccept.innerHTML = "J'accepte";
+  cookieinfo.innerHTML = "Nous utilisons des cookies uniquement à des fins d'analyse";
+} else if (document.documentElement.lang === "en") {
+  cookieaccept.innerHTML = "Accept";
+  cookieinfo.innerHTML = "We use cookies for analytical purposes only"; 
+}

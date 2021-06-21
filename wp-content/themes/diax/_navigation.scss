@@ -21,6 +21,10 @@ li a:hover, li a:active {
     cursor: pointer;
 }
 
+.rcc-links a:focus {
+	outline: 2px solid $white;
+}
+
 /***** Hoofdnavigatie *****/
 .main-navigation {
 	margin-top: 50px;
@@ -30,6 +34,10 @@ li a:hover, li a:active {
 		color: $blueVeryDark;
 		border-bottom: none;
 	}
+}
+
+.menu-hoofdmenu-nl-container {
+	width: 100%;
 }
 
 /***** Talenkeuze* ****/
