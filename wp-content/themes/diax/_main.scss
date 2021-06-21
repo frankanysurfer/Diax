@@ -352,4 +352,50 @@ section	.card-partners {
 	}
 }
 
+/***** home berichten *****/
+
+.home-berichten {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;;
+	width: 100%;
+	max-width: 100%;
+	article {
+		margin: 0 auto;
+		width: 100%;
+		padding: 0 2rem 1rem;
+    	border-radius: 2px;
+    	box-shadow: 2px 2px 20px rgba(0,5,24,.1);
+    	&:nth-child(2) {
+    		display: none;
+    	}
+    	h2 {
+			font-family: flama_semicondensedbold;
+			font-size: 24px;
+			line-height: 29px;
+			color: #070410;
+			margin-top: 1.5rem;
+			margin-bottom: .5rem;
+		}
+		.auteur {
+			font-family: flama_semicondensedbold;
+			font-size: 14px;
+			line-height: 17px;
+			color: $blueDark;
+		}
+		p {
+			font-size: 18px;
+			line-height: 24px;
+			color: $blueVeryDark;
+			max-width: 100%;
+			a {
+				font-size: flama_semicondensedbook;
+				font-size: 18px;
+				line-height: 22px;
+				color: $blueDark;
+			}
+		}
+	}
+}
+
 

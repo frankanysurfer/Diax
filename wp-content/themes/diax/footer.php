@@ -32,17 +32,17 @@
             <div class="footer-row footer-row-2">
             <h3>DiAX</h3>
             <ul class="footerlist">    
-                <li><a href="https://di-ax.be">Home</a></li>
-                <li><a href="https://di-ax.be/diensten">Diensten</a></li>
-                <li><a href="https://di-ax.be/contracten">Contracten</a></li>
-                <li><a href="https://di-ax.be/wetgeving">Wetgeving</a></li>
-                <li><a href="https://di-ax.be/over">Over DiAX</a></li>
-                <li><a href="https://di-ax.be/contact">Contact</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/diensten">Diensten</a></li>
+                <li><a href="/contracten">Contracten</a></li>
+                <li><a href="/wetgeving">Wetgeving</a></li>
+                <li><a href="/over">Over DiAX</a></li>
+                <li><a href="/contact">Contact</a></li>
             </ul>
             </div>
             <div class="footer-row">
             <ul class="footerlist nuttigelinks">    
-                <li><a href="https://di-ax.be/toegankelijkheidsverklaring">Toegankelijkheidsverklaring</a></li>
+                <li><a href="/toegankelijkheidsverklaring">Toegankelijkheidsverklaring</a></li>
             </ul>
 
             </div>
@@ -60,17 +60,17 @@
             <div class="footer-row footer-row-2">
             <h3>DiAX</h3>
             <ul class="footerlist">    
-                <li><a href="https://di-ax.be/fr/diax-francais">Home</a></li>
-                <li><a href="https://di-ax.be/fr/services-2">Services</a></li>
-                <li><a href="https://di-ax.be/fr/contrats">Contrats</a></li>
-                <li><a href="https://di-ax.be/fr/legislation">Législation</a></li>
-                <li><a href="https://di-ax.be/fr/qui-sommes-nous">Qui sommes-nous?</a></li>
-                <li><a href="https://di-ax.be/fr/contact-fr">Contact</a></li>
+                <li><a href="/fr/diax-francais">Home</a></li>
+                <li><a href="/fr/services-2">Services</a></li>
+                <li><a href="/fr/contrats">Contrats</a></li>
+                <li><a href="/fr/legislation">Législation</a></li>
+                <li><a href="/fr/qui-sommes-nous">Qui sommes-nous?</a></li>
+                <li><a href="/fr/contact-fr">Contact</a></li>
             </ul>
             </div>
             <div class="footer-row">
             <ul class="footerlist nuttigelinks">    
-                <li><a href="https://di-ax.be/fr/declaration-d-accessibilite">Déclaration d'accessibilité</a></li>
+                <li><a href="/fr/declaration-d-accessibilite">Déclaration d'accessibilité</a></li>
             </ul>
             </div>
             <?php
@@ -87,17 +87,17 @@
             <div class="footer-row footer-row-2">
             <h3>DiAX</h3>
             <ul class="footerlist">    
-                <li><a href="https://di-ax.be/en/diax-english">Home</a></li>
-                <li><a href="https://di-ax.be/en/services">Services</a></li>
-                <li><a href="https://di-ax.be/en/contracts">Contracts</a></li>
-                <li><a href="https://di-ax.be/en/legislation-2">Legislation</a></li>
-                <li><a href="https://di-ax.be/en/about-us">About us</a></li>
-                <li><a href="https://di-ax.be/en/contact-en">Contact</a></li>
+                <li><a href="/en/diax-english">Home</a></li>
+                <li><a href="/en/services">Services</a></li>
+                <li><a href="/en/contracts">Contracts</a></li>
+                <li><a href="/en/legislation-2">Legislation</a></li>
+                <li><a href="/en/about-us">About us</a></li>
+                <li><a href="/en/contact-en">Contact</a></li>
             </ul>
             </div>
             <div class="footer-row">
             <ul class="footerlist nuttigelinks">    
-                <li><a href="https://di-ax.be/en/accessibility-statement">Accessibility statement</a></li>
+                <li><a href="/en/accessibility-statement">Accessibility statement</a></li>
             </ul>
             </div>
              <?php                }  

@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.7.x - Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-06-11 15:54:59+0000\n"
+"PO-Revision-Date: 2021-06-18 08:52:53+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -223,13 +223,13 @@ msgstr "Er bestaat al een dubbele afspraak."
 msgid "A plugin prevented the event from being scheduled."
 msgstr "Een plugin hield de gebeurtenis tegen om gepland te worden."
 
-#: wp-includes/cron.php:1197
-msgid "The cron event list could not be saved."
-msgstr "De lijst met cron-gebeurtenissen kon niet worden opgeslagen."
-
 #: wp-includes/cron.php:498
 msgid "A plugin prevented the event from being unscheduled."
 msgstr "Een plugin heeft voorkomen dat de gebeurtenis ongepland werd."
+
+#: wp-includes/cron.php:1197
+msgid "The cron event list could not be saved."
+msgstr "De lijst met cron gebeurtenissen kon niet worden opgeslagen."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-attachments-controller.php:1391
 msgid "Height of the crop as a percentage of the image height."
@@ -802,10 +802,6 @@ msgctxt "Block pattern description"
 msgid "Three filled buttons with rounded corners, side by side."
 msgstr "Drie gevulde knoppen met afgeronde hoeken, naast elkaar."
 
-#: wp-includes/block-patterns/heading-paragraph.php:10
-msgid "These preliminaries settled, he did not care to put off any longer the execution of his design, urged on to it by the thought of all the world was losing by his delay, seeing what wrongs he intended to right, grievances to redress, injustices to repair, abuses to remove, and duties to discharge."
-msgstr "Deze voorontwerpen werden geregeld, hij gaf er niet meer om de uitvoering van zijn ontwerp uit te stellen, aangespoord door de gedachte dat de hele wereld door zijn uitstel verloor, gezien de misstanden die hij wilde rechtzetten, grieven om te herstellen, onrechtvaardigheden om te herstellen, misbruiken om te verwijderen, en plichten om te ontslaan."
-
 #: wp-includes/block-patterns/heading-paragraph.php:13
 msgctxt "Block pattern description"
 msgid "A heading preceded by a chapter number, and followed by a paragraph."
@@ -815,9 +811,9 @@ msgstr "Een koptekst vooraf gegaan door een hoofdstuk-nummer, en gevolgd door ee
 msgid "Books"
 msgstr "Boeken"
 
-#: wp-includes/block-patterns/text-two-columns-with-images.php:11
-msgid "But of all there were none he liked so well as those of the famous Feliciano de Silva's composition, for their lucidity of style and complicated conceits were as pearls in his sight, particularly when in his reading he came upon courtships and cartels, where he often found passages like \"the reason of the unreason with which my reason is afflicted so weakens my reason that with reason I murmur at your beauty;\" or again, \"the high heavens render you deserving of the desert your greatness deserves.\""
-msgstr "Maar er waren er geen die hij zo goed vond als die van de beroemde Feliciano de Silva's compositie, want hun luciditeit van stijl en ingewikkelde verwaandheid waren als parels in zijn ogen, vooral toen hij in zijn lezing kwam over hofmakerij en kartelvorming, waar hij vaak passages vond als \"de reden van de onredelijkheid waarmee mijn verstand wordt gekweld, verzwakt mijn verstand zo dat ik met rede over uw schoonheid mompel;\" of opnieuw, \"de hoge hemelen geven u het verdienen van het dessert die uw grootheid verdient\"."
+#: wp-includes/block-patterns/heading-paragraph.php:10
+msgid "These preliminaries settled, he did not care to put off any longer the execution of his design, urged on to it by the thought of all the world was losing by his delay, seeing what wrongs he intended to right, grievances to redress, injustices to repair, abuses to remove, and duties to discharge."
+msgstr "Deze voorontwerpen werden geregeld, hij gaf er niet meer om de uitvoering van zijn ontwerp uit te stellen, aangespoord door de gedachte dat de hele wereld door zijn uitstel verloor, gezien de misstanden die hij wilde rechtzetten, grieven om te herstellen, onrechtvaardigheden om te herstellen, misbruiken om te verwijderen, en plichten om te ontslaan."
 
 #: wp-includes/block-patterns/text-two-columns-with-images.php:12
 msgctxt "Block pattern description"
@@ -828,6 +824,10 @@ msgstr "Twee kolommen met tekst, elk met een afbeelding er boven."
 msgid "Which treats of the first sally the ingenious Don Quixote made from home"
 msgstr "Welke traktaties van de eerste sally die de ingenieuze Don Quichot van huis uit gemaakt heeft"
 
+#: wp-includes/block-patterns/text-two-columns-with-images.php:11
+msgid "But of all there were none he liked so well as those of the famous Feliciano de Silva's composition, for their lucidity of style and complicated conceits were as pearls in his sight, particularly when in his reading he came upon courtships and cartels, where he often found passages like \"the reason of the unreason with which my reason is afflicted so weakens my reason that with reason I murmur at your beauty;\" or again, \"the high heavens render you deserving of the desert your greatness deserves.\""
+msgstr "Maar er waren er geen die hij zo goed vond als die van de beroemde Feliciano de Silva's compositie, want hun luciditeit van stijl en ingewikkelde verwaandheid waren als parels in zijn ogen, vooral toen hij in zijn lezing kwam over hofmakerij en kartelvorming, waar hij vaak passages vond als \"de reden van de onredelijkheid waarmee mijn verstand wordt gekweld, verzwakt mijn verstand zo dat ik met rede over uw schoonheid mompel;\" of opnieuw, \"de hoge hemelen geven u het verdienen van het dessert die uw grootheid verdient\"."
+
 #: wp-includes/block-patterns/heading-paragraph.php:9
 msgid "Heading and paragraph"
 msgstr "Koptekst en paragraaf"
@@ -836,14 +836,14 @@ msgstr "Koptekst en paragraaf"
 msgid "They must know, then, that the above-named gentleman whenever he was at leisure (which was mostly all the year round) gave himself up to reading books of chivalry with such ardour and avidity that he almost entirely neglected the pursuit of his field-sports, and even the management of his property; and to such a pitch did his eagerness and infatuation go that he sold many an acre of tillageland to buy books of chivalry to read, and brought home as many of them as he could get."
 msgstr "Je moet dus weten, dat de bovengenoemde heer, wanneer hij op zijn gemak was (wat meestal het hele jaar door was), zich met zo'n vurigheid en gretigheid overgaf aan het lezen van ridderboeken dat hij de uitoefening van zijn veldsporten en zelfs het beheer van zijn eigendommen bijna volledig verwaarloosde; en op zo'n hoogte ging zijn gretigheid en verliefdheid zo ver dat hij vele hectaren tillageland verkocht om ridderboeken te kopen om te lezen, en bracht hij er zoveel mogelijk mee naar huis als hij maar kon krijgen."
 
-#: wp-includes/block-patterns/text-two-columns.php:11
-msgid "The rest of it went in a doublet of fine cloth and velvet breeches and shoes to match for holidays, while on week-days he made a brave figure in his best homespun. He had in his house a housekeeper past forty, a niece under twenty, and a lad for the field and market-place, who used to saddle the hack as well as handle the bill-hook. The age of this gentleman of ours was bordering on fifty; he was of a hardy habit, spare, gaunt-featured, a very early riser and a great sportsman."
-msgstr "De rest zat in een doublet van fijne stoffen en fluwelen rijbroeken en schoenen, passend bij de feestdagen, terwijl hij op doordeweekse dagen een moedig figuur maakte in zijn beste huispak. Hij had in zijn huis een huishoudster van boven de veertig, een nichtje onder de twintig, en een jongen voor het veld en de markt, die zowel de hack zadelde als de bill-hook afhandelde. De leeftijd van deze heer van ons was bijna vijftig; hij had een harde gewoonte, een spaarzame, magere persoonlijkheid, een zeer vroege vogel en een groot sportman."
-
 #: wp-includes/block-patterns/text-two-columns.php:12
 msgctxt "Block pattern description"
 msgid "Two columns of text preceded by a long heading."
 msgstr "Twee kolommen met tekst voorafgegaan door een lange koptekst."
+
+#: wp-includes/block-patterns/text-two-columns.php:11
+msgid "The rest of it went in a doublet of fine cloth and velvet breeches and shoes to match for holidays, while on week-days he made a brave figure in his best homespun. He had in his house a housekeeper past forty, a niece under twenty, and a lad for the field and market-place, who used to saddle the hack as well as handle the bill-hook. The age of this gentleman of ours was bordering on fifty; he was of a hardy habit, spare, gaunt-featured, a very early riser and a great sportsman."
+msgstr "De rest zat in een doublet van fijne stoffen en fluwelen rijbroeken en schoenen, passend bij de feestdagen, terwijl hij op doordeweekse dagen een moedig figuur maakte in zijn beste huispak. Hij had in zijn huis een huishoudster van boven de veertig, een nichtje onder de twintig, en een jongen voor het veld en de markt, die zowel de hack zadelde als de bill-hook afhandelde. De leeftijd van deze heer van ons was bijna vijftig; hij had een harde gewoonte, een spaarzame, magere persoonlijkheid, een zeer vroege vogel en een groot sportman."
 
 #: wp-includes/block-patterns/text-two-columns.php:11
 msgid "In a village of La Mancha, the name of which I have no desire to call to mind, there lived not long since one of those gentlemen that keep a lance in the lance-rack, an old buckler, a lean hack, and a greyhound for coursing. An olla of rather more beef than mutton, a salad on most nights, scraps on Saturdays, lentils on Fridays, and a pigeon or so extra on Sundays, made away with three-quarters of his income."
@@ -4720,10 +4720,6 @@ msgstr "Gebruikers met een schermlezer: indien in formuliermodus, kan het zijn d
 msgid "CSS code"
 msgstr "CSS-code"
 
-#: wp-includes/class-wp-customize-manager.php:5593
-msgid "You can choose what&#8217;s displayed on the homepage of your site. It can be posts in reverse chronological order (classic blog), or a fixed/static page. To set a static homepage, you first need to create two Pages. One will become the homepage, and the other will be where your posts are displayed."
-msgstr "Je kan zelf kiezen wat wordt weergegeven op de homepage van je website. Het kunnen berichten zijn in een omgekeerde chronologische volgorde, (de klassieke blog stijl), of een statische pagina. Om een statische pagina te kunnen gebruiken is het nodig om eerst twee pagina&#39;s te maken, &#233;&#233;n pagina wordt gebruikt als homepage, en de andere wordt gebruikt om de berichten weer te geven."
-
 #. translators: %s: Number of menu locations.
 #: wp-includes/class-wp-customize-nav-menus.php:495
 msgid "Your theme can display menus in %s location."
@@ -4749,9 +4745,13 @@ msgstr "Als je thema meerdere menu's heeft, geef ze duidelijke namen om je te he
 msgid "Add your own CSS code here to customize the appearance and layout of your site."
 msgstr "Je eigen CSS code hier toevoegen om de weergave en indeling van je website aan te passen."
 
+#: wp-includes/class-wp-customize-manager.php:5593
+msgid "You can choose what&#8217;s displayed on the homepage of your site. It can be posts in reverse chronological order (classic blog), or a fixed/static page. To set a static homepage, you first need to create two Pages. One will become the homepage, and the other will be where your posts are displayed."
+msgstr "Je kan zelf kiezen wat wordt weergegeven op de homepage van je website. Het kunnen berichten zijn in een omgekeerde chronologische volgorde, (de klassieke blog stijl), of een statische pagina. Om een statische pagina te kunnen gebruiken is het nodig om eerst twee pagina's te maken, één pagina wordt gebruikt als homepage, en de andere wordt gebruikt om de berichten weer te geven."
+
 #: wp-includes/class-wp-customize-manager.php:5591
 msgid "Homepage Settings"
-msgstr "Homepage-instellingen"
+msgstr "Homepage instellingen"
 
 #: wp-includes/class-wp-customize-manager.php:4345
 msgid "Copied"
@@ -5621,7 +5621,7 @@ msgstr "Archieven"
 #: wp-includes/theme.php:2335
 msgctxt "Theme starter content"
 msgid "This is an example of a homepage section. Homepage sections can be any page other than the homepage itself, including the page that shows your latest blog posts."
-msgstr "Dit is een voorbeeld van een homepage-sectie. Homepage-secties kunnen elke pagina zijn behalve de homepage zelf, inclusief de pagina die je meest recente berichten toont."
+msgstr "Dit is een voorbeeld van een homepage sectie. Homepage secties kunnen elke pagina zijn behalve de homepage zelf, inclusief de pagina die je meest recente berichten toont."
 
 #: wp-includes/theme.php:2327
 msgctxt "Theme starter content"
@@ -5805,7 +5805,7 @@ msgstr "Video wijzigen"
 #: wp-includes/theme.php:2332
 msgctxt "Theme starter content"
 msgid "A homepage section"
-msgstr "Een homepage-sectie"
+msgstr "Een homepage sectie"
 
 #: wp-includes/theme.php:2323
 msgctxt "Theme starter content"
@@ -6043,7 +6043,7 @@ msgstr "Ik heb echt een ID nodig om dit te laten werken."
 #: wp-includes/class-wp-customize-manager.php:5631
 #: wp-admin/includes/file.php:38
 msgid "Homepage"
-msgstr "Homepagina"
+msgstr "Homepage"
 
 #: wp-includes/script-loader.php:819 wp-includes/js/dist/components.js:24144
 msgid "Item selected."
@@ -10906,15 +10906,15 @@ msgstr "Geen tags gevonden."
 msgid "Do not deregister the %1$s script in the administration area. To target the front-end theme, use the %2$s hook."
 msgstr "Schakel het %1$s-script niet uit in het beheergedeelte. Om het front-end thema te benaderen maak je gebruik van de %2$s-hook."
 
-#: wp-includes/class-wp-xmlrpc-server.php:531 wp-admin/options-general.php:87
-msgid "WordPress Address (URL)"
-msgstr "WordPress-adres (URL)"
-
 #: wp-includes/class-wp-xmlrpc-server.php:536 wp-admin/options-general.php:92
 #: wp-admin/network/site-info.php:162 wp-admin/network/site-info.php:170
 #: wp-admin/network/site-new.php:208
 msgid "Site Address (URL)"
 msgstr "Website adres (URL)"
+
+#: wp-includes/class-wp-xmlrpc-server.php:531 wp-admin/options-general.php:87
+msgid "WordPress Address (URL)"
+msgstr "WordPress adres (URL)"
 
 #: wp-includes/class-wp-xmlrpc-server.php:2703
 #: wp-includes/rest-api/endpoints/class-wp-rest-application-passwords-controller.php:680
@@ -11970,7 +11970,7 @@ msgstr "Scripts en stijlen zouden niet geregistreerd of geladen mogen worden vó
 #. translators: 1: Home URL, 2: Admin URL.
 #: wp-includes/ms-functions.php:2287
 msgid "You have been added to this site. Please visit the <a href=\"%1$s\">homepage</a> or <a href=\"%2$s\">log in</a> using your username and password."
-msgstr "Je bent toegevoegd aan deze website. Bezoek de <a href=\"%1$s\">homepagina</a> of <a href=\"%2$s\">meld je aan</a> met je gebruikersnaam en wachtwoord."
+msgstr "Je bent toegevoegd aan deze website. Bezoek de <a href=\"%1$s\">homepage</a> of <a href=\"%2$s\">meld je aan</a> met je gebruikersnaam en wachtwoord."
 
 #: wp-includes/script-loader.php:871
 msgid "Memory exceeded. Please try another smaller file."

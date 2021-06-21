@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.7.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-06-11 15:54:17+0000\n"
+"PO-Revision-Date: 2021-06-18 08:54:04+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -3904,14 +3904,14 @@ msgstr "Je kan geen installatie uitvoeren omdat <a href=\"%1$s\">WordPress %2$s<
 msgid "You cannot install because <a href=\"%1$s\">WordPress %2$s</a> requires PHP version %3$s or higher. You are running version %4$s."
 msgstr "Je kan geen installatie uitvoeren omdat <a href=\"%1$s\">WordPress %2$s</a> PHP versie %3$s of hoger vereist. Je gebruikt nu versie %4$s."
 
-#: wp-admin/includes/dashboard.php:1953
-msgid "Set up your homepage"
-msgstr "Stel je homepagina in"
-
 #: wp-admin/includes/class-wp-site-health.php:736
 #: wp-admin/includes/dashboard.php:1794
 msgid "Learn more about updating PHP"
 msgstr "Leer meer over het updaten van PHP"
+
+#: wp-admin/includes/dashboard.php:1953
+msgid "Set up your homepage"
+msgstr "Stel je homepage in"
 
 #: wp-admin/includes/dashboard.php:1778
 msgid "What is PHP and how does it affect my site?"
@@ -4591,7 +4591,7 @@ msgstr "Bewerk de inhoud van jouw privacybeleid, verwijder de beschrijvingen en 
 
 #: wp-admin/privacy-policy-guide.php:67
 msgid "This text template will help you to create your web site&#8217;s privacy policy."
-msgstr "Dit sjabloon helpt je om het privacybeleid van jouw website te maken."
+msgstr "Dit tekst template helpt je om het privacybeleid van jouw website te maken."
 
 #: wp-admin/options-privacy.php:169
 msgid "As a website owner, you may need to follow national or international privacy laws. For example, you may need to create and display a Privacy Policy."
@@ -5150,7 +5150,7 @@ msgstr "Inhoud geselecteerd bestand:"
 #. translators: %s: Select field to choose the front page.
 #: wp-admin/options-reading.php:109
 msgid "Homepage: %s"
-msgstr "Homepagina: %s"
+msgstr "Homepage: %s"
 
 #: wp-admin/options-permalink.php:306
 msgid "Available tags:"
@@ -6231,18 +6231,6 @@ msgstr "Help voor afbeelding schalen"
 msgid "Single Page"
 msgstr "Enkele Pagina"
 
-#: wp-admin/includes/file.php:35
-msgid "Singular Template"
-msgstr "Enkelvoudig Sjabloon"
-
-#: wp-admin/includes/file.php:33
-msgid "Date Template"
-msgstr "Datum Sjabloon"
-
-#: wp-admin/includes/file.php:28
-msgid "Taxonomy Template"
-msgstr "Taxonomie Sjabloon"
-
 #: wp-admin/includes/dashboard.php:1060
 msgid "View more comments"
 msgstr "Bekijk meer reacties"
@@ -6257,6 +6245,18 @@ msgstr "Het waarschuwingspaneel van de browser negeren"
 msgctxt "dashboard"
 msgid "%1$s on %2$s %3$s"
 msgstr "%1$s op %2$s %3$s"
+
+#: wp-admin/includes/file.php:35
+msgid "Singular Template"
+msgstr "Enkelvoudig template"
+
+#: wp-admin/includes/file.php:33
+msgid "Date Template"
+msgstr "Datum template"
+
+#: wp-admin/includes/file.php:28
+msgid "Taxonomy Template"
+msgstr "Taxonomie template"
 
 #: wp-admin/includes/dashboard.php:751
 msgid "View this comment"
@@ -9275,13 +9275,13 @@ msgstr "Spring naar de hoofdinhoud"
 msgid "You can select an image to be shown at the top of your site by uploading from your computer or choosing from your media library. After selecting an image you will be able to crop it."
 msgstr "Een afbeelding selecteren om aan de bovenkant van je website te tonen. Een afbeelding van de computer uploaden of kies een afbeelding uit de mediabibliotheek. Na selectie kan de afbeelding worden bewerkt."
 
-#: wp-admin/edit-tags.php:260
-msgid "You can delete Link Categories in the Bulk Action pull-down, but that action does not delete the links within the category. Instead, it moves them to the default Link Category."
-msgstr "Linkcategorieën kunnen worden verwijderd met de bulkactie dropdown. Hoewel de categorieën worden verwijderd geldt dit niet voor de links in deze categorieën, deze worden verplaatst naar de standaard linkcategorie."
-
 #: wp-admin/edit-form-advanced.php:324
 msgid "Creating a Page is very similar to creating a Post, and the screens can be customized in the same way using drag and drop, the Screen Options tab, and expanding/collapsing boxes as you choose. This screen also has the distraction-free writing space, available in both the Visual and Text modes via the Fullscreen buttons. The Page editor mostly works the same as the Post editor, but there are some Page-specific features in the Page Attributes box."
 msgstr "Aanmaken van pagina's is soortgelijk aan het aanmaken van berichten. De schermen kunnen worden aangepast op dezelfde manier door middel van slepen en plaatsen, via de scherminstellingentabblad en door vakken in en uit te klappen. Dit scherm heeft ook de volledige weergave beschikbaar in zowel de visuele en tekstmodus. De editor werkt hetzelfde als de berichteditor, maar er zijn een aantal pagina-specifieke functies in de pagina attributenvak:"
+
+#: wp-admin/edit-tags.php:260
+msgid "You can delete Link Categories in the Bulk Action pull-down, but that action does not delete the links within the category. Instead, it moves them to the default Link Category."
+msgstr "Linkcategorieën kunnen worden verwijderd met de bulkactie dropdown. Hoewel de categorieën worden verwijderd geldt dit niet voor de links in deze categorieën, deze worden verplaatst naar de standaard linkcategorie."
 
 #: wp-admin/includes/class-custom-image-header.php:109
 msgid "You can set a custom image header for your site. Simply upload the image and crop it, and the new header will go live immediately. Alternatively, you can use an image that has already been uploaded to your Media Library by clicking the &#8220;Choose Image&#8221; button."
@@ -9836,7 +9836,7 @@ msgstr "Schermafbeeldingen"
 
 #: wp-admin/includes/plugin-install.php:702
 msgid "Plugin Homepage &#187;"
-msgstr "Plugin-startpagina &#187;"
+msgstr "Plugin startpagina &#187;"
 
 #. translators: 1: Table name, 2: Error message.
 #: wp-admin/maint/repair.php:114
@@ -11292,11 +11292,6 @@ msgstr "Met optionele velden kun je de &#8220;categorie&#8221; en &#8220;tag&#82
 msgid "Many themes show some sidebar widgets by default until you edit your sidebars, but they are not automatically displayed in your sidebar management tool. After you make your first widget change, you can re-add the default widgets by adding them from the Available Widgets area."
 msgstr "Veel thema's tonen standaard enkele zijbalk widgets totdat je de zijbalken gaat bewerken, maar ze worden niet automatisch weergegeven in je zijbalk beheertool. Nadat je je eerste widget wijzigt, kan je de standaard widgets opnieuw toevoegen uit het Beschikbare Widgets gebied."
 
-#. translators: %s: URL to create a new page.
-#: wp-admin/options-reading.php:28
-msgid "You can choose what&#8217;s displayed on the homepage of your site. It can be posts in reverse chronological order (classic blog), or a fixed/static page. To set a static homepage, you first need to create two <a href=\"%s\">Pages</a>. One will become the homepage, and the other will be where your posts are displayed."
-msgstr "Je kunt kiezen wat er wordt weergegeven op de homepagina van je website. Het kunnen berichten zijn in omgekeerde chronologische volgorde (klassiek blog), of een vaste / statische pagina. Als je een statische homepagina wilt, moet je eerst twee <a href=\"%s\">pagina&#39;s</a> maken. De een zal de voorpagina geworden, en de andere zal de pagina worden waarop je berichten worden weergegeven."
-
 #. translators: 1: %category%, 2: %tag%
 #: wp-admin/options-permalink.php:41
 msgid "When you assign multiple categories or tags to a post, only one can show up in the permalink: the lowest numbered category. This applies if your custom structure includes %1$s or %2$s."
@@ -11306,6 +11301,11 @@ msgstr "Wanneer je meerdere categorieën of tags toewijst aan een bericht, wordt
 #: wp-admin/options-permalink.php:36
 msgid "If you pick an option other than Plain, your general URL path with structure tags (terms surrounded by %s) will also appear in the custom structure field and your path can be further modified there."
 msgstr "Als je kiest voor een andere optie dan de standaard, zal je algemene URL-pad met de structuur tags (omringd door %s), ook verschijnen in het aangepaste structuur veld en je pad kan daar verder worden bewerkt."
+
+#. translators: %s: URL to create a new page.
+#: wp-admin/options-reading.php:28
+msgid "You can choose what&#8217;s displayed on the homepage of your site. It can be posts in reverse chronological order (classic blog), or a fixed/static page. To set a static homepage, you first need to create two <a href=\"%s\">Pages</a>. One will become the homepage, and the other will be where your posts are displayed."
+msgstr "Je kunt kiezen wat er wordt weergegeven op de homepage van je website. Het kunnen berichten zijn in omgekeerde chronologische volgorde (klassiek blog), of een vaste / statische pagina. Als je een statische homepage wilt, moet je eerst twee <a href=\"%s\">pagina's</a> maken. De een zal de homepage geworden, en de andere zal de pagina worden waarop je berichten worden weergegeven."
 
 #: wp-admin/users.php:34
 msgid "To add a new user for your site, click the Add New button at the top of the screen or Add New in the Users menu section."
@@ -11567,14 +11567,14 @@ msgstr "<strong>Naam</strong> &mdash; De naam die getoond wordt op je website."
 msgid "When adding a new category on this screen, you&#8217;ll fill in the following fields:"
 msgstr "Wanneer je een nieuwe categorie op dit scherm toevoegt moet je de volgende velden invullen:"
 
-#: wp-admin/edit-tags.php:262
-msgid "What&#8217;s the difference between categories and tags? Normally, tags are ad-hoc keywords that identify important information in your post (names, subjects, etc) that may or may not recur in other posts, while categories are pre-determined sections. If you think of your site like a book, the categories are like the Table of Contents and the tags are like the terms in the index."
-msgstr "Wat is het verschil tussen de categorie&#235;n en tags? Normaal gesproken zijn tags ad-hoc trefwoorden die belangrijke informatie in je bericht (namen, onderwerpen, enz.) bevatten. Die kunnen al dan niet voorkomen in andere berichten. Categorie&#235;n zijn vooraf bepaalde secties. Als je je website vergelijkt met een boek, zijn de categorie&#235;n de inhoudsopgave en de tags termen in de index."
-
 #. translators: %s: URL to Writing Settings screen.
 #: wp-admin/edit-tags.php:250
 msgid "You can use categories to define sections of your site and group related posts. The default category is &#8220;Uncategorized&#8221; until you change it in your <a href=\"%s\">writing settings</a>."
 msgstr "Je kunt categorie&#235;n gebruiken om onderverdelingen te maken in je website en verwante berichten te groeperen. De standaard bericht categorie is &#8220;Geen categorie&#8221; totdat je deze verandert in de <a href=\"%s\">instellingen voor schrijven</a>."
+
+#: wp-admin/edit-tags.php:262
+msgid "What&#8217;s the difference between categories and tags? Normally, tags are ad-hoc keywords that identify important information in your post (names, subjects, etc) that may or may not recur in other posts, while categories are pre-determined sections. If you think of your site like a book, the categories are like the Table of Contents and the tags are like the terms in the index."
+msgstr "Wat is het verschil tussen de categorie&#235;n en tags? Normaal gesproken zijn tags ad-hoc trefwoorden die belangrijke informatie in je bericht (namen, onderwerpen, enz.) bevatten. Die kunnen al dan niet voorkomen in andere berichten. Categorie&#235;n zijn vooraf bepaalde secties. Als je je website vergelijkt met een boek, zijn de categorie&#235;n de inhoudsopgave en de tags termen in de index."
 
 #: wp-admin/includes/class-custom-image-header.php:857
 msgid "You need JavaScript to choose a part of the image."
@@ -11813,7 +11813,7 @@ msgstr "Afbeelding verwijderen"
 
 #: wp-admin/includes/class-custom-background.php:348
 msgid "Display Options"
-msgstr "Weergave-instellingen"
+msgstr "Weergave instellingen"
 
 #: wp-admin/users.php:583
 msgid "You can't remove the current user."
@@ -11917,11 +11917,11 @@ msgstr "Tag template"
 
 #: wp-admin/includes/file.php:27
 msgid "Author Template"
-msgstr "Auteur sjabloon"
+msgstr "Auteur template"
 
 #: wp-admin/includes/file.php:54
 msgid "Visual Editor Stylesheet"
-msgstr "Visuele Editor stylesheet"
+msgstr "Visuele editor stylesheet"
 
 #: wp-admin/edit-form-advanced.php:204
 msgid "Page saved."
@@ -11985,10 +11985,6 @@ msgstr "Omschrijf in een paar woorden waar deze website over gaat."
 msgid "Site visibility"
 msgstr "Zichtbaarheid website"
 
-#: wp-admin/includes/class-walker-nav-menu-edit.php:212
-msgid "CSS Classes (optional)"
-msgstr "CSS-klassen (optioneel)"
-
 #: wp-admin/includes/nav-menu.php:1105
 msgid "Link Target"
 msgstr "Linkdoel"
@@ -11996,6 +11992,10 @@ msgstr "Linkdoel"
 #: wp-admin/nav-menus.php:957 wp-admin/nav-menus.php:1099
 msgid "Save Menu"
 msgstr "Menu opslaan"
+
+#: wp-admin/includes/class-walker-nav-menu-edit.php:212
+msgid "CSS Classes (optional)"
+msgstr "CSS klassen (optioneel)"
 
 #. translators: 1: Theme name, 2: Number of the theme, 3: Total number of
 #. themes being updated.
@@ -12084,7 +12084,7 @@ msgstr "WordPress bijwerken"
 
 #: wp-admin/includes/class-walker-nav-menu-edit.php:175
 msgid "Edit menu item"
-msgstr "Menu-item bewerken"
+msgstr "Menu item bewerken"
 
 #: wp-admin/options-general.php:295
 msgid "This timezone does not observe daylight saving time."
@@ -12253,10 +12253,6 @@ msgstr "Widget %s"
 msgid "Inactive Widgets"
 msgstr "Inactieve widgets"
 
-#: wp-admin/includes/class-wp-users-list-table.php:306
-msgid "Change"
-msgstr "Bijwerken"
-
 #: wp-admin/includes/class-wp-users-list-table.php:299
 #: wp-admin/includes/class-wp-users-list-table.php:301
 msgid "Change role to&hellip;"
@@ -12331,10 +12327,6 @@ msgstr "Voornaam"
 #: wp-admin/user-edit.php:325
 msgid "Enable keyboard shortcuts for comment moderation."
 msgstr "Inschakelen toetsenbord snelkoppelingen voor het modereren van reacties."
-
-#: wp-admin/includes/misc.php:952 wp-admin/user-edit.php:299
-msgid "Admin Color Scheme"
-msgstr "Kleurenpalet Instellen"
 
 #: wp-admin/update.php:298 wp-admin/theme-install.php:58
 #: wp-admin/theme-install.php:152 wp-admin/theme-install.php:154
@@ -12488,18 +12480,10 @@ msgstr "Mailserver"
 msgid "Post via email"
 msgstr "Bericht via e-mail"
 
-#: wp-admin/options-writing.php:112
-msgid "Default Link Category"
-msgstr "Standaard link-categorie"
-
 #. translators: %s: URL to Pages screen.
 #: wp-admin/options-reading.php:98
 msgid "A <a href=\"%s\">static page</a> (select below)"
 msgstr "Een <a href=\"%s\">statische pagina</a> (hieronder kiezen)"
-
-#: wp-admin/options-reading.php:16
-msgid "Reading Settings"
-msgstr "Instellingen lezen"
 
 #: wp-admin/options-permalink.php:344
 msgid "Tag base"
@@ -12795,10 +12779,6 @@ msgctxt "settings screen"
 msgid "General"
 msgstr "Algemeen"
 
-#: wp-admin/options-discussion.php:266 wp-admin/options-discussion.php:267
-msgid "Default Avatar"
-msgstr "Standaard Avatar"
-
 #: wp-admin/upload.php:324 wp-admin/upload.php:359
 msgid "Media file permanently deleted."
 msgstr "Mediabestand permanent verwijderd."
@@ -12989,10 +12969,6 @@ msgstr "Links zoeken"
 msgid "Other users have been deleted."
 msgstr "Andere gebruikers zijn verwijderd."
 
-#: wp-admin/user-edit.php:265
-msgid "Visual Editor"
-msgstr "Visuele Editor (What You See Is What You Get)"
-
 #: wp-admin/theme-editor.php:293 wp-admin/plugin-editor.php:272
 msgid "Documentation:"
 msgstr "Documentatie:"
@@ -13070,10 +13046,6 @@ msgstr "<strong>FOUT</strong>: Gelieve een wachtwoord in te vullen."
 msgid "Edit Themes"
 msgstr "Thema's bewerken"
 
-#: wp-admin/options-discussion.php:243 wp-admin/options-discussion.php:244
-msgid "Maximum Rating"
-msgstr "Maximale Beoordeling"
-
 #: wp-admin/includes/update-core.php:1308
 msgid "Upgrading database&#8230;"
 msgstr "Database bijwerken&#8230;"
@@ -13123,10 +13095,6 @@ msgstr "Eigenschappen filter"
 #: wp-admin/user-edit.php:268
 msgid "Disable the visual editor when writing"
 msgstr "De visuele editor uitschakelen tijdens het schrijven"
-
-#: wp-admin/options-reading.php:156
-msgid "Syndication feeds show the most recent"
-msgstr "RSS-feeds tonen de meest recente"
 
 #: wp-admin/media.php:73
 msgid "You can&#8217;t edit this attachment because it is in the Trash. Please move it out of the Trash and try again."
@@ -13243,11 +13211,6 @@ msgstr "Nieuwe gebruiker aangemaakt."
 msgid "You can&#8217;t delete the current user."
 msgstr "Je kan de huidige gebruiker niet verwijderen."
 
-#: wp-admin/my-sites.php:13 wp-admin/ms-delete-site.php:13
-#: wp-admin/network/admin.php:17
-msgid "Multisite support is not enabled."
-msgstr "Multisite support is niet geactiveerd."
-
 #: wp-admin/update-core.php:167
 msgid "Bring back this update"
 msgstr "Terugkeren naar deze update"
@@ -13280,10 +13243,6 @@ msgstr "Bevestigingsbericht overslaan."
 #: wp-admin/user-edit.php:202
 msgid "User updated."
 msgstr "Gebruiker bijgewerkt."
-
-#: wp-admin/includes/user.php:565
-msgid "Always use https when visiting the admin"
-msgstr "Gebruik steeds https wanneer je het Dashboard bezoekt"
 
 #. translators: Add new plugin.
 #: wp-admin/plugins.php:727 wp-admin/menu.php:246 wp-admin/network/menu.php:106
@@ -13318,10 +13277,6 @@ msgstr "Als je ervoor gekozen hebt om je %s bestand tijdelijk schrijfbaar te mak
 #: wp-admin/menu.php:299 wp-admin/options-privacy.php:139
 msgid "Privacy"
 msgstr "Privacy"
-
-#: wp-admin/options-privacy.php:167
-msgid "Privacy Settings"
-msgstr "Privacy Instellingen"
 
 #. translators: %s: Site link.
 #. translators: First post content. %s: Site link.
@@ -13373,11 +13328,6 @@ msgstr "Wanneer een reactie één van deze woorden bevat in zijn inhoud, naam, U
 #: wp-admin/options-discussion.php:209
 msgid "When a comment contains any of these words in its content, author name, URL, email, IP address, or browser&#8217;s user agent string, it will be put in the Trash. One word or IP address per line. It will match inside words, so &#8220;press&#8221; will match &#8220;WordPress&#8221;."
 msgstr "Wanneer een reactie één van deze woorden bevat in zijn inhoud, auteursnaam, URL, e-mail, IP-adres of browser user agent string, wordt deze in de prullenbak geplaatst. Eén woord of IP-adres per regel. Het zal matchen binnen woorden, dus &#8220;press&#8221; zal matchen met &#8220;WordPress&#8221;."
-
-#. translators: 1, 2, 3: Examples of random email addresses.
-#: wp-admin/options-writing.php:145
-msgid "To post to WordPress by email, you must set up a secret email account with POP3 access. Any mail received at this address will be posted, so it&#8217;s a good idea to keep this address very secret. Here are three random strings you could use: %1$s, %2$s, %3$s."
-msgstr "Om berichten via e-mail te kunnen plaatsen, moet je een geheim e-mail account instellen met POP3-toegang. Elke e-mail ontvangen op dit adres zal worden geplaatst, dus het is een goed idee om dit e-mailadres uiterst geheim te houden. Hier zijn drie willekeurige tekenreeksen die je kunt gebruiken: %1$s, %2$s, %3$s."
 
 #: wp-admin/includes/class-wp-plugins-list-table.php:601
 #: wp-admin/includes/class-wp-plugins-list-table.php:801
@@ -13432,6 +13382,56 @@ msgstr "Fout bij het automatisch bijwerken van WordPress. Stel de websitebeheerd
 msgid "An automated WordPress update has failed to complete - <a href=\"%s\">please attempt the update again now</a>."
 msgstr "Fout bij het automatisch bijwerken van WordPress - <a href=\"%s\">probeer opnieuw</a>."
 
+#: wp-admin/my-sites.php:13 wp-admin/ms-delete-site.php:13
+#: wp-admin/network/admin.php:17
+msgid "Multisite support is not enabled."
+msgstr "Multisite ondersteuning is niet geactiveerd."
+
+#: wp-admin/options-discussion.php:266 wp-admin/options-discussion.php:267
+msgid "Default Avatar"
+msgstr "Standaard avatar"
+
+#: wp-admin/options-discussion.php:243 wp-admin/options-discussion.php:244
+msgid "Maximum Rating"
+msgstr "Maximale beoordeling"
+
+#: wp-admin/options-reading.php:156
+msgid "Syndication feeds show the most recent"
+msgstr "RSS feeds tonen de meest recente"
+
+#: wp-admin/options-privacy.php:167
+msgid "Privacy Settings"
+msgstr "Privacy instellingen"
+
+#: wp-admin/options-reading.php:16
+msgid "Reading Settings"
+msgstr "Lezen instellingen"
+
+#. translators: 1, 2, 3: Examples of random email addresses.
+#: wp-admin/options-writing.php:145
+msgid "To post to WordPress by email, you must set up a secret email account with POP3 access. Any mail received at this address will be posted, so it&#8217;s a good idea to keep this address very secret. Here are three random strings you could use: %1$s, %2$s, %3$s."
+msgstr "Om berichten via e-mail te kunnen plaatsen, moet je een geheim e-mail account instellen met POP3 toegang. Elke e-mail ontvangen op dit adres zal worden geplaatst, dus het is een goed idee om dit e-mailadres uiterst geheim te houden. Hier zijn drie willekeurige tekenreeksen die je kunt gebruiken: %1$s, %2$s, %3$s."
+
+#: wp-admin/options-writing.php:112
+msgid "Default Link Category"
+msgstr "Standaard link categorie"
+
+#: wp-admin/user-edit.php:265
+msgid "Visual Editor"
+msgstr "Visuele editor"
+
+#: wp-admin/includes/user.php:565
+msgid "Always use https when visiting the admin"
+msgstr "Gebruik steeds https wanneer je het dashboard bezoekt"
+
+#: wp-admin/includes/misc.php:952 wp-admin/user-edit.php:299
+msgid "Admin Color Scheme"
+msgstr "Beheerder kleurenschema"
+
+#: wp-admin/includes/class-wp-users-list-table.php:306
+msgid "Change"
+msgstr "Wijzigen"
+
 #. translators: %s: Comment author, filled by Ajax.
 #: wp-admin/includes/template.php:549
 msgid "Comment by %s marked as spam."
@@ -13484,12 +13484,6 @@ msgstr "Niet toestaan"
 #: wp-admin/includes/class-wp-posts-list-table.php:1798
 msgid "Allow"
 msgstr "Toestaan"
-
-#. translators: Between password field and private checkbox on post quick edit
-#. interface.
-#: wp-admin/includes/class-wp-posts-list-table.php:1643
-msgid "&ndash;OR&ndash;"
-msgstr "&ndash;OR&ndash;"
 
 #: wp-admin/includes/class-wp-posts-list-table.php:1600
 #: wp-admin/includes/class-wp-posts-list-table.php:1703
@@ -13552,10 +13546,6 @@ msgstr "Er is een ongeldige plugin."
 msgid "The plugin generated unexpected output."
 msgstr "De plugin heeft onverwachte uitvoer gegenereerd."
 
-#: wp-admin/includes/plugin-install.php:282
-msgid "You may also browse based on the most popular tags in the Plugin Directory:"
-msgstr "Je kunt ook zoeken met behulp van de populairste tags in de Plugin Directory:"
-
 #: wp-admin/includes/plugin-install.php:281
 msgid "Popular tags"
 msgstr "Populaire tags"
@@ -13563,11 +13553,6 @@ msgstr "Populaire tags"
 #: wp-admin/includes/meta-boxes.php:1372
 msgid "(Leave at 0 for no rating.)"
 msgstr "(0 is geen waardering)"
-
-#: wp-admin/includes/class-wp-links-list-table.php:138
-#: wp-admin/includes/meta-boxes.php:1361
-msgid "Rating"
-msgstr "Waardering"
 
 #: wp-admin/includes/meta-boxes.php:1357
 msgid "Notes"
@@ -13678,10 +13663,6 @@ msgstr "Hoofd"
 msgid "Status:"
 msgstr "Status:"
 
-#: wp-admin/includes/meta-boxes.php:71
-msgid "Preview Changes"
-msgstr "Wijzigingen bekijken"
-
 #: wp-admin/includes/media.php:2981
 msgid "Link to image"
 msgstr "Naar afbeelding linken"
@@ -13690,10 +13671,6 @@ msgstr "Naar afbeelding linken"
 msgid "Link Image To:"
 msgstr "Afbeelding linken aan:"
 
-#: wp-admin/includes/media.php:2906
-msgid "Image Caption"
-msgstr "Onderschrift"
-
 #: wp-admin/includes/media.php:2858
 msgid "Filter &#187;"
 msgstr "Filter &#187;"
@@ -13701,10 +13678,6 @@ msgstr "Filter &#187;"
 #: wp-admin/includes/media.php:2766
 msgid "All Types"
 msgstr "Alle types"
-
-#: wp-admin/includes/media.php:2670
-msgid "Update gallery settings"
-msgstr "Galerij-instellingen bijwerken"
 
 #: wp-admin/includes/media.php:2649
 msgid "Gallery columns:"
@@ -13850,10 +13823,6 @@ msgstr "Er is geen bestand geupload."
 msgid "The uploaded file was only partially uploaded."
 msgstr "Het bestand is slechts gedeeltelijk geupload."
 
-#: wp-admin/includes/file.php:63
-msgid "Popup Comments Template"
-msgstr "Popup reactie template"
-
 #: wp-admin/includes/file.php:62
 msgid "Comments Template"
 msgstr "Reacties template"
@@ -13907,14 +13876,6 @@ msgstr "Filter"
 #: wp-admin/includes/class-file-upload-upgrader.php:111
 msgid "Please select a file"
 msgstr "Gelieve een bestand te selecteren"
-
-#: wp-admin/includes/template.php:495
-msgid "Update Comment"
-msgstr "Reactie aanpassen"
-
-#: wp-admin/edit-link-form.php:117
-msgid "Example: Nifty blogging software"
-msgstr "Voorbeeld: Handige blog software"
 
 #. translators: %s: Directory name.
 #: wp-admin/includes/class-wp-upgrader.php:157
@@ -13986,11 +13947,6 @@ msgstr "Bekijk &#8220;%s&#8221;"
 msgid "family"
 msgstr "familie"
 
-#. translators: %s: Directory name.
-#: wp-admin/includes/class-wp-filesystem-base.php:313
-msgid "Found %s"
-msgstr "%s Gevonden"
-
 #: wp-admin/includes/file.php:2240
 msgid "Hostname"
 msgstr "Hostname"
@@ -14004,11 +13960,6 @@ msgstr "Exporteer"
 msgid "Reply to this comment"
 msgstr "Antwoord op deze reactie"
 
-#. translators: %s: Home URL.
-#: wp-admin/includes/class-custom-image-header.php:496
-msgid "Header updated. <a href=\"%s\">Visit your site</a> to see how it looks."
-msgstr "Header aangepast <a href=\"%s\">Bekijk je website</a> om te zien hoe het er uitziet."
-
 #: wp-admin/includes/class-plugin-upgrader.php:57
 msgid "The plugin is at the latest version."
 msgstr "De plugin heeft de laatste versie."
@@ -14016,17 +13967,6 @@ msgstr "De plugin heeft de laatste versie."
 #: wp-admin/includes/class-wp-links-list-table.php:137
 msgid "Visible"
 msgstr "ZIchtbaar"
-
-#. translators: %s: hostname:port
-#: wp-admin/includes/class-wp-filesystem-ftpsockets.php:87
-#: wp-admin/includes/class-wp-filesystem-ftpsockets.php:100
-#: wp-admin/includes/class-wp-filesystem-ftpext.php:97
-msgid "Failed to connect to FTP Server %s"
-msgstr "Kan niet verbinden met FTP-Server %s"
-
-#: wp-admin/includes/class-wp-filesystem-ssh2.php:69
-msgid "The ssh2 PHP extension is not available"
-msgstr "De ssh2 PHP-extensie is niet beschikbaar"
 
 #. translators: %s: Directory name.
 #: wp-admin/includes/class-wp-filesystem-base.php:295
@@ -14055,11 +13995,6 @@ msgstr "geografisch"
 #: wp-admin/comment.php:143
 msgid "You are about to approve the following comment:"
 msgstr "Je staat op het punt om volgende reactie toe te staan:"
-
-#: wp-admin/includes/class-wp-filesystem-ftpsockets.php:56
-#: wp-admin/includes/class-wp-filesystem-ftpext.php:60
-msgid "FTP username is required"
-msgstr "FTP gebruikersnaam is verplicht"
 
 #: wp-admin/includes/media.php:1419
 msgid "Location of the uploaded file."
@@ -14618,10 +14553,6 @@ msgstr "Aflopend"
 msgid "Movable Type and TypePad"
 msgstr "Movable Type en TypePad"
 
-#: wp-admin/edit-tags.php:453 wp-admin/edit-tag-form.php:156
-msgid "The &#8220;slug&#8221; is the URL-friendly version of the name. It is usually all lowercase and contains only letters, numbers, and hyphens."
-msgstr "The &#8220;slug&#8221; is de URL-vriendelijke versie van de naam. Een slug bevat alleen (kleine) letters, cijfers en koppeltekens."
-
 #. translators: %s: Date and time of the revision.
 #: wp-admin/edit-form-advanced.php:187
 msgid "Post restored to revision from %s."
@@ -14681,10 +14612,6 @@ msgstr "Bijvoegen"
 msgid "(Unattached)"
 msgstr "Niet bijgevoegd"
 
-#: wp-admin/includes/file.php:64
-msgid "Popup Comments"
-msgstr "Popup reacties"
-
 #: wp-admin/includes/class-custom-image-header.php:838
 #: wp-admin/includes/class-custom-image-header.php:981
 msgid "Image Processing Error"
@@ -14734,10 +14661,6 @@ msgstr "Thumbnails koppelen aan:"
 #: wp-admin/includes/media.php:2559
 msgid "Sort Order:"
 msgstr "Sorteervolgorde:"
-
-#: wp-admin/includes/media.php:2555
-msgid "All Tabs:"
-msgstr "Alle Tabbladen"
 
 #: wp-admin/edit-tags.php:447 wp-admin/edit-tag-form.php:134
 msgid "The name is how it appears on your site."
@@ -14791,17 +14714,9 @@ msgstr "Het bestand is niet door de uploadtest gekomen."
 msgid "All image sizes"
 msgstr "Alle afbeeldingsafmetingen"
 
-#: wp-admin/includes/file.php:22
-msgid "404 Template"
-msgstr "404 Sjabloon"
-
 #: wp-admin/includes/image-edit.php:225
 msgid "Apply changes to:"
 msgstr "Wijzigingen toepassen op:"
-
-#: wp-admin/includes/file.php:56
-msgid "RTL Stylesheet"
-msgstr "RTL-Stylesheet"
 
 #. translators: 1: Type of comment, 2: Notification if the comment is pending.
 #: wp-admin/includes/dashboard.php:860
@@ -14894,26 +14809,6 @@ msgstr "Extra veld toevoegen"
 msgid "Empty archive."
 msgstr "Leeg archief"
 
-#: wp-admin/includes/file.php:44
-msgid "Audio Attachment Template"
-msgstr "Audio bijlage sjabloon"
-
-#: wp-admin/includes/file.php:43
-msgid "Video Attachment Template"
-msgstr "Video bijlage sjabloon"
-
-#: wp-admin/includes/file.php:42
-msgid "Image Attachment Template"
-msgstr "Afbeelding bijlage sjabloon"
-
-#: wp-admin/includes/file.php:41
-msgid "Attachment Template"
-msgstr "Bijlage sjabloon"
-
-#: wp-admin/includes/file.php:23
-msgid "Links Template"
-msgstr "Links sjabloon"
-
 #: wp-admin/includes/template.php:740
 msgid "Enter new"
 msgstr "Nieuwe invoegen"
@@ -14921,14 +14816,6 @@ msgstr "Nieuwe invoegen"
 #: wp-admin/includes/file.php:36
 msgid "Single Post"
 msgstr "Enkelvoudig bericht"
-
-#: wp-admin/includes/file.php:29
-msgid "Category Template"
-msgstr "Categorie sjabloon"
-
-#: wp-admin/includes/file.php:25
-msgid "Main Index Template"
-msgstr "Hoofdsjabloon"
 
 #: wp-admin/includes/template.php:714
 msgid "Add New Custom Field:"
@@ -14950,13 +14837,6 @@ msgstr "WordPress.org Plugin Pagina &#187;"
 #: wp-admin/includes/plugin-install.php:673
 msgid "Compatible up to:"
 msgstr "Compatibel tot:"
-
-#. translators: %s: Number of ratings.
-#: wp-admin/includes/plugin-install.php:722
-msgid "(based on %s rating)"
-msgid_plural "(based on %s ratings)"
-msgstr[0] "Gebaseerd op %s waardering"
-msgstr[1] "Gebaseerd op %s waarderingen"
 
 #: wp-admin/includes/plugin-install.php:355
 msgid "Plugin zip file"
@@ -15038,11 +14918,6 @@ msgstr[1] "%s blokken kunnen niet bijgewerkt worden, ze worden momenteel door ie
 msgid "<strong>Warning:</strong> This plugin <strong>has not been tested</strong> with your current version of WordPress."
 msgstr "<strong>Waarschuwing:</strong> deze plugin is <strong>niet getest</strong> met je huidige versie van WordPress."
 
-#. translators: 1: Plugin name, 2: Plugin version.
-#: wp-admin/includes/class-plugin-upgrader.php:86
-msgid "Successfully installed the plugin <strong>%1$s %2$s</strong>."
-msgstr "De plugin <strong>%1$s %2$s</strong> werd met succes geïnstalleerd."
-
 #: wp-admin/includes/class-wp-media-list-table.php:701
 #: wp-admin/includes/class-wp-media-list-table.php:757
 #: wp-admin/includes/class-wp-comments-list-table.php:768
@@ -15093,10 +14968,6 @@ msgstr "Bulkacties"
 msgid "Example: <code>https://wordpress.org/</code> &#8212; don&#8217;t forget the <code>https://</code>"
 msgstr "Voorbeeld: <code>https://wordpress.org/</code> Vergeet de <code>https://</code> niet"
 
-#: wp-admin/includes/bookmark.php:229
-msgid "Could not update link in the database."
-msgstr "Kan de link in de database niet bijwerken."
-
 #: wp-admin/includes/bookmark.php:237
 msgid "Could not insert link into the database."
 msgstr "Kan de link niet invoegen in de database."
@@ -15141,6 +15012,135 @@ msgstr "Nu installeren"
 #: wp-admin/includes/meta-boxes.php:1087 wp-admin/edit-link-form.php:17
 msgid "Update Link"
 msgstr "Update link"
+
+#. translators: %s: Home URL.
+#: wp-admin/includes/class-custom-image-header.php:496
+msgid "Header updated. <a href=\"%s\">Visit your site</a> to see how it looks."
+msgstr "Header bijgewerkt. <a href=\"%s\">Bekijk je website</a> om te zien hoe het er uitziet."
+
+#: wp-admin/includes/template.php:495
+msgid "Update Comment"
+msgstr "Reactie bijwerken"
+
+#: wp-admin/edit-link-form.php:117
+msgid "Example: Nifty blogging software"
+msgstr "Voorbeeld: handige blog software"
+
+#: wp-admin/edit-tags.php:453 wp-admin/edit-tag-form.php:156
+msgid "The &#8220;slug&#8221; is the URL-friendly version of the name. It is usually all lowercase and contains only letters, numbers, and hyphens."
+msgstr "De &#8220;slug&#8221; is de URL-vriendelijke versie van de naam. Een slug bevat alleen (kleine) letters, cijfers en koppeltekens."
+
+#. translators: %s: hostname:port
+#: wp-admin/includes/class-wp-filesystem-ftpsockets.php:87
+#: wp-admin/includes/class-wp-filesystem-ftpsockets.php:100
+#: wp-admin/includes/class-wp-filesystem-ftpext.php:97
+msgid "Failed to connect to FTP Server %s"
+msgstr "Kan niet verbinden met FTP server %s"
+
+#: wp-admin/includes/class-wp-filesystem-ftpsockets.php:56
+#: wp-admin/includes/class-wp-filesystem-ftpext.php:60
+msgid "FTP username is required"
+msgstr "FTP gebruikersnaam is vereist"
+
+#. translators: %s: Directory name.
+#: wp-admin/includes/class-wp-filesystem-base.php:313
+msgid "Found %s"
+msgstr "%s gevonden"
+
+#: wp-admin/includes/bookmark.php:229
+msgid "Could not update link in the database."
+msgstr "Kan de link niet bijwerken in de database."
+
+#: wp-admin/includes/class-wp-filesystem-ssh2.php:69
+msgid "The ssh2 PHP extension is not available"
+msgstr "De ssh2 PHP extensie is niet beschikbaar"
+
+#. translators: 1: Plugin name, 2: Plugin version.
+#: wp-admin/includes/class-plugin-upgrader.php:86
+msgid "Successfully installed the plugin <strong>%1$s %2$s</strong>."
+msgstr "Plugin <strong>%1$s %2$s</strong> werd met succes geïnstalleerd."
+
+#: wp-admin/includes/file.php:25
+msgid "Main Index Template"
+msgstr "Hoofd index template"
+
+#: wp-admin/includes/file.php:63
+msgid "Popup Comments Template"
+msgstr "Pop-up reactie template"
+
+#: wp-admin/includes/file.php:44
+msgid "Audio Attachment Template"
+msgstr "Audio bijlage template"
+
+#: wp-admin/includes/file.php:43
+msgid "Video Attachment Template"
+msgstr "Video bijlage template"
+
+#: wp-admin/includes/file.php:42
+msgid "Image Attachment Template"
+msgstr "Afbeelding bijlage template"
+
+#: wp-admin/includes/file.php:41
+msgid "Attachment Template"
+msgstr "Bijlage template"
+
+#: wp-admin/includes/file.php:23
+msgid "Links Template"
+msgstr "Links template"
+
+#: wp-admin/includes/file.php:22
+msgid "404 Template"
+msgstr "404 template"
+
+#: wp-admin/includes/file.php:29
+msgid "Category Template"
+msgstr "Categorie template"
+
+#: wp-admin/includes/file.php:64
+msgid "Popup Comments"
+msgstr "Pop-up reacties"
+
+#: wp-admin/includes/file.php:56
+msgid "RTL Stylesheet"
+msgstr "RTL stylesheet"
+
+#: wp-admin/includes/media.php:2670
+msgid "Update gallery settings"
+msgstr "Galerij instellingen bijwerken"
+
+#: wp-admin/includes/media.php:2555
+msgid "All Tabs:"
+msgstr "Alle tabbladen:"
+
+#: wp-admin/includes/meta-boxes.php:71
+msgid "Preview Changes"
+msgstr "Wijzigingen voorvertonen"
+
+#: wp-admin/includes/media.php:2906
+msgid "Image Caption"
+msgstr "Afbeelding onderschrift"
+
+#: wp-admin/includes/class-wp-links-list-table.php:138
+#: wp-admin/includes/meta-boxes.php:1361
+msgid "Rating"
+msgstr "Beoordeling"
+
+#: wp-admin/includes/plugin-install.php:282
+msgid "You may also browse based on the most popular tags in the Plugin Directory:"
+msgstr "Je kunt ook zoeken met behulp van de populairste tags in de plugin directory:"
+
+#. translators: %s: Number of ratings.
+#: wp-admin/includes/plugin-install.php:722
+msgid "(based on %s rating)"
+msgid_plural "(based on %s ratings)"
+msgstr[0] "(gebaseerd op %s beoordeling)"
+msgstr[1] "(gebaseerd op %s beoordelingen)"
+
+#. translators: Between password field and private checkbox on post quick edit
+#. interface.
+#: wp-admin/includes/class-wp-posts-list-table.php:1643
+msgid "&ndash;OR&ndash;"
+msgstr "&ndash;OF&ndash;"
 
 #: wp-admin/admin.php:329 wp-admin/import.php:18 wp-admin/menu.php:280
 msgid "Import"

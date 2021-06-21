@@ -106,8 +106,9 @@ h6 {
 b, strong {
   font-family: 'open_sansbold'; }
 
-i, em {
-  font-family: 'open_sansitalic'; }
+i, em, blockquote {
+  font-family: 'open_sansitalic';
+  font-style: normal; }
 
 /***** Links *****/
 a {
@@ -683,6 +684,52 @@ figure {
     .diensten-sec .card-content a {
       font-size: 2.8rem; }
 
+/***** home berichten *****/
+.home-berichten {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  max-width: 100%; }
+  .home-berichten article {
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 2rem 1rem;
+    border-radius: 2px;
+    -webkit-box-shadow: 2px 2px 20px rgba(0, 5, 24, 0.1);
+            box-shadow: 2px 2px 20px rgba(0, 5, 24, 0.1); }
+    .home-berichten article:nth-child(2) {
+      display: none; }
+    .home-berichten article h2 {
+      font-family: flama_semicondensedbold;
+      font-size: 24px;
+      line-height: 29px;
+      color: #070410;
+      margin-top: 1.5rem;
+      margin-bottom: .5rem; }
+    .home-berichten article .auteur {
+      font-family: flama_semicondensedbold;
+      font-size: 14px;
+      line-height: 17px;
+      color: #021b79; }
+    .home-berichten article p {
+      font-size: 18px;
+      line-height: 24px;
+      color: #01172e;
+      max-width: 100%; }
+      .home-berichten article p a {
+        font-size: flama_semicondensedbook;
+        font-size: 18px;
+        line-height: 22px;
+        color: #021b79; }
+
 input[type="text"],
 input[type="email"],
 input[type="url"],
@@ -866,20 +913,8 @@ input[type="submit"]:focus {
     .partners-sec .card-img {
       width: auto; }
 
-  .home-berichten {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    width: 100%; }
-    .home-berichten article {
-      width: 45%; }
+  .home-berichten article {
+    width: 40%; }
 
   .site-footer .row {
     margin: 0 2rem; }
