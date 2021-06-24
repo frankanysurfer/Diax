@@ -227,6 +227,37 @@
 		color: $blueVeryLight;
 	}
 
+	.wp-show-posts {
+		article {
+	    	box-shadow: 2px 2px 20px rgba(0,5,24,.1);
+	    	&:nth-child(2) {
+	    		display: none;
+	    		p {
+	    			color: $blueVeryLight;
+	    		}
+	    	}
+	    	.wp-show-posts-entry-title {
+				color: $blueBright;
+				a {
+					color: $blueBright;
+				}
+			}
+			a {
+				border: none;
+				.author-name {
+					color: $blueBright;
+				}
+			}
+			p {
+				color: $blueVeryLight;
+			}
+			.wp-show-posts-read-more {
+				color: $blueBright;
+			}
+		}
+	}
+
+
 	/***** Footer links *****/
 	.site-footer {
 		background-color: $blueBrightD;
@@ -624,6 +655,36 @@ body {
 
 	.quote figure figcaption {
 		color: $blueVeryLight;
+	}
+
+	.wp-show-posts {
+		article {
+	    	box-shadow: 2px 2px 20px rgba(0,5,24,.1);
+	    	&:nth-child(2) {
+	    		display: none;
+	    		p {
+	    			color: $blueVeryLight;
+	    		}
+	    	}
+	    	.wp-show-posts-entry-title {
+				color: $blueBright;
+				a {
+					color: $blueBright;
+				}
+			}
+			a {
+				border: none;
+				.author-name {
+					color: $blueBright;
+				}
+			}
+			p {
+				color: $blueVeryLight;
+			}
+			.wp-show-posts-read-more {
+				color: $blueBright;
+			}
+		}
 	}
 
 	/***** Footer links *****/

@@ -15,4 +15,10 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /diax/index.php [L]
 </IfModule>
 
+<FilesMatch "\.(ttf|otf|eot|woff|woff2)$">
+  <IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+  </IfModule>
+</FilesMatch>
+
 # END WordPress

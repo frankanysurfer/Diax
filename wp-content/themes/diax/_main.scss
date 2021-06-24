@@ -398,4 +398,76 @@ section	.card-partners {
 	}
 }
 
+.wp-show-posts {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;;
+	width: 100%;
+	max-width: 100%;
+	article {
+		margin: 0 auto;
+		width: 100%;
+		max-width: 500px;
+		padding: 2rem 2rem 0 2rem;
+    	border-radius: 2px;
+    	box-shadow: 2px 2px 20px rgba(0,5,24,.1);
+    	&:nth-child(2) {
+    		display: none;
+    	}
+    	.wp-show-posts-entry-title {
+			font-family: flama_semicondensedbold;
+			font-size: 24px;
+			line-height: 29px;
+			color: #070410;
+			margin-top: 0;
+			margin-bottom: .5rem;
+			a {
+				color: #070410;
+				&:hover {
+					border: none;
+				}
+				&:after {
+					background: none;
+				}
+			}
+		}
+		a {
+			border: none;
+			.author-name {
+				font-family: flama_semicondensedbold;
+				font-size: 14px;
+				line-height: 17px;
+				color: $blueDark;
+				border: none;
+			}
+			&:hover {
+				border: none;
+			}
+			&:after {
+				background: none;
+			}
+		}
+		p {
+			font-size: 18px;
+			line-height: 24px;
+			color: $blueVeryDark;
+			max-width: 100%;
+		}
+		.wp-show-posts-read-more {
+			font-size: flama_semicondensedbook;
+			font-size: 18px;
+			line-height: 22px;
+			color: $blueDark;
+			border: none;
+			padding: 0;
+			text-decoration: underline;
+			&:hover {
+				background: none;
+			}
+			&:after {
+				background: none;
+			}
+		}
+	}
+}
 

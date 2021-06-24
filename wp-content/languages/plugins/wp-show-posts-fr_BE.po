@@ -1,0 +1,509 @@
+# Translation of Plugins - WP Show Posts - Stable (latest release) in French (Belgium)
+# This file is distributed under the same license as the Plugins - WP Show Posts - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2016-09-28 11:13:04+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: GlotPress/3.0.0-alpha\n"
+"Language: fr_BE\n"
+"Project-Id-Version: Plugins - WP Show Posts - Stable (latest release)\n"
+
+#: admin/metabox.php:919
+msgid "No results message"
+msgstr "Message sans résultats"
+
+#: admin/metabox.php:726
+msgid "Exclude Post IDs"
+msgstr "Exclure ID d'articles"
+
+#: admin/metabox.php:663
+msgid "More settings"
+msgstr "Plus de réglages"
+
+#. Author URI of the plugin/theme
+msgid "https://tomusborne.com"
+msgstr "https://tomusborne.com"
+
+#. Author of the plugin/theme
+msgid "Tom Usborne"
+msgstr "Tom Usborne"
+
+#. Description of the plugin/theme
+msgid "WP Show Posts allows you to list posts (from any post type) anywhere on your site. This includes WooCommerce products or any other post type you might have! Check out the pro version for even more features at https://wpshowposts.com."
+msgstr "WP Show Posts vous permet de lister des articles (de tous les types) n'importe où sur votre site web. Ceci comprend les produits WooCommerce ou tout type d'article que vous ayez ! Vérifiez la version PRO pour davantage de fonctionnalités sur https://wpshowposts.com."
+
+#. Plugin URI of the plugin/theme
+msgid "https://wpshowposts.com"
+msgstr "https://wpshowposts.com"
+
+#: inc/defaults.php:59
+msgid "Sorry, no posts were found."
+msgstr "Désolé, aucun article n'a été trouvé."
+
+#: inc/functions.php:389
+msgid "Next &rarr;"
+msgstr "Suivant &rarr;"
+
+#: inc/functions.php:388
+msgid "&larr; Previous"
+msgstr "&larr; Précédent"
+
+#: inc/functions.php:70
+msgid "View all posts by %s"
+msgstr "Voir tous les articles par %s"
+
+#: admin/post-type.php:43
+msgid "Post List"
+msgstr "Liste d'articles"
+
+#: admin/post-type.php:40
+msgid "Filter items list"
+msgstr "Filtrer les éléments d'une liste"
+
+#: admin/post-type.php:39
+msgid "Items list navigation"
+msgstr "Naviguer entre les éléments d'une liste"
+
+#: admin/post-type.php:38
+msgid "Items list"
+msgstr "Liste d'éléments"
+
+#: admin/post-type.php:37
+msgid "Uploaded to this list"
+msgstr "Téléchargé dans cette liste"
+
+#: admin/post-type.php:36
+msgid "Insert into list"
+msgstr "Insérer dans une liste"
+
+#: admin/post-type.php:35
+msgid "Use as featured image"
+msgstr "Utiliser comme image mise en avant"
+
+#: admin/post-type.php:34
+msgid "Remove featured image"
+msgstr "Retirer l'image mise en avant"
+
+#: admin/post-type.php:33
+msgid "Set featured image"
+msgstr "Choisir une image mise en avant"
+
+#: admin/post-type.php:32
+msgid "Featured Image"
+msgstr "Image mise en avant"
+
+#: admin/post-type.php:31
+msgid "Not found in Trash"
+msgstr "Non trouvé dans la corbeille"
+
+#: admin/post-type.php:30
+msgid "Not found"
+msgstr "Non trouvé"
+
+#: admin/post-type.php:29
+msgid "Search List"
+msgstr "Rechercher dans une liste"
+
+#: admin/post-type.php:28
+msgid "View List"
+msgstr "Voir une liste"
+
+#: admin/post-type.php:27
+msgid "Update List"
+msgstr "Mettre à jour une liste"
+
+#: admin/post-type.php:26
+msgid "Edit List"
+msgstr "Modifier une liste"
+
+#: admin/post-type.php:25
+msgid "New List"
+msgstr "Nouvelle liste"
+
+#: admin/post-type.php:24
+msgid "Add New"
+msgstr "Ajouter"
+
+#: admin/post-type.php:23
+msgid "Add New List"
+msgstr "Ajouter une nouvelle liste"
+
+#: admin/post-type.php:22
+msgid "All Lists"
+msgstr "Toutes les listes"
+
+#: admin/post-type.php:21
+msgid "Parent List:"
+msgstr "Liste parent :"
+
+#: admin/post-type.php:20
+msgid "List Archives"
+msgstr "Liste d'archives"
+
+#: admin/post-type.php:17
+msgctxt "Post Type Singular Name"
+msgid "Post List"
+msgstr "Liste d'articles"
+
+#: admin/post-type.php:16
+msgctxt "Post Type General Name"
+msgid "Post Lists"
+msgstr "Listes d'articles"
+
+#: admin/metabox.php:984
+msgid "Function"
+msgstr "Fonction"
+
+#: admin/metabox.php:981
+msgid "Shortcode"
+msgstr "Code court"
+
+#: admin/metabox.php:968
+msgid "Usage"
+msgstr "Utilisation"
+
+#: admin/metabox.php:894
+msgid "Tax operator"
+msgstr "Opérateur fiscal"
+
+#: admin/metabox.php:877
+msgid "Meta value"
+msgstr "Valeur méta"
+
+#: admin/metabox.php:860
+msgid "Meta key"
+msgstr "Clé méta"
+
+#: admin/metabox.php:841
+msgid "Any"
+msgstr "Tout"
+
+#: admin/metabox.php:840
+msgid "Trash"
+msgstr "Corbeille"
+
+#: admin/metabox.php:839
+msgid "Inherit"
+msgstr "Hériter"
+
+#: admin/metabox.php:838
+msgid "Private"
+msgstr "Privé"
+
+#: admin/metabox.php:837
+msgid "Future"
+msgstr "À venir"
+
+#: admin/metabox.php:836
+msgid "Auto draft"
+msgstr "Auto-brouillon"
+
+#: admin/metabox.php:835
+msgid "Draft"
+msgstr "Brouillon"
+
+#: admin/metabox.php:834
+msgid "Pending"
+msgstr "En attente"
+
+#: admin/metabox.php:833
+msgid "Published"
+msgstr "Publié"
+
+#: admin/metabox.php:831
+msgid "Status"
+msgstr "Etat"
+
+#: admin/metabox.php:812
+msgid "Comment count"
+msgstr "Compte des commentaires"
+
+#: admin/metabox.php:811
+msgid "Random"
+msgstr "Aléatoire"
+
+#: admin/metabox.php:810
+msgid "Parent"
+msgstr "Parent"
+
+#: admin/metabox.php:809
+msgid "Modified"
+msgstr "Modifié"
+
+#: admin/metabox.php:808
+msgid "Date"
+msgstr "Date"
+
+#: admin/metabox.php:116 admin/metabox.php:807
+msgid "Post type"
+msgstr "Type d'article"
+
+#: admin/metabox.php:806
+msgid "Slug"
+msgstr "Identifiant"
+
+#: admin/metabox.php:805
+msgid "Title"
+msgstr "Titre"
+
+#: admin/metabox.php:804
+msgid "Author"
+msgstr "Auteur"
+
+#: admin/metabox.php:803
+msgid "ID"
+msgstr "ID"
+
+#: admin/metabox.php:802
+msgid "No order"
+msgstr "Sans ordre"
+
+#: admin/metabox.php:800
+msgid "Order by"
+msgstr "Ordre selon"
+
+#: admin/metabox.php:781
+msgid "Ascending"
+msgstr "Ascendant"
+
+#: admin/metabox.php:780
+msgid "Descending"
+msgstr "Descendant"
+
+#: admin/metabox.php:778
+msgid "Order"
+msgstr "Ordre"
+
+#: admin/metabox.php:761
+msgid "Offset"
+msgstr "Offset"
+
+#: admin/metabox.php:743
+msgid "Ignore sticky posts"
+msgstr "Ignorer les articles épinglés"
+
+#: admin/metabox.php:709
+msgid "Post IDs"
+msgstr "IDs de l'article"
+
+#: admin/metabox.php:691
+msgid "Exclude current"
+msgstr "Exclure l'actuel"
+
+#: admin/metabox.php:674
+msgid "Author ID"
+msgstr "ID de l'auteur"
+
+#: admin/metabox.php:603
+msgid "Terms location"
+msgstr "Emplacement des conditions"
+
+#: admin/metabox.php:585
+msgid "Include terms"
+msgstr "Inclure les conditions"
+
+#: admin/metabox.php:563
+msgid "Date location"
+msgstr "Emplacement de la date"
+
+#: admin/metabox.php:545
+msgid "Include date"
+msgstr "Inclure la date"
+
+#: admin/metabox.php:526 admin/metabox.php:566 admin/metabox.php:606
+#: admin/metabox.php:646
+msgid "Below post"
+msgstr "En-dessous de l'article"
+
+#: admin/metabox.php:523
+msgid "Author location"
+msgstr "Emplacement de l'auteur"
+
+#: admin/metabox.php:505
+msgid "Include author"
+msgstr "Inclure l'auteur"
+
+#: admin/metabox.php:495
+msgid "Meta"
+msgstr "Méta"
+
+#: admin/metabox.php:462
+msgid "Read more text"
+msgstr "Texte pour lire plus"
+
+#: admin/metabox.php:415
+msgid "Include title"
+msgstr "Inclure le titre"
+
+#: admin/metabox.php:397
+msgid "Excerpt length (words)"
+msgstr "Longueur de l'extrait (mots)"
+
+#: admin/metabox.php:378
+msgid "None"
+msgstr "Aucun"
+
+#: admin/metabox.php:377
+msgid "Full"
+msgstr "En entier"
+
+#: admin/metabox.php:376
+msgid "Excerpt"
+msgstr "Extrait"
+
+#: admin/metabox.php:374
+msgid "Content type"
+msgstr "Type de contenu"
+
+#: admin/metabox.php:364
+msgid "Content"
+msgstr "Contenu"
+
+#: admin/metabox.php:347
+msgid "Above title"
+msgstr "Au-dessus du titre"
+
+#: admin/metabox.php:346 admin/metabox.php:525 admin/metabox.php:565
+#: admin/metabox.php:605 admin/metabox.php:645
+msgid "Below title"
+msgstr "En-dessous du titre"
+
+#: admin/metabox.php:344
+msgid "Image location"
+msgstr "Emplacement de l'image"
+
+#: admin/metabox.php:325
+msgid "Right"
+msgstr "Droite"
+
+#: admin/metabox.php:324
+msgid "Center"
+msgstr "Centre"
+
+#: admin/metabox.php:323
+msgid "Left"
+msgstr "Gauche"
+
+#: admin/metabox.php:321
+msgid "Image alignment"
+msgstr "Alignement de l'image"
+
+#: admin/metabox.php:303
+msgid "Image height (px)"
+msgstr "Hauteur de l'image (px)"
+
+#: admin/metabox.php:285
+msgid "Image width (px)"
+msgstr "Largeur de l'image (px)"
+
+#: admin/metabox.php:257 admin/metabox.php:267
+msgid "Images"
+msgstr "Images"
+
+#: admin/metabox.php:241
+msgid "Columns gutter"
+msgstr "Gouttière des colonnes"
+
+#: admin/metabox.php:206 admin/metabox.php:216
+msgid "Columns"
+msgstr "Colonnes"
+
+#: admin/metabox.php:190
+msgid "Pagination should only be used if your posts are the only thing in the content area to prevent duplicate content issues."
+msgstr "La pagination devrait être utilisée uniquement si vos articles sont le seul élément présent dans la zone de contenu ; ceci afin d'éviter tout problème de duplication."
+
+#: admin/metabox.php:189
+msgid "Pagination"
+msgstr "Pagination"
+
+#: admin/metabox.php:172
+msgid "Posts per page"
+msgstr "Articles par page"
+
+#: admin/metabox.php:154
+msgid "Terms"
+msgstr "Termes"
+
+#: admin/metabox.php:135
+msgid "Taxonomy"
+msgstr "Taxinomie"
+
+#: admin/metabox.php:106
+msgid "Posts"
+msgstr "Articles"
+
+#. Translators: 1: month, 2: day, 3: year.
+#: admin/butterbean/tmpl/control-date.php:52
+#: admin/butterbean/tmpl/control-datetime.php:52
+msgid "%1$s %2$s, %3$s"
+msgstr "%2$s/%1$s/%3$s"
+
+#. Translators: 1: month, 2: day, 3: year, 4: hour, 5: minute, 6: second.
+#: admin/butterbean/tmpl/control-date.php:46
+#: admin/butterbean/tmpl/control-datetime.php:46
+msgid "%1$s %2$s, %3$s @ %4$s:%5$s:%6$s"
+msgstr "%2$s/%1$s/%3$s à  %4$s:%5$s:%6$s"
+
+#: admin/butterbean/inc/controls/class-control-image.php:71
+msgid "No image selected"
+msgstr "Aucune image sélectionnée"
+
+#: admin/butterbean/inc/controls/class-control-image.php:70
+msgid "Remove image"
+msgstr "Retirer l'image"
+
+#: admin/butterbean/inc/controls/class-control-image.php:69
+msgid "Change image"
+msgstr "Changer l'image"
+
+#: admin/butterbean/inc/controls/class-control-image.php:68
+msgid "Choose image"
+msgstr "Choisir comme image"
+
+#: admin/butterbean/inc/controls/class-control-image.php:67
+msgid "Set as image"
+msgstr "Placer comme image"
+
+#: admin/butterbean/inc/controls/class-control-image.php:66
+msgid "Add image"
+msgstr "Ajouter une image"
+
+#: admin/butterbean/inc/controls/class-control-date.php:131
+#: admin/butterbean/inc/controls/class-control-datetime.php:136
+msgid "Second"
+msgstr "Seconde"
+
+#: admin/butterbean/inc/controls/class-control-date.php:123
+#: admin/butterbean/inc/controls/class-control-datetime.php:128
+msgid "Minute"
+msgstr "Minute"
+
+#: admin/butterbean/inc/controls/class-control-date.php:115
+#: admin/butterbean/inc/controls/class-control-datetime.php:120
+msgid "Hour"
+msgstr "Heure"
+
+#: admin/butterbean/inc/controls/class-control-date.php:107
+#: admin/butterbean/inc/controls/class-control-datetime.php:112
+msgid "Day"
+msgstr "Jour"
+
+#: admin/butterbean/inc/controls/class-control-date.php:83
+#: admin/butterbean/inc/controls/class-control-datetime.php:88
+msgid "Month"
+msgstr "Mois"
+
+#: admin/butterbean/inc/controls/class-control-date.php:74
+#: admin/butterbean/inc/controls/class-control-datetime.php:79
+msgid "Year"
+msgstr "Année"
+
+#. #-#-#-#-#  wp-show-posts-code.pot (WP Show Posts 1.1.3)  #-#-#-#-#
+#. Plugin Name of the plugin/theme
+#: admin/admin.php:35 admin/metabox.php:94 admin/post-type.php:18
+#: admin/post-type.php:19 admin/widget.php:19
+msgid "WP Show Posts"
+msgstr "WP Show Posts"
