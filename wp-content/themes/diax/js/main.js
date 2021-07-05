@@ -20,7 +20,7 @@ Array.prototype.forEach.call(cards, card => {
 var d = document.getElementById("switch");
 
 var logo = document.getElementById("diax-logo").src;
-var logodark = "../img/diax-logo-dark.svg";
+var logodark = "https://www.di-ax.be/wp-content/themes/diax/img/diax-logo-dark.svg";
 var imgElement = document.getElementById('diax-logo');
 
 

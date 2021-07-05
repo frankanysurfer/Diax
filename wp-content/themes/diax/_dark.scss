@@ -227,9 +227,29 @@
 		color: $blueVeryLight;
 	}
 
+		/***** home berichten *****/
+
+	.home-berichten {
+		article {
+	    	box-shadow: 2px 2px 20px rgba(230,241,252,0.1);
+	    	h2 {
+				color: $blueBright;
+			}
+			.auteur {
+				color: $blueBright;
+			}
+			p {
+				color: $blueVeryLight;
+				a {
+					color: $blueBright;
+				}
+			}
+		}
+	}
+
 	.wp-show-posts {
 		article {
-	    	box-shadow: 2px 2px 20px rgba(0,5,24,.1);
+	    	box-shadow: 2px 2px 20px rgba(230,241,252,0.1);
 	    	&:nth-child(2) {
 	    		display: none;
 	    		p {
@@ -657,9 +677,31 @@ body {
 		color: $blueVeryLight;
 	}
 
+
+	/***** home berichten *****/
+
+	.home-berichten {
+		article {
+	    	box-shadow: 2px 2px 20px rgba(230,241,252,0.1);
+	    	h2 {
+				color: $blueBright;
+			}
+			.auteur {
+				color: $blueBright;
+			}
+			p {
+				color: $blueVeryLight;
+				a {
+					color: $blueBright;
+				}
+			}
+		}
+	}
+
+
 	.wp-show-posts {
 		article {
-	    	box-shadow: 2px 2px 20px rgba(0,5,24,.1);
+	    	box-shadow: 2px 2px 20px rgba(230,241,252,0.1);
 	    	&:nth-child(2) {
 	    		display: none;
 	    		p {

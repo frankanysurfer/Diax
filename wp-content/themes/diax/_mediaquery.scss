@@ -1,3 +1,9 @@
+@media screen and (min-width: 30em) {
+	.lang-item a {
+		padding: .5rem;
+	}
+}
+
 @media screen and (min-width: 37.5em) {
 
 	.main-navigation {
@@ -11,9 +17,9 @@
 	    }
 	}
 
-.entry-content .wp-show-posts-columns#wpsp-616	{
-	margin-left: 0;
-}
+	.entry-content .wp-show-posts-columns#wpsp-616	{
+		margin-left: 0;
+	}
 
 	.wp-show-posts {
 		article {
